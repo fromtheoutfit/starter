@@ -1,0 +1,376 @@
+// =============================================================================
+// Grid layout system.
+// =============================================================================
+
+// Some projects need this grid layout system while others may not. Please be
+// sure to intentionally include (or not include) this partial as needed over in
+// the main.scss file.
+
+
+// =============================================================================
+// Demo: A typical HTML structure for this grid layout system.
+// =============================================================================
+
+// <!-- Grid wrapper: full-width element that spans the entire viewport. -->
+// <div class="gw">
+//
+//    <!-- Content wrapper: a hook for min/max-width value(s) and centering via
+//    margin-left/right:auto;. -->
+//    <div class="c">
+//
+//      <!-- Grid item: 100% width to start, then 33.333% at $bp-medium. -->
+//      <div class="g one-whole m-one-third">
+//        Grid item #1
+//      </div><!-- .g -->
+//
+//      <!-- Grid item: 100% width to start, then 33.333% at $bp-medium. -->
+//      <div class="g one-whole m-one-third">
+//        Grid item #2
+//      </div><!-- .g -->
+//
+//      <!-- Grid item: 100% width to start, then 33.333% at $bp-medium. -->
+//      <div class="g one-whole m-one-third">
+//        Grid item #3
+//      </div><!-- .g -->
+//
+//    </div><!-- .c -->
+//
+// </div><!-- .gw -->
+
+
+// =============================================================================
+// Grid selectors.
+// =============================================================================
+
+// Grid wrapper.
+
+// .gw {
+//   Most of the time, this full-width element doesn't need styles.
+// }
+
+// Content wrapper.
+
+.c {
+  @extend %clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $content-max-width;
+  padding-right: $grid-spacing-unit;
+
+  @include mq-min-width($bp-medium) {
+    padding-right: $grid-spacing-unit * 2;
+  }
+}
+
+// Grid item(s).
+
+.g {
+  float: left;
+  padding-left: $grid-spacing-unit;
+
+  @include mq-min-width($bp-medium) {
+    padding-left: $grid-spacing-unit * 2;
+  }
+}
+
+.g-rev {
+  float: right;
+  padding-left: $grid-spacing-unit;
+
+  @include mq-min-width($bp-medium) {
+    padding-left: $grid-spacing-unit * 2;
+  }
+}
+
+// Sometimes, the grid elements are applied directly to list elements.
+
+ul.gw,
+ol.gw {
+  list-style: none;
+  padding-left: 0;
+}
+
+li.g,
+li.g-rev {
+  margin-bottom: 0;
+}
+
+
+// =============================================================================
+// Default Rules.
+// =============================================================================
+
+.one-whole {
+  width: 100%;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.one-third {
+  width: 33.333%;
+}
+
+.two-thirds {
+  width: 66.666%;
+}
+
+.one-quarter {
+  width: 25%;
+}
+
+.three-quarters {
+  width: 75%;
+}
+
+.one-fifth {
+  width: 20%;
+}
+
+.two-fifths {
+  width: 40%;
+}
+
+.three-fifths {
+  width: 60%;
+}
+
+.four-fifths {
+  width: 80%;
+}
+
+
+// =============================================================================
+// "Small" Rules.
+// =============================================================================
+
+@include mq-min-width($bp-small) {
+  .s-one-whole {
+    width: 100%;
+  }
+
+  .s-one-half {
+    width: 50%;
+  }
+
+  .s-one-third {
+    width: 33.333%;
+  }
+
+  .s-two-thirds {
+    width: 66.666%;
+  }
+
+  .s-one-quarter {
+    width: 25%;
+  }
+
+  .s-three-quarters {
+    width: 75%;
+  }
+
+  .s-one-fifth {
+    width: 20%;
+  }
+
+  .s-two-fifths {
+    width: 40%;
+  }
+
+  .s-three-fifths {
+    width: 60%;
+  }
+
+  .s-four-fifths {
+    width: 80%;
+  }
+}
+
+
+// =============================================================================
+// "Compact" Rules.
+// =============================================================================
+
+@include mq-min-width($bp-compact) {
+  .c-one-whole {
+    width: 100%;
+  }
+
+  .c-one-half {
+    width: 50%;
+  }
+
+  .c-one-third {
+    width: 33.333%;
+  }
+
+  .c-two-thirds {
+    width: 66.666%;
+  }
+
+  .c-one-quarter {
+    width: 25%;
+  }
+
+  .c-three-quarters {
+    width: 75%;
+  }
+
+  .c-one-fifth {
+    width: 20%;
+  }
+
+  .c-two-fifths {
+    width: 40%;
+  }
+
+  .c-three-fifths {
+    width: 60%;
+  }
+
+  .c-four-fifths {
+    width: 80%;
+  }
+}
+
+
+// =============================================================================
+// "Medium" Rules.
+// =============================================================================
+
+@include mq-min-width($bp-medium) {
+  .m-one-whole {
+    width: 100%;
+  }
+
+  .m-one-half {
+    width: 50%;
+  }
+
+  .m-one-third {
+    width: 33.333%;
+  }
+
+  .m-two-thirds {
+    width: 66.666%;
+  }
+
+  .m-one-quarter {
+    width: 25%;
+  }
+
+  .m-three-quarters {
+    width: 75%;
+  }
+
+  .m-one-fifth {
+    width: 20%;
+  }
+
+  .m-two-fifths {
+    width: 40%;
+  }
+
+  .m-three-fifths {
+    width: 60%;
+  }
+
+  .m-four-fifths {
+    width: 80%;
+  }
+}
+
+
+// =============================================================================
+// "Large" Rules.
+// =============================================================================
+
+@include mq-min-width($bp-large) {
+  .l-one-whole {
+    width: 100%;
+  }
+
+  .l-one-half {
+    width: 50%;
+  }
+
+  .l-one-third {
+    width: 33.333%;
+  }
+
+  .l-two-thirds {
+    width: 66.666%;
+  }
+
+  .l-one-quarter {
+    width: 25%;
+  }
+
+  .l-three-quarters {
+    width: 75%;
+  }
+
+  .l-one-fifth {
+    width: 20%;
+  }
+
+  .l-two-fifths {
+    width: 40%;
+  }
+
+  .l-three-fifths {
+    width: 60%;
+  }
+
+  .l-four-fifths {
+    width: 80%;
+  }
+}
+
+
+// =============================================================================
+// "Extra Large" Rules.
+// =============================================================================
+
+@include mq-min-width($bp-extra-large) {
+  .xl-one-whole {
+    width: 100%;
+  }
+
+  .xl-one-half {
+    width: 50%;
+  }
+
+  .xl-one-third {
+    width: 33.333%;
+  }
+
+  .xl-two-thirds {
+    width: 66.666%;
+  }
+
+  .xl-one-quarter {
+    width: 25%;
+  }
+
+  .xl-three-quarters {
+    width: 75%;
+  }
+
+  .xl-one-fifth {
+    width: 20%;
+  }
+
+  .xl-two-fifths {
+    width: 40%;
+  }
+
+  .xl-three-fifths {
+    width: 60%;
+  }
+
+  .xl-four-fifths {
+    width: 80%;
+  }
+}

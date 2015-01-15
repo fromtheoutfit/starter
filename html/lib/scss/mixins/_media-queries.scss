@@ -1,0 +1,82 @@
+// =============================================================================
+// Min-width.
+// =============================================================================
+
+@mixin mq-min-width($screen-width) {
+  @media only screen and (min-width: $screen-width) {
+    @content;
+  }
+}
+
+
+// =============================================================================
+// Max-width.
+// =============================================================================
+
+@mixin mq-max-width($screen-width) {
+  @media only screen and (max-width: $screen-width) {
+    @content;
+  }
+}
+
+
+// =============================================================================
+// Between two widths.
+// =============================================================================
+
+@mixin mq-between-width($min-width, $max-width) {
+  @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+
+// =============================================================================
+// DPR: 2x.
+// =============================================================================
+
+@mixin mq-2x {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+         only screen and (min--moz-device-pixel-ratio: 2),
+         only screen and (-moz-min-device-pixel-ratio: 2),
+         only screen and (-o-min-device-pixel-ratio: 2/1),
+         only screen and (min-device-pixel-ratio: 2),
+         only screen and (min-resolution: 192dpi),
+         only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+
+// =============================================================================
+// DPR: 3x.
+// =============================================================================
+
+@mixin mq-3x {
+  @media only screen and (-webkit-min-device-pixel-ratio: 3),
+         only screen and (min--moz-device-pixel-ratio: 3),
+         only screen and (-moz-min-device-pixel-ratio: 3),
+         only screen and (-o-min-device-pixel-ratio: 3/1),
+         only screen and (min-device-pixel-ratio: 3),
+         only screen and (min-resolution: 288dpi),
+         only screen and (min-resolution: 3dppx) {
+    @content;
+  }
+}
+
+
+// =============================================================================
+// DPR: 4x.
+// =============================================================================
+
+@mixin mq-4x {
+  @media only screen and (-webkit-min-device-pixel-ratio: 4),
+         only screen and (min--moz-device-pixel-ratio: 4),
+         only screen and (-moz-min-device-pixel-ratio: 4),
+         only screen and (-o-min-device-pixel-ratio: 4/1),
+         only screen and (min-device-pixel-ratio: 4),
+         only screen and (min-resolution: 384dpi),
+         only screen and (min-resolution: 4dppx) {
+    @content;
+  }
+}

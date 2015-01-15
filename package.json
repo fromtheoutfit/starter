@@ -1,0 +1,19 @@
+{
+  "name": "the-outfit-starter",
+  "version": "0.0.0",
+  "description": "The directories, files, and code that most website projects are started with at The Outfit.",
+  "author": "The Outfit, Inc.",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^1.9.0",
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.3",
+    "gulp-filter": "^2.0.0",
+    "gulp-html-replace": "^1.4.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^1.0.2",
+    "jshint-stylish": "^1.0.0",
+    "run-sequence": "^1.0.2"
+  }
+}

@@ -1,0 +1,34 @@
+// =============================================================================
+// Type.
+// =============================================================================
+
+$font-stack-sans:   sans-serif; // http://css-tricks.com/sans-serif/
+$font-stack-serif:  serif;
+$font-stack-mono:   monospace;
+$font-size:         1rem;
+$line-height:       1.4;
+
+
+// =============================================================================
+// Colors.
+// =============================================================================
+
+$color-background:    white;
+$color-text:          black;
+$color-link:          blue;
+$color-link-hover:    red;
+$color-link-visited:  gray;
+
+
+// =============================================================================
+// Layout.
+// =============================================================================
+
+$content-min-width: (200rem/16);
+$content-max-width: (1200rem/16);
+$bp-small:          (401rem/16);
+$bp-compact:        (576rem/16);
+$bp-medium:         (751rem/16);
+$bp-large:          (901rem/16);
+$bp-extra-large:    (1201rem/16);
+$grid-spacing-unit: $font-size;

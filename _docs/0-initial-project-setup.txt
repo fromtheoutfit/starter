@@ -1,0 +1,57 @@
+* If you're in a hurry, skip to line #23 *
+
+So, it's the future and websites are complicated. They're complicated to plan,
+they're complicated to build, and it's not easy to ensure they're useful to all
+of the people all of the time.
+
+That said, we love a challenge, and this "starter project" aims to make it easy
+in two ways:
+
+1. It is thoroughly documented.
+When something is optional, there will be documentation explaining why you may
+or may not want to use it. You make the decision based on the project's
+particular needs, then either keep or delete the associated code/files/etc.
+
+2. It will be updated, often.
+As time passes, things change. Developer processes improve, polyfills aren't
+needed anymore, design trends go out of fashion, etc. This starter project will
+be updated often to ensure it's as helpful as possible and it provides what
+clients want.
+
+
+********************************************************************************
+* Initial Project Setup
+********************************************************************************
+
+
+First: Task Runner Installation
+--------------------------------------------------------------------------------
+
+This starter project uses a task runner to simplify the development process. For
+example: Sass will be compiled to css on the fly, web browsers will be refreshed
+and synchronized automatically, JavaScript will be checked for code quality, and
+so on. This task runner relies on certain things being available on your
+computer before they can be of any use to you.
+
+To obtain and use these certain things, you need NodeJS and NPM on your
+computer. If you don't have NodeJS and NPM yet, go to this page, choose
+your operating system, and follow the associated instructions:
+https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager (If
+that URL goes away, http://nodejs.org is good, too.)
+
+Once you have NodeJS and NPM, open up your command line interface, navigate to
+this project's root directory, and type in the following command: "sudo npm
+install" without the double quotes. Press return, then you'll be prompted for
+your computer's password, so type it in and press return. Once a bunch of stuff
+is done flying by, you're done. All of the necessary things are now on your
+computer.
+
+
+Second: Set Up Project
+--------------------------------------------------------------------------------
+
+The initial HTML template (/html/_templates/home.html) is chock-full of code and
+associated documentation that, if left untouched, is probably not ideal for
+every project. When starting a new website, read the comments that start with
+"( * OPTIONAL * )" and determine whether or not you need each of the associated
+things.

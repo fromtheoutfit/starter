@@ -1,0 +1,61 @@
+// =============================================================================
+// The button mixin has numerous parameters, each with a sensible default value.
+// Here's a table of each parameter's variable name, meaning, and default value:
+//
+// Parameter          Meaning                             Default
+// -----------------------------------------------------------------------------
+// $bg-color          background color                    blue
+// $border-radius     border-radius                       8px
+// $color             text color                          white
+// $hf-bg-color       hover & focus background color      darken($bg-color, 25%)
+// $hf-color          hover & focus text color            white
+// $font-size         font-size                           $font-size
+// $size              set the button size                 '' [empty/default]
+// =============================================================================
+// Example usage, keeping the default values:
+// .log-in a {
+//   @include btn;
+// }
+//
+// Example usage, adjusting some of the default values:
+// .log-in a {
+//   @include btn($size:large, $bg-color:#f90, $hf-bg-color:#c90)
+// }
+// =============================================================================
+
+@mixin btn($bg-color: blue,
+           $border-radius: 8px,
+           $color: white,
+           $hf-bg-color: darken($bg-color, 25%),
+           $hf-color: white,
+           $font-size: $font-size,
+           $size:'') {
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  border: none;
+  color: $color;
+  display: inline-block;
+  font-size: $font-size;
+  line-height: 1.2;
+  padding: (12em/16) (24em/16);
+  text-decoration: none;
+  text-transform: uppercase;
+  @if $size == small {
+    font-size: ($font-size * 0.75);
+    padding: (10em/16) (20em/16);
+  } @else if $size == large {
+    font-size: ($font-size * 1.2);
+    padding: (14em/16) (28em/16);
+  }
+
+  &:visited {
+    background-color: $bg-color;
+    color: $color;
+  }
+
+  &:hover,
+  &:focus {
+    background: $hf-bg-color;
+    color: $hf-color;
+  }
+}
