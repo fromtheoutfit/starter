@@ -51,6 +51,9 @@ var config = {
 gulp.task('scss', function() {
   return gulp.src(config.scssFile)
     .pipe(sass({style:'compressed', sourcemapPath:'../scss/'}))
+    .on('error', function(err) {
+      console.error(err.message);
+    })
     .pipe(gulp.dest(config.cssPath))
     .pipe(filter('**/*.css'))
     .pipe(browserSync.reload({stream:true}));
