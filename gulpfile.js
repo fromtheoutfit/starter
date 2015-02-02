@@ -34,7 +34,7 @@ var config = {
   imagePath  : 'html/lib/img/**/*', // Currently unused.
   templateFiles : [
     'html/index.+(html|php)',
-    // 'html/_templates/**/*.html', // As of right now, I *think* it's best if we DON'T allow the prep-templates task to work on these particular files. Why? Because we want the inline documentation and and the multiple script elements to stay put.
+    'html/_templates/**/*.+(html|php)',
     'engine/expressionengine/snippets/default_site/**/*.html',
     'engine/expressionengine/templates/default_site/**/*.html'
   ]

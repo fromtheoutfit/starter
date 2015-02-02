@@ -10,20 +10,6 @@
     <meta name="description" content="TODO: update this with a quality page description" />
 
     <!-- build:docs --><!--
-    TODO: Update the following files with project specific details.
-    - /html/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
-    - /html/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
-    --><!-- endbuild -->
-
-    <!-- build:docs --><!--
-    ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require feature
-    detection? Ask yourself: Are we supporting older browsers? Is the visual
-    and/or interaction design complex? If so, utilize the code below. If not,
-    delete the code below and the asset that it references.
-    --><!-- endbuild -->
-    <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
-
-    <!-- build:docs --><!--
     ( * OPTIONAL * ) FACEBOOK / TWITTER: Is this project utilizing Facebook and
     Twitter stuff? If so, utilize and update the code below. If not, delete the
     code below.
@@ -60,6 +46,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="msapplication-TileColor" content="#3372DF" /><!-- TODO: update this hex value -->
     <meta name="theme-color" content="#3372DF" /><!-- TODO: update this hex value -->
+
+    <!-- build:docs --><!--
+    ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require feature
+    detection? Ask yourself: Are we supporting older browsers? Is the visual
+    and/or interaction design complex? If so, utilize the code below. If not,
+    delete the code below and the asset that it references.
+    --><!-- endbuild -->
+    <script src="/lib/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- build:docs --><!--
+    TODO: Update the following files with project specific details.
+    - /html/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
+    - /html/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
+    --><!-- endbuild -->
 
   </head>
   <body>
