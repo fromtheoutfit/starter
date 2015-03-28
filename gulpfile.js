@@ -22,19 +22,19 @@ var uglify      = require('gulp-uglify');
 
 var config = {
   localUrl   : 'starter.dev:8888/', // This is what you setup in MAMP, etc.
-  cssPath    : 'html/lib/css/',
-  scssFile   : 'html/lib/scss/all.scss',
-  jsPath     : 'html/lib/js/',
+  cssPath    : 'public/lib/css/',
+  scssFile   : 'public/lib/scss/all.scss',
+  jsPath     : 'public/lib/js/',
   jsProdFile : 'all.min.js',
   jsFiles    : [
-    'html/lib/js/**/*.js',
-    '!html/lib/js/vendor/**/*',
-    '!html/lib/js/all.min.js'
+    'public/lib/js/**/*.js',
+    '!public/lib/js/vendor/**/*',
+    '!public/lib/js/all.min.js'
   ],
-  imagePath  : 'html/lib/img/**/*', // Currently unused.
+  imagePath  : 'public/lib/img/**/*', // Currently unused.
   templateFiles : [
-    'html/index.+(html|php)',
-    'html/_templates/**/*.+(html|php)',
+    'public/index.+(html|php)',
+    'public/_templates/**/*.+(html|php)',
     'engine/expressionengine/snippets/default_site/**/*.html',
     'engine/expressionengine/templates/default_site/**/*.html'
   ]
@@ -127,7 +127,7 @@ gulp.task('bs-reload', function() {
 // ****************************************************************************
 
 gulp.task('default', ['browser-sync'], function() {
-  gulp.watch('html/lib/scss/**/*.scss', ['scss']);
+  gulp.watch('public/lib/scss/**/*.scss', ['scss']);
   gulp.watch(config.jsFiles, ['js-hint', 'bs-reload']);
   gulp.watch(config.templateFiles, ['bs-reload']);
 });

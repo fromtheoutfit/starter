@@ -1,13 +1,13 @@
 // Hide visually and from screen readers: h5bp.com/u
 
-%hidden {
+.hidden {
   display: none !important;
   visibility: hidden;
 }
 
 // Hide only visually, but have it available for screen readers: h5bp.com/v
 
-%visuallyhidden {
+.visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -33,7 +33,7 @@
 
 // Hide visually and from screen readers, but maintain layout.
 
-%invisible {
+.invisible {
   visibility: hidden;
 }
 
@@ -46,12 +46,12 @@
 //   2. The use of `table` rather than `block` is only necessary if using
 //      `:before` to contain the top-margins of child elements.
 
-%clearfix:before,
-%clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
 
-%clearfix:after {
+.clearfix:after {
   clear: both;
 }
