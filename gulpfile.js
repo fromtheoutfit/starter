@@ -22,8 +22,8 @@ var uglify      = require('gulp-uglify');
 
 var config = {
   localUrl   : 'starter.dev:8888/', // This is what you setup in MAMP, etc.
+  scssFile   : 'scss/all.scss',
   cssPath    : 'public/lib/css/',
-  scssFile   : 'public/lib/scss/all.scss',
   jsPath     : 'public/lib/js/',
   jsProdFile : 'all.min.js',
   jsFiles    : [
@@ -33,6 +33,10 @@ var config = {
   ],
   imagePath  : 'public/lib/img/**/*', // Currently unused.
   templateFiles : [
+    // It's *very* likely that you'll need to update the below paths on a per-
+    // project basis. It's currently setup to watch template files and standard
+    // ExpressionEngine files, but if your project isn't EE, those last two
+    // lines are useless and probably need to be something different.
     'public/index.+(html|php)',
     'public/_templates/**/*.+(html|php)',
     'engine/expressionengine/snippets/default_site/**/*.html',
@@ -127,7 +131,7 @@ gulp.task('bs-reload', function() {
 // ****************************************************************************
 
 gulp.task('default', ['browser-sync'], function() {
-  gulp.watch('public/lib/scss/**/*.scss', ['scss']);
+  gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch(config.jsFiles, ['js-hint', 'bs-reload']);
   gulp.watch(config.templateFiles, ['bs-reload']);
 });
