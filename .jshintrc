@@ -16,5 +16,8 @@
   "sub": true,
   "browser": true,
   "jquery": true,
-  "node": true
+  "node": true,
+  "globals": {
+    "Modernizr": true
+  }
 }
