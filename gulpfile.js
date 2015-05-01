@@ -2,16 +2,18 @@
 // Plugins
 // ****************************************************************************
 
-var browserSync = require('browser-sync');
-var concat      = require('gulp-concat');
-var filter      = require('gulp-filter');
-var gulp        = require('gulp');
-var htmlReplace = require('gulp-html-replace');
-var jsHint      = require('gulp-jshint');
-var runSequence = require('run-sequence'); // Unnecessary once Gulp 4 is here.
-var sass        = require('gulp-ruby-sass');
-var stylish     = require('jshint-stylish');
-var uglify      = require('gulp-uglify');
+var browserSync  = require('browser-sync');
+var autoprefixer = require('gulp-autoprefixer');
+var concat       = require('gulp-concat');
+var filter       = require('gulp-filter');
+var gulp         = require('gulp');
+var htmlReplace  = require('gulp-html-replace');
+var jsHint       = require('gulp-jshint');
+var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
+var sass         = require('gulp-sass');
+var sourcemaps   = require('gulp-sourcemaps');
+var stylish      = require('jshint-stylish');
+var uglify       = require('gulp-uglify');
 
 
 
@@ -54,10 +56,10 @@ var config = {
 // Compile Scss.
 gulp.task('scss', function() {
   return gulp.src(config.scssFile)
-    .pipe(sass({style:'compressed', sourcemapPath:'../scss/'}))
-    .on('error', function(err) {
-      console.error(err.message);
-    })
+    .pipe(sourcemaps.init())
+    .pipe(sass({errLogToConsole:true, outputStyle:'compressed'}))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.cssPath))
     .pipe(filter('**/*.css'))
     .pipe(browserSync.reload({stream:true}));
