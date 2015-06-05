@@ -55,9 +55,9 @@ var config = {
 
 // Compile Scss.
 gulp.task('scss', function() {
-  return gulp.src(config.scssFile)
+  gulp.src(config.scssFile)
     .pipe(sourcemaps.init())
-    .pipe(sass({errLogToConsole:true, outputStyle:'compressed'}))
+    .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.cssPath))
