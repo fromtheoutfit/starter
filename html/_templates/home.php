@@ -1,5 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<!-- build:docs --><!--
+( * OPTIONAL * ) APP CACHE: Is this project utilizing a cache manifest? If so,
+leave the below <html> tag as is, then open /html/manifest.cache and update it
+as necessary for this particular project. However, if it's not, remove the
+manifest="manifest.appcache" attribute from the below <html> tag.
+Learn more here:
+https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
+--><!-- endbuild -->
+<html class="no-js" lang="en" manifest="manifest.appcache">
   <head>
 
     <meta charset="utf-8" />

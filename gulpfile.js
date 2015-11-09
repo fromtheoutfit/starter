@@ -23,7 +23,7 @@ var uglify       = require('gulp-uglify');
 // ****************************************************************************
 
 var config = {
-  localUrl   : 'starter.dev:8888/', // This is what you setup in MAMP, etc.
+  localUrl   : 'http://starter.vbox.bytheoutfit.com/', // This is what you setup in MAMP, etc.
   scssFile   : 'scss/all.scss',
   cssPath    : 'public/lib/css/',
   jsPath     : 'public/lib/js/',
