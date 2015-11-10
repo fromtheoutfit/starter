@@ -38,9 +38,9 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
     mobile devices? If so, utilize the code below and update the assets that it
     references. If not, delete the code below and the assets that it references.
     --><!-- endbuild -->
-    <link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.png" />
-    <link rel="icon" sizes="192x192" href="/images/touch/chrome-touch-icon-192x192.png" />
-    <meta name="msapplication-TileImage" content="/images/touch/ms-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon" href="/lib/img/meta/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="/lib/img/meta/chrome-touch-icon-192x192.png" />
+    <meta name="msapplication-TileImage" content="/lib/img/meta/ms-touch-icon-144x144-precomposed.png" />
 
     <!-- build:docs --><!--
     ( * OPTIONAL * ) WEB APP: Is this project a web app? More importantly, are
@@ -54,6 +54,15 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="msapplication-TileColor" content="#3372DF" /><!-- TODO: update this hex value -->
     <meta name="theme-color" content="#3372DF" /><!-- TODO: update this hex value -->
+
+    <!-- build:docs --><!--
+    ( * OPTIONAL * ) PINNED TAB ICON: When someone pins this project's tab in
+    Safari, a unique SVG will be used. It needs a transparent background and
+    100% black for all vectors. The link element's color attribute sets the
+    display color of the image. Learn more here:
+    https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
+    --><!-- endbuild -->
+    <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
     <!-- build:docs --><!--
     ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require feature
