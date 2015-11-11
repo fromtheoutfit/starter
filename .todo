@@ -14,4 +14,3 @@ Things that need doing in this project:
 - test the appcache functionality and path
 - try to get autoprefixer working
 - document the gulpfile more indepthly
-- i think the whole build:docs thing is overkill...

@@ -9,13 +9,13 @@
     <title>TODO: update this with a quality page title</title>
     <meta name="description" content="TODO: update this with a quality page description" />
 
-    <!-- build:docs --><!--
+    <!--
     ( * OPTIONAL * ) FACEBOOK / TWITTER: Is this project utilizing Facebook and
     Twitter stuff? If so, utilize and update the code below. If not, delete the
     code below.
     - Facebook info: https://developers.facebook.com/docs/sharing/best-practices
     - Twitter info:  https://dev.twitter.com/cards/getting-started
-    --><!-- endbuild -->
+    -->
     <meta property="og:site_name" content="TODO: update this with a site name"/>
     <meta property="og:title" content="TODO: update this with a quality page title" />
     <meta property="og:description" content="TODO: update this with a quality page description" />
@@ -25,20 +25,20 @@
     <meta name="twitter:site" content="@twitter-account-for-website" />
     <meta name="twitter:creator" content="@twitter-account-for-author" />
 
-    <!-- build:docs --><!--
+    <!--
     ( * OPTIONAL * ) HOME SCREEN ICON: Do you want an icon on the home screen of
     mobile devices? If so, utilize the code below and update the assets that it
     references. If not, delete the code below and the assets that it references.
-    --><!-- endbuild -->
     <link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.png" />
     <link rel="icon" sizes="192x192" href="/images/touch/chrome-touch-icon-192x192.png" />
     <meta name="msapplication-TileImage" content="/images/touch/ms-touch-icon-144x144-precomposed.png" />
+    -->
 
-    <!-- build:docs --><!--
+    <!--
     ( * OPTIONAL * ) WEB APP: Is this project a web app? More importantly, are
     all anchor links intercepted and handled by JavaScript? If so, utilize and
     update the code below. If not, delete the code below.
-    --><!-- endbuild -->
+    -->
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="application-name" content="TODO: update this with a short application name" />
@@ -47,19 +47,19 @@
     <meta name="msapplication-TileColor" content="#3372DF" /><!-- TODO: update this hex value -->
     <meta name="theme-color" content="#3372DF" /><!-- TODO: update this hex value -->
 
-    <!-- build:docs --><!--
+    <!--
     ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require feature
     detection? Ask yourself: Are we supporting older browsers? Is the visual
     and/or interaction design complex? If so, utilize the code below. If not,
     delete the code below and the asset that it references.
-    --><!-- endbuild -->
+    -->
     <script src="/lib/js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <!-- build:docs --><!--
+    <!--
     TODO: Update the following files with project specific details.
     - /public/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
     - /public/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
-    --><!-- endbuild -->
+    -->
 
   </head>
   <body>
@@ -78,28 +78,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/lib/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 
-    <!-- build:docs --><!--
-    JAVASCRIPT: We treat our JavaScript the same way we treat our Sass: many
-    individual files organized however we wish, which makes future maintenance
-    easier for us. Normally this would be frowned upon, but we will concatenate
-    all of them during the build process.
+    <!-- YOUR SCRIPTS HERE. -->
 
-    ! IMPORTANT: Be sure to keep 3rd party scripts in the /vendor directory, and
-    everything we write outside of the /vendor directory.
-    --><!-- endbuild -->
-    <!-- build:js -->
-    <script src="/lib/js/a-thing.js"></script>
-    <script src="/lib/js/another-thing.js"></script>
-    <script src="/lib/js/test/hey.js"></script>
-    <!-- endbuild -->
 
-    <!-- build:docs --><!--
+    <!--
     ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google
     Analytics? If so, swap the below string 'UA-UPDATE-THIS' with a legit UA
     string. If this project is utilizing a different analytics package, delete
     the entire script element below and insert the other one as instructed.
     Otherwise, delete the entire script element below.
-    --><!-- endbuild -->
+    -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

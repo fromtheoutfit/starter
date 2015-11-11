@@ -7,7 +7,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat       = require('gulp-concat');
 var filter       = require('gulp-filter');
 var gulp         = require('gulp');
-var htmlReplace  = require('gulp-html-replace');
 var jsHint       = require('gulp-jshint');
 var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
 var sass         = require('gulp-sass');
@@ -90,23 +89,6 @@ gulp.task('js-concat-uglify', function() {
 
 
 
-
-// ****************************************************************************
-// Template Tasks
-// ****************************************************************************
-
-// Remove references to our many, individual JS files and replace them with a
-// single reference to the concatenated + minified JS file, which has a rev
-// query parameter whose value is set to the current unix timestamp. This allows
-// us to cache-bust on the fly. Also strip out most of the documentation.
-gulp.task('prep-templates', function() {
-  return gulp.src(config.templateFiles, {base:'./'})
-    .pipe(htmlReplace({
-      'js': '/lib/js/'+config.jsProdFile+'?rev='+Date.now(),
-      'docs': ''
-    }))
-    .pipe(gulp.dest('./'));
-});
 
 
 
