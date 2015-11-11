@@ -1,5 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<!--
+( * OPTIONAL * ) APP CACHE: Is this project utilizing a cache manifest? If so,
+leave the below <html> tag as is, then open /html/manifest.cache and update it
+as necessary for this particular project. However, if it's not, remove the
+manifest="manifest.appcache" attribute from the below <html> tag.
+Learn more here:
+https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
+-->
+<html class="no-js" lang="en" manifest="manifest.appcache">
   <head>
 
     <meta charset="utf-8" />
@@ -29,10 +37,10 @@
     ( * OPTIONAL * ) HOME SCREEN ICON: Do you want an icon on the home screen of
     mobile devices? If so, utilize the code below and update the assets that it
     references. If not, delete the code below and the assets that it references.
-    <link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.png" />
-    <link rel="icon" sizes="192x192" href="/images/touch/chrome-touch-icon-192x192.png" />
-    <meta name="msapplication-TileImage" content="/images/touch/ms-touch-icon-144x144-precomposed.png" />
     -->
+    <link rel="apple-touch-icon" href="/lib/img/meta/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="/lib/img/meta/chrome-touch-icon-192x192.png" />
+    <meta name="msapplication-TileImage" content="/lib/img/meta/ms-touch-icon-144x144-precomposed.png" />
 
     <!--
     ( * OPTIONAL * ) WEB APP: Is this project a web app? More importantly, are
@@ -46,6 +54,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="msapplication-TileColor" content="#3372DF" /><!-- TODO: update this hex value -->
     <meta name="theme-color" content="#3372DF" /><!-- TODO: update this hex value -->
+
+    <!--
+    ( * OPTIONAL * ) PINNED TAB ICON: When someone pins this project's tab in
+    Safari, a unique SVG will be used. It needs a transparent background and
+    100% black for all vectors. The link element's color attribute sets the
+    display color of the image. Learn more here:
+    https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
+    -->
+    <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
     <!--
     ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require feature

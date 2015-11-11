@@ -7,9 +7,7 @@ Things that need doing in this project:
   things
 - look at .htaccess, in general, to see where we can use apache tools, etc.
 - get a 'demo' page in place
-
 - figure out the various platform's home screen icons vs. web app settings
 - set up a cache manifest
 - test the appcache functionality and path
-- try to get autoprefixer working
 - document the gulpfile more indepthly

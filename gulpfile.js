@@ -103,7 +103,3 @@ gulp.task('default', ['browser-sync'], function() {
   gulp.watch(config.jsFiles, ['js-hint', 'bs-reload']);
   gulp.watch(config.templateFiles, ['bs-reload']);
 });
-
-gulp.task('go-prod', function() {
-  runSequence('js-concat-uglify', 'prep-templates', 'browser-sync');
-});

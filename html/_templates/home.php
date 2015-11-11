@@ -82,13 +82,15 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
   <body>
 
 
-    <!-- YOUR CODE HERE. -->
+    <!-- YOUR MARKUP HERE. -->
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/lib/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 
     <!-- YOUR SCRIPTS HERE. -->
+
+
     <!--
     ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google
     Analytics? If so, swap the below string 'UA-UPDATE-THIS' with a legit UA
