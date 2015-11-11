@@ -88,21 +88,7 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/lib/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
 
-    JAVASCRIPT: We treat our JavaScript the same way we treat our Sass: many
-    individual files organized however we wish, which makes future maintenance
-    easier for us. Normally this would be frowned upon, but we will concatenate
-    all of them during the build process.
-
-    ! IMPORTANT: Be sure to keep 3rd party scripts in the /vendor directory, and
-    everything we write outside of the /vendor directory.
-    --><!-- endbuild -->
-    <!-- build:js -->
-    <script src="/lib/js/a-thing.js"></script>
-    <script src="/lib/js/another-thing.js"></script>
-    <script src="/lib/js/test/hey.js"></script>
-    <!-- endbuild -->
-
-    <!-- build:docs --><!--
+    <!-- YOUR SCRIPTS HERE. -->
     <!--
     ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google
     Analytics? If so, swap the below string 'UA-UPDATE-THIS' with a legit UA

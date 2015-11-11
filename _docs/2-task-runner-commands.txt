@@ -22,23 +22,6 @@ be synchronized across them.
 
 
 ********************************************************************************
-* gulp go-prod
-********************************************************************************
-
-Type "gulp go-prod" and press return when you're ready send the project to a
-production server. The following will happen:
-
-1. Most of the JavaScript files will be:
-  a. Concatenated into one, new file called "all.min.js"
-  b. The contents of all.min.js will be minified
-2. Template files will undergo the following changes:
-  - Most of the comments will be stripped out
-  - The many script elements will be swapped for a single script element whose
-    source is all.min.js
-3. All connected devices will be refreshed/reloaded
-
-
-********************************************************************************
 * control+c
 ********************************************************************************
 

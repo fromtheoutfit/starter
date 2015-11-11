@@ -4,7 +4,6 @@
 
 var browserSync  = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
-var concat       = require('gulp-concat');
 var filter       = require('gulp-filter');
 var gulp         = require('gulp');
 var jsHint       = require('gulp-jshint');
@@ -12,7 +11,6 @@ var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var stylish      = require('jshint-stylish');
-var uglify       = require('gulp-uglify');
 
 
 
@@ -25,8 +23,6 @@ var config = {
   localUrl   : 'http://starter.vbox.bytheoutfit.com/', // This is what you setup in MAMP, etc.
   scssFile   : 'scss/all.scss',
   cssPath    : 'public/lib/css/',
-  jsPath     : 'public/lib/js/',
-  jsProdFile : 'all.min.js',
   jsFiles    : [
     'public/lib/js/**/*.js',
     '!public/lib/js/vendor/**/*',
@@ -77,18 +73,6 @@ gulp.task('js-hint', function() {
     .pipe(jsHint())
     .pipe(jsHint.reporter(stylish));
 });
-
-// Concatenate non-vendor JS files into one file, then minify it.
-gulp.task('js-concat-uglify', function() {
-  return gulp.src(config.jsFiles)
-    .pipe(concat(config.jsProdFile))
-    .pipe(gulp.dest(config.jsPath))
-    .pipe(uglify())
-    .pipe(gulp.dest(config.jsPath));
-});
-
-
-
 
 
 
