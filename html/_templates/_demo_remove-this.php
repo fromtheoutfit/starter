@@ -7,7 +7,7 @@ manifest="manifest.appcache" attribute from the below <html> tag.
 Learn more here:
 https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
 -->
-<html class="no-js" lang="en" manifest="manifest.appcache">
+<html class="no-js" lang="en">
   <head>
 
     <meta charset="utf-8" />
