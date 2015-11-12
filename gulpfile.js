@@ -22,20 +22,20 @@ var stylish      = require('jshint-stylish');
 var config = {
   localUrl   : 'http://starter.vbox.bytheoutfit.com/', // This is what you setup in MAMP, etc.
   scssFile   : 'scss/all.scss',
-  cssPath    : 'public/lib/css/',
+  cssPath    : 'html/lib/css/',
   jsFiles    : [
-    'public/lib/js/**/*.js',
-    '!public/lib/js/vendor/**/*',
-    '!public/lib/js/all.min.js'
+    'html/lib/js/**/*.js',
+    '!html/lib/js/vendor/**/*',
+    '!html/lib/js/all.min.js'
   ],
-  imagePath  : 'public/lib/img/**/*', // Currently unused.
+  imagePath  : 'html/lib/img/**/*', // Currently unused.
   templateFiles : [
     // It's *very* likely that you'll need to update the below paths on a per-
     // project basis. It's currently setup to watch template files and standard
     // ExpressionEngine files, but if your project isn't EE, those last two
     // lines are useless and probably need to be something different.
-    'public/index.+(html|php)',
-    'public/_templates/**/*.+(html|php)',
+    'html/index.+(html|php)',
+    'html/_templates/**/*.+(html|php)',
     'engine/expressionengine/snippets/default_site/**/*.html',
     'engine/expressionengine/templates/default_site/**/*.html'
   ]

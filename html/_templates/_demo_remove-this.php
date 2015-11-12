@@ -74,8 +74,8 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
 
     <!--
     TODO: Update the following files with project specific details.
-    - /public/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
-    - /public/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
+    - /html/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
+    - /html/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
     -->
 
   </head>
