@@ -4,16 +4,13 @@
 
 var browserSync  = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
-var concat       = require('gulp-concat');
 var filter       = require('gulp-filter');
 var gulp         = require('gulp');
-var htmlReplace  = require('gulp-html-replace');
 var jsHint       = require('gulp-jshint');
 var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var stylish      = require('jshint-stylish');
-var uglify       = require('gulp-uglify');
 
 
 
@@ -25,22 +22,20 @@ var uglify       = require('gulp-uglify');
 var config = {
   localUrl   : 'http://starter.vbox.bytheoutfit.com/', // This is what you setup in MAMP, etc.
   scssFile   : 'scss/all.scss',
-  cssPath    : 'public/lib/css/',
-  jsPath     : 'public/lib/js/',
-  jsProdFile : 'all.min.js',
+  cssPath    : 'html/lib/css/',
   jsFiles    : [
-    'public/lib/js/**/*.js',
-    '!public/lib/js/vendor/**/*',
-    '!public/lib/js/all.min.js'
+    'html/lib/js/**/*.js',
+    '!html/lib/js/vendor/**/*',
+    '!html/lib/js/all.min.js'
   ],
-  imagePath  : 'public/lib/img/**/*', // Currently unused.
+  imagePath  : 'html/lib/img/**/*', // Currently unused.
   templateFiles : [
     // It's *very* likely that you'll need to update the below paths on a per-
     // project basis. It's currently setup to watch template files and standard
     // ExpressionEngine files, but if your project isn't EE, those last two
     // lines are useless and probably need to be something different.
-    'public/index.+(html|php)',
-    'public/_templates/**/*.+(html|php)',
+    'html/index.+(html|php)',
+    'html/_templates/**/*.+(html|php)',
     'engine/expressionengine/snippets/default_site/**/*.html',
     'engine/expressionengine/templates/default_site/**/*.html'
   ]
@@ -79,35 +74,6 @@ gulp.task('js-hint', function() {
     .pipe(jsHint.reporter(stylish));
 });
 
-// Concatenate non-vendor JS files into one file, then minify it.
-gulp.task('js-concat-uglify', function() {
-  return gulp.src(config.jsFiles)
-    .pipe(concat(config.jsProdFile))
-    .pipe(gulp.dest(config.jsPath))
-    .pipe(uglify())
-    .pipe(gulp.dest(config.jsPath));
-});
-
-
-
-
-// ****************************************************************************
-// Template Tasks
-// ****************************************************************************
-
-// Remove references to our many, individual JS files and replace them with a
-// single reference to the concatenated + minified JS file, which has a rev
-// query parameter whose value is set to the current unix timestamp. This allows
-// us to cache-bust on the fly. Also strip out most of the documentation.
-gulp.task('prep-templates', function() {
-  return gulp.src(config.templateFiles, {base:'./'})
-    .pipe(htmlReplace({
-      'js': '/lib/js/'+config.jsProdFile+'?rev='+Date.now(),
-      'docs': ''
-    }))
-    .pipe(gulp.dest('./'));
-});
-
 
 
 
@@ -136,8 +102,4 @@ gulp.task('default', ['browser-sync'], function() {
   gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch(config.jsFiles, ['js-hint', 'bs-reload']);
   gulp.watch(config.templateFiles, ['bs-reload']);
-});
-
-gulp.task('go-prod', function() {
-  runSequence('js-concat-uglify', 'prep-templates', 'browser-sync');
 });

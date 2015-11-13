@@ -50,7 +50,7 @@ computer.
 Second: Set Up Project
 --------------------------------------------------------------------------------
 
-The initial HTML template (/public/_templates/home.html) is chock-full of code and
+The initial HTML template (/html/_templates/home.html) is chock-full of code and
 associated documentation that, if left untouched, is probably not ideal for
 every project. When starting a new website, read the comments that start with
 "( * OPTIONAL * )" and determine whether or not you need each of the associated
