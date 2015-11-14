@@ -14,9 +14,9 @@ host for this project with a URL of "clientwebsite.dev", BrowserSync needs to
 know about that host URL.
 
 
-********************************************************************************
+*******************************************************************************
 * Tell BrowserSync About Host URL
-********************************************************************************
+*******************************************************************************
 
 Here's how to tell BrowserSync about your local server and the host URL you set
 up in it. You only need to do this once.
@@ -28,9 +28,9 @@ up in it. You only need to do this once.
 4. Save the file
 
 
-********************************************************************************
+*******************************************************************************
 * Start Local Server
-********************************************************************************
+*******************************************************************************
 
 Here's how to get the server and BrowserSync up and running. You need do this
 any time you want to work on the website.

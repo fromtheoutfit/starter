@@ -1,17 +1,17 @@
-// =============================================================================
-// The button mixin has numerous parameters, each with a sensible default value.
-// Here's a table of each parameter's variable name, meaning, and default value:
+// ============================================================================
+// The button mixin has numerous parameters, each with a sensible default.
+// Here's are each parameter's variable name, meaning, and default value:
 //
-// Parameter          Meaning                             Default
-// -----------------------------------------------------------------------------
-// $bg-color          background color                    blue
-// $border-radius     border-radius                       8px
-// $color             text color                          white
-// $hf-bg-color       hover & focus background color      darken($bg-color, 25%)
-// $hf-color          hover & focus text color            white
-// $font-size         font-size                           $font-size
-// $size              set the button size                 '' [empty/default]
-// =============================================================================
+// Parameter          Meaning                            Default
+// ----------------------------------------------------------------------------
+// $bg-color          background color                   blue
+// $border-radius     border-radius                      8px
+// $color             text color                         white
+// $hf-bg-color       hover & focus background color     darken($bg-color, 25%)
+// $hf-color          hover & focus text color           white
+// $font-size         font-size                          $font-size
+// $size              set the button size                '' [empty/default]
+// ============================================================================
 // Example usage, keeping the default values:
 // .log-in a {
 //   @include btn;
@@ -21,7 +21,7 @@
 // .log-in a {
 //   @include btn($size:large, $bg-color:#f90, $hf-bg-color:#c90)
 // }
-// =============================================================================
+// ============================================================================
 
 @mixin btn($bg-color: blue,
            $border-radius: 8px,

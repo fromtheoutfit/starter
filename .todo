@@ -1,7 +1,7 @@
 Things that need doing in this project:
 
-- figure out some sort of cache-breaking for CSS and make it part of the go-prod
-  task
+- figure out some sort of cache-breaking for CSS and make it part of the
+  go-prod task
 - confirm that the .jshintrc file is being utilized by the hint task
 - one last check of h5bp (they just released 5.0.0) to integrate new and shiny
   things

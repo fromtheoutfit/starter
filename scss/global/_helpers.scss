@@ -17,8 +17,8 @@
   position: absolute;
   width: 1px;
 
-  // Extends the .visuallyhidden class to allow the element to be focusable when
-  // navigated to via the keyboard: h5bp.com/p
+  // Extends the .visuallyhidden class to allow the element to be focusable
+  // when navigated to via the keyboard: h5bp.com/p
 
   &.focusable:active,
   &.focusable:focus {

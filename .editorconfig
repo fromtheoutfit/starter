@@ -1,7 +1,8 @@
 # Q: What?
 # A: http://EditorConfig.org
 
-# This is the top-most EditorConfig file. See http://editorconfig.org/#file-location for more information.
+# This is the top-most EditorConfig file. See http://editorconfig.org/#file-location
+# for more information.
 root = true
 
 # All files.

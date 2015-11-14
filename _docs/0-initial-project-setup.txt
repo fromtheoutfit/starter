@@ -19,23 +19,23 @@ be updated often to ensure it's as helpful as possible and it provides what
 clients want.
 
 
-********************************************************************************
+*******************************************************************************
 * Initial Project Setup
-********************************************************************************
+*******************************************************************************
 
 
 First: Task Runner Installation
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
-This starter project uses a task runner to simplify the development process. For
-example: Sass will be compiled to css on the fly, web browsers will be refreshed
-and synchronized automatically, JavaScript will be checked for code quality, and
-so on. This task runner relies on certain things being available on your
-computer before they can be of any use to you.
+This starter project uses a task runner to simplify the development process.
+For example: Sass will be compiled to css on the fly, web browsers will be
+refreshed and synchronized automatically, JavaScript will be checked for code
+quality, and so on. This task runner relies on certain things being available
+on your computer before they can be of any use to you.
 
 To obtain and use these certain things, you need NodeJS and NPM on your
-computer. If you don't have NodeJS and NPM yet, go to this page, choose
-your operating system, and follow the associated instructions:
+computer. If you don't have NodeJS and NPM yet, go to this page, choose your
+operating system, and follow the associated instructions:
 https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager (If
 that URL goes away, http://nodejs.org is good, too.)
 
@@ -48,10 +48,10 @@ computer.
 
 
 Second: Set Up Project
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
-The initial HTML template (/html/_templates/home.html) is chock-full of code and
-associated documentation that, if left untouched, is probably not ideal for
+The initial HTML template (/html/_templates/home.html) is chock-full of code
+and associated documentation that, if left untouched, is probably not ideal for
 every project. When starting a new website, read the comments that start with
 "( * OPTIONAL * )" and determine whether or not you need each of the associated
 things.

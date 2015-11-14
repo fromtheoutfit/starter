@@ -3,9 +3,8 @@
 ( * OPTIONAL * ) APP CACHE: Is this project utilizing a cache manifest? If so,
 leave the below <html> tag as is, then open /html/manifest.cache and update it
 as necessary for this particular project. However, if it's not, remove the
-manifest="manifest.appcache" attribute from the below <html> tag.
-Learn more here:
-https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
+manifest="manifest.appcache" attribute from the below <html> tag. Learn more
+here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
 -->
 <html class="no-js" lang="en">
   <head>
@@ -19,10 +18,10 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
 
     <!--
     ( * OPTIONAL * ) FACEBOOK / TWITTER: Is this project utilizing Facebook and
-    Twitter stuff? If so, utilize and update the code below. If not, delete the
-    code below.
-    - Facebook info: https://developers.facebook.com/docs/sharing/best-practices
-    - Twitter info:  https://dev.twitter.com/cards/getting-started
+    Twitter? If so, utilize the code below and update the assets it references.
+    If not, delete the code below and the assets that it references.
+    - Facebook: https://developers.facebook.com/docs/sharing/best-practices
+    - Twitter:  https://dev.twitter.com/cards/getting-started
     -->
     <meta property="og:site_name" content="TODO: update this with a site name"/>
     <meta property="og:title" content="TODO: update this with a quality page title" />
@@ -34,9 +33,10 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
     <meta name="twitter:creator" content="@twitter-account-for-author" />
 
     <!--
-    ( * OPTIONAL * ) HOME SCREEN ICON: Do you want an icon on the home screen of
-    mobile devices? If so, utilize the code below and update the assets that it
-    references. If not, delete the code below and the assets that it references.
+    ( * OPTIONAL * ) HOME SCREEN ICON: If you'd like it to be possible for
+    users to add this project's icon to their device, utilize the code below
+    and update the assets it references. If not, delete the code below and the
+    assets that it references.
     -->
     <link rel="apple-touch-icon" href="/lib/img/meta/apple-touch-icon.png" />
     <link rel="icon" sizes="192x192" href="/lib/img/meta/chrome-touch-icon-192x192.png" />
@@ -65,10 +65,10 @@ https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-website
     <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
     <!--
-    ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require feature
-    detection? Ask yourself: Are we supporting older browsers? Is the visual
-    and/or interaction design complex? If so, utilize the code below. If not,
-    delete the code below and the asset that it references.
+    ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require
+    feature detection? Ask yourself: Are we supporting older browsers? Is the
+    visual and/or interaction design complex? If so, utilize the code below. If
+    not, delete the code below and the asset that it references.
     -->
     <script src="/lib/js/vendor/modernizr-2.8.3.min.js"></script>
 

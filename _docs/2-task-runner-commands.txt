@@ -3,9 +3,9 @@ tasks that help the development process, prepare your project for production,
 stop gulp altogether, and more [soon].
 
 
-********************************************************************************
+*******************************************************************************
 * gulp
-********************************************************************************
+*******************************************************************************
 
 Type "gulp" and press return when you want to work on this project. The
 following will happen:
@@ -21,8 +21,9 @@ ready to be automatically refreshed when code is changed, and most actions will
 be synchronized across them.
 
 
-********************************************************************************
+*******************************************************************************
 * control+c
-********************************************************************************
+*******************************************************************************
 
-Type control+c to stop gulp, typically when you're done working on this project.
+Type control+c to stop gulp, typically when you're done working on this
+project.

@@ -1,4 +1,4 @@
-- Do a project-wide search for the following and do whatever each one refers to:
+- Do a project-wide search for the following & do whatever each one refers to:
   - todo
   - to do
 
