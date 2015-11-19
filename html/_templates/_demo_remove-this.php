@@ -114,5 +114,27 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
       ga('send', 'pageview');
     </script>
 
+    <!--
+    ( * DEV ONLY * ) PERFORMANCE MONITOR: During the development process it's
+    wise to keep an eye on the performance of this project. The below script
+    will generate a "bar" at the bottom of the page that is filled with useful
+    information about a range of things. Some of the metrics can be assigned
+    allowable ranges, of which sensible defaults are defined below. Learn more
+    here: http://wpotools.github.io/perfBar/
+
+    TODO: It is IMPERATIVE that you remove or comment this out before pushing
+    this project to any publicly viewable environment.
+    -->
+    <script src="/lib/js/vendor/perfbar-0.2.1.js"></script>
+    <script>
+      perfBar.init({
+        budget: {
+          'latency'     : {max: 500}, // Time to first byte, in milliseconds.
+          'FirstPaint'  : {max: 500}, // First paint, in milliseconds.
+          'loadTime'    : {max: 1500} // Total load time, in milliseconds.
+        }
+      });
+    </script>
+
   </body>
 </html>
