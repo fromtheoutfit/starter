@@ -65,12 +65,15 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
     <!--
-    ( * OPTIONAL * ) FEATURE DETECTION: Is this project going to require
-    feature detection? Ask yourself: Are we supporting older browsers? Is the
-    visual and/or interaction design complex? If so, utilize the code below. If
-    not, delete the code below and the asset that it references.
+    ( * OPTIONAL * ) FEATURE SUPPORT DETECTION: By default, the Modernizr
+    script below detects support for touch events *only*. If this project will
+    need to detect support for additional features, follow these steps:
+    1. Go to this URL: http://modernizr.com/download/?-touchevents
+    2. Find & check off the additional features you want to detect support for
+    3. Select the BUILD button to download an updated version of Modernizr
+    4. Replace the below script with what was downloaded
     -->
-    <script src="/lib/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="/lib/js/vendor/modernizr-3.2.0.min.js"></script>
 
     <!--
     TODO: Update the following files with project specific details.
