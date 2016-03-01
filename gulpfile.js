@@ -20,15 +20,14 @@ var stylish      = require('jshint-stylish');
 // ****************************************************************************
 
 var config = {
-  localUrl   : 'http://starter.vbox.bytheoutfit.com/', // This is what you setup in MAMP, etc.
-  scssFile   : 'scss/all.scss',
-  cssPath    : 'html/lib/css/',
-  jsFiles    : [
+  // localUrl is whatever's provided to you by your local server situation.
+  localUrl : 'http://starter.vbox.bytheoutfit.com/',
+  scssFile : 'scss/all.scss',
+  cssPath  : 'html/lib/css/',
+  jsFiles  : [
     'html/lib/js/**/*.js',
-    '!html/lib/js/vendor/**/*',
-    '!html/lib/js/all.min.js'
+    '!html/lib/js/vendor/**/*'
   ],
-  imagePath  : 'html/lib/img/**/*', // Currently unused.
   templateFiles : [
     // It's *very* likely that you'll need to update the below paths on a per-
     // project basis. It's currently setup to watch template files and standard
@@ -52,7 +51,8 @@ var config = {
 gulp.task('scss', function() {
   gulp.src(config.scssFile)
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle:'compressed'})
+    .on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.cssPath))
