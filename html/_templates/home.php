@@ -60,7 +60,7 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     Safari, a unique SVG will be used. It needs a transparent background and
     100% black for all vectors. The link element's color attribute sets the
     display color of the image. Learn more here:
-    https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
+    https://developer.apple.com/library/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
     -->
     <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
