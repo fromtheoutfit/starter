@@ -35,8 +35,8 @@ var config = {
     // lines are useless and probably need to be something different.
     'html/index.+(html|php)',
     'html/_templates/**/*.+(html|php)',
-    'engine/expressionengine/snippets/default_site/**/*.html',
-    'engine/expressionengine/templates/default_site/**/*.html'
+    'snippets/default_site/**/*.html',
+    'templates/default_site/**/*.html'
   ]
 };
 
