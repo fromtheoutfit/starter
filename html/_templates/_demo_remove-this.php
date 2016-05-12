@@ -60,7 +60,7 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     Safari, a unique SVG will be used. It needs a transparent background and
     100% black for all vectors. The link element's color attribute sets the
     display color of the image. Learn more here:
-    https://developer.apple.com/library/prerelease/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
+    https://developer.apple.com/library/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
     -->
     <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
@@ -68,12 +68,12 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     ( * OPTIONAL * ) FEATURE SUPPORT DETECTION: By default, the Modernizr
     script below detects support for touch events *only*. If this project will
     need to detect support for additional features, follow these steps:
-    1. Go to this URL: http://modernizr.com/download/?-touchevents
+    1. Go to this URL: http://modernizr.com/download/?-touchevents-setclasses
     2. Find & check off the additional features you want to detect support for
     3. Select the BUILD button to download an updated version of Modernizr
-    4. Replace the below script with what was downloaded
+    4. Replace the contents of the below script with what was downloaded
     -->
-    <script src="/lib/js/vendor/modernizr-3.2.0.min.js"></script>
+    <script src="/lib/js/global/vendor-modernizr.js"></script>
 
     <!--
     TODO: Update the following files with project specific details.
@@ -95,8 +95,8 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     </div>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/lib/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/lib/js/global/vendor-jquery.js"><\/script>')</script>
 
     <!-- YOUR SCRIPTS HERE. -->
 
@@ -128,7 +128,7 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     TODO: It is IMPERATIVE that you remove or comment this out before pushing
     this project to any publicly viewable environment.
     -->
-    <script src="/lib/js/vendor/perfbar-0.2.1.js"></script>
+    <script src="/lib/js/global/vendor-perfbar.js"></script>
     <script>
       perfBar.init({
         budget: {

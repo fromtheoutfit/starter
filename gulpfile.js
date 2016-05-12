@@ -19,26 +19,22 @@ var stylish      = require('jshint-stylish');
 // Project Configuration
 // ****************************************************************************
 
-var config = {
-  // localUrl is whatever's provided to you by your local server situation.
-  localUrl : 'http://starter.vbox.bytheoutfit.com/',
-  scssFile : 'scss/all.scss',
-  cssPath  : 'html/lib/css/',
-  jsFiles  : [
-    'html/lib/js/**/*.js',
-    '!html/lib/js/vendor/**/*'
-  ],
-  templateFiles : [
-    // It's *very* likely that you'll need to update the below paths on a per-
-    // project basis. It's currently setup to watch template files and standard
-    // ExpressionEngine files, but if your project isn't EE, those last two
-    // lines are useless and probably need to be something different.
-    'html/index.+(html|php)',
-    'html/_templates/**/*.+(html|php)',
-    'snippets/default_site/**/*.html',
-    'templates/default_site/**/*.html'
-  ]
-};
+var localUrl      = 'http://starter.vbox.bytheoutfit.com/';
+var scssFile      = 'scss/all.scss';
+var cssPath       = 'html/lib/css/';
+var jsAllFiles    = 'html/lib/js/**/*.js';
+var jsVendor      = 'html/lib/js/**/*vendor*';
+var jsCompiled    = 'html/lib/js/compiled/**/*';
+var jsHintTarget  = [
+                      jsAllFiles,
+                      '!' + jsCompiled,
+                      '!' + jsVendor
+                    ];
+var templateFiles = [
+                      'html/**/*.+(html|php)',
+                      '+(snippets|templates)/default_site/**/*.html',
+                      'craft/templates/**/*.html'
+                    ];
 
 
 
@@ -49,13 +45,13 @@ var config = {
 
 // Compile Scss.
 gulp.task('scss', function() {
-  gulp.src(config.scssFile)
+  gulp.src(scssFile)
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle:'compressed'})
     .on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.cssPath))
+    .pipe(gulp.dest(cssPath))
     .pipe(filter('**/*.css'))
     .pipe(browserSync.reload({stream:true}));
 });
@@ -69,7 +65,7 @@ gulp.task('scss', function() {
 
 // Hint non-vendor JS files.
 gulp.task('js-hint', function() {
-  return gulp.src(config.jsFiles)
+  return gulp.src(jsHintTarget)
     .pipe(jsHint())
     .pipe(jsHint.reporter(stylish));
 });
@@ -83,7 +79,7 @@ gulp.task('js-hint', function() {
 
 // Start a server and provide auto refreshing and action synchronization.
 gulp.task('browser-sync', function() {
-  browserSync({proxy:config.localUrl});
+  browserSync({proxy:localUrl});
 });
 
 // A task that will reload all connected devices, which can be called manually.
@@ -98,8 +94,13 @@ gulp.task('bs-reload', function() {
 // Combo Tasks
 // ****************************************************************************
 
+// maybe a 'css' task for recompiling sass
+// and a 'js' task for all js stuff
+// and a default task for everything
+// that way any of us can run the single tasks quickly, or one combo-task
+
 gulp.task('default', ['browser-sync'], function() {
   gulp.watch('scss/**/*.scss', ['scss']);
-  gulp.watch(config.jsFiles, ['js-hint', 'bs-reload']);
-  gulp.watch(config.templateFiles, ['bs-reload']);
+  gulp.watch(jsHintTarget, 'js-hint', 'bs-reload']);
+  gulp.watch(templateFiles, ['bs-reload']);
 });
