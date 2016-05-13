@@ -7,12 +7,12 @@
 //     makes http://localhost:3000 and http://[your IP address]:3000 available
 //     to devices on your wifi network.
 //   - watches for template changes and refreshes page(s).
-//   - watches for js changes, hints js, compiles js, minifies js, and
+//   - watches for js changes, lints js, compiles js, minifies js, and
 //     refreshes page(s).
 //   - watches for scss changes, compiles scss, and injects styles.
 //
 // 'gulp js':
-//   - watches for js changes, hints js, compiles js, and minifies js.
+//   - watches for js changes, lints js, compiles js, and minifies js.
 //
 // 'gulp scss':
 //   - compiles scss to css, overwriting all.css and all.css.map. ♥ Michael.
@@ -25,19 +25,18 @@
 // ****************************************************************************
 
 var browserSync  = require('browser-sync');
-var autoprefixer = require('gulp-autoprefixer');
-var filter       = require('gulp-filter');
+var fs           = require('fs');
 var gulp         = require('gulp');
-var jsHint       = require('gulp-jshint');
-var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
+var autoprefixer = require('gulp-autoprefixer');
+var concat       = require('gulp-concat');
+var esLint       = require('gulp-eslint');
+var filter       = require('gulp-filter');
+var rename       = require('gulp-rename');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
-var stylish      = require('jshint-stylish');
-var concat       = require('gulp-concat');
-var rename       = require('gulp-rename');
 var uglify       = require('gulp-uglify');
-var fs           = require('fs');
 var path         = require('path');
+var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
 
 
 
@@ -53,7 +52,7 @@ var jsPathCompiled  = 'html/lib/js/';
 var jsPathFeatures  = 'js/features/';
 var jsFilesGlobal   = 'js/global/**/*.js';
 var jsDevFiles      = 'js/**/*.js';
-var jsHintFiles     = ['js/**/*.js', '!js/**/*vendor*'];
+var jsLintFiles     = ['js/**/*.js', '!js/**/*vendor*'];
 var templates       = [
                         'html/**/*.+(html|php)',
            /*    EE: */ '+(snippets|templates)/default_site/**/*.html',
@@ -120,12 +119,12 @@ gulp.task('js-compile-features', function() {
 });
 
 
-// Hint non-vendor JS files.
+// Lint non-vendor JS files.
 // ----------------------------------------------------------------------------
-gulp.task('js-hint', function() {
-  return gulp.src(jsHintFiles)
-    .pipe(jsHint())
-    .pipe(jsHint.reporter(stylish));
+gulp.task('js-lint', function() {
+  return gulp.src(jsLintFiles)
+    .pipe(esLint())
+    .pipe(esLint.format());
 });
 
 
@@ -161,7 +160,7 @@ gulp.task('default', ['browser-sync'], function() {
   gulp.watch(templates, ['bs-reload']);
   gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch(jsDevFiles, function(e) {
-    runSequence('js-hint', ['js-compile-global', 'js-compile-features'], 'bs-reload');
+    runSequence('js-lint', ['js-compile-global', 'js-compile-features'], 'bs-reload');
   });
 });
 
@@ -170,6 +169,6 @@ gulp.task('default', ['browser-sync'], function() {
 // ----------------------------------------------------------------------------
 gulp.task('js', function() {
   gulp.watch(jsDevFiles, function(e) {
-    runSequence('js-hint', ['js-compile-global', 'js-compile-features']);
+    runSequence('js-lint', ['js-compile-global', 'js-compile-features']);
   });
 });

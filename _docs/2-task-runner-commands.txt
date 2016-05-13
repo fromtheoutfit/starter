@@ -14,7 +14,7 @@ following will happen:
   makes http://localhost:3000 and http://[your IP address]:3000 available to
   devices on your wifi network.
 - The task runner will watch for template changes, then refreshes page(s).
-- The task runner will watch for js changes, then it will hint js, compile js,
+- The task runner will watch for js changes, then it will lint js, compile js,
   minify js, and refreshes page(s).
 - The task runner will watch for scss changes, then it will compile scss, and
   inject styles.
@@ -33,7 +33,7 @@ Type "gulp js" and press return when you want to work only on JavaScript, which
 is a fairly common thing our back-end developers need to do. The following will
 happen:
 
-- The task runner will watch for js changes, then it will hint js, compile js,
+- The task runner will watch for js changes, then it will lint js, compile js,
   and minify js.
 
 
