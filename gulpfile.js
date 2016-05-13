@@ -3,15 +3,16 @@
 // ****************************************************************************
 //
 // 'gulp':
-//   - creates a server that points to localUrl (defined below) and makes
-//     localhost:3000 and [your IP address]:3000 available to devices on your
-//     wifi network.
+//   - creates an environment that points to your local server's host URL and
+//     makes http://localhost:3000 and http://[your IP address]:3000 available
+//     to devices on your wifi network.
 //   - watches for template changes and refreshes page(s).
-//   - watches for js changes, hints js, compiles js, and refreshes page(s).
+//   - watches for js changes, hints js, compiles js, minifies js, and
+//     refreshes page(s).
 //   - watches for scss changes, compiles scss, and injects styles.
 //
 // 'gulp js':
-//   - watches for js changes, hints js, and compiles js.
+//   - watches for js changes, hints js, compiles js, and minifies js.
 //
 // 'gulp scss':
 //   - compiles scss to css, overwriting all.css and all.css.map. ♥ Michael.
@@ -46,17 +47,17 @@ var path         = require('path');
 // ****************************************************************************
 
 var localUrl        = 'http://starter.vbox.bytheoutfit.com/';
-var libPath         = 'html/lib/'
 var scssFile        = 'scss/all.scss';
-var cssPath         = libPath + 'css/';
-var jsPathCompiled  = libPath + 'js/';
+var cssPath         = 'html/lib/css/';
+var jsPathCompiled  = 'html/lib/js/';
 var jsPathFeatures  = 'js/features/';
 var jsFilesGlobal   = 'js/global/**/*.js';
-var jsDevFiles      = ['js/**/*.js', '!js/**/*vendor*'];
+var jsDevFiles      = 'js/**/*.js';
+var jsHintFiles     = ['js/**/*.js', '!js/**/*vendor*'];
 var templates       = [
                         'html/**/*.+(html|php)',
-                        '+(snippets|templates)/default_site/**/*.html',
-                        'craft/templates/**/*.html'
+           /*    EE: */ '+(snippets|templates)/default_site/**/*.html',
+           /* Craft: */ 'craft/templates/**/*.html'
                       ];
 
 
@@ -122,7 +123,7 @@ gulp.task('js-compile-features', function() {
 // Hint non-vendor JS files.
 // ----------------------------------------------------------------------------
 gulp.task('js-hint', function() {
-  return gulp.src(jsDevFiles)
+  return gulp.src(jsHintFiles)
     .pipe(jsHint())
     .pipe(jsHint.reporter(stylish));
 });
