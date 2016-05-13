@@ -1,8 +1,3 @@
-- Make sure the PerfBar plugin is removed or commented out; see the bottom of
-  any / most / all templates and look for the following:
-  <script src="/lib/js/vendor/perfbar-0.2.1.js"></script>
-  <script>perfBar.init({ ... });</script>
-
 - Test the site with/in:
   - https://developers.google.com/speed/pagespeed
   - http://yslow.org

@@ -1,6 +1,6 @@
-Here are the various commands you type into your command line interface to run
-tasks that help the development process, prepare your project for production,
-stop gulp altogether, and more [soon].
+Here are the various commands you can type into your command line interface to
+run tasks that help the development process, prepare your project for
+production, stop gulp altogether, etc.
 
 
 *******************************************************************************
@@ -10,15 +10,45 @@ stop gulp altogether, and more [soon].
 Type "gulp" and press return when you want to work on this project. The
 following will happen:
 
-- A web browser will open and start serving the /html/index.html file at
-  http://localhost:3000/
-- The command line will mention an "External URL" that's based on your IP
-  address
+- An environment is created that points to your local server's host URL and
+  makes http://localhost:3000 and http://[your IP address]:3000 available to
+  devices on your wifi network.
+- The task runner will watch for template changes, then refreshes page(s).
+- The task runner will watch for js changes, then it will hint js, compile js,
+  minify js, and refreshes page(s).
+- The task runner will watch for scss changes, then it will compile scss, and
+  inject styles.
 
-You can open up any nearby devices, which are on the same network as your
-computer, and navigate to that External URL. At this point, all browsers are
-ready to be automatically refreshed when code is changed, and most actions will
+You can open up any nearby devices that are on the same network as your
+computer and navigate to that External URL. At this point, all browsers are
+ready to be automatically refreshed when code is changed, and most events will
 be synchronized across them.
+
+
+*******************************************************************************
+* gulp js
+*******************************************************************************
+
+Type "gulp js" and press return when you want to work only on JavaScript, which
+is a fairly common thing our back-end developers need to do. The following will
+happen:
+
+- The task runner will watch for js changes, then it will hint js, compile js,
+  and minify js.
+
+
+*******************************************************************************
+* gulp sass
+*******************************************************************************
+
+Type "gulp sass" and press return when you want to quickly recompile the css
+file and its associated map file. Every once in a while, a non-front-end
+developer will experience a git conflict that requires CSS to be recompiled.
+Rather than asking a front-end developer to do it, they can run "gulp sass" to
+do it themselves. The following will happen:
+
+- The task runner will recompile all scss to css, overwriting all.css and
+  all.css.map.
 
 
 *******************************************************************************

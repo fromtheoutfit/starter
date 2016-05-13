@@ -28,16 +28,21 @@ First: Task Runner Installation
 -------------------------------------------------------------------------------
 
 This starter project uses a task runner to simplify the development process.
-For example: Sass will be compiled to css on the fly, web browsers will be
-refreshed and synchronized automatically, JavaScript will be checked for code
-quality, and so on. This task runner relies on certain things being available
-on your computer before they can be of any use to you.
+For example: Sass will be compiled to css on the fly; JavaScript will be
+checked for code quality, then concatenated and minified; web browsers will be
+refreshed and synchronized automatically; and so on. This task runner relies on
+certain things being available on your computer before they can be of any use
+to you.
 
 To obtain and use these certain things, you need NodeJS and NPM on your
-computer. If you don't have NodeJS and NPM yet, go to this page, choose your
-operating system, and follow the associated instructions:
-https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager (If
-that URL goes away, http://nodejs.org is good, too.)
+computer. To check whether or not you already have NodeJS and NPM, open up your
+favorite command line interface and type:
+node -v (and press return)
+npm -v  (and press return)
+If both of those commands respond with version numbers, you've got NodeJS and
+NPM. If you don't have them yet, go to http://nodejs.org and do whatever you
+must to download and install them. I'd give you exact instructions, but the
+process changes often enough to be slightly annoying.
 
 Once you have NodeJS and NPM, open up your command line interface, navigate to
 this project's root directory, and type in the following command: "sudo npm
@@ -50,8 +55,8 @@ computer.
 Second: Set Up Project
 -------------------------------------------------------------------------------
 
-The initial HTML template (/html/_templates/home.html) is chock-full of code
-and associated documentation that, if left untouched, is probably not ideal for
-every project. When starting a new website, read the comments that start with
+The initial HTML template (/html/_templates/home.php) is chock-full of code and
+associated documentation that, if left untouched, is probably not ideal for
+every project. When starting a new project, read the comments that start with
 "( * OPTIONAL * )" and determine whether or not you need each of the associated
 things.

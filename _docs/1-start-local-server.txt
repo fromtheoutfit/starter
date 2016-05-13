@@ -1,17 +1,14 @@
-By default, the task runner used in this starter project relies on a separate
-local server, such as MAMP, to be set up and running.
-
-"Why is that? Aren't we using BrowserSync?", you ask. Yes, we are using
-BrowserSync, but it can only serve static code, like HTML. Most of the websites
-we build use dynamic code meant to be processed server-side, such as PHP, so we
-need to rely on a separate local server.
+The task runner used in this starter project requires a local server, such as
+VirtualBox, Vagrant, MAMP, etc., to be set up and running. "Why is that? Aren't
+we using BrowserSync?", you ask. Yes, we are using BrowserSync, but it can only
+serve static code, such as HTML. Most of the websites we build use dynamic code
+meant to be processed server-side, such as PHP, so we need to rely on a
+separate local server.
 
 We combine the features of BrowserSync (automatic page refreshing and device
 synchronization) with the features of a local server (processing dynamic code)
-by using BrowserSync's proxy option, in which we pass the host URL that we set
-up in the local server. For example, if you're using MAMP and you created a new
-host for this project with a URL of "clientwebsite.dev", BrowserSync needs to
-know about that host URL.
+by using BrowserSync's proxy option, into which we pass the host URL that we
+set up in the local server.
 
 
 *******************************************************************************
@@ -22,9 +19,8 @@ Here's how to tell BrowserSync about your local server and the host URL you set
 up in it. You only need to do this once.
 
 1. Open up /gulpfile.js
-2. Search for the "localUrl" property
-3. Change its value from "starter.dev:8888" to the host URL you set up in your
-   local server
+2. Search for the "localUrl" variable
+3. Change its value to the host URL you set up in your local server
 4. Save the file
 
 
@@ -35,11 +31,11 @@ up in it. You only need to do this once.
 Here's how to get the server and BrowserSync up and running. You need do this
 any time you want to work on the website.
 
-1. Start your local server (for example, MAMP)
+1. Start your local server
 2. Open up your command line interface
 3. Navigate to this project's root directory (the directory where gulpfile.js
    lives)
-4. Type in the following command: "gulp" without the double quotes
+4. Type one of the commands documented in the file 2-task-runner-commands.txt.
 5. Press return
 
 ...and two things will happen:
@@ -49,7 +45,7 @@ any time you want to work on the website.
 - The command line will mention an "External URL" that's based on your IP
   address
 
-You can open up any nearby devices, which are on the same network as your
-computer, and navigate to that External URL. At this point, all browsers are
-ready to be automatically refreshed when code is changed, and most actions will
+You can open up any nearby devices that are on the same network as your
+computer and navigate to that External URL. At this point, all browsers are
+ready to be automatically refreshed when code is changed, and most events will
 be synchronized across them.
