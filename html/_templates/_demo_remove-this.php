@@ -73,7 +73,7 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
     3. Select the BUILD button to download an updated version of Modernizr
     4. Replace the contents of the below script with what was downloaded
     -->
-    <script src="/lib/js/global/vendor-modernizr.js"></script>
+    <script src="/lib/js/modernizr.js"></script>
 
     <!--
     TODO: Update the following files with project specific details.
@@ -96,10 +96,15 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/lib/js/global/vendor-jquery.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="/lib/js/jquery.js"><\/script>')</script>
+    <script src="/lib/js/global.min.js"></script>
 
-    <!-- YOUR SCRIPTS HERE. -->
-
+    <!--
+    YOUR NON-GLOBAL, FEATURE-SPECIFIC JS FILE(S) HERE, LIKE SO:
+    <script src="/lib/js/neat-slider.min.js"></script>
+    <script src="/lib/js/great-angular-form-magic.min.js"></script>
+    <script src="/lib/js/dope-modal.min.js"></script>
+    -->
 
     <!--
     ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google
@@ -115,28 +120,6 @@ here: https://fromtheoutfit.com/updates/how-to-build-an-offline-single-page-webs
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-UPDATE-THIS', 'auto');
       ga('send', 'pageview');
-    </script>
-
-    <!--
-    ( * DEV ONLY * ) PERFORMANCE MONITOR: During the development process it's
-    wise to keep an eye on the performance of this project. The below script
-    will generate a "bar" at the bottom of the page that is filled with useful
-    information about a range of things. Some of the metrics can be assigned
-    allowable ranges, of which sensible defaults are defined below. Learn more
-    here: http://wpotools.github.io/perfBar/
-
-    TODO: It is IMPERATIVE that you remove or comment this out before pushing
-    this project to any publicly viewable environment.
-    -->
-    <script src="/lib/js/global/vendor-perfbar.js"></script>
-    <script>
-      perfBar.init({
-        budget: {
-          'latency'     : {max: 500}, // Time to first byte, in milliseconds.
-          'FirstPaint'  : {max: 500}, // First paint, in milliseconds.
-          'loadTime'    : {max: 1500} // Total load time, in milliseconds.
-        }
-      });
     </script>
 
   </body>
