@@ -2,19 +2,19 @@
 // Tasks you can run on the command line and what they'll do for you.
 // ****************************************************************************
 //
-// 'gulp':
-//   - creates an environment that points to your local server's host URL and
+// gulp:
+//   - Creates an environment that points to your local server's host URL and
 //     makes http://localhost:3000 and http://[your IP address]:3000 available
-//     to devices on your wifi network.
-//   - watches for template changes and refreshes page(s).
+//     to devices on your wifi network;
+//   - watches for template changes and refreshes page(s);
 //   - watches for js changes, lints js, compiles js, minifies js, and
-//     refreshes page(s).
+//     refreshes page(s);
 //   - watches for scss changes, compiles scss, and injects styles.
 //
-// 'gulp js':
+// gulp js:
 //   - watches for js changes, lints js, compiles js, and minifies js.
 //
-// 'gulp scss':
+// gulp scss:
 //   - compiles scss to css, overwriting all.css and all.css.map. ♥ Michael.
 
 
@@ -45,19 +45,19 @@ var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
 // Project configuration.
 // ****************************************************************************
 
-var localUrl        = 'http://starter.vbox.bytheoutfit.com/';
-var scssFile        = 'scss/all.scss';
-var cssPath         = 'html/lib/css/';
-var jsPathCompiled  = 'html/lib/js/';
-var jsPathFeatures  = 'js/features/';
-var jsFilesGlobal   = 'js/global/**/*.js';
-var jsDevFiles      = 'js/**/*.js';
-var jsLintFiles     = ['js/**/*.js', '!js/**/*vendor*'];
-var templates       = [
-                        'html/**/*.+(html|php)',
-           /*    EE: */ '+(snippets|templates)/default_site/**/*.html',
-           /* Craft: */ 'craft/templates/**/*.html'
-                      ];
+var localUrl   = 'http://starter.vbox.bytheoutfit.com/';
+var scssFile   = 'scss/all.scss';
+var cssPath    = 'html/lib/css/';
+var jsWatch    = 'js/**/*.js';
+var jsFeatures = 'js/features/';
+var jsCompiled = 'html/lib/js/';
+var jsGlobal   = ['js/global/vendor/**/*.js', 'js/global/**/*.js'];
+var jsLint     = ['js/**/*.js', '!js/**/*vendor*'];
+var templates  = [
+     /* Basics: */ 'html/**/*.+(html|php)',
+     /*     EE: */ '+(snippets|templates)/default_site/**/*.html',
+     /*  Craft: */ 'craft/templates/**/*.html'
+                 ];
 
 
 
@@ -86,19 +86,19 @@ gulp.task('scss', function() {
 // JavaScript tasks.
 // ****************************************************************************
 
-// Concatenate and minify all JS global files.
+// Concatenate and minify all global JS files.
 // ----------------------------------------------------------------------------
 gulp.task('js-compile-global', function() {
-  return gulp.src(jsFilesGlobal)
+  return gulp.src(jsGlobal)
     .pipe(concat('global.js'))
-    // .pipe(gulp.dest(jsPathCompiled)) // Also save a non-minified version.
+    // .pipe(gulp.dest(jsCompiled)) // Also save a non-minified version.
     .pipe(rename({suffix:'.min'}))
     .pipe(uglify({mangle:false}))
-    .pipe(gulp.dest(jsPathCompiled));
+    .pipe(gulp.dest(jsCompiled));
 });
 
 
-// Concatenate and minify all JS features files.
+// Concatenate and minify all feature JS files.
 // ----------------------------------------------------------------------------
 function getFolders(dir) {
   return fs.readdirSync(dir).filter(function(file) {
@@ -106,14 +106,14 @@ function getFolders(dir) {
   });
 }
 gulp.task('js-compile-features', function() {
-  var folders = getFolders(jsPathFeatures);
+  var folders = getFolders(jsFeatures);
   var tasks   = folders.map(function(folder) {
-    return gulp.src(path.join(jsPathFeatures, folder, '**/*.js'))
+    return gulp.src(path.join(jsFeatures, folder, '**/*.js'))
       .pipe(concat(folder + '.js'))
-      // .pipe(gulp.dest(jsPathCompiled)) // Also save a non-minified version.
+      // .pipe(gulp.dest(jsCompiled)) // Also save a non-minified version.
       .pipe(rename({suffix:'.min'}))
       .pipe(uglify({mangle:false}))
-      .pipe(gulp.dest(jsPathCompiled));
+      .pipe(gulp.dest(jsCompiled));
   });
   return tasks;
 });
@@ -122,8 +122,20 @@ gulp.task('js-compile-features', function() {
 // Lint non-vendor JS files.
 // ----------------------------------------------------------------------------
 gulp.task('js-lint', function() {
-  return gulp.src(jsLintFiles)
-    .pipe(esLint())
+  return gulp.src(jsLint)
+    .pipe(esLint({
+      extends: 'eslint:recommended',
+      rules: {
+        'curly':'warn',
+        'eqeqeq':'warn',
+        'no-console':'off'
+      },
+      globals: {
+        'jquery':true,
+        'modernizr':true
+      },
+      envs: ['browser']
+    }))
     .pipe(esLint.format());
 });
 
@@ -159,7 +171,7 @@ gulp.task('bs-reload', function() {
 gulp.task('default', ['browser-sync'], function() {
   gulp.watch(templates, ['bs-reload']);
   gulp.watch('scss/**/*.scss', ['scss']);
-  gulp.watch(jsDevFiles, function(e) {
+  gulp.watch(jsWatch, function(e) {
     runSequence('js-lint', ['js-compile-global', 'js-compile-features'], 'bs-reload');
   });
 });
@@ -168,7 +180,7 @@ gulp.task('default', ['browser-sync'], function() {
 // The js task that's typically run back-end devs working on js.
 // ----------------------------------------------------------------------------
 gulp.task('js', function() {
-  gulp.watch(jsDevFiles, function(e) {
+  gulp.watch(jsWatch, function(e) {
     runSequence('js-lint', ['js-compile-global', 'js-compile-features']);
   });
 });
