@@ -73,7 +73,7 @@ gulp.task('scss', function() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest(cssPath))
     .pipe(filter('**/*.css'))
     .pipe(browserSync.reload({stream:true}));
@@ -90,10 +90,12 @@ gulp.task('scss', function() {
 // ----------------------------------------------------------------------------
 gulp.task('js-compile-global', function() {
   return gulp.src(jsGlobal)
+    .pipe(sourcemaps.init())
     .pipe(concat('global.js'))
     // .pipe(gulp.dest(jsCompiled)) // Also save a non-minified version.
     .pipe(rename({suffix:'.min'}))
     .pipe(uglify({mangle:false}))
+    .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest(jsCompiled));
 });
 
@@ -109,10 +111,12 @@ gulp.task('js-compile-features', function() {
   var folders = getFolders(jsFeatures);
   var tasks   = folders.map(function(folder) {
     return gulp.src(path.join(jsFeatures, folder, '**/*.js'))
+      .pipe(sourcemaps.init())
       .pipe(concat(folder + '.js'))
       // .pipe(gulp.dest(jsCompiled)) // Also save a non-minified version.
       .pipe(rename({suffix:'.min'}))
       .pipe(uglify({mangle:false}))
+      .pipe(sourcemaps.write('maps'))
       .pipe(gulp.dest(jsCompiled));
   });
   return tasks;
