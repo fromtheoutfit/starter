@@ -1,3 +1,8 @@
-Hey you,
+# Branches
 
-Before you start working on this project, read /_docs/0-initial-project-setup.txt
+* **core:** a great, *but bare*, starter package that's useful for super-custom web things.
+* **core+modules:** all of the above, *plus* pre-defined modules, a grid layout, etc., that's useful for average marketing websites.
+
+# Getting Started
+
+If it's your first time using this starter package, it might be helpful to first read [/_docs/0-initial-project-setup.txt](https://github.com/fromtheoutfit/starter/blob/core/_docs/0-initial-project-setup.txt)
