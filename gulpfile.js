@@ -45,19 +45,19 @@ var runSequence  = require('run-sequence'); // Unnecessary once Gulp 4 is here.
 // Project configuration.
 // ****************************************************************************
 
-var localUrl   = 'http://starter.vbox.bytheoutfit.com/';
-var scssFile   = 'scss/all.scss';
-var cssPath    = 'html/lib/css/';
-var jsWatch    = 'js/**/*.js';
-var jsFeatures = 'js/features/';
-var jsCompiled = 'html/lib/js/';
-var jsGlobal   = ['js/global/vendor/**/*.js', 'js/global/**/*.js'];
-var jsLint     = ['js/**/*.js', '!js/**/*vendor*'];
-var templates  = [
-     /* Basics: */ 'html/**/*.+(html|php)',
-     /*     EE: */ '+(snippets|templates)/default_site/**/*.html',
-     /*  Craft: */ 'craft/templates/**/*.html'
-                 ];
+var localUrl    = 'http://starter.vbox.bytheoutfit.com/';
+var scssFile    = '_scss/all.scss';
+var cssCompiled = 'html/lib/css/';
+var jsCompiled  = 'html/lib/js/';
+var jsWatch     = '_js/**/*.js';
+var jsFeatures  = '_js/features/';
+var jsGlobal    = ['_js/global/vendor/**/*.js', '_js/global/**/*.js'];
+var jsLint      = ['_js/**/*.js', '!_js/**/*vendor*'];
+var templates   = [
+      /* Basics: */ 'html/**/*.+(html|php)',
+      /*     EE: */ '+(snippets|templates)/default_site/**/*.html',
+      /*  Craft: */ 'craft/templates/**/*.html'
+                  ];
 
 
 
@@ -74,7 +74,7 @@ gulp.task('scss', function() {
     .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest(cssPath))
+    .pipe(gulp.dest(cssCompiled))
     .pipe(filter('**/*.css'))
     .pipe(browserSync.reload({stream:true}));
 });
@@ -174,7 +174,7 @@ gulp.task('bs-reload', function() {
 // ----------------------------------------------------------------------------
 gulp.task('default', ['browser-sync'], function() {
   gulp.watch(templates, ['bs-reload']);
-  gulp.watch('scss/**/*.scss', ['scss']);
+  gulp.watch('_scss/**/*.scss', ['scss']);
   gulp.watch(jsWatch, function(e) {
     runSequence('js-lint', ['js-compile-global', 'js-compile-features'], 'bs-reload');
   });
