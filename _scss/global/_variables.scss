@@ -6,7 +6,7 @@ $font-stack-sans:   sans-serif; // http://css-tricks.com/sans-serif/
 $font-stack-serif:  serif;
 $font-stack-mono:   monospace;
 $font-size:         1rem;
-$line-height:       1.4;
+$line-height:       1.5;
 
 
 // ============================================================================
@@ -24,11 +24,10 @@ $color-link-visited:  gray;
 // Layout.
 // ============================================================================
 
-$content-min-width: (200rem/16);
-$content-max-width: (1200rem/16);
-$bp-small:          (401rem/16);
-$bp-compact:        (576rem/16);
-$bp-medium:         (751rem/16);
-$bp-large:          (901rem/16);
-$bp-extra-large:    (1201rem/16);
-$grid-spacing-unit: $font-size;
+$content-min-width: (300rem/16);
+$content-max-width: (1600rem/16);
+$bp-small:          (600rem/16);
+$bp-compact:        (960rem/16);
+$bp-medium:         (1280rem/16);
+$bp-large:          (1600rem/16);
+$bp-x-large:        (1920rem/16);
