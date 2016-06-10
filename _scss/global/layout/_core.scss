@@ -1,0 +1,33 @@
+// ============================================================================
+// All layout code borrows heavily from the patterns found on these websites:
+// ============================================================================
+
+
+// - http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+// - http://flexboxgrid.com/
+
+
+// ============================================================================
+// A standard module, an optional container for its items, and the items.
+// ============================================================================
+
+
+[data-layout~="module"] {
+  display: flex;
+}
+
+
+// module__container is optional. If you use it, it should be the immediate
+// descendant of module and it should envelope all module__item elements.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// [data-layout~="module__container"] {
+//   display: flex;
+//   max-width: $content-max-width;
+//   min-width: $content-min-width;
+// }
+
+
+[data-layout~="module__item"] {
+  flex: 1;
+}
