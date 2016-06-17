@@ -54,7 +54,7 @@ var jsFeatures  = '_js/features/';
 var jsGlobal    = ['_js/global/vendor/**/*.js', '_js/global/**/*.js'];
 var jsLint      = ['_js/**/*.js', '!_js/**/*vendor*'];
 var templates   = [
-      /* Basics: */ 'html/**/*.+(html|php)',
+      /* Basics: */ 'html/**/*.+(html|css|php)',
       /*     EE: */ '+(snippets|templates)/default_site/**/*.html',
       /*  Craft: */ 'craft/templates/**/*.html'
                   ];

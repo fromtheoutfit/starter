@@ -6,45 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/lib/css/all.css" />
-    <title>All Modules</title>
-    <meta name="description" content="A demonstration of all of the modules in this project" />
+    <title>Layout Demos</title>
+    <meta name="description" content="Demos of the various layout options available in this project." />
 
     <script src="/lib/js/modernizr.js"></script>
 
-    <!-- This style element is *only* for this demo page, it has no effect on
-    the layout demos themselves. -->
-    <style>
-      /* General */
-      html,
-      .nav  {background-color:tomato;}
-      body  {background-color:white;}
-
-      /* Nav */
-      .nav    {color:#fff; padding:15px;}
-      .nav a  {color:#fff;}
-      .nav h1 {font-size:125%; margin-bottom:.25em;}
-      .nav a  {display:inline-block; margin-right:1rem;}
-      .no-js .nav__toggle {display:none; visibility:hidden;}
-      .js .nav {left:0; position:fixed; transform:translateY(-100%); transition:transform 100ms;}
-      .js .nav.is-visible {transform:none;}
-      .js .nav__toggle {background-color:tomato; border:none; border-bottom-left-radius:3px; border-bottom-right-radius:3px; color:#fff; display:block; left:50%; padding:6px 16px; position:absolute; top:100%; transform:translateX(-50%); transition:padding-top 100ms}
-      .js .nav__toggle:hover {cursor:pointer;}
-      .js .nav:not(.is-visible) .nav__toggle:hover {padding-top:10px;}
-      .js .nav__toggle:focus {outline:none;}
-
-      /* Demo */
-      .demo {padding:60px 0 2.352%;}
-      .demo > h2 {margin-top:0;}
-      .demo > h2,
-      .demo > p {padding:0 10px; text-align:center;}
-      .demo__content {background-color:rgba(0,0,0,.1); padding:15px;}
-      .demo__content p:first-child {margin-top:0;}
-      .demo__content p:last-child {margin-bottom:0;}
-      .demo__code {background-color:#000; /*margin-top:2.352%;*/}
-      .demo__code pre {color:#fff; margin:0; overflow:auto; padding:10px;}
-      .demo__highlight,
-      .demo__highlight {color:tomato;}
-    </style>
+    <!-- This imported stylesheet is *only* for this demo page and its simple
+    UI. It has no effect on the demos themselves and it should *not* be
+    included in the production-ready code. -->
+    <style>@import 'demos-ui.css';</style>
 
   </head>
   <body>
@@ -53,7 +23,7 @@
     <?php // include $_SERVER['DOCUMENT_ROOT'].'/mod/header.php'; ?>
 
 
-    <nav class="nav" id="nav">
+    <nav class="demos-nav" id="demos-nav">
       <h1>Layout Demos</h1>
       <a href="#demo-1">Unadorned</a>
       <a href="#demo-2">Gutters</a>
@@ -66,7 +36,6 @@
       <a href="#demo-9">Gutters + defined width on <em>all</em> items + item wrapping</a>
       <a href="#demo-10">Gutters + defined width on <em>all</em> items + item wrapping + center-alignment</a>
       <a href="#demo-11">Gutters + item wrapping + items changing width at breakpoints</a>
-
       <h1>Width Demos</h1>
       <a href="#demo-12">Default widths</a>
       <a href="#demo-13">Small breakpoint widths</a>
@@ -75,8 +44,8 @@
       <a href="#demo-16">Large breakpoint widths</a>
       <a href="#demo-17">Huge breakpoint widths</a>
       <a href="#demo-18">Using multiple widths on an item</a>
-      <button class="nav__toggle" id="nav__toggle">Toggle Nav</button>
-    </nav><!-- .nav -->
+      <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
+    </nav><!-- .demos-nav -->
 
 
     <div class="demo" id="demo-1">
@@ -109,7 +78,7 @@
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -143,7 +112,7 @@
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -171,7 +140,7 @@
             <blockquote>
               <p><em>Dad hurt his wrist and had to go to the hospital, where he talked to a doctor.</em></p>
               <p>
-                Dad: <q>When this heals will I be able to play the piano?</q></br />
+                Dad: <q>When this heals will I be able to play the piano?</q><br />
                 Doctor: <q>Yes, you’ll be fine in a few days.</q><br />
                 Dad: <q>Perfect, I’ve always wanted to be able to play an instrument.</q>
               </p>
@@ -186,7 +155,7 @@
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -241,7 +210,7 @@
 &lt;div data-layout="module" data-layout-options="gutters equal-height-items"&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -317,7 +286,7 @@
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -402,7 +371,7 @@
       &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -437,7 +406,7 @@
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-fifth"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -471,7 +440,7 @@
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-quarter"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-quarter"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -519,7 +488,7 @@
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -581,13 +550,13 @@
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
     <div class="demo" id="demo-11">
-      <h2>Gutters + item wrapping + items changing width at breakpoints</h1>
+      <h2>Gutters + item wrapping + items changing width at breakpoints</h2>
 
       <div data-layout="module" data-layout-options="gutters wrap-items">
         <div data-layout="module__item" data-layout-width="one-whole s-one-third c-one-half">
@@ -630,7 +599,7 @@
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third c-one-half"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third c-one-half"</span>&gt; ... &lt;/div&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole c-one-half"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
     </div><!-- .demo__code -->
     </div><!-- .demo -->
 
@@ -1145,33 +1114,10 @@
       </div><!-- module -->
     </div><!-- .demo -->
 
-    <script>
-      var nav           = document.getElementById('nav');
-      var navLinks      = document.querySelectorAll('#nav a');
-      var navToggle     = document.getElementById('nav__toggle');
-      var toggledClass  = 'is-visible';
-
-      function toggleNav() {
-        if (nav.classList) {
-          nav.classList.toggle(toggledClass);
-        } else {
-          var classes = nav.toggledClass.split(' ');
-          var existingIndex = classes.indexOf(toggledClass);
-          if (existingIndex >= 0) {
-            classes.splice(existingIndex, 1);
-          } else {
-            classes.push(toggledClass);
-          }
-          nav.toggledClass = classes.join(' ');
-        }
-      }
-
-      navToggle.addEventListener('click', toggleNav, false);
-
-      for (var i = 0; i < navLinks.length; i++) {
-        navLinks[i].addEventListener('click', toggleNav, false);
-      }
-    </script>
+    <!-- This script is *only* for this demo page and its simple UI. It has no
+    effect on the demos themselves and it should *not* be included in the
+    production-ready code. -->
+    <script src="demos-ui.js"></script>
 
   </body>
 </html>

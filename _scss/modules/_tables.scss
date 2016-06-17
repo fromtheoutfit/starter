@@ -1,0 +1,37 @@
+$table-borders-color: rgba(0,0,0,.1);
+$table-rows-bg-color: rgba(0,0,0,.075);
+
+
+table {
+  border-bottom: 1px solid $table-borders-color;
+  border-collapse: collapse;
+  border-right: 1px solid $table-borders-color;
+}
+
+
+caption {
+  font-size: 85%;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+
+thead {
+  border-top: 1px solid $table-borders-color;
+}
+
+
+tbody {
+  border-top: 1px solid $table-borders-color;
+
+  tr:nth-child(even) {
+    background-color: $table-rows-bg-color;
+  }
+}
+
+
+th,
+td {
+  border-left: 1px solid $table-borders-color;
+  padding: 0.5em;
+}

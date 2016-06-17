@@ -2,21 +2,21 @@
 // Borrowed from h5bp.com.
 // ============================================================================
 
+
 html {
   box-sizing: border-box;
   color: $color-text;
   font-family: $font-stack-sans;
-  font-size: $font-size;
-  line-height: $line-height;
 }
 
-// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 
 hr {
   display: block;
@@ -27,6 +27,7 @@ hr {
   padding: 0;
 }
 
+
 audio,
 canvas,
 iframe,
@@ -35,6 +36,7 @@ svg,
 video {
   vertical-align: middle;
 }
+
 
 fieldset {
   border: 0;
@@ -48,12 +50,36 @@ fieldset {
 // ============================================================================
 
 
-figure {
-  margin: 0
+// Using the three selectors below, we reset some of the properties of many
+// common elements to then scope and redefine them in _copy-block.scss. This
+// article nicely sums up why it’s a good idea:
+// http://cognition.happycog.com/article/expressive-type-for-copy-blocks
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, blockquote, pre, figure,
+figcaption {font-size:inherit; line-height:1; margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight:inherit;}
+ul, ol {list-style-type:none;}
+
+
+img, video {
+  height: auto;
+  max-width: 100%;
 }
 
 
-img {
-  height: auto;
+iframe {
+  border: none;
   max-width: 100%;
+}
+
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  @include btn();
+
+  &:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
 }

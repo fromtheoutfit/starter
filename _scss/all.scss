@@ -20,17 +20,25 @@
 
 @import "global/normalize";
 @import "global/base";
-@import "global/layout/core";
-@import "global/layout/widths";
-@import "global/layout/alignment";
-@import "global/layout/options";
+
+
+// ============================================================================
+// Layout.
+// ============================================================================
+
+@import "layout/core";
+@import "layout/widths";
+@import "layout/alignment";
+@import "layout/options";
 
 
 // ============================================================================
 // Modules.
 // ============================================================================
 
-// Add module @import statements in place of this comment
+@import "modules/copy-block";
+@import "modules/tables";
+@import "modules/forms";
 
 
 // ============================================================================
