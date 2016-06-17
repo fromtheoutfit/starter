@@ -2,6 +2,7 @@
 // Borrowed from h5bp.com.
 // ============================================================================
 
+
 html {
   box-sizing: border-box;
   color: $color-text;
@@ -10,13 +11,14 @@ html {
   line-height: $line-height;
 }
 
-// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 
 hr {
   display: block;
@@ -27,6 +29,7 @@ hr {
   padding: 0;
 }
 
+
 audio,
 canvas,
 iframe,
@@ -35,6 +38,7 @@ svg,
 video {
   vertical-align: middle;
 }
+
 
 fieldset {
   border: 0;
@@ -53,7 +57,26 @@ figure {
 }
 
 
-img {
+img, video {
   height: auto;
   max-width: 100%;
+}
+
+
+iframe {
+  border: none;
+  max-width: 100%;
+}
+
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  @include btn();
+
+  &:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
 }

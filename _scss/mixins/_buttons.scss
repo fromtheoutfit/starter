@@ -2,15 +2,15 @@
 // The button mixin has numerous parameters, each with a sensible default.
 // Here's are each parameter's variable name, meaning, and default value:
 //
-// Parameter          Meaning                            Default
+// Parameter          Meaning                        Default
 // ----------------------------------------------------------------------------
-// $bg-color          background color                   blue
-// $border-radius     border-radius                      8px
-// $color             text color                         white
-// $hf-bg-color       hover & focus background color     darken($bg-color, 25%)
-// $hf-color          hover & focus text color           white
-// $font-size         font-size                          $font-size
-// $size              set the button size                '' [empty/default]
+// $bg-color          bg color                       value of $color-link
+// $border-radius     border-radius                  5px
+// $color             text color                     #fff
+// $hf-bg-color       hover & focus bg color         desaturate($bg-color, 75%)
+// $hf-color          hover & focus text color       white
+// $font-size         font-size                      $font-size
+// $size              set the button size            '' [empty/default]
 // ============================================================================
 // Example usage, keeping the default values:
 // .log-in a {
@@ -23,29 +23,32 @@
 // }
 // ============================================================================
 
-@mixin btn($bg-color: blue,
-           $border-radius: 8px,
-           $color: white,
-           $hf-bg-color: darken($bg-color, 25%),
-           $hf-color: white,
-           $font-size: $font-size,
-           $size:'') {
+@mixin btn (
+  $bg-color: $color-link,
+  $border-radius: 5px,
+  $color: #fff,
+  $hf-bg-color: darken($bg-color, 25%),
+  $hf-color: white,
+  $font-size: (14rem/16),
+  $size:''
+) {
   background-color: $bg-color;
   border-radius: $border-radius;
   border: none;
   color: $color;
   display: inline-block;
   font-size: $font-size;
-  line-height: 1.2;
-  padding: (12rem/16) (24rem/16);
+  line-height: 1;
+  padding: (10rem/16) (14rem/16);
   text-decoration: none;
   text-transform: uppercase;
+
   @if $size == small {
-    font-size: ($font-size * 0.75);
-    padding: (10em/16) (20em/16);
+    font-size: ($font-size * 0.8);
+    padding: (8em/16) (12em/16);
   } @else if $size == large {
     font-size: ($font-size * 1.2);
-    padding: (14em/16) (28em/16);
+    padding: (12em/16) (16em/16);
   }
 
   &:visited {
@@ -57,5 +60,11 @@
   &:focus {
     background: $hf-bg-color;
     color: $hf-color;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(1px);
   }
 }
