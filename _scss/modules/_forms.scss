@@ -32,13 +32,13 @@ input, select, textarea {
 // ============================================================================
 
 
-.input-message {
+.input-response {
   padding-top: $label-margin;
   line-height: $line-height;
 }
 
 
-// .form-message {
+// .form-response {
 
 // }
 
@@ -46,8 +46,8 @@ input, select, textarea {
 .is-error {
   &:not(.control-group) label,
   .control-group__label,
-  .input-message,
-  &.form-message {
+  .input-response,
+  &.form-response {
     color: $color-error;
   }
 
@@ -60,8 +60,8 @@ input, select, textarea {
 .is-success {
   &:not(.control-group) label,
   .control-group__label,
-  .input-message,
-  &.form-message  {
+  .input-response,
+  &.form-response  {
     color: $color-success;
   }
 
@@ -72,7 +72,7 @@ input, select, textarea {
 
 
 // ============================================================================
-// Utilities available for this module.
+// Utility classes available for this module.
 // ============================================================================
 
 

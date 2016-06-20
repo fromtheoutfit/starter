@@ -547,8 +547,8 @@ A line of code</code></pre>
     &lt;input type="file" name="..." id="..." /&gt;
   &lt;/div&gt;
 
-  <span class="demo__highlight">&lt;div class="control-group u-inline-controls"&gt;</span>
-    <span class="demo__highlight">&lt;div class="control-group__label"&gt; ... &lt;/div&gt;</span>
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls</span>"&gt;
+    &lt;div class="<span class="demo__highlight">control-group__label</span>"&gt; ... &lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="radio" name="..." value="..." id="..." /&gt;
       &lt;label for="..."&gt; ... &lt;/label&gt;
@@ -561,10 +561,10 @@ A line of code</code></pre>
       &lt;input type="radio" name="..." value="..." id="..." /&gt;
       &lt;label for="..."&gt; ... &lt;/label&gt;
     &lt;/div&gt;
-  <span class="demo__highlight">&lt;/div&gt;</span>
+  &lt;/div&gt;
 
-  <span class="demo__highlight">&lt;div class="control-group"&gt;</span>
-    <span class="demo__highlight">&lt;div class="control-group__label"&gt; ... &lt;/div&gt;</span>
+  &lt;div class="<span class="demo__highlight">control-group</span>"&gt;
+    &lt;div class="<span class="demo__highlight">control-group__label</span>"&gt; ... &lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="checkbox" name="..." value="..." id="..." /&gt;
       &lt;label for="..."&gt; ... &lt;/label&gt;
@@ -577,7 +577,7 @@ A line of code</code></pre>
       &lt;input type="checkbox" name="..." value="..." id="..." /&gt;
       &lt;label for="..."&gt; ... &lt;/label&gt;
     &lt;/div&gt;
-  <span class="demo__highlight">&lt;/div&gt;</span>
+  &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
     &lt;input type="submit" value="..." /&gt;
@@ -606,13 +606,13 @@ A line of code</code></pre>
               <div class="form-control u-stack-label is-error">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" required />
-                <div class="input-message">This field is required.</div>
+                <div class="input-response">This field is required.</div>
               </div>
 
               <div class="form-control u-stack-label is-success">
                 <label for="email-address">Email Address</label>
                 <input type="email" name="email-address" id="email-address" class="u-text-input" placeholder="ex. you@domain.com" required />
-                <div class="input-message">Awesome!</div>
+                <div class="input-response">Awesome!</div>
               </div>
 
               <div class="form-control u-stack-label">
@@ -667,9 +667,9 @@ A line of code</code></pre>
                 <input type="submit" value="Send" />
               </div>
 
-              <div class="form-message is-error">Oops, there’s an issue in this form; please review the highlighted fields.</div>
+              <div class="form-response is-error">Oops, there’s an issue in this form; please review the highlighted fields.</div>
 
-              <div class="form-message is-success">Sent, thank you!</div>
+              <div class="form-response is-success">Sent, thank you!</div>
 
             </form>
           </div><!-- .demo__content -->
@@ -682,13 +682,13 @@ A line of code</code></pre>
   &lt;div class="form-control u-stack-label <span class="demo__highlight">is-error</span>"&gt;
     &lt;label for="name"&gt;Name&lt;/label&gt;
     &lt;input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" <span class="demo__highlight">required</span> /&gt;
-    <span class="demo__highlight">&lt;div class="input-message"&gt;This field is required.&lt;/div&gt;</span>
+    <span class="demo__highlight">&lt;div class="input-response"&gt;This field is required.&lt;/div&gt;</span>
   &lt;/div&gt;
 
   &lt;div class="form-control u-stack-label <span class="demo__highlight">is-success</span>"&gt;
     &lt;label for="email-address"&gt;Email Address&lt;/label&gt;
     &lt;input type="email" name="email-address" id="email-address" class="u-text-input" placeholder="ex. you@domain.com" <span class="demo__highlight">required</span> /&gt;
-    <span class="demo__highlight">&lt;div class="input-message"&gt;Awesome!&lt;/div&gt;</span>
+    <span class="demo__highlight">&lt;div class="input-response"&gt;Awesome!&lt;/div&gt;</span>
   &lt;/div&gt;
 
   &lt;div class="form-control u-stack-label"&gt;
@@ -716,8 +716,8 @@ A line of code</code></pre>
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__label"&gt;Options&lt;/div&gt;
     &lt;div class="form-control"&gt;
-      &lt;input type="radio" name="options" value="Fast" id="Fast" /&gt;
-      &lt;label for="Fast"&gt;Fast&lt;/label&gt;
+      &lt;input type="radio" name="options" value="fast" id="fast" /&gt;
+      &lt;label for="fast"&gt;Fast&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="form-control"&gt;
       &lt;input type="radio" name="options" value="cheap" id="cheap" /&gt;
@@ -743,9 +743,9 @@ A line of code</code></pre>
     &lt;input type="submit" value="Send" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-message is-error"&gt;Oops, there’s an issue in this form; please review the highlighted fields.&lt;/div&gt;
+  &lt;div class="form-response is-error"&gt;Oops, there’s an issue in this form; please review the highlighted fields.&lt;/div&gt;
 
-  &lt;div class="form-message is-success"&gt;Sent, thank you!&lt;/div&gt;
+  &lt;div class="form-response is-success"&gt;Sent, thank you!&lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
       </div><!-- .demo__code -->
