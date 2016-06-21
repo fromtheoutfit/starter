@@ -25,17 +25,17 @@
 
     <nav class="demos-nav" id="demos-nav">
       <h1>Layout Demos</h1>
-      <a href="#demo-1">Copy block</a>
+      <a href="#demo-1">Copy Block</a>
       <a href="#demo-2">Table</a>
-      <a href="#demo-3">Form: control types</a>
-      <a href="#demo-4">Form: example</a>
+      <a href="#demo-3">Form: Control Types</a>
+      <a href="#demo-4">Form: Example</a>
       <a href="#demo-5">Mixed Media</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
 
 
     <div class="demo" id="demo-1">
-      <h2>Copy block</h2>
+      <h2>Copy Block</h2>
 
       <p>
         All <em>typical</em> copy styles are zeroed-out globally, then redefined and scoped to the <code>copy-block</code> class.<br />
@@ -44,118 +44,121 @@
 
       <div data-layout="module" data-layout-options="gutters">
         <div data-layout="module__item">
+          <div class="demo__content">
 
-          <div class="copy-block">
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
+            <div class="copy-block">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
 
-            <p>
-              This is a paragraph with various child elements used throughout; use your browser’s inspector to learn more.
-              <a href="#">Here’s a link</a>,
-              <abbr title="the full description of the abbreviation goes here">this is an abbreviation</abbr>,
-              and <b>this text is bold</b>.
-              <cite>Here’s a citation</cite>,
-              <code>this is code</code>,
-              <del datetime="1980-12-31">this has been deleted</del>,
-              and <dfn title="the actual definition of the word(s) in this element">this is a definition</dfn>.
-              <em>This bit of text is emphasized</em>,
-              <i>this text is italic</i>,
-              <ins datetime="1980-12-31" cite="http://optional-url-to-explanation-of-change.com/">this text has been inserted</ins>,
-              and <kbd>this is keyboard</kbd>.
-              <mark>This text has been marked</mark>
-              and <q cite="http://optional-url-to-source-of-quote.com/">this text has been quoted</q>.
-              <s>This text has been struck-through</s>,
-              <samp>this is sample output</samp>,
-              and <small>this text is rather small</small>.
-              <strong>This text has strong emphasis</strong>,
-              <sub>this text is subscript</sub>,
-              and <sup>this text is superscript</sup>.
-              <time datetime="1980-12-31">This is what time looks like</time>,
-              <u>this bit right here is underlined</u>,
-              and here’s a <var>variable</var>.
-            </p>
+              <p>
+                This is a paragraph with various child elements used throughout; use your browser’s inspector to learn more.
+                <a href="#">Here’s a link</a>,
+                <abbr title="the full description of the abbreviation goes here">this is an abbreviation</abbr>,
+                and <b>this text is bold</b>.
+                <cite>Here’s a citation</cite>,
+                <code>this is code</code>,
+                <del datetime="1980-12-31">this has been deleted</del>,
+                and <dfn title="the actual definition of the word(s) in this element">this is a definition</dfn>.
+                <em>This bit of text is emphasized</em>,
+                <i>this text is italic</i>,
+                <ins datetime="1980-12-31" cite="http://optional-url-to-explanation-of-change.com/">this text has been inserted</ins>,
+                and <kbd>this is keyboard</kbd>.
+                <mark>This text has been marked</mark>
+                and <q cite="http://optional-url-to-source-of-quote.com/">this text has been quoted</q>.
+                <s>This text has been struck-through</s>,
+                <samp>this is sample output</samp>,
+                and <small>this text is rather small</small>.
+                <strong>This text has strong emphasis</strong>,
+                <sub>this text is subscript</sub>,
+                and <sup>this text is superscript</sup>.
+                <time datetime="1980-12-31">This is what time looks like</time>,
+                <u>this bit right here is underlined</u>,
+                and here’s a <var>variable</var>.
+              </p>
 
-            <ul>
-              <li>First unordered list item</li>
-              <li>Second unordered list item</li>
-              <li>Third unordered list item</li>
-            </ul>
+              <ul>
+                <li>First unordered list item</li>
+                <li>Second unordered list item</li>
+                <li>Third unordered list item</li>
+              </ul>
 
-            <ol>
-              <li>First ordered list item</li>
-              <li>Second ordered list item</li>
-              <li>Third ordered list item</li>
-            </ol>
+              <ol>
+                <li>First ordered list item</li>
+                <li>Second ordered list item</li>
+                <li>Third ordered list item</li>
+              </ol>
 
-            <dl>
-              <dt>Term A</dt>
-              <dd>A description for Term A</dd>
-              <dt>Term B</dt>
-              <dd>A description for Term B</dd>
-            </dl>
+              <dl>
+                <dt>Term A</dt>
+                <dd>A description for Term A</dd>
+                <dt>Term B</dt>
+                <dd>A description for Term B</dd>
+              </dl>
 
-            <blockquote>
-              <p>This is a paragraph inside of a blockquote.</p>
-              <p>This is another paragraph inside of the same blockquote.</p>
-            </blockquote>
+              <blockquote>
+                <p>This is a paragraph inside of a blockquote.</p>
+                <p>This is another paragraph inside of the same blockquote.</p>
+              </blockquote>
 
-            <pre><code>A line of code
+              <pre><code>A line of code
   An indented line of code
   An indented line of code
 A line of code</code></pre>
 
-            <figure>
-              <img src="img/fpo-image-400x300-1x.png" alt="A blank image that is for placement only" width="400" height="300" />
-              <figcaption>This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image.</figcaption>
-            </figure>
+              <figure>
+                <img src="img/fpo-image-400x300-1x.png" alt="A blank image that is for placement only" width="400" height="300" />
+                <figcaption>This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image.</figcaption>
+              </figure>
 
-            <video width="640" height="360" controls>
-              <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
-              <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
-            </video>
+              <video width="640" height="360" controls>
+                <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
+              </video>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
-          </div><!-- .copy-block -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+            </div><!-- .copy-block -->
+
+          </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
 
       <div class="demo__code">
         <pre><code><span class="demo__highlight">&lt;div class="copy-block"&gt;</span>
 
-  &lt;h1&gt; ... &lt;/h1&gt;
-  &lt;h2&gt; ... &lt;/h2&gt;
-  &lt;h3&gt; ... &lt;/h3&gt;
-  &lt;h4&gt; ... &lt;/h4&gt;
-  &lt;h5&gt; ... &lt;/h5&gt;
-  &lt;h6&gt; ... &lt;/h6&gt;
+  &lt;h1&gt;...&lt;/h1&gt;
+  &lt;h2&gt;...&lt;/h2&gt;
+  &lt;h3&gt;...&lt;/h3&gt;
+  &lt;h4&gt;...&lt;/h4&gt;
+  &lt;h5&gt;...&lt;/h5&gt;
+  &lt;h6&gt;...&lt;/h6&gt;
 
-  &lt;p&gt; ... &lt;/p&gt;
+  &lt;p&gt;...&lt;/p&gt;
 
   &lt;ul&gt;
-    &lt;li&gt; ... &lt;/li&gt;
-    &lt;li&gt; ... &lt;/li&gt;
-    &lt;li&gt; ... &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
   &lt;/ul&gt;
 
   &lt;ol&gt;
-    &lt;li&gt; ... &lt;/li&gt;
-    &lt;li&gt; ... &lt;/li&gt;
-    &lt;li&gt; ... &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
   &lt;/ol&gt;
 
   &lt;dl&gt;
-    &lt;dt&gt; ... &lt;/dt&gt;
-    &lt;dd&gt; ... &lt;/dd&gt;
-    &lt;dt&gt; ... &lt;/dt&gt;
-    &lt;dd&gt; ... &lt;/dd&gt;
+    &lt;dt&gt;...&lt;/dt&gt;
+    &lt;dd&gt;...&lt;/dd&gt;
+    &lt;dt&gt;...&lt;/dt&gt;
+    &lt;dd&gt;...&lt;/dd&gt;
   &lt;/dl&gt;
 
   &lt;blockquote&gt;
-    &lt;p&gt; ... &lt;/p&gt;
+    &lt;p&gt;...&lt;/p&gt;
   &lt;/blockquote&gt;
 
   &lt;pre&gt;&lt;code&gt;...
@@ -165,7 +168,7 @@ A line of code</code></pre>
 
   &lt;figure&gt;
     &lt;img src="..." alt="..." width="..." height="..." /&gt;
-    &lt;figcaption&gt; ... &lt;/figcaption&gt;
+    &lt;figcaption&gt;...&lt;/figcaption&gt;
   &lt;/figure&gt;
 
   &lt;video width="..." height="..." controls&gt;
@@ -187,6 +190,7 @@ A line of code</code></pre>
       <div data-layout="module" data-layout-options="gutters">
         <div data-layout="module__item">
           <div class="demo__content">
+
             <table>
               <caption>Caption for this table</caption>
               <thead>
@@ -229,40 +233,41 @@ A line of code</code></pre>
                 </tr>
               </tbody>
             </table>
+
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
 
       <div class="demo__code">
         <pre><code>&lt;table&gt;
-  &lt;caption&gt; ... &lt;/caption&gt;
+  &lt;caption&gt;...&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;/td&gt;
-      &lt;th scope="col"&gt; ... &lt;/th&gt;
-      &lt;th scope="col"&gt; ... &lt;/th&gt;
+      &lt;th scope="col"&gt;...&lt;/th&gt;
+      &lt;th scope="col"&gt;...&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;th scope="row"&gt; ... &lt;/th&gt;
-      &lt;td&gt; ... &lt;/td&gt;
-      &lt;td&gt; ... &lt;/td&gt;
+      &lt;th scope="row"&gt;...&lt;/th&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope="row"&gt; ... &lt;/th&gt;
-      &lt;td&gt; ... &lt;/td&gt;
-      &lt;td&gt; ... &lt;/td&gt;
+      &lt;th scope="row"&gt;...&lt;/th&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope="row"&gt; ... &lt;/th&gt;
-      &lt;td&gt; ... &lt;/td&gt;
-      &lt;td&gt; ... &lt;/td&gt;
+      &lt;th scope="row"&gt;...&lt;/th&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope="row"&gt; ... &lt;/th&gt;
-      &lt;td&gt; ... &lt;/td&gt;
-      &lt;td&gt; ... &lt;/td&gt;
+      &lt;th scope="row"&gt;...&lt;/th&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
@@ -272,13 +277,13 @@ A line of code</code></pre>
     <div class="demo" id="demo-3">
       <h2>Form: Control Types</h2>
 
-      <!-- <p></p> -->
+      <p>All of the form control types supported by this project.</p>
 
       <div data-layout="module" data-layout-options="gutters">
         <div data-layout="module__item">
           <div class="demo__content">
-            <form>
 
+            <form>
               <div class="form-control u-stack-label">
                 <label for="input-1">Text</label>
                 <input type="text" name="input-1" id="input-1" class="u-text-input" placeholder="example value" />
@@ -423,16 +428,16 @@ A line of code</code></pre>
               </div>
 
               <div class="form-control">
-                <input type="submit" value="Submit" />
+                <input type="submit" class="btn" value="Submit" />
               </div>
 
               <div class="form-control">
-                <input type="button" value="Button A" />
-                <input type="button" value="Button B" />
-                <input type="button" value="Button C" />
+                <input type="button" class="btn-large" value="Button: Large" />
+                <input type="button" class="btn" value="Button" />
+                <input type="button" class="btn-small" value="Button: Small" />
               </div>
-
             </form>
+
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
@@ -441,90 +446,90 @@ A line of code</code></pre>
         <pre><code>&lt;form&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="text" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="email" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="password" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="search" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="url" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="date" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="datetime-local" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="time" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="week" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="month" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="tel" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="number" name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;textarea name="..." rows="5" id="..." class="<span class="demo__highlight">u-text-input</span>" placeholder="..."&gt;&lt;/textarea&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;select name="..." id="..."&gt;
       &lt;optgroup label="Group 1"&gt;
-        &lt;option value="..."&gt; ... &lt;/option&gt;
-        &lt;option value="..."&gt; ... &lt;/option&gt;
-        &lt;option value="..."&gt; ... &lt;/option&gt;
-        &lt;option value="..."&gt; ... &lt;/option&gt;
-        &lt;option value="..."&gt; ... &lt;/option&gt;
+        &lt;option value="..."&gt;...&lt;/option&gt;
+        &lt;option value="..."&gt;...&lt;/option&gt;
+        &lt;option value="..."&gt;...&lt;/option&gt;
+        &lt;option value="..."&gt;...&lt;/option&gt;
+        &lt;option value="..."&gt;...&lt;/option&gt;
       &lt;/optgroup&gt;
-      &lt;option value="..."&gt; ... &lt;/option&gt;
-      &lt;option value="..."&gt; ... &lt;/option&gt;
-      &lt;option value="..."&gt; ... &lt;/option&gt;
-      &lt;option value="..."&gt; ... &lt;/option&gt;
-      &lt;option value="..."&gt; ... &lt;/option&gt;
+      &lt;option value="..."&gt;...&lt;/option&gt;
+      &lt;option value="..."&gt;...&lt;/option&gt;
+      &lt;option value="..."&gt;...&lt;/option&gt;
+      &lt;option value="..."&gt;...&lt;/option&gt;
+      &lt;option value="..."&gt;...&lt;/option&gt;
     &lt;/select&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input list="..." name="..." id="..." class="<span class="demo__highlight">u-text-input</span>" /&gt;
     &lt;datalist id="..."&gt;
       &lt;option value="..."&gt;
@@ -534,60 +539,60 @@ A line of code</code></pre>
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="range" min="..." max="..." name="..." id="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="color" name="..." id="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
-    &lt;label for="..."&gt; ... &lt;/label&gt;
+    &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;input type="file" name="..." id="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">control-group u-inline-controls</span>"&gt;
-    &lt;div class="<span class="demo__highlight">control-group__label</span>"&gt; ... &lt;/div&gt;
+    &lt;div class="<span class="demo__highlight">control-group__label</span>"&gt;...&lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="radio" name="..." value="..." id="..." /&gt;
-      &lt;label for="..."&gt; ... &lt;/label&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="radio" name="..." value="..." id="..." /&gt;
-      &lt;label for="..."&gt; ... &lt;/label&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="radio" name="..." value="..." id="..." /&gt;
-      &lt;label for="..."&gt; ... &lt;/label&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">control-group</span>"&gt;
-    &lt;div class="<span class="demo__highlight">control-group__label</span>"&gt; ... &lt;/div&gt;
+    &lt;div class="<span class="demo__highlight">control-group__label</span>"&gt;...&lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="checkbox" name="..." value="..." id="..." /&gt;
-      &lt;label for="..."&gt; ... &lt;/label&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="checkbox" name="..." value="..." id="..." /&gt;
-      &lt;label for="..."&gt; ... &lt;/label&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;/div&gt;
     &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
       &lt;input type="checkbox" name="..." value="..." id="..." /&gt;
-      &lt;label for="..."&gt; ... &lt;/label&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
-    &lt;input type="submit" value="..." /&gt;
+    &lt;input type="submit" class="<span class="demo__highlight">btn</span>" value="..." /&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control</span>"&gt;
-    &lt;input type="button" value="..." /&gt;
-    &lt;input type="button" value="..." /&gt;
-    &lt;input type="button" value="..." /&gt;
+    &lt;input type="button" class="<span class="demo__highlight">btn-large</span>" value="..." /&gt;
+    &lt;input type="button" class="<span class="demo__highlight">btn</span>" value="..." /&gt;
+    &lt;input type="button" class="<span class="demo__highlight">btn-small</span>" value="..." /&gt;
   &lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
@@ -602,8 +607,8 @@ A line of code</code></pre>
       <div data-layout="module" data-layout-options="gutters">
         <div data-layout="module__item">
           <div class="demo__content">
-            <form>
 
+            <form>
               <div class="form-control u-stack-label is-error">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" required />
@@ -665,14 +670,14 @@ A line of code</code></pre>
               </div>
 
               <div class="form-control">
-                <input type="submit" value="Send" />
+                <input type="submit" class="btn" value="Send" />
               </div>
 
               <div class="form-response is-error">Oops, there’s an issue in this form; please review the highlighted fields.</div>
 
               <div class="form-response is-success">Sent, thank you!</div>
-
             </form>
+
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
@@ -741,7 +746,7 @@ A line of code</code></pre>
   &lt;/div&gt;
 
   &lt;div class="form-control"&gt;
-    &lt;input type="submit" value="Send" /&gt;
+    &lt;input type="submit" class="btn" value="Send" /&gt;
   &lt;/div&gt;
 
   &lt;div class="form-response is-error"&gt;Oops, there’s an issue in this form; please review the highlighted fields.&lt;/div&gt;
