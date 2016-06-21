@@ -129,45 +129,45 @@ Demos UI: Individual Demo
 }
 
 
-.demo__content p {
+.demo__content > p {
   line-height: 1.5;
   margin: 0.75em 0;
 }
 
 
-.demo__content p:first-child {
+.demo__content > p:first-child {
   margin-top: 0;
 }
 
 
-.demo__content p:last-child {
+.demo__content > p:last-child {
   margin-bottom: 0;
 }
 
 
-.demo__content ul,
-.demo__content ol {
+.demo__content > ul,
+.demo__content > ol {
   margin: 0.75em 0;
   padding-left: 1.25em;
 }
 
 
-.demo__content ul {
+.demo__content > ul {
   list-style-type: disc;
 }
 
 
-.demo__content ol {
+.demo__content > ol {
   list-style-type: decimal;
 }
 
 
-.demo__content li {
+.demo__content > li {
   margin-bottom: 0.5em;
 }
 
 
-.demo__content li:last-child {
+.demo__content > li:last-child {
   margin-bottom: 0;
 }
 
@@ -191,15 +191,5 @@ Demos UI: Individual Demo
   line-height: 1.5;
   margin: 0;
   overflow: auto;
-  padding: 15px;
-}
-
-
-/* Module-specific demo styles.
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-
-.copy-block {
-  background-color: rgba(0,0,0,.05);
   padding: 15px;
 }
