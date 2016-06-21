@@ -29,6 +29,7 @@
       <a href="#demo-2">Table</a>
       <a href="#demo-3">Form: control types</a>
       <a href="#demo-4">Form: example</a>
+      <a href="#demo-5">Mixed Media</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
 
@@ -748,6 +749,185 @@ A line of code</code></pre>
   &lt;div class="form-response is-success"&gt;Sent, thank you!&lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
+      </div><!-- .demo__code -->
+    </div><!-- .demo -->
+
+    <div class="demo" id="demo-5">
+      <h2>Mixed Media</h2>
+
+      <p>Four examples showing <em>some</em> of the various ways you can mix the child elements of a Mixed Media module.</p>
+
+      <div data-layout="module" data-layout-options="gutters wrap-items">
+        <div data-layout="module__item">
+          <div class="demo__content">
+
+            <div class="mm">
+              <div class="mm__header">
+                <h1 class="mm__title">Mixed Media Block Title</h1>
+                <p class="mm__subtitle">Mixed media block subtitle</p>
+              </div><!-- .mm__header -->
+              <figure class="mm__image">
+                <img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" />
+                <figcaption>A small caption for the above image.</figcaption>
+              </figure><!-- .mm__image -->
+              <div class="mm__body">
+                <p>Lorem ipsum dolor sit amet, <a href="http://an-unlikely-url.com">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="mm__cta">
+                <a href="#" class="btn">Action</a>
+              </div><!-- .mm__cta -->
+            </div><!-- .mm -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+
+        <div data-layout="module__item">
+          <div class="demo__content">
+
+            <div class="mm">
+              <figure class="mm__image">
+                <a href="#"><img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /></a>
+              </figure><!-- .mm__image -->
+              <div class="mm__header">
+                <h1 class="mm__title">A Rather Long Mixed Media Block Title</h1>
+                <p class="mm__subtitle">This is the subtitle and it’s also quite long.</p>
+              </div><!-- .mm__header -->
+              <div class="mm__body">
+                <ol>
+                  <li>List item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                  <li>Ordered list item list item list item list item list item list item list item</li>
+                </ol>
+              </div>
+              <div class="mm__cta">
+                <a href="#" class="btn">Action</a>
+              </div><!-- .mm__cta -->
+            </div><!-- .mm -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+
+        <div data-layout="module__item">
+          <div class="demo__content">
+
+            <div class="mm">
+              <div class="mm__header">
+                <h1 class="mm__title"><a href="http://a-place.com">Title</a></h1>
+              </div><!-- .mm__header -->
+              <figure class="mm__image">
+                <a href="#"><img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /></a>
+                <figcaption>A small caption for the above image.</figcaption>
+              </figure><!-- .mm__image -->
+              <div class="mm__body">
+                <dl>
+                  <dt>Title</dt>
+                  <dd>Description</dd>
+                  <dt>Title title title title title title title title title title title title title title title</dt>
+                  <dd>Description description description description description description description description description description</dd>
+                </dl>
+              </div>
+              <div class="mm__cta">
+                <a href="#" class="btn-large">Action 1</a>
+                <a href="#" class="btn">Action 2</a>
+                <a href="#" class="btn-small">Action 3</a>
+              </div><!-- .mm__cta -->
+            </div><!-- .mm -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+
+        <div data-layout="module__item">
+          <div class="demo__content">
+
+            <div class="mm">
+              <figure class="mm__image">
+                <a href="#" class="icon-play--image"><img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /></a>
+                <figcaption>A small caption for the above image.</figcaption>
+              </figure><!-- .mm__image -->
+              <div class="mm__cta">
+                <a href="#" class="btn icon-play--btn">Action</a>
+              </div><!-- .mm__cta -->
+            </div><!-- .mm -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+      </div><!-- module -->
+
+      <div class="demo__code">
+        <pre><code>&lt;div class="<span class="demo__highlight">mm</span>"&gt;
+  &lt;div class="<span class="demo__highlight">mm__header</span>"&gt;
+    &lt;h1 class="<span class="demo__highlight">mm__title</span>"&gt;...&lt;/h1&gt;
+    &lt;p class="<span class="demo__highlight">mm__subtitle</span>"&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;figure class="<span class="demo__highlight">mm__image</span>"&gt;
+    &lt;img src="..." width="..." height="..." alt="..." /&gt;
+    &lt;figcaption&gt;...&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">mm__body</span>"&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="demo__highlight">mm__cta</span>"&gt;
+    &lt;a href="..." class="<span class="demo__highlight">btn</span>"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="demo__highlight">mm</span>"&gt;
+  &lt;figure class="<span class="demo__highlight">mm__image</span>"&gt;
+    &lt;a href="..."&gt;&lt;img src="..." width="..." height="..." alt="..." /&gt;&lt;/a&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">mm__header</span>"&gt;
+    &lt;h1 class="<span class="demo__highlight">mm__title</span>"&gt;...&lt;/h1&gt;
+    &lt;p class="<span class="demo__highlight">mm__subtitle</span>"&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="demo__highlight">mm__body</span>"&gt;
+    &lt;ol&gt;
+      &lt;li&gt;...&lt;/li&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="demo__highlight">mm__cta</span>"&gt;
+    &lt;a href="..." class="<span class="demo__highlight">btn</span>"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="demo__highlight">mm</span>"&gt;
+  &lt;div class="<span class="demo__highlight">mm__header</span>"&gt;
+    &lt;h1 class="<span class="demo__highlight">mm__title</span>"&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;figure class="<span class="demo__highlight">mm__image</span>"&gt;
+    &lt;a href="...""&gt;&lt;img src="..." width="..." height="..." alt="..." /&gt;&lt;/a&gt;
+    &lt;figcaption&gt;...&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">mm__body</span>"&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;...&lt;/dt&gt;
+      &lt;dd&gt;...&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="demo__highlight">mm__cta</span>"&gt;
+    &lt;a href="..." class="<span class="demo__highlight">btn-large</span>"&gt;...&lt;/a&gt;
+    &lt;a href="..." class="<span class="demo__highlight">btn</span>"&gt;...&lt;/a&gt;
+    &lt;a href="..." class="<span class="demo__highlight">btn-small</span>"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="demo__highlight">mm</span>"&gt;
+  &lt;figure class="<span class="demo__highlight">mm__image</span>"&gt;
+    &lt;a href="..." class="<span class="demo__highlight">icon-play--image</span>"&gt;&lt;img src="..." width="..." height="..." alt="..." /&gt;&lt;/a&gt;
+    &lt;figcaption&gt;...&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">mm__cta</span>"&gt;
+    &lt;a href="..." class="<span class="demo__highlight">btn icon-play--btn</span>"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 

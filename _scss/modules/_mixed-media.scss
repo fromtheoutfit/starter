@@ -1,0 +1,72 @@
+$object-margin: 1em;
+
+.mm {
+  &__header {
+    &:first-child {
+      margin-bottom: $object-margin;
+    }
+
+    &:not(:first-child) {
+      margin-top: $object-margin;
+    }
+  }
+
+  &__title {
+    font-size: 160%;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    font-size: 120%;
+    line-height: 1.2;
+    margin-top: ($object-margin * 0.5);
+  }
+
+  &__image {
+    figcaption {
+      color: lighten($color-text, 50%);
+      font-size: 90%;
+      line-height: $line-height;
+      margin-top: ($object-margin * 0.5);
+    }
+  }
+
+  &__body {
+    line-height: $line-height;
+    margin-top: $object-margin;
+
+    p, ul, ol, dl, pre {
+      &:not(:first-child) {
+        margin-top: ($object-margin * 0.5);
+      }
+    }
+
+    p, ul, ol, li, dl, dt, dd, pre {
+      line-height: inherit;
+    }
+
+    ul, ol, dd {
+      padding-left: 1.5em;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    dt {
+      font-weight: bold;
+
+      &::after {
+        content: ':'
+      }
+    }
+  }
+
+  &__cta {
+    margin-top: $object-margin;
+  }
+}
