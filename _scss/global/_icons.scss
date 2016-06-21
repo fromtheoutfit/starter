@@ -1,0 +1,78 @@
+// ============================================================================
+// Various icons used throughout the project.
+// ============================================================================
+
+
+// Play icon (variations)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Play icon when it's in a button, like so:
+// <a href="" class="btn icon-play--btn">...</a>
+// or
+// <button class="icon-play--btn">...</button>
+.icon-play--btn {
+  &::before {
+    border-top:    6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left:   8px solid #fff;
+    content: '';
+    display: inline-block;
+    margin-right: 0.5em;
+    position: relative;
+    top: 1px;
+  }
+}
+
+
+// Play icon when it's on top of an image, like so:
+// <a href="" class="icon-play--image">
+//   <img src="image.jpg" width="..." height="..." alt="..." />
+// </a>
+.icon-play--image {
+  background-color: #000;
+  display: block;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  &::before {
+    border-top:    22.5px solid transparent;
+    border-bottom: 22.5px solid transparent;
+    border-left:   30px solid rgba(255,255,255,.5);
+    transform: translate(-36%, -50%);
+  }
+
+  &::after {
+    border: 8px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    width: 90px;
+  }
+
+  img {
+    opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-left-color: rgba(255,255,255,1);
+    }
+
+    &::after {
+      border-color: rgba(255,255,255,1);
+    }
+
+    img {
+      opacity: 0.75;
+    }
+  }
+}
