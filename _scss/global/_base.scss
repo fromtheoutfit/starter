@@ -72,14 +72,16 @@ iframe {
 }
 
 
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+.btn {
   @include btn();
+}
 
-  &:disabled {
-    background-color: #999;
-    cursor: not-allowed;
-  }
+
+.btn-small {
+  @include btn($size:'small');
+}
+
+
+.btn-large {
+  @include btn($size:'large');
 }
