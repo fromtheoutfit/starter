@@ -37,18 +37,21 @@
   border: none;
   color: $color;
   display: inline-block;
-  font-size: $font-size;
   line-height: 1;
-  padding: (10rem/16) (14rem/16);
   text-decoration: none;
   text-transform: uppercase;
 
   @if $size == small {
     font-size: ($font-size * 0.8);
     padding: (8em/16) (12em/16);
-  } @else if $size == large {
+  }
+  @else if $size == large {
     font-size: ($font-size * 1.2);
     padding: (12em/16) (16em/16);
+  }
+  @else {
+    font-size: $font-size;
+    padding: (10rem/16) (14rem/16);
   }
 
   &:visited {
@@ -66,5 +69,10 @@
 
   &:active {
     transform: translateY(1px);
+  }
+
+  &:disabled {
+    background-color: #999;
+    cursor: not-allowed;
   }
 }
