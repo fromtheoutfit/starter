@@ -31,6 +31,7 @@
       <a href="#demo-3">Form: Control Types</a>
       <a href="#demo-4">Form: Example</a>
       <a href="#demo-5">Mixed Media</a>
+      <a href="#demo-6">Call to Action</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
 
@@ -975,6 +976,46 @@ A line of code</code></pre>
   &lt;/figure&gt;
   &lt;div class="<span class="demo__highlight">mm__cta</span>"&gt;
     &lt;a href="..." class="<span class="demo__highlight">btn icon-play--btn</span>"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .demo__code -->
+    </div><!-- .demo -->
+
+    <div class="demo" id="demo-6">
+      <h2>Call to Action</h2>
+
+      <p>A simple call to action module.</p>
+
+      <div data-layout="module" data-layout-options="gutters wrap-items">
+        <div data-layout="module__item">
+          <div class="demo__content">
+
+            <div class="cta">
+              <div class="cta__content">
+                <div class="cta__title">See Our Thing</div>
+                <div class="cta__body">
+                  <p>It’s an amazing thing that’ll make your life quite a bit easier and simpler and higher quality and softer and brighter and quieter and faster!</p>
+                </div><!-- .cta__body -->
+              </div><!-- .cta__content -->
+              <div class="cta__action">
+                <a href="#" class="btn">See Thing Now!</a>
+              </div><!-- .cta__action -->
+            </div><!-- .cta -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+      </div><!-- module -->
+
+      <div class="demo__code">
+        <pre><code>&lt;div class="<span class="demo__highlight">cta</span>"&gt;
+  &lt;div class="<span class="demo__highlight">cta__content</span>"&gt;
+    &lt;div class="<span class="demo__highlight">cta__title</span>"&gt;...&lt;/div&gt;
+    &lt;div class="<span class="demo__highlight">cta__body</span>"&gt;
+      &lt;p&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="<span class="demo__highlight">cta__action</span>"&gt;
+    &lt;a href="..." class="btn"&gt;...&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->

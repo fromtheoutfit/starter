@@ -1,0 +1,66 @@
+$cta-object-margin: 1em;
+
+.cta {
+  &__title {
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+  &__body {
+    line-height: $line-height;
+    margin-top: 1em;
+
+    p, ul, ol, dl, pre {
+      &:not(:first-child) {
+        margin-top: ($cta-object-margin * 0.5);
+      }
+    }
+
+    p, ul, ol, li, dl, dt, dd, pre {
+      line-height: inherit;
+    }
+
+    ul, ol, dd {
+      padding-left: 1.5em;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    dt {
+      font-weight: bold;
+
+      &::after {
+        content: ':'
+      }
+    }
+  }
+
+  &__action {
+    margin-top: $cta-object-margin;
+  }
+
+  @include mq-min-width($bp-compact) {
+    align-items: center;
+    display: flex;
+
+    &__content {
+      flex: none;
+      padding-right: $cta-object-margin;
+      width: 75%;
+    }
+
+    &__action {
+      flex: none;
+      margin-top: 0;
+      padding-left: $cta-object-margin;
+      text-align: right;
+      width: 25%;
+    }
+  }
+}
