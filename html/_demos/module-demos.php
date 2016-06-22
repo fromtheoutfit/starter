@@ -25,6 +25,7 @@
 
     <nav class="demos-nav" id="demos-nav">
       <h1>Layout Demos</h1>
+      <a href="#demo-0">Intro</a>
       <a href="#demo-1">Copy Block</a>
       <a href="#demo-2">Table</a>
       <a href="#demo-3">Form: Control Types</a>
@@ -32,6 +33,49 @@
       <a href="#demo-5">Mixed Media</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
+
+
+    <div class="demo" id="demo-0">
+      <h2>Intro</h2>
+
+      <p>Two examples of a basic introduction module; it’s primary purpose is for page titles, but aims to be flexible enough for any sort of page/section introduction.</p>
+
+      <div data-layout="module" data-layout-options="gutters wrap-items">
+        <div data-layout="module__item" data-layout-width="one-whole">
+          <div class="demo__content">
+
+            <div class="intro">
+              <h1 class="intro__title">About The Company</h1>
+              <p class="intro__subtitle">Bits and bobs about our people, culture, etc.</p>
+            </div><!-- .intro -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+
+        <div data-layout="module__item" data-layout-width="one-whole">
+          <div class="demo__content">
+
+            <div class="intro u-inline-subtitle u-inverted">
+              <h1 class="intro__title">About The Company</h1>
+              <p class="intro__subtitle">Bits and bobs about our people, culture, etc.</p>
+            </div><!-- .intro -->
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+      </div><!-- module -->
+
+      <div class="demo__code">
+        <pre><code>&lt;div class="<span class="demo__highlight">intro</span>"&gt;
+  &lt;h1 class="<span class="demo__highlight">intro__title</span>"&gt;About The Company&lt;/h1&gt;
+  &lt;p class="<span class="demo__highlight">intro__subtitle</span>"&gt;Bits and bobs about our people, culture, etc.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="demo__highlight">intro u-inline-subtitle u-inverted</span>"&gt;
+  &lt;h1 class="<span class="demo__highlight">intro__title</span>"&gt;About The Company&lt;/h1&gt;
+  &lt;p class="<span class="demo__highlight">intro__subtitle</span>"&gt;Bits and bobs about our people, culture, etc.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .demo__code -->
+    </div><!-- .demo -->
 
 
     <div class="demo" id="demo-1">

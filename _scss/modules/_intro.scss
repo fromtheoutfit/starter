@@ -1,0 +1,47 @@
+.intro {
+  &__title {
+    font-size: 250%;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    font-size: 150%;
+    line-height: 1.2;
+    margin-top: 0.5em;
+  }
+}
+
+
+// ============================================================================
+// Utility classes available for this module.
+// ============================================================================
+
+
+// Make the subtitle inline with the title, after a defined breakpoint.
+.u-inline-subtitle {
+  @include mq-min-width($bp-compact) {
+    display: flex;
+
+    > * {
+      flex: 1;
+    }
+
+    .intro__title {
+      padding-right: 1em;
+    }
+
+    .intro__subtitle {
+      padding-left: 1em;
+      text-align: right;
+    }
+  }
+}
+
+
+// Invert the background and text colors.
+.u-inverted {
+  background-color: black;
+  color: #fff;
+  padding: 1em;
+}
