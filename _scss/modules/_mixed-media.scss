@@ -1,13 +1,13 @@
-$object-margin: 1em;
+$mm-object-margin: 1em;
 
 .mm {
   &__header {
     &:first-child {
-      margin-bottom: $object-margin;
+      margin-bottom: $mm-object-margin;
     }
 
     &:not(:first-child) {
-      margin-top: $object-margin;
+      margin-top: $mm-object-margin;
     }
   }
 
@@ -19,7 +19,7 @@ $object-margin: 1em;
   &__subtitle {
     font-size: 120%;
     line-height: 1.2;
-    margin-top: ($object-margin * 0.5);
+    margin-top: ($mm-object-margin * 0.5);
   }
 
   &__image {
@@ -27,17 +27,17 @@ $object-margin: 1em;
       color: lighten($color-text, 50%);
       font-size: 90%;
       line-height: $line-height;
-      margin-top: ($object-margin * 0.5);
+      margin-top: ($mm-object-margin * 0.5);
     }
   }
 
   &__body {
     line-height: $line-height;
-    margin-top: $object-margin;
+    margin-top: $mm-object-margin;
 
     p, ul, ol, dl, pre {
       &:not(:first-child) {
-        margin-top: ($object-margin * 0.5);
+        margin-top: ($mm-object-margin * 0.5);
       }
     }
 
@@ -67,6 +67,6 @@ $object-margin: 1em;
   }
 
   &__cta {
-    margin-top: $object-margin;
+    margin-top: $mm-object-margin;
   }
 }

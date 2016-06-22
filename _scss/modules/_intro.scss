@@ -1,3 +1,5 @@
+$intro-object-margin: 1em;
+
 .intro {
   &__title {
     font-size: 250%;
@@ -8,7 +10,7 @@
   &__subtitle {
     font-size: 150%;
     line-height: 1.2;
-    margin-top: 0.5em;
+    margin-top: ($intro-object-margin * 0.5);
   }
 }
 
@@ -28,11 +30,11 @@
     }
 
     .intro__title {
-      padding-right: 1em;
+      padding-right: $intro-object-margin;
     }
 
     .intro__subtitle {
-      padding-left: 1em;
+      padding-left: $intro-object-margin;
       text-align: right;
     }
   }
@@ -43,5 +45,5 @@
 .u-inverted {
   background-color: black;
   color: #fff;
-  padding: 1em;
+  padding: $intro-object-margin;
 }
