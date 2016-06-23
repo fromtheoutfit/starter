@@ -1,0 +1,110 @@
+$feature-object-margin: 1em;
+
+.feature {
+  &__content {
+    padding: ($feature-object-margin * 2) ($feature-object-margin * 1.5);
+  }
+
+  &__title {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  &__body {
+    font-size: 125%;
+    line-height: $line-height;
+    margin-top: ($feature-object-margin * 0.5);
+
+    p, ul, ol, dl, pre {
+      &:not(:first-child) {
+        margin-top: ($feature-object-margin * 0.5);
+      }
+    }
+
+    p, ul, ol, li, dl, dt, dd, pre {
+      line-height: inherit;
+    }
+
+    ul, ol, dd {
+      padding-left: 1.5em;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    dt {
+      font-weight: bold;
+
+      &::after {
+        content: ':'
+      }
+    }
+  }
+
+  // Background color.
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  .u-background-dark {
+    background-color: rgba(0,0,0,.75);
+
+    .feature__title,
+    .feature__body {
+      color: #fff;
+    }
+  }
+
+  .u-background-light {
+    background-color: rgba(255,255,255,.75);
+
+    .feature__title,
+    .feature__body {
+      color: #000;
+    }
+  }
+
+  @include mq-min-width($bp-small) {
+    position: relative;
+
+    &__content {
+      max-height: 100%;
+      overflow: auto;
+      position: absolute;
+      top: 50%;
+      width: 60%;
+
+      // Alignment.
+      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+      &.u-align-left,
+      &.u-align-right {
+        transform: translateY(-50%);
+      }
+
+      &.u-align-left {
+        left: 0;
+      }
+
+      &.u-align-center {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &.u-align-right {
+        right: 0;
+      }
+    }
+
+    &__title {
+      font-size: 200%;
+    }
+
+    &__body {
+      font-size: 150%;
+    }
+  }
+}

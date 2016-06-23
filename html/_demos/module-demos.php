@@ -32,6 +32,7 @@
       <a href="#demo-4">Form: Example</a>
       <a href="#demo-5">Mixed Media</a>
       <a href="#demo-6">Call to Action</a>
+      <a href="#demo-7">Feature</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
 
@@ -1016,6 +1017,106 @@ A line of code</code></pre>
   &lt;/div&gt;
   &lt;div class="<span class="demo__highlight">cta__action</span>"&gt;
     &lt;a href="..." class="btn"&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .demo__code -->
+    </div><!-- .demo -->
+
+    <div class="demo" id="demo-7">
+      <h2>Feature</h2>
+
+      <p>The Feature module has three <em>content alignment</em> options and two <em>content background color</em> options.</p>
+
+      <div data-layout="module" data-layout-options="gutters wrap-items">
+        <div data-layout="module__item" data-layout-width="one-whole">
+
+          <div class="feature">
+            <figure class="feature__image">
+              <img src="img/fpo-photo-light-1x.jpg" srcset="img/fpo-photo-light-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
+            </figure><!-- .feature__image -->
+            <div class="feature__content u-align-left u-background-dark">
+              <h1 class="feature__title">Left-aligned Feature Content</h1>
+              <div class="feature__body">
+                <p><b>…with a dark background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><a href="#" class="btn">Visit Link</a></p>
+              </div><!-- .feature__body -->
+            </div><!-- .feature__content -->
+          </div><!-- .feature -->
+
+        </div><!-- module__item -->
+
+        <div data-layout="module__item" data-layout-width="one-whole">
+
+          <div class="feature">
+            <figure class="feature__image">
+              <img src="img/fpo-photo-dark-1x.jpg" srcset="img/fpo-photo-dark-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
+            </figure><!-- .feature__image -->
+            <div class="feature__content u-align-center u-background-light">
+              <h1 class="feature__title">Center-aligned Feature Content</h1>
+              <div class="feature__body">
+                <p><b>…with a light background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="btn">Visit Link</a></p>
+              </div><!-- .feature__body -->
+            </div><!-- .feature__content -->
+          </div><!-- .feature -->
+
+        </div><!-- module__item -->
+
+        <div data-layout="module__item" data-layout-width="one-whole">
+
+          <div class="feature">
+            <figure class="feature__image">
+              <img src="img/fpo-photo-mixed-1x.jpg" srcset="img/fpo-photo-mixed-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
+            </figure><!-- .feature__image -->
+            <div class="feature__content u-align-right u-background-dark">
+              <h1 class="feature__title">Right-aligned Feature Content</h1>
+              <div class="feature__body">
+                <p><b>…with a dark background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><a href="#" class="btn">Visit Link</a></p>
+              </div><!-- .feature__body -->
+            </div><!-- .feature__content -->
+          </div><!-- .feature -->
+
+        </div><!-- module__item -->
+      </div><!-- module -->
+
+      <div class="demo__code">
+        <pre><code>&lt;div class="<span class="demo__highlight">feature</span>"&gt;
+  &lt;figure class="<span class="demo__highlight">feature__image</span>"&gt;
+    &lt;img src="..." srcset="..." width="..." height="..." alt="..." /&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">feature__content u-align-left u-background-dark</span>"&gt;
+    &lt;h1 class="<span class="demo__highlight">feature__title</span>"&gt;...&lt;/h1&gt;
+    &lt;div class="<span class="demo__highlight">feature__body</span>"&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;p&gt;&lt;a href="#" class="btn"&gt;...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="demo__highlight">feature</span>"&gt;
+  &lt;figure class="<span class="demo__highlight">feature__image</span>"&gt;
+    &lt;img src="..." srcset="..." width="..." height="..." alt="..." /&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">feature__content u-align-center u-background-light</span>"&gt;
+    &lt;h1 class="<span class="demo__highlight">feature__title</span>"&gt;...&lt;/h1&gt;
+    &lt;div class="<span class="demo__highlight">feature__body</span>"&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;p&gt;&lt;a href="#" class="btn"&gt;...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="demo__highlight">feature</span>"&gt;
+  &lt;figure class="<span class="demo__highlight">feature__image</span>"&gt;
+    &lt;img src="..." srcset="..." width="..." height="..." alt="..." /&gt;
+  &lt;/figure&gt;
+  &lt;div class="<span class="demo__highlight">feature__content u-align-right u-background-dark</span>"&gt;
+    &lt;h1 class="<span class="demo__highlight">feature__title</span>"&gt;...&lt;/h1&gt;
+    &lt;div class="<span class="demo__highlight">feature__body</span>"&gt;
+      &lt;p&gt;...&lt;/p&gt;
+      &lt;p&gt;&lt;a href="#" class="btn"&gt;...&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
