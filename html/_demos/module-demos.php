@@ -993,7 +993,7 @@ A line of code</code></pre>
 
             <div class="cta">
               <div class="cta__content">
-                <div class="cta__title">See Our Thing</div>
+                <h1 class="cta__title">See Our Thing</h1>
                 <div class="cta__body">
                   <p>It’s an amazing thing that’ll make your life quite a bit easier and simpler and higher quality and softer and brighter and quieter and faster!</p>
                 </div><!-- .cta__body -->
@@ -1010,7 +1010,7 @@ A line of code</code></pre>
       <div class="demo__code">
         <pre><code>&lt;div class="<span class="demo__highlight">cta</span>"&gt;
   &lt;div class="<span class="demo__highlight">cta__content</span>"&gt;
-    &lt;div class="<span class="demo__highlight">cta__title</span>"&gt;...&lt;/div&gt;
+    &lt;h1 class="<span class="demo__highlight">cta__title</span>"&gt;...&lt;/h1&gt;
     &lt;div class="<span class="demo__highlight">cta__body</span>"&gt;
       &lt;p&gt;...&lt;/p&gt;
     &lt;/div&gt;
