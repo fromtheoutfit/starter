@@ -49,6 +49,7 @@ Demos UI: Navigation
   position: fixed;
   transform: translateY(-100%);
   transition: transform 100ms;
+  z-index: 10;
 }
 
 
