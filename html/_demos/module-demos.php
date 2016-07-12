@@ -20,9 +20,6 @@
   <body>
 
 
-    <?php // include $_SERVER['DOCUMENT_ROOT'].'/mod/header.php'; ?>
-
-
     <nav class="demos-nav" id="demos-nav">
       <h1>Layout Demos</h1>
       <a href="#demo-0">Intro</a>
@@ -35,6 +32,49 @@
       <a href="#demo-7">Feature</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
+
+
+    <header class="header">
+      <div class="header__id">
+        <a href="#"><img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="200" height="125" alt="Project Name" /></a>
+        <h1 class="visuallyhidden">Project Name</h1>
+      </div><!-- .header__id -->
+      <button class="header__open-nav js-header__open-nav" aria-label="Open navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /></svg></button>
+      <nav class="header__nav-wrap js-header__nav-wrap">
+        <button class="header__close-nav js-header__close-nav" aria-label="Close navigation">&times;</button>
+        <h2 class="visuallyhidden">Main Navigation</h2>
+        <ul class="header__nav-links">
+          <li>
+            <a href="#">Generic Link</a>
+            <ul>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Medium Link</a></li>
+              <li>
+                <a href="#">A Somewhat Long Link</a>
+                <ul>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Medium Link</a></li>
+                  <li><a href="#">A Somewhat Long Link</a></li>
+                  <li><a href="#">Here’s a Ridiculously Long Link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Here’s a Ridiculously Long Link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Happy Link</a></li>
+          <li><a href="#">Helpful Link</a></li>
+          <li>
+            <a href="#">Friendly Link</a>
+            <ul>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Medium Link</a></li>
+              <li><a href="#">A Somewhat Long Link</a></li>
+              <li><a href="#">Here’s a Ridiculously Long Link</a></li>
+            </ul>
+          </li>
+        </ul><!-- .header__nav-links -->
+      </nav><!-- .header__nav-wrap -->
+    </header><!-- .header -->
 
 
     <div class="demo" id="demo-0">
@@ -658,13 +698,13 @@ A line of code</code></pre>
               <div class="form-control u-stack-label is-error">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" required />
-                <div class="input-response">This field is required.</div>
+                <div class="form-control__response">This field is required.</div>
               </div>
 
               <div class="form-control u-stack-label is-success">
                 <label for="email-address">Email Address</label>
                 <input type="email" name="email-address" id="email-address" class="u-text-input" placeholder="ex. you@domain.com" required />
-                <div class="input-response">Awesome!</div>
+                <div class="form-control__response">Awesome!</div>
               </div>
 
               <div class="form-control u-stack-label">
@@ -719,9 +759,9 @@ A line of code</code></pre>
                 <input type="submit" class="btn" value="Send" />
               </div>
 
-              <div class="form-response is-error">Oops, there’s an issue in this form; please review the highlighted fields.</div>
+              <div class="form__response is-error">Oops, there’s an issue in this form; please review the highlighted fields.</div>
 
-              <div class="form-response is-success">Sent, thank you!</div>
+              <div class="form__response is-success">Sent, thank you!</div>
             </form>
 
           </div><!-- .demo__content -->
@@ -734,13 +774,13 @@ A line of code</code></pre>
   &lt;div class="form-control u-stack-label <span class="demo__highlight">is-error</span>"&gt;
     &lt;label for="name"&gt;Name&lt;/label&gt;
     &lt;input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" <span class="demo__highlight">required</span> /&gt;
-    <span class="demo__highlight">&lt;div class="input-response"&gt;This field is required.&lt;/div&gt;</span>
+    <span class="demo__highlight">&lt;div class="form-control__response"&gt;This field is required.&lt;/div&gt;</span>
   &lt;/div&gt;
 
   &lt;div class="form-control u-stack-label <span class="demo__highlight">is-success</span>"&gt;
     &lt;label for="email-address"&gt;Email Address&lt;/label&gt;
     &lt;input type="email" name="email-address" id="email-address" class="u-text-input" placeholder="ex. you@domain.com" <span class="demo__highlight">required</span> /&gt;
-    <span class="demo__highlight">&lt;div class="input-response"&gt;Awesome!&lt;/div&gt;</span>
+    <span class="demo__highlight">&lt;div class="form-control__response"&gt;Awesome!&lt;/div&gt;</span>
   &lt;/div&gt;
 
   &lt;div class="form-control u-stack-label"&gt;
@@ -795,9 +835,9 @@ A line of code</code></pre>
     &lt;input type="submit" class="btn" value="Send" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-response is-error"&gt;Oops, there’s an issue in this form; please review the highlighted fields.&lt;/div&gt;
+  <span class="demo__highlight">&lt;div class="form__response is-error"&gt;Oops, there’s an issue in this form; please review the highlighted fields.&lt;/div&gt;
 
-  &lt;div class="form-response is-success"&gt;Sent, thank you!&lt;/div&gt;
+  &lt;div class="form__response is-success"&gt;Sent, thank you!&lt;/div&gt;</span>
 
 &lt;/form&gt;</code></pre>
       </div><!-- .demo__code -->
@@ -1121,6 +1161,8 @@ A line of code</code></pre>
 &lt;/div&gt;</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
+
+    <script src="/lib/js/global.min.js"></script>
 
     <!-- This script is *only* for this demo page and its simple UI. It has no
     effect on the demos themselves and it should *not* be included in the

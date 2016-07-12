@@ -1,0 +1,146 @@
+.header {
+  background-color: #888;
+  padding: 15px;
+  position: relative;
+
+  &__id {
+    text-align: center;
+  }
+
+  &__open-nav,
+  &__close-nav {
+    background-color: transparent;
+    border: none;
+    line-height: 1;
+    padding: 0;
+    position: absolute;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__open-nav {
+    right: 15px;
+    top: 8px;
+  }
+
+  &__close-nav {
+    font-size: 2.5em;
+    right: 21px;
+    top: 2px;
+  }
+
+  &__nav-wrap {
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    width: 80%;
+    z-index: 1;
+
+    &.is-visible {
+      box-shadow: -10px 0 50px rgba(0,0,0,.25);
+      transform: none;
+    }
+  }
+
+  &__nav-links {
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+
+    a {
+      color: $color-text;
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(0,0,0,0.1);
+      }
+    }
+
+    ul {
+      a {
+        padding-left: 20px;
+      }
+
+      ul {
+        a {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  @include mq-min-width($bp-small) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__open-nav,
+    &__close-nav {
+      display: none;
+      visibility: hidden;
+    }
+
+    &__nav-wrap {
+      background-color: transparent;
+      height: auto;
+      padding: 0;
+      position: static;
+      right: auto;
+      top: auto;
+      transition: none;
+      transform: none;
+      width: auto;
+      z-index: auto;
+    }
+
+
+    &__nav-links {
+      display: flex;
+      bottom: auto;
+      overflow: visible;
+      padding: 0;
+      position: static;
+      top: auto;
+      width: auto;
+
+
+      > li + li {
+        margin-left: 1em;
+      }
+
+      > li > ul,
+      > li > ol {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
