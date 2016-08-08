@@ -1,12 +1,12 @@
 var nav = {
 
-  swapWidth   : 600,
-  isVisible   : false,
-  wrapEl      : null,
-  allDesc     : null,
-  openBtn     : null,
-  closeBtn    : null,
-  vpWidth     : null,
+  swapWidth : 600,
+  isVisible : false,
+  wrapEl    : null,
+  allDesc   : null,
+  openBtn   : null,
+  closeBtn  : null,
+  vpWidth   : null,
 
   initialize: function() {
     nav.selectNodes();
