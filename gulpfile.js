@@ -52,7 +52,7 @@ var jsCompiled  = 'html/lib/js/';
 var jsWatch     = '_js/**/*.js';
 var jsFeatures  = '_js/features/';
 var jsGlobal    = ['_js/global/vendor/**/*.js', '_js/global/**/*.js'];
-var jsLint      = ['_js/**/*.js', '!_js/**/*vendor*'];
+var jsLint      = ['_js/**/*.js', '!_js/**/*vendor*/*.js'];
 var templates   = [
       /* Basics: */ 'html/**/*.+(html|css|php)',
       /*     EE: */ '+(snippets|templates)/default_site/**/*.html',
@@ -138,7 +138,7 @@ gulp.task('js-lint', function() {
         'jquery':true,
         'modernizr':true
       },
-      envs: ['browser']
+      envs: ['browser', 'jquery']
     }))
     .pipe(esLint.format());
 });
