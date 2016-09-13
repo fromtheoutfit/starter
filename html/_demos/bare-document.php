@@ -44,7 +44,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="application-name" content="TODO: update this with a short application name" />
     <meta name="apple-mobile-web-app-title" content="TODO: update this with a short application name" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="msapplication-TileColor" content="#3372DF" /><!-- TODO: update this hex value -->
     <meta name="theme-color" content="#3372DF" /><!-- TODO: update this hex value -->
 
