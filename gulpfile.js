@@ -138,7 +138,7 @@ gulp.task('js-lint', function() {
         'jquery':true,
         'modernizr':true
       },
-      envs: ['browser']
+      envs: ['browser', 'jquery']
     }))
     .pipe(esLint.format());
 });
