@@ -1,0 +1,151 @@
+// ============================================================================
+// Layout widths.
+//
+// <div data-layout="module">
+//   <div data-layout="module__item" data-layout-width="one-whole l-one-half"> ... </div>
+//   <div data-layout="module__item" data-layout-width="one-whole l-one-half"> ... </div>
+//   <div data-layout="module__item" data-layout-width="one-whole"> ... </div>
+// </div>
+//
+// For example:
+//  - one-whole      = By default, width will be one-whole.
+//  - s-one-half     = At the small breakpoint, width will be one-half.
+//  - m-three-fifths = At the medium breakpoint, width will be three-fifths.
+//  - h-one-quarter  = At the huge breakpoint, width will be one-quarter.
+// ============================================================================
+
+
+// Reset flex declaration so we can control item widths:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[data-layout-width] {flex:none;}
+
+
+// Default ("mobile first") rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[data-layout-width~="one-whole"],
+[data-layout-width~="two-halves"],
+[data-layout-width~="three-thirds"],
+[data-layout-width~="four-quarters"],
+[data-layout-width~="five-fifths"]    {width:100%;}
+[data-layout-width~="one-half"],
+[data-layout-width~="two-quarters"]   {width:50%;}
+[data-layout-width~="one-third"]      {width:33.3333333333%;}
+[data-layout-width~="two-thirds"]     {width:66.6666666667%;}
+[data-layout-width~="one-quarter"]    {width:25%;}
+[data-layout-width~="three-quarters"] {width:75%;}
+[data-layout-width~="one-fifth"]      {width:20%;}
+[data-layout-width~="two-fifths"]     {width:40%;}
+[data-layout-width~="three-fifths"]   {width:60%;}
+[data-layout-width~="four-fifths"]    {width:80%;}
+
+
+// Small breakpoint rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@include mq-min-width($bp-small) {
+  [data-layout-width~="s-one-whole"],
+  [data-layout-width~="s-two-halves"],
+  [data-layout-width~="s-three-thirds"],
+  [data-layout-width~="s-four-quarters"],
+  [data-layout-width~="s-five-fifths"]    {width:100%;}
+  [data-layout-width~="s-one-half"],
+  [data-layout-width~="s-two-quarters"]   {width:50%;}
+  [data-layout-width~="s-one-third"]      {width:33.3333333333%;}
+  [data-layout-width~="s-two-thirds"]     {width:66.6666666667%;}
+  [data-layout-width~="s-one-quarter"]    {width:25%;}
+  [data-layout-width~="s-three-quarters"] {width:75%;}
+  [data-layout-width~="s-one-fifth"]      {width:20%;}
+  [data-layout-width~="s-two-fifths"]     {width:40%;}
+  [data-layout-width~="s-three-fifths"]   {width:60%;}
+  [data-layout-width~="s-four-fifths"]    {width:80%;}
+}
+
+
+// Compact breakpoint rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@include mq-min-width($bp-compact) {
+  [data-layout-width~="c-one-whole"],
+  [data-layout-width~="c-two-halves"],
+  [data-layout-width~="c-three-thirds"],
+  [data-layout-width~="c-four-quarters"],
+  [data-layout-width~="c-five-fifths"]    {width:100%;}
+  [data-layout-width~="c-one-half"],
+  [data-layout-width~="c-two-quarters"]   {width:50%;}
+  [data-layout-width~="c-one-third"]      {width:33.3333333333%;}
+  [data-layout-width~="c-two-thirds"]     {width:66.6666666667%;}
+  [data-layout-width~="c-one-quarter"]    {width:25%;}
+  [data-layout-width~="c-three-quarters"] {width:75%;}
+  [data-layout-width~="c-one-fifth"]      {width:20%;}
+  [data-layout-width~="c-two-fifths"]     {width:40%;}
+  [data-layout-width~="c-three-fifths"]   {width:60%;}
+  [data-layout-width~="c-four-fifths"]    {width:80%;}
+}
+
+
+// Medium breakpoint rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@include mq-min-width($bp-medium) {
+  [data-layout-width~="m-one-whole"],
+  [data-layout-width~="m-two-halves"],
+  [data-layout-width~="m-three-thirds"],
+  [data-layout-width~="m-four-quarters"],
+  [data-layout-width~="m-five-fifths"]    {width:100%;}
+  [data-layout-width~="m-one-half"],
+  [data-layout-width~="m-two-quarters"]   {width:50%;}
+  [data-layout-width~="m-one-third"]      {width:33.3333333333%;}
+  [data-layout-width~="m-two-thirds"]     {width:66.6666666667%;}
+  [data-layout-width~="m-one-quarter"]    {width:25%;}
+  [data-layout-width~="m-three-quarters"] {width:75%;}
+  [data-layout-width~="m-one-fifth"]      {width:20%;}
+  [data-layout-width~="m-two-fifths"]     {width:40%;}
+  [data-layout-width~="m-three-fifths"]   {width:60%;}
+  [data-layout-width~="m-four-fifths"]    {width:80%;}
+}
+
+
+// Large breakpoint rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@include mq-min-width($bp-large) {
+  [data-layout-width~="l-one-whole"],
+  [data-layout-width~="l-two-halves"],
+  [data-layout-width~="l-three-thirds"],
+  [data-layout-width~="l-four-quarters"],
+  [data-layout-width~="l-five-fifths"]    {width:100%;}
+  [data-layout-width~="l-one-half"],
+  [data-layout-width~="l-two-quarters"]   {width:50%;}
+  [data-layout-width~="l-one-third"]      {width:33.3333333333%;}
+  [data-layout-width~="l-two-thirds"]     {width:66.6666666667%;}
+  [data-layout-width~="l-one-quarter"]    {width:25%;}
+  [data-layout-width~="l-three-quarters"] {width:75%;}
+  [data-layout-width~="l-one-fifth"]      {width:20%;}
+  [data-layout-width~="l-two-fifths"]     {width:40%;}
+  [data-layout-width~="l-three-fifths"]   {width:60%;}
+  [data-layout-width~="l-four-fifths"]    {width:80%;}
+}
+
+
+// Huge breakpoint rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@include mq-min-width($bp-huge) {
+  [data-layout-width~="h-one-whole"],
+  [data-layout-width~="h-two-halves"],
+  [data-layout-width~="h-three-thirds"],
+  [data-layout-width~="h-four-quarters"],
+  [data-layout-width~="h-five-fifths"]    {width:100%;}
+  [data-layout-width~="h-one-half"],
+  [data-layout-width~="h-two-quarters"]   {width:50%;}
+  [data-layout-width~="h-one-third"]      {width:33.3333333333%;}
+  [data-layout-width~="h-two-thirds"]     {width:66.6666666667%;}
+  [data-layout-width~="h-one-quarter"]    {width:25%;}
+  [data-layout-width~="h-three-quarters"] {width:75%;}
+  [data-layout-width~="h-one-fifth"]      {width:20%;}
+  [data-layout-width~="h-two-fifths"]     {width:40%;}
+  [data-layout-width~="h-three-fifths"]   {width:60%;}
+  [data-layout-width~="h-four-fifths"]    {width:80%;}
+}

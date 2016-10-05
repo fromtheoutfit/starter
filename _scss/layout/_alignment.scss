@@ -1,0 +1,27 @@
+// ============================================================================
+// Layout alignment.
+//
+// <div data-layout="module" data-layout-align="h-center v-bottom">
+//   <div data-layout="module__item"> ... </div>
+//   <div data-layout="module__item"> ... </div>
+//   <div data-layout="module__item"> ... </div>
+// </div
+// ============================================================================
+
+
+// Horizontal alignment of items:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[data-layout-align~="h-left"]          {justify-content:flex-start;}
+[data-layout-align~="h-center"]        {justify-content:center;}
+[data-layout-align~="h-right"]         {justify-content:flex-end;}
+[data-layout-align~="h-space-around"]  {justify-content:space-around;}
+[data-layout-align~="h-space-between"] {justify-content:space-between;}
+
+
+// Vertical alignment items:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+[data-layout-align~="v-top"]           {align-items:flex-start;}
+[data-layout-align~="v-center"]        {align-items:center;}
+[data-layout-align~="v-bottom"]        {align-items:flex-end;}
