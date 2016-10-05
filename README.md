@@ -1,7 +1,8 @@
 # Branches
 
 * **core:** a great, *but bare*, starter package that's useful for super-custom web things.
-* **core+modules:** all of the above, *plus* pre-defined modules, a grid layout, etc., that's useful for average marketing websites.
+* **core+layout:** all of the above, *plus* a grid layout.
+* **core+layout+modules:** all of the above, *plus* pre-defined modules.
 
 # Getting Started
 
