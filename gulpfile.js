@@ -171,20 +171,20 @@ gulp.task('js-compile-features', function() {
 // ----------------------------------------------------------------------------
 gulp.task('js-lint', function() {
   return gulp.src(jsSrcLint)
-    .pipe(plugin.esLint({
+    .pipe(plugin.eslint({
       extends: 'eslint:recommended',
       rules: {
         'curly':'warn',
         'eqeqeq':'warn',
         'no-console':'off'
       },
-      globals: {
-        'jquery':true,
-        'modernizr':true
-      },
+      globals: [
+        'jquery',
+        'modernizr'
+      ],
       envs: ['browser', 'jquery']
     }))
-    .pipe(plugin.esLint.format());
+    .pipe(plugin.eslint.format());
 });
 
 
