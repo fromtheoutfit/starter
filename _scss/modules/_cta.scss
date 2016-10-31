@@ -1,6 +1,19 @@
 $cta-object-margin: 1em;
 
 .cta {
+  @include mq-min-width($bp-compact) {
+    align-items: center;
+    display: flex;
+  }
+
+  &__content {
+    @include mq-min-width($bp-compact) {
+      flex: none;
+      padding-right: $cta-object-margin;
+      width: 75%;
+    }
+  }
+
   &__title {
     font-size: 200%;
     font-weight: bold;
@@ -43,19 +56,8 @@ $cta-object-margin: 1em;
 
   &__action {
     margin-top: $cta-object-margin;
-  }
 
-  @include mq-min-width($bp-compact) {
-    align-items: center;
-    display: flex;
-
-    &__content {
-      flex: none;
-      padding-right: $cta-object-margin;
-      width: 75%;
-    }
-
-    &__action {
+    @include mq-min-width($bp-compact) {
       flex: none;
       margin-top: 0;
       padding-left: $cta-object-margin;

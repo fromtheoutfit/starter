@@ -24,16 +24,22 @@ $intro-object-margin: 1em;
 .u-inline-subtitle {
   @include mq-min-width($bp-compact) {
     display: flex;
+  }
 
-    > * {
+  > * {
+    @include mq-min-width($bp-compact) {
       flex: 1;
     }
+  }
 
-    .intro__title {
+  .intro__title {
+    @include mq-min-width($bp-compact) {
       padding-right: $intro-object-margin;
     }
+  }
 
-    .intro__subtitle {
+  .intro__subtitle {
+    @include mq-min-width($bp-compact) {
       padding-left: $intro-object-margin;
       text-align: right;
     }

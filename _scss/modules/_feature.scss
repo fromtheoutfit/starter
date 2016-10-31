@@ -1,19 +1,68 @@
 $feature-object-margin: 1em;
 
 .feature {
+  @include mq-min-width($bp-small) {
+    position: relative;
+  }
+
   &__content {
     padding: ($feature-object-margin * 2) ($feature-object-margin * 1.5);
+
+    @include mq-min-width($bp-small) {
+      max-height: 100%;
+      overflow: auto;
+      position: absolute;
+      top: 50%;
+      width: 60%;
+    }
+
+    // Alignment.
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    &.u-align-left,
+    &.u-align-right {
+      @include mq-min-width($bp-small) {
+        transform: translateY(-50%);
+      }
+    }
+
+    &.u-align-left {
+      @include mq-min-width($bp-small) {
+        left: 0;
+      }
+    }
+
+    &.u-align-center {
+      @include mq-min-width($bp-small) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &.u-align-right {
+      @include mq-min-width($bp-small) {
+        right: 0;
+      }
+    }
   }
 
   &__title {
     font-size: 150%;
     font-weight: bold;
+
+    @include mq-min-width($bp-small) {
+      font-size: 200%;
+    }
   }
 
   &__body {
     font-size: 125%;
     line-height: $line-height;
     margin-top: ($feature-object-margin * 0.5);
+
+    @include mq-min-width($bp-small) {
+      font-size: 150%;
+    }
 
     p, ul, ol, dl, pre {
       &:not(:first-child) {
@@ -64,47 +113,6 @@ $feature-object-margin: 1em;
     .feature__title,
     .feature__body {
       color: #000;
-    }
-  }
-
-  @include mq-min-width($bp-small) {
-    position: relative;
-
-    &__content {
-      max-height: 100%;
-      overflow: auto;
-      position: absolute;
-      top: 50%;
-      width: 60%;
-
-      // Alignment.
-      // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-      &.u-align-left,
-      &.u-align-right {
-        transform: translateY(-50%);
-      }
-
-      &.u-align-left {
-        left: 0;
-      }
-
-      &.u-align-center {
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &.u-align-right {
-        right: 0;
-      }
-    }
-
-    &__title {
-      font-size: 200%;
-    }
-
-    &__body {
-      font-size: 150%;
     }
   }
 }
