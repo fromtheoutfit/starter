@@ -20,9 +20,6 @@
   <body>
 
 
-    <?php // include $_SERVER['DOCUMENT_ROOT'].'/mod/header.php'; ?>
-
-
     <nav class="demos-nav" id="demos-nav">
       <h1>Layout Demos</h1>
       <a href="#demo-1">Unadorned</a>

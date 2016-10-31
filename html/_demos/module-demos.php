@@ -21,7 +21,7 @@
 
 
     <nav class="demos-nav" id="demos-nav">
-      <h1>Layout Demos</h1>
+      <h1>Module Demos</h1>
       <a href="#demo-0">Intro</a>
       <a href="#demo-1">Copy Block</a>
       <a href="#demo-2">Table</a>
