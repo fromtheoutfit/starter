@@ -1,9 +1,15 @@
+$color-input-bg: #fff;
+$color-input-border: lighten($color-text, 50%);
+$input-border-radius: 0;
+$input-padding: 10px;
 $label-margin: 0.3em;
 $line-height: 1.4;
+$select-arrow-size: 5px;
 
 
 input, select, textarea {
   &:disabled {
+    background-color: #f6f6f6 !important; // !important overrides color(s) set farther down.
     cursor: not-allowed;
   }
 }
@@ -51,7 +57,8 @@ input, select, textarea {
     color: $color-error;
   }
 
-  .u-text-input {
+  .u-text-input,
+  .u-select-input select {
     border-color: $color-error;
   }
 }
@@ -65,7 +72,8 @@ input, select, textarea {
     color: $color-success;
   }
 
-  .u-text-input {
+  .u-text-input,
+  .u-select-input select {
     border-color: $color-success;
   }
 }
@@ -79,7 +87,7 @@ input, select, textarea {
 // Stack each form-control's label.
 .u-stack-label {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
 
   label {
     margin-bottom: $label-margin;
@@ -87,7 +95,7 @@ input, select, textarea {
 }
 
 
-// Form-controls that are inside of a control-group are inline.
+// Form-controls that are inside of a control-group can be inline.
 .u-inline-controls {
   display: flex;
 
@@ -105,13 +113,46 @@ input, select, textarea {
 }
 
 
-// Styles for inputs that have the same "text input"-type appearance.
-.u-text-input {
-  border: 1px solid lighten($color-text, 50%);
-  padding: 10px;
+// Improve/unify the appearance of text and select inputs.
+.u-text-input,
+.u-select-input select {
+  background-color: $color-input-bg;
+  border: 1px solid $color-input-border;
+  border-radius: $input-border-radius;
+  padding: $input-padding;
+}
 
-  &:disabled {
-    background-color: #f6f6f6;
-    border-color: lighten($color-text, 75%);
+.u-select-input {
+  display: inline-block;
+  position: relative;
+
+  select {
+    appearance: none;
+    display: inline-block;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+
+    // Remove Firefox's inner focus ring:
+    &:focus:-moz-focusring {color:transparent; text-shadow:0 0 0 $color-text;}
+
+    // Hide the arrow in IE10+:
+    &::-ms-expand {display:none;}
+  }
+
+  &::after {
+    border-bottom: $select-arrow-size solid transparent;
+    border-left: $select-arrow-size solid transparent;
+    border-right: $select-arrow-size solid transparent;
+    border-top: $select-arrow-size solid $color-input-border;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin-top: -($select-arrow-size / 2);
+    pointer-events: none;
+    position: absolute;
+    right: $input-padding;
+    top: 50%;
+    width: 0;
   }
 }

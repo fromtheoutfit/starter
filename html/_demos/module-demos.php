@@ -437,20 +437,22 @@ A line of code</code></pre>
 
               <div class="form-control u-stack-label">
                 <label for="input-14">Select</label>
-                <select name="input-14" id="input-14">
-                  <optgroup label="Group 1">
-                    <option value="G101">Group 1: Option 1</option>
-                    <option value="G102">Group 1: Option 2</option>
-                    <option value="G103">Group 1: Option 3</option>
-                    <option value="G104">Group 1: Option 4</option>
-                    <option value="G105">Group 1: Option 5</option>
-                  </optgroup>
-                  <option value="01">No Group: Option 1</option>
-                  <option value="02">No Group: Option 2</option>
-                  <option value="03">No Group: Option 3</option>
-                  <option value="04">No Group: Option 4</option>
-                  <option value="05">No Group: Option 5</option>
-                </select>
+                <div class="u-select-input">
+                  <select name="input-14" id="input-14">
+                    <optgroup label="Group 1">
+                      <option value="G101">Group 1: Option 1</option>
+                      <option value="G102">Group 1: Option 2</option>
+                      <option value="G103">Group 1: Option 3</option>
+                      <option value="G104">Group 1: Option 4</option>
+                      <option value="G105">Group 1: Option 5</option>
+                    </optgroup>
+                    <option value="01">No Group: Option 1</option>
+                    <option value="02">No Group: Option 2</option>
+                    <option value="03">No Group: Option 3</option>
+                    <option value="04">No Group: Option 4</option>
+                    <option value="05">No Group: Option 5</option>
+                  </select>
+                </div>
               </div>
 
               <div class="form-control u-stack-label">
@@ -598,20 +600,22 @@ A line of code</code></pre>
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
     &lt;label for="..."&gt;...&lt;/label&gt;
-    &lt;select name="..." id="..."&gt;
-      &lt;optgroup label="Group 1"&gt;
+    &lt;div class="u-select-input"&gt;
+      &lt;select name="..." id="..."&gt;
+        &lt;optgroup label="Group 1"&gt;
+          &lt;option value="..."&gt;...&lt;/option&gt;
+          &lt;option value="..."&gt;...&lt;/option&gt;
+          &lt;option value="..."&gt;...&lt;/option&gt;
+          &lt;option value="..."&gt;...&lt;/option&gt;
+          &lt;option value="..."&gt;...&lt;/option&gt;
+        &lt;/optgroup&gt;
         &lt;option value="..."&gt;...&lt;/option&gt;
         &lt;option value="..."&gt;...&lt;/option&gt;
         &lt;option value="..."&gt;...&lt;/option&gt;
         &lt;option value="..."&gt;...&lt;/option&gt;
         &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;/optgroup&gt;
-      &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;option value="..."&gt;...&lt;/option&gt;
-    &lt;/select&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class="<span class="demo__highlight">form-control u-stack-label</span>"&gt;
@@ -714,14 +718,16 @@ A line of code</code></pre>
 
               <div class="form-control u-stack-label">
                 <label for="subject">Subject</label>
-                <select name="subject" id="subject">
-                  <option selected disabled>Please choose:</option>
-                  <option value="Invoices">Invoices</option>
-                  <option value="Address Change">Address Change</option>
-                  <option value="Disputes">Disputes</option>
-                  <option value="Customer Service">Customer Service</option>
-                  <option value="Other">Other</option>
-                </select>
+                <div class="u-select-input">
+                  <select name="subject" id="subject">
+                    <option selected disabled>Please choose:</option>
+                    <option value="Invoices">Invoices</option>
+                    <option value="Address Change">Address Change</option>
+                    <option value="Disputes">Disputes</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
               </div>
 
               <div class="form-control u-stack-label">
@@ -790,14 +796,16 @@ A line of code</code></pre>
 
   &lt;div class="form-control u-stack-label"&gt;
     &lt;label for="subject"&gt;Subject&lt;/label&gt;
-    &lt;select name="subject" id="subject"&gt;
-      &lt;option selected disabled&gt;Please choose:&lt;/option&gt;
-      &lt;option value="Invoices"&gt;Invoices&lt;/option&gt;
-      &lt;option value="Address Change"&gt;Address Change&lt;/option&gt;
-      &lt;option value="Disputes"&gt;Disputes&lt;/option&gt;
-      &lt;option value="Customer Service"&gt;Customer Service&lt;/option&gt;
-      &lt;option value="Other"&gt;Other&lt;/option&gt;
-    &lt;/select&gt;
+    &lt;div class="u-select-input"&gt;
+      &lt;select name="subject" id="subject"&gt;
+        &lt;option selected disabled&gt;Please choose:&lt;/option&gt;
+        &lt;option value="Invoices"&gt;Invoices&lt;/option&gt;
+        &lt;option value="Address Change"&gt;Address Change&lt;/option&gt;
+        &lt;option value="Disputes"&gt;Disputes&lt;/option&gt;
+        &lt;option value="Customer Service"&gt;Customer Service&lt;/option&gt;
+        &lt;option value="Other"&gt;Other&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;div class="form-control u-stack-label"&gt;
