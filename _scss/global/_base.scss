@@ -52,6 +52,21 @@ fieldset {
 // ============================================================================
 
 
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-link-visited;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+  }
+}
+
+
 figure {
   margin: 0;
 }
