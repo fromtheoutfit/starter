@@ -52,6 +52,21 @@ fieldset {
 // ============================================================================
 
 
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-link-visited;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+  }
+}
+
+
 figure {
   margin: 0;
 }
@@ -81,4 +96,9 @@ iframe {
 
 .btn-large {
   @include btn($size:'large');
+}
+
+
+.btn-strip {
+  @include btn-strip();
 }
