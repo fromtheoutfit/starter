@@ -18,11 +18,11 @@
 
   @if $size == small {
     font-size: ($font-size * 0.8);
-    padding: (8em/16) (12em/16);
+    padding: (8rem/16) (12rem/16);
   }
   @else if $size == large {
     font-size: ($font-size * 1.2);
-    padding: (12em/16) (16em/16);
+    padding: (12rem/16) (16rem/16);
   }
   @else {
     font-size: $font-size;
