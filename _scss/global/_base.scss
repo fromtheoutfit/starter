@@ -82,3 +82,8 @@ iframe {
 .btn-large {
   @include btn($size:'large');
 }
+
+
+.btn-strip {
+  @include btn-strip();
+}

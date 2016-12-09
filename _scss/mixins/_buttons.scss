@@ -69,10 +69,23 @@
 
   &:active {
     transform: translateY(1px);
+@mixin btn-strip() {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: $color-link;
+  padding: 0;
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    cursor: pointer;
+    outline: none;
   }
 
   &:disabled {
-    background-color: #999;
+    color: #999;
     cursor: not-allowed;
   }
 }
