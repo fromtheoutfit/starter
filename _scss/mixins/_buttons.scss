@@ -1,34 +1,9 @@
-// ============================================================================
-// The button mixin has numerous parameters, each with a sensible default.
-// Here's are each parameter's variable name, meaning, and default value:
-//
-// Parameter          Meaning                        Default
-// ----------------------------------------------------------------------------
-// $bg-color          bg color                       value of $color-link
-// $border-radius     border-radius                  5px
-// $color             text color                     #fff
-// $hf-bg-color       hover & focus bg color         desaturate($bg-color, 75%)
-// $hf-color          hover & focus text color       white
-// $font-size         font-size                      $font-size
-// $size              set the button size            '' [empty/default]
-// ============================================================================
-// Example usage, keeping the default values:
-// .log-in a {
-//   @include btn;
-// }
-//
-// Example usage, adjusting some of the default values:
-// .log-in a {
-//   @include btn($size:large, $bg-color:#f90, $hf-bg-color:#c90)
-// }
-// ============================================================================
-
 @mixin btn (
   $bg-color: $color-link,
   $border-radius: 5px,
   $color: #fff,
   $hf-bg-color: darken($bg-color, 25%),
-  $hf-color: white,
+  $hf-color: #fff,
   $font-size: (14rem/16),
   $size:''
 ) {
@@ -67,12 +42,30 @@
     outline: none;
   }
 
-  &:active {
-    transform: translateY(1px);
+  &:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+}
+
+
+@mixin btn-strip() {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: $color-link;
+  padding: 0;
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    cursor: pointer;
+    outline: none;
   }
 
   &:disabled {
-    background-color: #999;
+    color: #999;
     cursor: not-allowed;
   }
 }

@@ -54,29 +54,3 @@
 .clearfix:after {
   clear: both;
 }
-
-
-// Strip button element of all button-like styles, making it look like a basic
-// anchor element.
-
-.strip-btn {
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  color: $color-link;
-  padding: 0;
-  text-align: left;
-  text-decoration: underline;
-
-  &:hover,
-  &:focus {
-    color: $color-link-hover;
-    cursor: pointer;
-    outline: none;
-  }
-
-  &:disabled {
-    color: #999;
-    cursor: not-allowed;
-  }
-}

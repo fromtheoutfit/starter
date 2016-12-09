@@ -60,6 +60,21 @@ h1, h2, h3, h4, h5, h6 {font-weight:inherit;}
 ul, ol {list-style-type:none;}
 
 
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-link-visited;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+  }
+}
+
+
 img, video {
   height: auto;
   max-width: 100%;
@@ -84,4 +99,9 @@ iframe {
 
 .btn-large {
   @include btn($size:'large');
+}
+
+
+.btn-strip {
+  @include btn-strip();
 }
