@@ -9,7 +9,7 @@ $select-arrow-size: 5px;
 
 input, select, textarea {
   &:disabled {
-    background-color: #f6f6f6 !important; // !important overrides color(s) set farther down.
+    background-color: #f6f6f6 !important; // !important overrides color(s) set below.
     cursor: not-allowed;
   }
 }
@@ -39,8 +39,13 @@ input, select, textarea {
 
 
 .form-control__response {
+  margin-top: 0;
   padding-top: $label-margin;
   line-height: $line-height;
+
+  .control-group.u-stack-label & {
+    flex-basis: 100%;
+  }
 }
 
 
@@ -84,13 +89,25 @@ input, select, textarea {
 // ============================================================================
 
 
-// Stack each form-control's label.
+// Stack labels.
 .u-stack-label {
-  display: flex;
-  flex-direction: column;
+  &.form-control {
+    display: flex;
+    flex-direction: column;
 
-  label {
-    margin-bottom: $label-margin;
+    label {
+      margin-bottom: $label-margin;
+    }
+  }
+
+  &.control-group {
+    flex-wrap: wrap;
+
+    .control-group__label {
+      flex-basis: 100%;
+      margin-bottom: $label-margin;
+      margin-right: 0;
+    }
   }
 }
 
@@ -104,11 +121,22 @@ input, select, textarea {
   }
 
   .control-group__label {
+    align-self: center;
     margin-bottom: 0;
   }
 
   .form-control {
     line-height: inherit;
+  }
+
+  &--stretch {
+    .form-control {
+      flex: auto;
+
+      > * {
+        width: 100%;
+      }
+    }
   }
 }
 

@@ -26,10 +26,11 @@
       <a href="#demo-1">Copy Block</a>
       <a href="#demo-2">Table</a>
       <a href="#demo-3">Form: Control Types</a>
-      <a href="#demo-4">Form: Example</a>
-      <a href="#demo-5">Mixed Media</a>
-      <a href="#demo-6">Call to Action</a>
-      <a href="#demo-7">Feature</a>
+      <a href="#demo-4">Form: Layout Options</a>
+      <a href="#demo-5">Form: Example</a>
+      <a href="#demo-6">Mixed Media</a>
+      <a href="#demo-7">Call to Action</a>
+      <a href="#demo-8">Feature</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
 
@@ -690,6 +691,281 @@ A line of code</code></pre>
     </div><!-- .demo -->
 
     <div class="demo" id="demo-4">
+      <h2>Form: Layout Options</h2>
+
+      <p>The various ways a group of form controls can be laid out.</p>
+
+      <div data-layout="module" data-layout-options="gutters">
+        <div data-layout="module__item">
+          <div class="demo__content">
+
+            <form>
+              <div class="control-group">
+                <div class="control-group__label">Group Label</div>
+                <div class="form-control">
+                  <input type="radio" name="options-1" value="option-1" id="options-1-option-1" />
+                  <label for="options-1-option-1">Option</label>
+                </div>
+                <div class="form-control">
+                  <input type="radio" name="options-1" value="option-2" id="options-1-option-2" />
+                  <label for="options-1-option-2">Option</label>
+                </div>
+                <div class="form-control">
+                  <input type="radio" name="options-1" value="option-3" id="options-1-option-3" />
+                  <label for="options-1-option-3">Option</label>
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls">
+                <div class="control-group__label">Group Label</div>
+                <div class="form-control">
+                  <input type="radio" name="options-2" value="option-1" id="options-2-option-1" />
+                  <label for="options-2-option-1">Option</label>
+                </div>
+                <div class="form-control">
+                  <input type="radio" name="options-2" value="option-2" id="options-2-option-2" />
+                  <label for="options-2-option-2">Option</label>
+                </div>
+                <div class="form-control">
+                  <input type="radio" name="options-2" value="option-3" id="options-2-option-3" />
+                  <label for="options-2-option-3">Option</label>
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls">
+                <div class="control-group__label">Group Label</div>
+                <div class="form-control">
+                  <label for="grouped-input-1" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-1" id="grouped-input-1" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-2" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-2" id="grouped-input-2" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-3" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-3" id="grouped-input-3" class="u-text-input" placeholder="Placeholder" />
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls u-inline-controls--stretch">
+                <div class="control-group__label">Group Label</div>
+                <div class="form-control">
+                  <label for="grouped-input-4" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-4" id="grouped-input-4" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-5" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-5" id="grouped-input-5" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-6" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-6" id="grouped-input-6" class="u-text-input" placeholder="Placeholder" />
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls u-stack-label">
+                <div class="control-group__label">Group Label</div>
+                <div class="form-control">
+                  <label for="grouped-input-7" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-7" id="grouped-input-7" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-8" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-8" id="grouped-input-8" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-9" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-9" id="grouped-input-9" class="u-text-input" placeholder="Placeholder" />
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls u-inline-controls--stretch u-stack-label">
+                <div class="control-group__label">Group Label</div>
+                <div class="form-control">
+                  <label for="grouped-input-10" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-10" id="grouped-input-10" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-11" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-11" id="grouped-input-11" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control">
+                  <label for="grouped-input-12" class="visuallyhidden">Input Label</label>
+                  <input type="text" name="grouped-input-12" id="grouped-input-12" class="u-text-input" placeholder="Placeholder" />
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls">
+                <div class="form-control u-stack-label">
+                  <label for="grouped-input-13">Input Label</label>
+                  <input type="text" name="grouped-input-13" id="grouped-input-13" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control u-stack-label">
+                  <label for="grouped-input-14">Input Label</label>
+                  <input type="text" name="grouped-input-14" id="grouped-input-14" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control u-stack-label">
+                  <label for="grouped-input-15">Input Label</label>
+                  <input type="text" name="grouped-input-15" id="grouped-input-15" class="u-text-input" placeholder="Placeholder" />
+                </div>
+              </div>
+
+              <div class="control-group u-inline-controls u-inline-controls--stretch">
+                <div class="form-control u-stack-label">
+                  <label for="grouped-input-16">Input Label</label>
+                  <input type="text" name="grouped-input-16" id="grouped-input-16" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control u-stack-label">
+                  <label for="grouped-input-17">Input Label</label>
+                  <input type="text" name="grouped-input-17" id="grouped-input-17" class="u-text-input" placeholder="Placeholder" />
+                </div>
+                <div class="form-control u-stack-label">
+                  <label for="grouped-input-18">Input Label</label>
+                  <input type="text" name="grouped-input-18" id="grouped-input-18" class="u-text-input" placeholder="Placeholder" />
+                </div>
+              </div>
+
+            </form>
+
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+      </div><!-- module -->
+
+      <div class="demo__code">
+        <pre><code>&lt;form&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group</span>"&gt;
+    <span class="demo__highlight">&lt;div class="control-group__label"&gt;...&lt;/div&gt;</span>
+    &lt;div class="form-control"&gt;
+      &lt;input type="radio" name="..." value="..." id="..." /&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;input type="radio" name="..." value="..." id="..." /&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;input type="radio" name="..." value="..." id="..." /&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls</span>"&gt;
+    <span class="demo__highlight">&lt;div class="control-group__label"&gt;...&lt;/div&gt;</span>
+    &lt;div class="form-control"&gt;
+      &lt;input type="radio" name="..." value="..." id="..." /&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;input type="radio" name="..." value="..." id="..." /&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;input type="radio" name="..." value="..." id="..." /&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls</span>"&gt;
+    <span class="demo__highlight">&lt;div class="control-group__label"&gt;...&lt;/div&gt;</span>
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls u-inline-controls--stretch</span>"&gt;
+    <span class="demo__highlight">&lt;div class="control-group__label"&gt;...&lt;/div&gt;</span>
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls u-stack-label</span>"&gt;
+    <span class="demo__highlight">&lt;div class="control-group__label"&gt;...&lt;/div&gt;</span>
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls u-inline-controls--stretch u-stack-label</span>"&gt;
+    <span class="demo__highlight">&lt;div class="control-group__label"&gt;...&lt;/div&gt;</span>
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control"&gt;
+      &lt;label for="..." class="<span class="demo__highlight">visuallyhidden</span>"&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls</span>"&gt;
+    &lt;div class="form-control <span class="demo__highlight">u-stack-label</span>"&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control <span class="demo__highlight">u-stack-label</span>"&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control <span class="demo__highlight">u-stack-label</span>"&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="<span class="demo__highlight">control-group u-inline-controls u-inline-controls--stretch</span>"&gt;
+    &lt;div class="form-control <span class="demo__highlight">u-stack-label</span>"&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control <span class="demo__highlight">u-stack-label</span>"&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+    &lt;div class="form-control <span class="demo__highlight">u-stack-label</span>"&gt;
+      &lt;label for="..."&gt;...&lt;/label&gt;
+      &lt;input type="text" name="..." id="..." class="u-text-input" placeholder="..." /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/form&gt;</code></pre>
+      </div><!-- .demo__code -->
+    </div><!-- .demo -->
+
+    <div class="demo" id="demo-5">
       <h2>Form: Example</h2>
 
       <p>A simple form using <em>some</em> of the above control types as well as common states such as, <em>error</em>, <em>success</em>, <code>disabled</code>, and <code>required</code>.</p>
@@ -738,8 +1014,8 @@ A line of code</code></pre>
               <div class="control-group">
                 <div class="control-group__label">Options</div>
                 <div class="form-control">
-                  <input type="radio" name="options" value="Fast" id="Fast" />
-                  <label for="Fast">Fast</label>
+                  <input type="radio" name="options" value="fast" id="fast" />
+                  <label for="fast">Fast</label>
                 </div>
                 <div class="form-control">
                   <input type="radio" name="options" value="cheap" id="cheap" />
@@ -851,7 +1127,7 @@ A line of code</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
-    <div class="demo" id="demo-5">
+    <div class="demo" id="demo-6">
       <h2>Mixed Media</h2>
 
       <p>Four examples showing <em>some</em> of the various ways you can mix the child elements of a Mixed Media module.</p>
@@ -1030,7 +1306,7 @@ A line of code</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
-    <div class="demo" id="demo-6">
+    <div class="demo" id="demo-7">
       <h2>Call to Action</h2>
 
       <p>A simple call to action module.</p>
@@ -1070,7 +1346,7 @@ A line of code</code></pre>
       </div><!-- .demo__code -->
     </div><!-- .demo -->
 
-    <div class="demo" id="demo-7">
+    <div class="demo" id="demo-8">
       <h2>Feature</h2>
 
       <p>The Feature module has three <em>content alignment</em> options and two <em>content background color</em> options.</p>
