@@ -69,14 +69,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module"&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -103,14 +95,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters"</span>&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -146,14 +130,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters equal-height-items"</span>&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -197,18 +173,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" data-layout-options="gutters equal-height-items"&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;
-&lt;div data-layout="module" data-layout-options="gutters equal-height-items"&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -271,20 +235,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters equal-height-items wrap-items"</span>&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -345,31 +295,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" data-layout-options="gutters"&gt;
-  &lt;div data-layout="module__item"&gt;
-    ...
-    &lt;div data-layout="module" data-layout-options="gutters"&gt;
-      &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-      &lt;div data-layout="module__item"&gt;
-        ...
-        &lt;div data-layout="module" data-layout-options="gutters"&gt;
-          &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-          &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
-    ...
-    &lt;div data-layout="module" data-layout-options="gutters"&gt;
-      &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-      &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -397,14 +322,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters"</span>&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-fifth"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -431,14 +348,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters"</span>&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-quarter"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-quarter"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -477,16 +386,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters wrap-items"</span>&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -539,16 +438,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters wrap-items" data-layout-align="h-center"</span>&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-third"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-      </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 
@@ -589,15 +478,6 @@
           </div><!-- .demo__content -->
         </div><!-- module__item -->
       </div><!-- module -->
-
-      <div class="demo__code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters wrap-items"</span>&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third c-one-half"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third c-one-half"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third c-one-half"</span>&gt; ... &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole c-one-half"</span>&gt; ... &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-    </div><!-- .demo__code -->
     </div><!-- .demo -->
 
 

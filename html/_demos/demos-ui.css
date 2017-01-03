@@ -176,21 +176,3 @@ Demos UI: Individual Demo
 .demo__highlight {
   color: tomato;
 }
-
-
-/* The code sample(s) found beneath each demo.
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-
-.demo__code {
-  background-color: #000;
-}
-
-
-.demo__code pre {
-  color: #fff;
-  line-height: 1.5;
-  margin: 0;
-  overflow: auto;
-  padding: 15px;
-}

@@ -1,16 +1,23 @@
-$color-input-bg: #fff;
-$color-input-border: lighten($color-text, 50%);
-$input-border-radius: 0;
-$input-padding: 10px;
-$label-margin: 0.3em;
-$line-height: 1.4;
-$select-arrow-size: 5px;
-
+$color-input-bg:          #fff;
+$color-input-border:      lighten($color-text, 50%);
+$input-border-radius:     0;
+$input-padding:           10px;
+$label-margin-stacked:    0.3em;
+$label-margin-inline:     1em;
+$control-margin-stacked:  0.3em;
+$control-margin-inline:   1em;
+$line-height:             1.4;
+$select-arrow-size:       5px;
 
 input, select, textarea {
   &:disabled {
     background-color: #f6f6f6 !important; // !important overrides color(s) set below.
     cursor: not-allowed;
+
+    + :not(.form__response) {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
   }
 }
 
@@ -23,63 +30,15 @@ input, select, textarea {
 
 .control-group {
   &__label {
-    margin-bottom: $label-margin;
+    margin-bottom: $label-margin-stacked;
   }
 
   .form-control {
-    line-height: $line-height;
     margin-top: 0;
-  }
-}
 
-
-// ============================================================================
-// Error and success states.
-// ============================================================================
-
-
-.form-control__response {
-  margin-top: 0;
-  padding-top: $label-margin;
-  line-height: $line-height;
-
-  .control-group.u-stack-label & {
-    flex-basis: 100%;
-  }
-}
-
-
-// .form__response {
-
-// }
-
-
-.is-error {
-  &:not(.control-group) label,
-  .control-group__label,
-  .form-control__response,
-  &.form__response {
-    color: $color-error;
-  }
-
-  .u-text-input,
-  .u-select-input select {
-    border-color: $color-error;
-  }
-}
-
-
-.is-success {
-  &:not(.control-group) label,
-  .control-group__label,
-  .form-control__response,
-  &.form__response  {
-    color: $color-success;
-  }
-
-  .u-text-input,
-  .u-select-input select {
-    border-color: $color-success;
+    &:not(:last-of-type) {
+      margin-bottom: $control-margin-stacked;
+    }
   }
 }
 
@@ -87,58 +46,6 @@ input, select, textarea {
 // ============================================================================
 // Utility classes available for this module.
 // ============================================================================
-
-
-// Stack labels.
-.u-stack-label {
-  &.form-control {
-    display: flex;
-    flex-direction: column;
-
-    label {
-      margin-bottom: $label-margin;
-    }
-  }
-
-  &.control-group {
-    flex-wrap: wrap;
-
-    .control-group__label {
-      flex-basis: 100%;
-      margin-bottom: $label-margin;
-      margin-right: 0;
-    }
-  }
-}
-
-
-// Form-controls that are inside of a control-group can be inline.
-.u-inline-controls {
-  display: flex;
-
-  > *:not(:last-child) {
-    margin-right: 1em;
-  }
-
-  .control-group__label {
-    align-self: center;
-    margin-bottom: 0;
-  }
-
-  .form-control {
-    line-height: inherit;
-  }
-
-  &--stretch {
-    .form-control {
-      flex: auto;
-
-      > * {
-        width: 100%;
-      }
-    }
-  }
-}
 
 
 // Improve/unify the appearance of text and select inputs.
@@ -182,5 +89,152 @@ input, select, textarea {
     right: $input-padding;
     top: 50%;
     width: 0;
+  }
+}
+
+// Make the controls stretch to fill available width.
+.u-stretch-controls {
+  width: 100%;
+
+  .form-control {
+    display: flex;
+    flex: auto;
+
+    > * {
+      width: 100%;
+    }
+
+    label {
+      flex: 0 0 auto;
+      width: inherit;
+    }
+  }
+}
+
+
+// Inline elements.
+.u-inline-children {
+
+  // When the *entire* control-group has inline children (AKA: the group label is inline as well).
+  &.control-group {
+    display: flex;
+
+    .control-group__label {
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  // When *only* the form-controls are inline (AKA: the group label is *not* inline).
+  &.control-group__controls {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-control {
+      margin-bottom: 0;
+
+      // HEY MARC THIS IS PROBABLY WHERE THE QUANTITY QUERIES WILL GO!
+
+      &:not(:last-of-type) {
+        margin-right: $control-margin-inline;
+      }
+    }
+  }
+
+}
+
+
+// Stack one input label; used on individual .form-control.
+.u-stack-input-label {
+  label {
+    display: block;
+    margin-bottom: $label-margin-stacked;
+  }
+}
+
+
+// Stack many input labels; used on .control-group__controls.
+.u-stack-input-labels {
+  .form-control {
+    label {
+      display: block;
+      margin-bottom: $label-margin-stacked;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: ($control-margin-stacked * 2);
+    }
+  }
+
+  &.u-stretch-controls {
+    .form-control {
+      flex-direction: column;
+
+      label {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+// Various white-space classes.
+.u-padding-right {
+  padding-right: $label-margin-inline;
+}
+
+.u-padding-top {
+  padding-top: ($input-padding + 1px);
+}
+
+
+// ============================================================================
+// Responses.
+// ============================================================================
+
+// todo Problems:
+//  #16: needs to be on a new line, somehow
+
+.form__response {
+  display: block;
+  line-height: $line-height;
+  margin-top: $label-margin-stacked;
+
+  &--inline {
+    display: inline-block;
+  }
+
+  .control-group__controls.u-inline-children & {
+    flex-basis: 100%;
+  }
+}
+
+
+.is-error {
+  &:not(.control-group) label,
+  .control-group__label,
+  .form__response,
+  &.form__response {
+    color: $color-error;
+  }
+
+  .u-text-input,
+  .u-select-input select {
+    border-color: $color-error;
+  }
+}
+
+
+.is-success {
+  &:not(.control-group) label,
+  .control-group__label,
+  .form__response,
+  &.form__response  {
+    color: $color-success;
+  }
+
+  .u-text-input,
+  .u-select-input select {
+    border-color: $color-success;
   }
 }
