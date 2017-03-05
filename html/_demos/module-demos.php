@@ -177,6 +177,7 @@
               <blockquote>
                 <p>This is a paragraph inside of a blockquote.</p>
                 <p>This is another paragraph inside of the same blockquote.</p>
+                <footer>— <cite>Firstname Lastname</cite></footer>
               </blockquote>
 
               <pre><code>A line of code
