@@ -51,6 +51,7 @@ input, select, textarea {
 // Improve/unify the appearance of text and select inputs.
 .u-text-input,
 .u-select-input select {
+  appearance: none;
   background-color: $color-input-bg;
   border: 1px solid $color-input-border;
   border-radius: $input-border-radius;
@@ -62,7 +63,6 @@ input, select, textarea {
   position: relative;
 
   select {
-    appearance: none;
     display: inline-block;
     margin: 0;
     outline: 0;
