@@ -55,7 +55,8 @@ var localUrl      = 'http://starter.vbox.bytheoutfit.com/';
 var templates   = [
     /* Basics: */ 'html/**/*.+(html|php)',
     /*     EE: */ '+(snippets|templates)/default_site/**/*.html',
-    /*  Craft: */ 'craft/templates/**/*.html'
+    /*  Craft: */ 'craft/templates/**/*.html',
+  /*  Laravel: */ 'laravel/resources/views/**/*.blade.php'
                   ];
 
 // Style paths.
