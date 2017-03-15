@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/lib/css/all.css" />
+    <link rel="stylesheet" href="/lib/css/app.css" />
     <title>TODO: update this with a quality page title</title>
     <meta name="description" content="TODO: update this with a quality page description" />
 
@@ -83,14 +83,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/lib/js/jquery.js"><\/script>')</script>
-    <script src="/lib/js/global.min.js"></script>
-
-    <!--
-    YOUR NON-GLOBAL, FEATURE-SPECIFIC JS FILE(S) HERE, LIKE SO:
-    <script src="/lib/js/neat-slider.min.js"></script>
-    <script src="/lib/js/great-angular-form-magic.min.js"></script>
-    <script src="/lib/js/dope-modal.min.js"></script>
-    -->
+    <script src="/lib/js/app.js"></script>
 
     <!--
     ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google

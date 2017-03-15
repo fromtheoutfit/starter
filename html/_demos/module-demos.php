@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/lib/css/all.css" />
+    <link rel="stylesheet" href="/lib/css/app.css" />
     <title>Module Demos</title>
     <meta name="description" content="Demos of the various modules available in this project." />
 
@@ -1180,7 +1180,7 @@ A line of code</code></pre>
       </div><!-- module -->
     </div><!-- .demo -->
 
-    <script src="/lib/js/global.min.js"></script>
+    <script src="/lib/js/app.js"></script>
 
     <!-- This script is *only* for this demo page and its simple UI. It has no
     effect on the demos themselves and it should *not* be included in the
