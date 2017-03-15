@@ -13,9 +13,11 @@ let mix = require('laravel-mix');
 
 mix.js('_js/app.js', 'html/lib/js')
    .sass('_scss/app.scss', 'html/lib/css')
-   .options({
-     processCssUrls:false
-    })
+   // The .options method, below, currently breaks sourcemaps, so we're
+   // disabling it until it's fixed: https://github.com/JeffreyWay/laravel-mix/issues/560
+   // .options({
+   //   processCssUrls: false
+   // })
    .sourceMaps()
    .browserSync({
      proxy: 'http://starter.vbox.bytheoutfit.com/',
