@@ -30,7 +30,7 @@ mix.js('_js/app.js', 'html/lib/js')
        // =====================================================================
        '+(html|public)/**/*.+(html|php)',             // Generic .html and/or .php files [no specific platform]
        'laravel/resources/views/**/*.php',            // Laravel-specific view files
-       'craft/templates/**/*.html',                   // Craft-specific templates
+       'craft/templates/**/*.+(html|twig)',           // Craft-specific templates, as html and/or twig
        '+(snippets|templates)/default_site/**/*.html' // EE-specific snippets and/or templates
      ]
    });
