@@ -1,5 +1,0 @@
-- Test the site with/in:
-  - https://developers.google.com/speed/pagespeed
-  - http://yslow.org
-  - http://www.webpagetest.org
-  - http://whatdoesmysitecost.com
