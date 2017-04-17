@@ -81,8 +81,6 @@
     <!-- YOUR MARKUP HERE. -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/lib/js/jquery.js"><\/script>')</script>
     <script src="/lib/js/app.js"></script>
 
     <!--
