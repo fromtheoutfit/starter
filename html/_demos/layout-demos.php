@@ -33,14 +33,15 @@
       <a href="#demo-9">Gutters + defined width on <em>all</em> items + item wrapping</a>
       <a href="#demo-10">Gutters + defined width on <em>all</em> items + item wrapping + center-alignment</a>
       <a href="#demo-11">Gutters + item wrapping + items changing width at breakpoints</a>
+      <a href="#demo-12">Gutters + row order reversal</a>
       <h1>Width Demos</h1>
-      <a href="#demo-12">Default widths</a>
-      <a href="#demo-13">Small breakpoint widths</a>
-      <a href="#demo-14">Compact breakpoint widths</a>
-      <a href="#demo-15">Medium breakpoint widths</a>
-      <a href="#demo-16">Large breakpoint widths</a>
-      <a href="#demo-17">Huge breakpoint widths</a>
-      <a href="#demo-18">Using multiple widths on an item</a>
+      <a href="#demo-13">Default widths</a>
+      <a href="#demo-14">Small breakpoint widths</a>
+      <a href="#demo-15">Compact breakpoint widths</a>
+      <a href="#demo-16">Medium breakpoint widths</a>
+      <a href="#demo-17">Large breakpoint widths</a>
+      <a href="#demo-18">Huge breakpoint widths</a>
+      <a href="#demo-19">Using multiple widths on an item</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav><!-- .demos-nav -->
 
@@ -482,6 +483,38 @@
 
 
     <div class="demo" id="demo-12">
+      <h2>Gutters + row order reversal</h2>
+
+      <div data-layout="module" data-layout-options="gutters row-reverse">
+        <div data-layout="module__item">
+          <div class="demo__content">
+            <p><b><code>module__item</code></b></p>
+            <p><b>First</b> in the html source order.</p>
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+        <div data-layout="module__item">
+          <div class="demo__content">
+            <p><b><code>module__item</code></b></p>
+            <p><b>Second</b> in the html source order.</p>
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+        <div data-layout="module__item">
+          <div class="demo__content">
+            <p><b><code>module__item</code></b></p>
+            <p><b>Third</b> in the html source order.</p>
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+        <div data-layout="module__item">
+          <div class="demo__content">
+            <p><b><code>module__item</code></b></p>
+            <p><b>Fourth</b> in the html source order.</p>
+          </div><!-- .demo__content -->
+        </div><!-- module__item -->
+      </div><!-- module -->
+    </div><!-- .demo -->
+
+
+    <div class="demo" id="demo-13">
       <h2>Default widths</h2>
 
       <p>These widths are applied by default, before any breakpoints. Think <i>mobile first</i>.</p>
@@ -561,7 +594,7 @@
     </div><!-- .demo -->
 
 
-    <div class="demo" id="demo-13">
+    <div class="demo" id="demo-14">
       <h2>Small breakpoint widths</h2>
 
       <p>These widths apply at the small breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -641,7 +674,7 @@
     </div><!-- .demo -->
 
 
-    <div class="demo" id="demo-14">
+    <div class="demo" id="demo-15">
       <h2>Compact breakpoint widths</h2>
 
       <p>These widths apply at the compact breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -721,7 +754,7 @@
     </div><!-- .demo -->
 
 
-    <div class="demo" id="demo-15">
+    <div class="demo" id="demo-16">
       <h2>Medium breakpoint widths</h2>
 
       <p>These widths apply at the medium breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -801,7 +834,7 @@
     </div><!-- .demo -->
 
 
-    <div class="demo" id="demo-16">
+    <div class="demo" id="demo-17">
       <h2>Large breakpoint widths</h2>
 
       <p>These widths apply at the large breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -881,7 +914,7 @@
     </div><!-- .demo -->
 
 
-    <div class="demo" id="demo-17">
+    <div class="demo" id="demo-18">
       <h2>Huge breakpoint widths</h2>
 
       <p>These widths apply at the huge breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -961,7 +994,7 @@
     </div><!-- .demo -->
 
 
-    <div class="demo" id="demo-18">
+    <div class="demo" id="demo-19">
       <h2>Using multiple widths on an item</h2>
 
       <p>By using multiple values together, you can make an item different widths at different breakpoints. Make your browser thinner / wider to see how it works.</p>

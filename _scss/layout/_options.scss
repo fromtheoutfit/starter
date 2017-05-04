@@ -113,3 +113,19 @@ $gutter-size: 10px;
     }
   }
 }
+
+
+// ============================================================================
+// Layout option: reverse the order of module__items on each row.
+//
+// <div data-layout="module" data-layout-options="row-reverse">
+//   <div data-layout="module__item"> ... </div>
+//   <div data-layout="module__item"> ... </div>
+//   <div data-layout="module__item"> ... </div>
+// </div
+// ============================================================================
+
+
+[data-layout-options~="row-reverse"] {
+  flex-direction: row-reverse;
+}
