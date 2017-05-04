@@ -163,12 +163,12 @@ Demos UI: Individual Demo
 }
 
 
-.demo__content > li {
+.demo__content li {
   margin-bottom: 0.5em;
 }
 
 
-.demo__content > li:last-child {
+.demo__content li:last-child {
   margin-bottom: 0;
 }
 
