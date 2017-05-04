@@ -13,7 +13,7 @@ let mix = require('laravel-mix');
 
 mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
    .js('_js/app.js', 'html/lib/js')
-   .sass('_scss/app.scss', 'html/lib/css')
+   .standaloneSass('_scss/app.scss', 'html/lib/css')
    .options({
      processCssUrls: false
    })
@@ -39,6 +39,7 @@ mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
 // mix.extract(vendorLibs);
 // mix.sass(src, output);
+// mix.standaloneSass('src', output); <-- Faster, but isolated from Webpack.
 // mix.less(src, output);
 // mix.stylus(src, output);
 // mix.browserSync('my-site.dev');
