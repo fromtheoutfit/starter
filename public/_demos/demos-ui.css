@@ -177,3 +177,19 @@ Demos UI: Individual Demo
 .demo__highlight {
   color: tomato;
 }
+
+
+/* Lorem Dashum: https://codepen.io/marcamos/pen/rLjNpa
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+.lorem-dashum,
+.lorem-dashum * {
+  color: transparent;
+}
+
+
+.lorem-dashum {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%22995%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200h995%22%20stroke%3D%22%23666%22%20stroke-width%3D%2210%22%20stroke-dasharray%3D%2223%2B10%2B28%2B10%2B17%2B10%2B28%2B10%2B28%2B10%2B17%2B10%2B17%2B10%2B40%2B10%2B40%2B10%2B28%2B10%2B11%2B10%2B23%2B10%2B51%2B10%2B5%2B10%2B17%2B10%2B34%2B10%2B51%2B10%2B11%2B10%2B40%2B10%2B17%2B10%2B51%2B10%2B11%2B10%2B17%2B10%2B63%2B10%2B23%2B10%2B17%2B10%2B17%2B10%22%2F%3E%3C%2Fsvg%3E');
+  background-position: 0 7px;
+}
