@@ -32,8 +32,8 @@
     ...
   }
 }</code></pre>
-      </div><!-- .demo__content -->
-    </div><!-- .demo -->
+      </div>
+    </div>
 
   </body>
 </html>

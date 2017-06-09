@@ -32,14 +32,14 @@
       <a href="#demo-7">Call to Action</a>
       <a href="#demo-8">Feature</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
-    </nav><!-- .demos-nav -->
+    </nav>
 
 
     <header class="header">
       <div class="header__id">
         <a href="#"><img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="200" height="125" alt="Project Name" /></a>
         <h1 class="visuallyhidden">Project Name</h1>
-      </div><!-- .header__id -->
+      </div>
       <button class="header__open-nav js-header__open-nav" aria-label="Open navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /></svg></button>
       <nav class="header__nav-wrap js-header__nav-wrap">
         <button class="header__close-nav js-header__close-nav" aria-label="Close navigation">&times;</button>
@@ -73,9 +73,9 @@
               <li><a href="#">Here’s a Ridiculously Long Link</a></li>
             </ul>
           </li>
-        </ul><!-- .header__nav-links -->
-      </nav><!-- .header__nav-wrap -->
-    </header><!-- .header -->
+        </ul>
+      </nav>
+    </header>
 
 
     <div class="demo" id="demo-0">
@@ -90,10 +90,10 @@
             <div class="intro">
               <h1 class="intro__title">About The Company</h1>
               <p class="intro__subtitle">Bits and bobs about our people, culture, etc.</p>
-            </div><!-- .intro -->
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
+          </div>
+        </div>
 
         <div data-layout="module__item" data-layout-width="one-whole">
           <div class="demo__content">
@@ -101,12 +101,12 @@
             <div class="intro u-inline-subtitle u-inverted">
               <h1 class="intro__title">About The Company</h1>
               <p class="intro__subtitle">Bits and bobs about our people, culture, etc.</p>
-            </div><!-- .intro -->
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div class="demo" id="demo-1">
@@ -196,12 +196,12 @@ A line of code</code></pre>
               </video>
 
               <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
-            </div><!-- .copy-block -->
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-2">
       <h2>Table</h2>
@@ -255,10 +255,10 @@ A line of code</code></pre>
               </tbody>
             </table>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-3">
       <h2>Form: Control Types</h2>
@@ -430,10 +430,10 @@ A line of code</code></pre>
               </div>
             </form>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-4">
       <h2>Form: Layout Options</h2>
@@ -892,10 +892,10 @@ A line of code</code></pre>
 
             </form>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-5">
       <h2>Form: Example</h2>
@@ -980,10 +980,10 @@ A line of code</code></pre>
               <div class="form__response is-success">Sent, thank you!</div>
             </form>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-6">
       <h2>Mixed Media</h2>
@@ -998,22 +998,22 @@ A line of code</code></pre>
               <div class="mm__header">
                 <h1 class="mm__title">Mixed Media Block Title</h1>
                 <p class="mm__subtitle">Mixed media block subtitle</p>
-              </div><!-- .mm__header -->
+              </div>
               <figure class="mm__image">
                 <img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" />
                 <figcaption>A small caption for the above image.</figcaption>
-              </figure><!-- .mm__image -->
+              </figure>
               <div class="mm__body">
                 <p>Lorem ipsum dolor sit amet, <a href="http://an-unlikely-url.com">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="mm__cta">
                 <a href="#" class="btn">Action</a>
-              </div><!-- .mm__cta -->
-            </div><!-- .mm -->
+              </div>
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
+          </div>
+        </div>
 
         <div data-layout="module__item">
           <div class="demo__content">
@@ -1021,11 +1021,11 @@ A line of code</code></pre>
             <div class="mm">
               <figure class="mm__image">
                 <a href="#"><img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /></a>
-              </figure><!-- .mm__image -->
+              </figure>
               <div class="mm__header">
                 <h1 class="mm__title">A Rather Long Mixed Media Block Title</h1>
                 <p class="mm__subtitle">This is the subtitle and it’s also quite long.</p>
-              </div><!-- .mm__header -->
+              </div>
               <div class="mm__body">
                 <ol>
                   <li>List item</li>
@@ -1042,11 +1042,11 @@ A line of code</code></pre>
               </div>
               <div class="mm__cta">
                 <a href="#" class="btn">Action</a>
-              </div><!-- .mm__cta -->
-            </div><!-- .mm -->
+              </div>
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
+          </div>
+        </div>
 
         <div data-layout="module__item">
           <div class="demo__content">
@@ -1054,11 +1054,11 @@ A line of code</code></pre>
             <div class="mm">
               <div class="mm__header">
                 <h1 class="mm__title"><a href="http://a-place.com">Title</a></h1>
-              </div><!-- .mm__header -->
+              </div>
               <figure class="mm__image">
                 <a href="#"><img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /></a>
                 <figcaption>A small caption for the above image.</figcaption>
-              </figure><!-- .mm__image -->
+              </figure>
               <div class="mm__body">
                 <dl>
                   <dt>Title</dt>
@@ -1071,11 +1071,11 @@ A line of code</code></pre>
                 <a href="#" class="btn-large">Action 1</a>
                 <a href="#" class="btn">Action 2</a>
                 <a href="#" class="btn-small">Action 3</a>
-              </div><!-- .mm__cta -->
-            </div><!-- .mm -->
+              </div>
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
+          </div>
+        </div>
 
         <div data-layout="module__item">
           <div class="demo__content">
@@ -1084,16 +1084,16 @@ A line of code</code></pre>
               <figure class="mm__image">
                 <a href="#" class="icon-play--image"><img src="img/fpo-image-400x300-1x.png" srcset="img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /></a>
                 <figcaption>A small caption for the above image.</figcaption>
-              </figure><!-- .mm__image -->
+              </figure>
               <div class="mm__cta">
                 <a href="#" class="btn icon-play--btn">Action</a>
-              </div><!-- .mm__cta -->
-            </div><!-- .mm -->
+              </div>
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-7">
       <h2>Call to Action</h2>
@@ -1109,17 +1109,17 @@ A line of code</code></pre>
                 <h1 class="cta__title">See Our Thing</h1>
                 <div class="cta__body">
                   <p>It’s an amazing thing that’ll make your life quite a bit easier and simpler and higher quality and softer and brighter and quieter and faster!</p>
-                </div><!-- .cta__body -->
-              </div><!-- .cta__content -->
+                </div>
+              </div>
               <div class="cta__action">
                 <a href="#" class="btn">See Thing Now!</a>
-              </div><!-- .cta__action -->
-            </div><!-- .cta -->
+              </div>
+            </div>
 
-          </div><!-- .demo__content -->
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="demo" id="demo-8">
       <h2>Feature</h2>
@@ -1132,53 +1132,53 @@ A line of code</code></pre>
           <div class="feature">
             <figure class="feature__image">
               <img src="img/fpo-photo-light-1x.jpg" srcset="img/fpo-photo-light-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
-            </figure><!-- .feature__image -->
+            </figure>
             <div class="feature__content u-align-left u-background-dark">
               <h1 class="feature__title">Left-aligned Feature Content</h1>
               <div class="feature__body">
                 <p><b>…with a dark background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p><a href="#" class="btn">Visit Link</a></p>
-              </div><!-- .feature__body -->
-            </div><!-- .feature__content -->
-          </div><!-- .feature -->
+              </div>
+            </div>
+          </div>
 
-        </div><!-- module__item -->
+        </div>
 
         <div data-layout="module__item" data-layout-width="one-whole">
 
           <div class="feature">
             <figure class="feature__image">
               <img src="img/fpo-photo-dark-1x.jpg" srcset="img/fpo-photo-dark-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
-            </figure><!-- .feature__image -->
+            </figure>
             <div class="feature__content u-align-center u-background-light">
               <h1 class="feature__title">Center-aligned Feature Content</h1>
               <div class="feature__body">
                 <p><b>…with a light background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p><a href="#" class="btn">Visit Link</a></p>
-              </div><!-- .feature__body -->
-            </div><!-- .feature__content -->
-          </div><!-- .feature -->
+              </div>
+            </div>
+          </div>
 
-        </div><!-- module__item -->
+        </div>
 
         <div data-layout="module__item" data-layout-width="one-whole">
 
           <div class="feature">
             <figure class="feature__image">
               <img src="img/fpo-photo-mixed-1x.jpg" srcset="img/fpo-photo-mixed-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
-            </figure><!-- .feature__image -->
+            </figure>
             <div class="feature__content u-align-right u-background-dark">
               <h1 class="feature__title">Right-aligned Feature Content</h1>
               <div class="feature__body">
                 <p><b>…with a dark background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <p><a href="#" class="btn">Visit Link</a></p>
-              </div><!-- .feature__body -->
-            </div><!-- .feature__content -->
-          </div><!-- .feature -->
+              </div>
+            </div>
+          </div>
 
-        </div><!-- module__item -->
-      </div><!-- module -->
-    </div><!-- .demo -->
+        </div>
+      </div>
+    </div>
 
     <script src="/lib/js/app.js"></script>
 

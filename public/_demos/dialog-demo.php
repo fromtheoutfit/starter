@@ -43,8 +43,8 @@
         <p><span class="lorem-dashum">"The first Chauffeur was Bill, a common fellow, as I said before," the  old man expounded; "but his wife was a lady, a great lady. Before the  Scarlet Death she was the wife of Van Worden. He was President of the  Board of Industrial Magnates, and was one of the dozen men who  ruled America. He was worth one billion, eight hundred millions of  dollars&mdash;coins like you have there in your pouch, Edwin. And then came  the Scarlet Death, and his wife became the wife of Bill, the first  Chauffeur. He used to beat her, too. I have seen it myself."</span></p>
         <p><span class="lorem-dashum">Hoo-Hoo, lying on his stomach and idly digging his toes in the sand,  cried out and investigated, first, his toe-nail, and next, the small  hole he had dug. The other two boys joined him, excavating the sand  rapidly with their hands till there lay three skeletons exposed. Two  were of adults, the third being that of a part-grown child. The old man  hudged along on the ground and peered at the find.</span></p>
         <p><span class="lorem-dashum">"Plague victims," he announced. "That's the way they died everywhere  in the last days. This must have been a family, running away from the  contagion and perishing here on the Cliff House beach. They&mdash;what are  you doing, Edwin?"</span></p>
-      </div><!-- .demo__content -->
-    </div><!-- .demo -->
+      </div>
+    </div>
 
     <div class="dialog">
       <div class="dialog__bg"></div>
