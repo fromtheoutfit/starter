@@ -130,7 +130,8 @@ Demos UI: Individual Demo
 }
 
 
-.demo__content > p {
+.demo__content > p,
+.demo__content > pre {
   line-height: 1.5;
   margin: 0.75em 0;
 }
