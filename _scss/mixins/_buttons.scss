@@ -20,10 +20,12 @@
     font-size: ($font-size * 0.8);
     padding: (8rem/16) (12rem/16);
   }
+
   @else if $size == large {
     font-size: ($font-size * 1.2);
     padding: (12rem/16) (16rem/16);
   }
+
   @else {
     font-size: $font-size;
     padding: (10rem/16) (14rem/16);
@@ -49,7 +51,7 @@
 }
 
 
-@mixin btn-strip() {
+@mixin btn-as-link() {
   appearance: none;
   background-color: transparent;
   border: none;
@@ -60,6 +62,27 @@
   &:hover,
   &:focus {
     color: $color-link-hover;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &:disabled {
+    color: #999;
+    cursor: not-allowed;
+  }
+}
+
+
+@mixin btn-strip() {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: $color-text;
+  padding: 0;
+  text-align: left;
+
+  &:hover,
+  &:focus {
     cursor: pointer;
     outline: none;
   }

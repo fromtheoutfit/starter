@@ -107,6 +107,11 @@ iframe {
 }
 
 
+.btn-as-link {
+  @include btn-as-link();
+}
+
+
 .btn-strip {
   @include btn-strip();
 }
