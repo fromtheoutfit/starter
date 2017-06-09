@@ -70,8 +70,8 @@
 
     <!--
     TODO: Update the following files with project specific details.
-    - /html/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
-    - /html/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
+    - /public/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
+    - /public/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
     -->
 
   </head>

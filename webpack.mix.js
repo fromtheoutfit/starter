@@ -12,8 +12,8 @@ let mix = require('laravel-mix');
  */
 
 mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
-   .js('_js/app.js', 'html/lib/js')
-   .standaloneSass('_scss/app.scss', 'html/lib/css')
+   .js('_js/app.js', 'public/lib/js')
+   .standaloneSass('_scss/app.scss', 'public/lib/css')
    .options({
      processCssUrls: false
    })
