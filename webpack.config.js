@@ -179,7 +179,10 @@ let rules = [
                     publicPath: Mix.options.resourceRoot
                 }
             },
-            'img-loader'
+            {
+                loader: 'img-loader',
+                options: Mix.options.imgLoaderOptions
+            }
         ]
     },
 
@@ -211,6 +214,18 @@ let rules = [
         }
     }
 ];
+
+let extensions = ['*', '.js', '.jsx', '.vue'];
+
+if (Mix.ts) {
+    rules.push({
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+    });
+
+    extensions.push('.ts', '.tsx');
+}
 
 let sassRule = {
     test: /\.s[ac]ss$/,
@@ -247,7 +262,7 @@ module.exports.module = { rules };
  */
 
 module.exports.resolve = {
-    extensions: ['*', '.js', '.jsx', '.vue'],
+    extensions,
 
     alias: {
         'vue$': 'vue/dist/vue.common.js'
@@ -397,6 +412,10 @@ if (Mix.options.versioning) {
     plugins.push(
         new webpack[Mix.inProduction ? 'HashedModuleIdsPlugin': 'NamedModulesPlugin'](),
         new webpackPlugins.WebpackChunkHashPlugin()
+    );
+} else if (Mix.options.hmr) {
+    plugins.push(
+        new webpack.NamedModulesPlugin()
     );
 }
 

@@ -19,7 +19,8 @@ mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
    })
    .sourceMaps()
    .browserSync({
-     proxy: 'http://starter.vbox.bytheoutfit.com/',
+     // Homestead instructions: https://gist.github.com/marcamos/415df7891d98eef0e5bc18120e3d80bb
+     proxy: 'starter.dev',
      files: [
        '+(html|public)/lib/css/app.css',  // Generated .css file
        '+(html|public)/lib/js/app.js',    // Generated .js file
