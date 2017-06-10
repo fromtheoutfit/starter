@@ -1166,7 +1166,8 @@
           <div class="demo__content">
             <code>data-layout-width="<span class="demo__highlight">one-half s-three-quarters c-one-third m-three-fifths l-one-half h-four-fifths</span>"</code>
           </div>
-        </div>m-two-fifths l-one-half h-one-fifth">
+        </div>
+        <div data-layout="module__item" data-layout-width="one-half s-one-quarter c-two-thirds m-two-fifths l-one-half h-one-fifth">
           <div class="demo__content">
             <code>data-layout-width="<span class="demo__highlight">one-half s-one-quarter c-two-thirds m-two-fifths l-one-half h-one-fifth</span>"</code>
           </div>
@@ -1178,7 +1179,8 @@
           <div class="demo__content">
             <code>data-layout-width="<span class="demo__highlight">one-third s-two-thirds c-one-half m-two-fifths l-one-quarter h-one-fifth</span>"</code>
           </div>
-        </div>m-three-fifths l-three-quarters h-four-fifths">
+        </div>
+        <div data-layout="module__item" data-layout-width="two-thirds s-one-third c-one-half m-three-fifths l-three-quarters h-four-fifths">
           <div class="demo__content">
             <code>data-layout-width="<span class="demo__highlight">two-thirds s-one-third c-one-half m-three-fifths l-three-quarters h-four-fifths</span>"</code>
           </div>
