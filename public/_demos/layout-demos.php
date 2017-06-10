@@ -36,12 +36,14 @@
       <a href="#demo-12">Gutters + row order reversal</a>
       <h1>Layout Widths:</h1>
       <a href="#demo-13">Default widths</a>
-      <a href="#demo-14">Small breakpoint widths</a>
-      <a href="#demo-15">Compact breakpoint widths</a>
-      <a href="#demo-16">Medium breakpoint widths</a>
-      <a href="#demo-17">Large breakpoint widths</a>
-      <a href="#demo-18">Huge breakpoint widths</a>
-      <a href="#demo-19">Using multiple widths on an item</a>
+      <a href="#demo-14">Tiny breakpoint widths</a>
+      <a href="#demo-15">Small breakpoint widths</a>
+      <a href="#demo-16">Compact breakpoint widths</a>
+      <a href="#demo-17">Medium breakpoint widths</a>
+      <a href="#demo-18">Large breakpoint widths</a>
+      <a href="#demo-19">Huge breakpoint widths</a>
+      <a href="#demo-20">Epic breakpoint widths</a>
+      <a href="#demo-21">Using multiple widths on an item</a>
       <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
     </nav>
 
@@ -595,6 +597,86 @@
 
 
     <div class="demo" id="demo-14">
+      <h2>Tiny breakpoint widths</h2>
+
+      <p>These widths apply at the tiny breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="t-one-whole">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-one-whole</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="t-one-half">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-one-half</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="t-one-half">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-one-half</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="t-one-third">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-one-third</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="t-two-thirds">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-two-thirds</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="t-one-quarter">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-one-quarter</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="t-three-quarters">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-three-quarters</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="t-one-fifth">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-one-fifth</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="t-four-fifths">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-four-fifths</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="t-two-fifths">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-two-fifths</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="t-three-fifths">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">t-three-fifths</span>"</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="demo" id="demo-15">
       <h2>Small breakpoint widths</h2>
 
       <p>These widths apply at the small breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -674,7 +756,7 @@
     </div>
 
 
-    <div class="demo" id="demo-15">
+    <div class="demo" id="demo-16">
       <h2>Compact breakpoint widths</h2>
 
       <p>These widths apply at the compact breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -754,7 +836,7 @@
     </div>
 
 
-    <div class="demo" id="demo-16">
+    <div class="demo" id="demo-17">
       <h2>Medium breakpoint widths</h2>
 
       <p>These widths apply at the medium breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -834,7 +916,7 @@
     </div>
 
 
-    <div class="demo" id="demo-17">
+    <div class="demo" id="demo-18">
       <h2>Large breakpoint widths</h2>
 
       <p>These widths apply at the large breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -914,7 +996,7 @@
     </div>
 
 
-    <div class="demo" id="demo-18">
+    <div class="demo" id="demo-19">
       <h2>Huge breakpoint widths</h2>
 
       <p>These widths apply at the huge breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
@@ -994,7 +1076,87 @@
     </div>
 
 
-    <div class="demo" id="demo-19">
+    <div class="demo" id="demo-20">
+      <h2>Epic breakpoint widths</h2>
+
+      <p>These widths apply at the epic breakpoint; before that, they’re as wide as the content they contain. Make your browser thinner / wider to see how they work.</p>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="e-one-whole">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-one-whole</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="e-one-half">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-one-half</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="e-one-half">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-one-half</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="e-one-third">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-one-third</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="e-two-thirds">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-two-thirds</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="e-one-quarter">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-one-quarter</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="e-three-quarters">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-three-quarters</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="e-one-fifth">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-one-fifth</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="e-four-fifths">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-four-fifths</span>"</code>
+          </div>
+        </div>
+      </div>
+
+      <div data-layout="module" data-layout-options="gutters equal-height-items">
+        <div data-layout="module__item" data-layout-width="e-two-fifths">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-two-fifths</span>"</code>
+          </div>
+        </div>
+        <div data-layout="module__item" data-layout-width="e-three-fifths">
+          <div class="demo__content">
+            <code>data-layout-width="<span class="demo__highlight">e-three-fifths</span>"</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="demo" id="demo-21">
       <h2>Using multiple widths on an item</h2>
 
       <p>By using multiple values together, you can make an item different widths at different breakpoints. Make your browser thinner / wider to see how it works.</p>

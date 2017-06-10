@@ -171,3 +171,25 @@
   [data-layout-width~="h-three-fifths"]   {width:60%;}
   [data-layout-width~="h-four-fifths"]    {width:80%;}
 }
+
+
+// Epic breakpoint rules:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@include mq-min-width($bp-epic) {
+  [data-layout-width~="e-one-whole"],
+  [data-layout-width~="e-two-halves"],
+  [data-layout-width~="e-three-thirds"],
+  [data-layout-width~="e-four-quarters"],
+  [data-layout-width~="e-five-fifths"]    {width:100%;}
+  [data-layout-width~="e-one-half"],
+  [data-layout-width~="e-two-quarters"]   {width:50%;}
+  [data-layout-width~="e-one-third"]      {width:33.3333333333%;}
+  [data-layout-width~="e-two-thirds"]     {width:66.6666666667%;}
+  [data-layout-width~="e-one-quarter"]    {width:25%;}
+  [data-layout-width~="e-three-quarters"] {width:75%;}
+  [data-layout-width~="e-one-fifth"]      {width:20%;}
+  [data-layout-width~="e-two-fifths"]     {width:40%;}
+  [data-layout-width~="e-three-fifths"]   {width:60%;}
+  [data-layout-width~="e-four-fifths"]    {width:80%;}
+}

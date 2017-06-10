@@ -37,5 +37,22 @@ $bp-large:   1200px;
 $bp-huge:    1440px;
 $bp-epic:    1680px;
 
-// If you're looking for the layout's gutter variable, see the "Gutter control"
-// section in _layout.scss.
+
+// Gutters:
+// Where there's a single letter at the variable's beginning, that letter
+// represents a breakpoint defined above. For empty-cells:
+// * $t-gutter-size is used at the (t)iny breakpoint.
+// * $c-gutter-size is used at the (c)compact breakpoint.
+// * $h-gutter-size is used at the (h)uge breakpoint.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// The first letter refers to a breakpoint, defined above.
+// t = $bp-tiny; m = $bp-medium; e = $bp-epic; etc.
+$gutter-size:   6px;
+$t-gutter-size: 12px;
+$s-gutter-size: 18px;
+$c-gutter-size: 24px;
+$m-gutter-size: 30px;
+$l-gutter-size: 36px;
+$h-gutter-size: 42px;
+$e-gutter-size: 48px;
