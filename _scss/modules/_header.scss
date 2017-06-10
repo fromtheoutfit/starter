@@ -1,6 +1,6 @@
 .header {
   background-color: #888;
-  padding: 15px;
+  padding: 16px;
   position: relative;
 
   @include mq-min-width($bp-small) {
@@ -36,7 +36,7 @@
   }
 
   &__open-nav {
-    right: 15px;
+    right: 16px;
     top: 8px;
   }
 
@@ -81,7 +81,7 @@
     bottom: 0;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 15px;
+    padding: 16px;
     position: absolute;
     top: 40px;
     width: 100%;
@@ -137,7 +137,7 @@
   ul {
     ul {
       a {
-        padding-left: 20px;
+        padding-left: 24px;
 
         @include mq-min-width($bp-small) {
           padding-left: inherit;
