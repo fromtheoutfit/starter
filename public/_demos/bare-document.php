@@ -79,9 +79,11 @@
 
 
     <!-- YOUR MARKUP HERE. -->
+    <div style="padding:50px;">
+      <em>pssst, this is an empty document … view the source</em>
+    </div>
+    <!-- YOUR MARKUP HERE. -->
 
-
-    <script src="/lib/js/app.js"></script>
 
     <!--
     ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google

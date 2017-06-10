@@ -2,6 +2,7 @@
 // Type.
 // ============================================================================
 
+
 $font-stack-sans:   sans-serif; // http://css-tricks.com/sans-serif/
 $font-stack-serif:  serif;
 $font-stack-mono:   monospace;
@@ -12,6 +13,7 @@ $line-height:       1.4;
 // ============================================================================
 // Colors.
 // ============================================================================
+
 
 $color-background:    white;
 $color-text:          black;
@@ -26,8 +28,16 @@ $color-success:       mediumseagreen;
 // Layout.
 // ============================================================================
 
-$content-min-width: (300rem/16);
-$content-max-width: (1600rem/16);
+
+// Min/max widths:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$content-min-width: 300px;
+$content-max-width: 1920px;
+
+
+// Breakpoints:
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 $bp-tiny:    480px;
 $bp-small:   720px;
