@@ -38,7 +38,6 @@ $dialog-body-max-width:     680px;
   }
 
   &__close {
-    background-image: linear-gradient(to bottom, $dialog-body-bg-color 10%,transparent 100%);
     left: 0;
     padding: 8px 8px 0 0;
     position: sticky;
