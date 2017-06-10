@@ -1,0 +1,17 @@
+.header {
+  &__nav-wrap {
+    z-index: 1;
+
+    @include mq-min-width($bp-small) {
+      z-index: auto;
+    }
+  }
+}
+
+
+.icon-play--image {
+  &:before,
+  &:after {
+    z-index: 1;
+  }
+}

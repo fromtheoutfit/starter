@@ -56,7 +56,6 @@
     transition-property: transform;
     transition-duration: 250ms;
     width: 80%;
-    z-index: 1;
 
     @include mq-min-width($bp-small) {
       background-color: transparent;
@@ -68,7 +67,6 @@
       transition: none;
       transform: none;
       width: auto;
-      z-index: auto;
     }
 
     &.is-visible {
