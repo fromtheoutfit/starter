@@ -55,7 +55,7 @@
         <div class="dialog__content">
           <div class="copy-block">
             <h3><strong>Dialog</strong></h3>
-            <p>The phantoms, <a href="#">for so they then seemed</a>, were flitting on the other side of the deck, and, with a noiseless celerity, were casting loose the tackles and bands of the boat which swung there. This boat had always been deemed one of the spare boats, though technically called the captain's, on account of its hanging from the starboard quarter.</span></p>
+            <p><span class="lorem-dashum">The phantoms, <a href="#">for so they then seemed</a>, were flitting on the other side of the deck, and, with a noiseless celerity, were casting loose the tackles and bands of the boat which swung there. This boat had always been deemed one of the spare boats, though technically called the captain's, on account of its hanging from the starboard quarter.</span></p>
             <p><span class="lorem-dashum">While yet the wondering ship's company were gazing upon these strangers, Ahab cried out to the white-turbaned old man at their head, "All ready there, Fedallah?"</span></p>
             <p><span class="lorem-dashum">"Ready," was the half-hissed reply.</span></p>
             <p><span class="lorem-dashum">"Lower away then; d'ye hear?" shouting across the deck. "Lower away there, I say."</span></p>
