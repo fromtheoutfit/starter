@@ -21,7 +21,7 @@
 
 
     <nav class="demos-nav" id="demos-nav">
-      <h1>Layout Demos</h1>
+      <h1>Layout Options:</h1>
       <a href="#demo-1">Unadorned</a>
       <a href="#demo-2">Gutters</a>
       <a href="#demo-3">Gutters + equal height items</a>
@@ -34,7 +34,7 @@
       <a href="#demo-10">Gutters + defined width on <em>all</em> items + item wrapping + center-alignment</a>
       <a href="#demo-11">Gutters + item wrapping + items changing width at breakpoints</a>
       <a href="#demo-12">Gutters + row order reversal</a>
-      <h1>Width Demos</h1>
+      <h1>Layout Widths:</h1>
       <a href="#demo-13">Default widths</a>
       <a href="#demo-14">Small breakpoint widths</a>
       <a href="#demo-15">Compact breakpoint widths</a>
