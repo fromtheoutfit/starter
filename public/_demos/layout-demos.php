@@ -2,19 +2,26 @@
 <html class="no-js" lang="en">
   <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/lib/css/app.css" />
-    <title>Layout Demos</title>
-    <meta name="description" content="Demos of the various layout options available in this project." />
+    <?php include_once 'inc/head.php'; ?>
 
-    <script src="/lib/js/modernizr.js"></script>
+    <!--
+    ( * NOTE * ) Most of <head>'s elements are stored in the include above. The
+    rest are below, as they're page-specific:
+    -->
+    <title>TODO: update this with a quality page title</title>
+    <meta name="description" content="TODO: update this with a quality page description" />
 
-    <!-- This imported stylesheet is *only* for this demo page and its simple
-    UI. It has no effect on the demos themselves and it should *not* be
-    included in the production-ready code. -->
-    <style>@import 'demos-ui.css';</style>
+    <!--
+    ( * OPTIONAL * ) FACEBOOK / TWITTER: Is this project utilizing Facebook and
+    Twitter? If so, utilize the code below and update the assets it references.
+    If not, delete the code below and the assets that it references.
+    - Facebook: https://developers.facebook.com/docs/sharing/best-practices
+    - Twitter:  https://dev.twitter.com/cards/getting-started
+    -->
+    <meta property="og:title" content="TODO: update this with a quality page title" />
+    <meta property="og:description" content="TODO: update this with a quality page description" />
+    <meta property="og:url" content="TODO: update this with an absolute URL to this page" />
+    <meta property="og:image" content="http://absolute-path.com/to/1200x630.jpg" />
 
   </head>
   <body>
@@ -1188,10 +1195,7 @@
       </div>
     </div>
 
-    <!-- This script is *only* for this demo page and its simple UI. It has no
-    effect on the demos themselves and it should *not* be included in the
-    production-ready code. -->
-    <script src="demos-ui.js"></script>
+    <?php include_once 'inc/scripts.php'; ?>
 
   </body>
 </html>
