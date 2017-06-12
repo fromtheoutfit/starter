@@ -7,16 +7,18 @@ let closeBtn    = null;
 let vpWidth     = null;
 
 export function initialize() {
-  selectNodes();
-  addListeners();
-  betterResize();
-}
-
-export function selectNodes() {
   openBtn  = document.querySelector('.js-header__open-nav');
   closeBtn = document.querySelector('.js-header__close-nav');
   wrapEl   = document.querySelector('.js-header__nav-wrap');
-  allDesc  = wrapEl.getElementsByTagName('*');
+
+  // Stop everything if any of the above elements do not exist.
+  if (!openBtn || !closeBtn || !wrapEl) {
+    return;
+  }
+
+  allDesc = wrapEl.getElementsByTagName('*');
+  addListeners();
+  betterResize();
 }
 
 export function addListeners() {
