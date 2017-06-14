@@ -27,19 +27,7 @@
   <body>
 
 
-    <nav class="demos-nav" id="demos-nav">
-      <h1>Module Demos:</h1>
-      <a href="#demo-0">Intro</a>
-      <a href="#demo-1">Copy Block</a>
-      <a href="#demo-2">Table</a>
-      <a href="#demo-3">Form: Control Types</a>
-      <a href="#demo-4">Form: Layout Options</a>
-      <a href="#demo-5">Form: Example</a>
-      <a href="#demo-6">Mixed Media</a>
-      <a href="#demo-7">Call to Action</a>
-      <a href="#demo-8">Feature</a>
-      <button class="demos-nav__toggle" id="demos-nav__toggle">Toggle Nav</button>
-    </nav>
+    <?php include_once 'inc/demos-nav.php'; ?>
 
 
     <header class="header">

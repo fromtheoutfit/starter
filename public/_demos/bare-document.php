@@ -26,6 +26,8 @@
   </head>
   <body>
 
+    <?php include_once 'inc/demos-nav.php'; ?>
+
     <div style="padding:50px;">
       <em>pssst, this is an empty document … view the source</em>
     </div>

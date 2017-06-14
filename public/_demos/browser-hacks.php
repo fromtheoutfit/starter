@@ -26,6 +26,8 @@
   </head>
   <body>
 
+    <?php include_once 'inc/demos-nav.php'; ?>
+
     <div class="demo">
       <h2>IE 11 Only</h2>
 

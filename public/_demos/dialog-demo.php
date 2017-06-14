@@ -26,6 +26,8 @@
   </head>
   <body>
 
+    <?php include_once 'inc/demos-nav.php'; ?>
+
     <div class="demo">
       <h2>Dialog</h2>
       <div class="demo__content">
