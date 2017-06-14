@@ -14,14 +14,16 @@ If so, swap the below string 'UA-UPDATE-THIS' with a legit UA string. If this
 project is utilizing a different analytics package, delete the entire script
 element below and insert the other one as instructed. Otherwise, delete the
 entire script element below.
+
+Note: We're using some of the advice given in this article:
+https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/
 -->
+<!--
 <script>
-  /*
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
   ga('create', 'UA-UPDATE-THIS', 'auto');
+  ga('set', 'transport', 'beacon');
   ga('send', 'pageview');
-  */
 </script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+-->
