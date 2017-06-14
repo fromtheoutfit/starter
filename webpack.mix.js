@@ -22,13 +22,13 @@ mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
      // Homestead instructions: https://gist.github.com/marcamos/415df7891d98eef0e5bc18120e3d80bb
      proxy: 'starter.dev',
      files: [
-       '+(html|public)/lib/css/app.css',  // Generated .css file
-       '+(html|public)/lib/js/app.js',    // Generated .js file
+       'public/lib/css/app.css',  // Generated .css file
+       'public/lib/js/app.js',    // Generated .js file
        // =====================================================================
        // You probably need only one of the below lines, depending
        // on which platform this project is being built upon.
        // =====================================================================
-       '+(html|public)/**/*.+(html|php)',             // Generic .html and/or .php files [no specific platform]
+       'public/**/*.+(html|php)',                     // Generic .html and/or .php files [no specific platform]
        'laravel/resources/views/**/*.php',            // Laravel-specific view files
        'craft/templates/**/*.+(html|twig)',           // Craft-specific templates, as html and/or twig
        '+(snippets|templates)/default_site/**/*.html' // EE-specific snippets and/or templates
