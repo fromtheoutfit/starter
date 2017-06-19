@@ -31,7 +31,7 @@ export function addListeners() {
 }
 
 export function betterResize() {
-  var running = false;
+  let running = false;
   function doItViaRAF() {
     if (running) {return;}
     running = true;
@@ -55,7 +55,7 @@ export function determineEventLoc(event) {
     if (event.target === wrapEl) {
       return;
     } else {
-      for (var i = 0; i < allDesc.length; i++) {
+      for (let i = 0; i < allDesc.length; i++) {
         if (event.target === allDesc[i]) {
           return;
         }
