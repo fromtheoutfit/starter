@@ -5,7 +5,7 @@
 ( * IMPORTANT * ) This script is *only* for the demo pages. It has no effect on
 the demos themselves and it should *not* be included in production-ready code.
 -->
-<script src="demos-ui.js"></script>
+<script src="/_demos/demos-ui.js"></script>
 
 
 <!--

@@ -67,4 +67,4 @@ TODO: Update the following files with project specific details.
 <!-- This imported stylesheet is *only* for this demo page and its simple UI.
 It has no effect on the demos themselves and it should *not* be included in the
 production-ready code. -->
-<style>@import 'demos-ui.css';</style>
+<style>@import '/_demos/demos-ui.css';</style>
