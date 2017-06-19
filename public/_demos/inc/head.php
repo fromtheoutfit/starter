@@ -63,8 +63,3 @@ TODO: Update the following files with project specific details.
 - /public/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
 - /public/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
 -->
-
-<!-- This imported stylesheet is *only* for this demo page and its simple UI.
-It has no effect on the demos themselves and it should *not* be included in the
-production-ready code. -->
-<style>@import '/_demos/demos-ui.css';</style>

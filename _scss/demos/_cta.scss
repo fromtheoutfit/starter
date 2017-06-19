@@ -1,6 +1,6 @@
 $cta-object-margin: 1em;
 
-.cta {
+.demo .cta {
   @include mq-min-width($bp-compact) {
     align-items: center;
     display: flex;

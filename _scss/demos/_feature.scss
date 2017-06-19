@@ -1,6 +1,6 @@
 $feature-object-margin: 1em;
 
-.feature {
+.demo .feature {
   @include mq-min-width($bp-small) {
     position: relative;
   }

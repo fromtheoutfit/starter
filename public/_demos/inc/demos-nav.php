@@ -1,7 +1,15 @@
-<nav class="demos-nav" id="demos-nav">
+<nav class="demos-nav js-demos-nav">
+
+  <!-- Single Pages -->
+  <h1>Individual Pages:</h1>
+  <div class="demos-nav__list">
+    <a href="/_demos/bare-document.php">Bare Document</a>
+    <a href="/_demos/dialog.php">Dialog</a>
+    <a href="/_demos/browser-hacks.php">Browser Hacks</a>
+  </div>
 
   <!-- Modules -->
-  <h1>Module Demos:</h1>
+  <h1>Modules:</h1>
   <div class="demos-nav__list">
     <a href="/_demos/modules/header.php">Header</a>
     <a href="/_demos/modules/intro.php">Intro</a>
@@ -16,7 +24,7 @@
   </div>
 
   <!-- Layout Options -->
-  <h1>Layout Demos:</h1>
+  <h1>Layouts:</h1>
   <div class="demos-nav__list">
     <a href="/_demos/layout/plain.php">Plain grid</a>
     <a href="/_demos/layout/gutters.php">Gutters</a>
@@ -29,6 +37,6 @@
     <a href="/_demos/layout/row-order-reversal.php">Row order reversal</a>
   </div>
 
-  <button class="demos-nav__toggle" id="demos-nav__toggle">Demo Nav</button>
+  <button class="demos-nav__toggle js-demos-nav-toggle">Demo Nav</button>
 
 </nav>

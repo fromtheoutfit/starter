@@ -2,13 +2,6 @@
 
 
 <!--
-( * IMPORTANT * ) This script is *only* for the demo pages. It has no effect on
-the demos themselves and it should *not* be included in production-ready code.
--->
-<script src="/_demos/demos-ui.js"></script>
-
-
-<!--
 ( * OPTIONAL * ) GOOGLE ANALYTICS: Is this project utilizing Google Analytics?
 If so, swap the below string 'UA-UPDATE-THIS' with a legit UA string. If this
 project is utilizing a different analytics package, delete the entire script

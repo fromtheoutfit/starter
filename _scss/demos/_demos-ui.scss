@@ -1,0 +1,289 @@
+body {
+  background-color: white;
+}
+
+
+/* ============================================================================
+Navigation
+============================================================================ */
+
+
+.demos-nav {
+  background-color: tomato;
+  color: #fff;
+  line-height: 1.5;
+  padding: 15px;
+  width: 100%;
+}
+
+
+.demos-nav h1 {
+  font-size: 125%;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+
+.demos-nav h1:not(:first-of-type) {
+  border-top: 1px solid rgba(255,255,255,0.5);
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+
+@media screen and (min-width: 500px) {
+  .demos-nav__list {
+    column-count: 2;
+    column-gap: 2em;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .demos-nav__list {
+    column-count: 3;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .demos-nav__list {
+    column-count: 4;
+  }
+}
+
+
+.demos-nav a {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+
+.demos-nav a:focus,
+.demos-nav a:hover {
+  text-decoration: none;
+}
+
+
+.demos-nav a:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.js .demos-nav {
+  left: 0;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 100ms;
+  z-index: 10;
+}
+
+
+.js .demos-nav.is-visible {
+  transform: none;
+}
+
+
+.no-js .demos-nav__toggle {
+  display: none;
+  visibility: hidden;
+}
+
+
+.js .demos-nav__toggle {
+  background-color: tomato;
+  border: none;
+  border-radius: 0 0 3px 3px;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  left: 50%;
+  opacity: 0.5;
+  padding: 2px 8px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 100%;
+  transform: translateX(-50%);
+  transition: opacity 100ms,
+              padding-top 100ms;
+}
+
+
+.js .demos-nav__toggle:hover {
+  cursor: pointer;
+}
+
+
+.js .demos-nav:not(.is-visible) .demos-nav__toggle:hover {
+  padding-top: 10px;
+}
+
+.js .demos-nav:not(.is-visible) .demos-nav__toggle:hover,
+.js .demos-nav.is-visible .demos-nav__toggle {
+  opacity: 1;
+}
+
+
+.js .demos-nav__toggle:focus {
+  outline: none;
+}
+
+
+/* ============================================================================
+Checkerboard background
+============================================================================ */
+
+
+.demo__info,
+.demo__code {
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #f4f4f4 25%, transparent 25%, transparent 75%, #f4f4f4 75%, #f4f4f4),
+                    linear-gradient(45deg, #f4f4f4 25%, transparent 25%, transparent 75%, #f4f4f4 75%, #f4f4f4);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+
+/* ============================================================================
+Demo information
+============================================================================ */
+
+
+.demo__info {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 2.5% 2.5%;
+}
+
+
+.demo__info h2,
+.demo__info p,
+.demo__info ul,
+.demo__info ol {
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+
+.demo__info h2,
+.demo__info p {
+  text-align: center;
+}
+
+
+.demo__info h2 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.demo__info p {
+  font-size: 120%;
+}
+
+
+.demo__info ul,
+.demo__info ol {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.demo__info ul {
+  list-style-type: disc;
+}
+
+
+/* ============================================================================
+Layout demo(s) content - modules, module__items, etc.
+============================================================================ */
+
+
+.demo [data-layout~="module__item"] p,
+.demo [data-layout~="module__item"] pre {
+  line-height: 1.5;
+  margin: 0.75em 0;
+}
+
+
+.demo [data-layout~="module__item"] p:first-child {
+  margin-top: 0;
+}
+
+
+.demo [data-layout~="module__item"] p:last-child {
+  margin-bottom: 0;
+}
+
+
+.demo [data-layout~="module__item"] ul,
+.demo [data-layout~="module__item"] ol {
+  margin: 0.75em 0;
+  padding-left: 1.25em;
+}
+
+
+.demo [data-layout~="module__item"] ul {
+  list-style-type: disc;
+}
+
+
+.demo [data-layout~="module__item"] ol {
+  list-style-type: decimal;
+}
+
+
+.demo [data-layout~="module__item"] li {
+  margin-bottom: 0.5em;
+  width: auto;
+}
+
+
+.demo [data-layout~="module__item"] li:last-child {
+  margin-bottom: 0;
+}
+
+
+.demo [data-layout~="module__item"] > * {
+  border: 1px dashed rgba(0,0,0,0.25);
+  padding: 20px;
+}
+
+
+/* ============================================================================
+Demo code
+============================================================================ */
+
+
+.demo__code {
+  overflow: auto;
+  padding: 2.5%;
+}
+
+
+.demo__code pre {
+  line-height: 1.25;
+}
+
+
+.demo__highlight {
+  color: tomato;
+}
+
+
+/* ============================================================================
+Lorem Dashum: https://codepen.io/marcamos/pen/rLjNpa
+============================================================================ */
+
+
+.lorem-dashum,
+.lorem-dashum * {
+  color: transparent;
+}
+
+
+.lorem-dashum {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20width%3D%22995%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200h995%22%20stroke%3D%22%23666%22%20stroke-width%3D%2210%22%20stroke-dasharray%3D%2223%2B10%2B28%2B10%2B17%2B10%2B28%2B10%2B28%2B10%2B17%2B10%2B17%2B10%2B40%2B10%2B40%2B10%2B28%2B10%2B11%2B10%2B23%2B10%2B51%2B10%2B5%2B10%2B17%2B10%2B34%2B10%2B51%2B10%2B11%2B10%2B40%2B10%2B17%2B10%2B51%2B10%2B11%2B10%2B17%2B10%2B63%2B10%2B23%2B10%2B17%2B10%2B17%2B10%22%2F%3E%3C%2Fsvg%3E');
+  background-position: 0 7px;
+}

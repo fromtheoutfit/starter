@@ -22,6 +22,10 @@
 
 @import "global/normalize";
 @import "global/base";
+@import "global/copy-block";
+@import "global/dialog";
+@import "global/form";
+@import "global/table";
 @import "global/icons";
 @import "global/z-indexes";
 
@@ -37,18 +41,25 @@
 
 
 // ============================================================================
+// Demos.
+// Note: These imports/partials are ONLY for the temporary demos found inside
+//       of /public/_demos/. Be sure to delete these @imports before this
+//       project goes live.
+// ============================================================================
+
+@import "demos/demos-ui";
+@import "demos/header";
+@import "demos/intro";
+@import "demos/mixed-media";
+@import "demos/cta";
+@import "demos/feature";
+
+
+// ============================================================================
 // Modules.
 // ============================================================================
 
-@import "modules/header";
-@import "modules/intro";
-@import "modules/copy-block";
-@import "modules/table";
-@import "modules/form";
-@import "modules/mixed-media";
-@import "modules/cta";
-@import "modules/feature";
-@import "modules/dialog";
+// Add module @import statements in place of this comment
 
 
 // ============================================================================

@@ -1,6 +1,8 @@
 $intro-object-margin: 1em;
 
-.intro {
+.demo .intro {
+  padding: $intro-object-margin;
+
   &__title {
     font-size: 250%;
     font-weight: bold;
@@ -16,12 +18,12 @@ $intro-object-margin: 1em;
 
 
 // ============================================================================
-// Utility classes available for this module.
+// Modifier classes available for this module.
 // ============================================================================
 
 
 // Make the subtitle inline with the title, after a defined breakpoint.
-.u-inline-subtitle {
+.demo .intro--inline {
   @include mq-min-width($bp-compact) {
     display: flex;
   }
@@ -48,8 +50,7 @@ $intro-object-margin: 1em;
 
 
 // Invert the background and text colors.
-.u-inverted {
+.demo .intro--inverted {
   background-color: black;
   color: #fff;
-  padding: $intro-object-margin;
 }

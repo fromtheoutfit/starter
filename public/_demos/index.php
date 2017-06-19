@@ -26,37 +26,17 @@
   </head>
   <body>
 
-
     <?php include_once 'inc/demos-nav.php'; ?>
 
-
-    <!-- ======================================================================
-    Demo information
-    ======================================================================= -->
-
-
-    <div class="demo__info">
-      <h2>IE 11 Only</h2>
-      <p>In any selector that needs IE 11 specific overrides, use the <code>ie-11-only</code> @mixin:</p>
-    </div>
-
-
-    <!-- ======================================================================
-    Demo code
-    ======================================================================= -->
-
-
-    <div class="demo__code">
-      <pre><code>.selector {
-  ...
-
-  @include ie-11-only {
-    ...
-  }
-}</code></pre>
+    <div class="copy-block">
+      <p style="padding:100px 25px 25px; text-align:center;">
+        &uarr;<br />
+        Hi! Tap that button up there.
+      </p>
     </div>
 
     <?php include_once 'inc/scripts.php'; ?>
 
   </body>
 </html>
+

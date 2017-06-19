@@ -1,12 +1,12 @@
-var demosNav       = null;
-var demosNavLinks  = null;
-var demosNavToggle = null;
-var toggledClass   = 'is-visible';
+let demosNav       = null;
+let demosNavLinks  = null;
+let demosNavToggle = null;
+const toggledClass = 'is-visible';
 
-function initialize() {
-  demosNav       = document.getElementById('demos-nav');
-  demosNavLinks  = document.querySelectorAll('#demos-nav a');
-  demosNavToggle = document.getElementById('demos-nav__toggle');
+export function initialize() {
+  demosNav       = document.querySelector('.js-demos-nav');
+  demosNavLinks  = document.querySelectorAll('.js-demos-nav a');
+  demosNavToggle = document.querySelector('.js-demos-nav-toggle');
 
   // Stop everything if any of the above elements do not exist.
   if (!demosNav || !demosNavLinks || !demosNavToggle) {
@@ -16,19 +16,19 @@ function initialize() {
   addListeners();
 }
 
-function addListeners() {
+export function addListeners() {
   demosNavToggle.addEventListener('click', toggleDemosNav, false);
-  for (var i = 0; i < demosNavLinks.length; i++) {
+  for (let i = 0; i < demosNavLinks.length; i++) {
     demosNavLinks[i].addEventListener('click', toggleDemosNav, false);
   }
 }
 
-function toggleDemosNav(event) {
+export function toggleDemosNav(event) {
   if (demosNav.classList) {
     demosNav.classList.toggle(toggledClass);
   } else {
-    var classes       = demosNav.toggledClass.split(' ');
-    var existingIndex = classes.indexOf(toggledClass);
+    let classes       = demosNav.toggledClass.split(' ');
+    let existingIndex = classes.indexOf(toggledClass);
     if (existingIndex >= 0) {
       classes.splice(existingIndex, 1);
     } else {
