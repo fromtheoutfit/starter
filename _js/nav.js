@@ -6,6 +6,7 @@ let openBtn     = null;
 let closeBtn    = null;
 let vpWidth     = null;
 
+
 export function initialize() {
   openBtn  = document.querySelector('.js-header__open-nav');
   closeBtn = document.querySelector('.js-header__close-nav');
@@ -21,6 +22,7 @@ export function initialize() {
   betterResize();
 }
 
+
 export function addListeners() {
   openBtn.addEventListener('click', toggleNav, false);
   closeBtn.addEventListener('click', toggleNav, false);
@@ -29,6 +31,7 @@ export function addListeners() {
   document.addEventListener('keyup', handleKeyPresses, false);
   window.addEventListener('resizeViaRAF', handleResize, false);
 }
+
 
 export function betterResize() {
   let running = false;
@@ -43,12 +46,14 @@ export function betterResize() {
   window.addEventListener('resize', doItViaRAF);
 }
 
+
 export function handleResize() {
   vpWidth = window.innerWidth;
   if ((vpWidth >= swapWidth) && isVisible) {
     toggleNav(event);
   }
 }
+
 
 export function determineEventLoc(event) {
   if (isVisible) {
@@ -67,11 +72,13 @@ export function determineEventLoc(event) {
   }
 }
 
+
 export function handleKeyPresses(event) {
   if (isVisible && (event.keyCode === 27)) {
     toggleNav(event);
   }
 }
+
 
 export function toggleNav(event) {
   wrapEl.classList.toggle('is-visible');

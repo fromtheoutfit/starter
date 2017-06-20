@@ -37,6 +37,6 @@
     <a href="/_demos/layout/row-order-reversal.php">Row order reversal</a>
   </div>
 
-  <button class="demos-nav__toggle js-demos-nav-toggle">Demo Nav</button>
+  <button class="demos-nav__toggle js-demos-nav-toggle" title="Toggle the demo navigation">Demo Nav</button>
 
 </nav>
