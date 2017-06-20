@@ -48,74 +48,74 @@
 
     <form>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-1">Text</label>
-        <input type="text" name="input-1" id="input-1" class="u-text-input" placeholder="example value" />
+        <input type="text" name="input-1" id="input-1" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-2">Email</label>
-        <input type="email" name="input-2" id="input-2" class="u-text-input" placeholder="example value" />
+        <input type="email" name="input-2" id="input-2" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-3">Password</label>
-        <input type="password" name="input-3" id="input-3" class="u-text-input" placeholder="example value" />
+        <input type="password" name="input-3" id="input-3" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-4">Search</label>
-        <input type="search" name="input-4" id="input-4" class="u-text-input" placeholder="example value" />
+        <input type="search" name="input-4" id="input-4" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-5">URL</label>
-        <input type="url" name="input-5" id="input-5" class="u-text-input" placeholder="example value" />
+        <input type="url" name="input-5" id="input-5" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-6">Date</label>
-        <input type="date" name="input-6" id="input-6" class="u-text-input" />
+        <input type="date" name="input-6" id="input-6" class="text-input" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-7">Datetime-local</label>
-        <input type="datetime-local" name="input-7" id="input-7" class="u-text-input" />
+        <input type="datetime-local" name="input-7" id="input-7" class="text-input" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-8">Time</label>
-        <input type="time" name="input-8" id="input-8" class="u-text-input" />
+        <input type="time" name="input-8" id="input-8" class="text-input" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-9">Week</label>
-        <input type="week" name="input-9" id="input-9" class="u-text-input" />
+        <input type="week" name="input-9" id="input-9" class="text-input" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-10">Month</label>
-        <input type="month" name="input-10" id="input-10" class="u-text-input" />
+        <input type="month" name="input-10" id="input-10" class="text-input" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-11">Telephone</label>
-        <input type="tel" name="input-11" id="input-11" class="u-text-input" placeholder="example value" />
+        <input type="tel" name="input-11" id="input-11" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-12">Number</label>
-        <input type="number" name="input-12" id="input-12" class="u-text-input" placeholder="example value" />
+        <input type="number" name="input-12" id="input-12" class="text-input" placeholder="example value" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-13">Textarea</label>
-        <textarea name="input-13" rows="5" cols="30" id="input-13" class="u-text-input" placeholder="example value"></textarea>
+        <textarea name="input-13" rows="5" cols="30" id="input-13" class="text-input" placeholder="example value"></textarea>
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-14">Select</label>
-        <div class="u-select-input">
+        <div class="select-input">
           <select name="input-14" id="input-14">
             <optgroup label="Group 1">
               <option value="G101">Group 1: Option 1</option>
@@ -133,9 +133,9 @@
         </div>
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-15">Datalist</label>
-        <input list="list-name" name="input-15" id="input-15" class="u-text-input" />
+        <input list="list-name" name="input-15" id="input-15" class="text-input" />
         <datalist id="list-name">
           <option value="Option 1">
           <option value="Option 2">
@@ -146,17 +146,17 @@
         </datalist>
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-16">Range</label>
         <input type="range" min="10" max="30" name="input-16" id="input-16" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-17">Color</label>
         <input type="color" name="input-17" id="input-17" />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="input-18">File</label>
         <input type="file" name="input-18" id="input-18" />
       </div>
@@ -222,74 +222,74 @@
       <div class="demo__language-code">
         <pre><code>&lt;form&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-1"&gt;Text&lt;/label&gt;
-    &lt;input type="text" name="input-1" id="input-1" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="text" name="input-1" id="input-1" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-2"&gt;Email&lt;/label&gt;
-    &lt;input type="email" name="input-2" id="input-2" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="email" name="input-2" id="input-2" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-3"&gt;Password&lt;/label&gt;
-    &lt;input type="password" name="input-3" id="input-3" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="password" name="input-3" id="input-3" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-4"&gt;Search&lt;/label&gt;
-    &lt;input type="search" name="input-4" id="input-4" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="search" name="input-4" id="input-4" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-5"&gt;URL&lt;/label&gt;
-    &lt;input type="url" name="input-5" id="input-5" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="url" name="input-5" id="input-5" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-6"&gt;Date&lt;/label&gt;
-    &lt;input type="date" name="input-6" id="input-6" class="u-text-input" /&gt;
+    &lt;input type="date" name="input-6" id="input-6" class="text-input" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-7"&gt;Datetime-local&lt;/label&gt;
-    &lt;input type="datetime-local" name="input-7" id="input-7" class="u-text-input" /&gt;
+    &lt;input type="datetime-local" name="input-7" id="input-7" class="text-input" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-8"&gt;Time&lt;/label&gt;
-    &lt;input type="time" name="input-8" id="input-8" class="u-text-input" /&gt;
+    &lt;input type="time" name="input-8" id="input-8" class="text-input" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-9"&gt;Week&lt;/label&gt;
-    &lt;input type="week" name="input-9" id="input-9" class="u-text-input" /&gt;
+    &lt;input type="week" name="input-9" id="input-9" class="text-input" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-10"&gt;Month&lt;/label&gt;
-    &lt;input type="month" name="input-10" id="input-10" class="u-text-input" /&gt;
+    &lt;input type="month" name="input-10" id="input-10" class="text-input" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-11"&gt;Telephone&lt;/label&gt;
-    &lt;input type="tel" name="input-11" id="input-11" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="tel" name="input-11" id="input-11" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-12"&gt;Number&lt;/label&gt;
-    &lt;input type="number" name="input-12" id="input-12" class="u-text-input" placeholder="example value" /&gt;
+    &lt;input type="number" name="input-12" id="input-12" class="text-input" placeholder="example value" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-13"&gt;Textarea&lt;/label&gt;
-    &lt;textarea name="input-13" rows="5" cols="30" id="input-13" class="u-text-input" placeholder="example value"&gt;&lt;/textarea&gt;
+    &lt;textarea name="input-13" rows="5" cols="30" id="input-13" class="text-input" placeholder="example value"&gt;&lt;/textarea&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-14"&gt;Select&lt;/label&gt;
-    &lt;div class="u-select-input"&gt;
+    &lt;div class="select-input"&gt;
       &lt;select name="input-14" id="input-14"&gt;
         &lt;optgroup label="Group 1"&gt;
           &lt;option value="G101"&gt;Group 1: Option 1&lt;/option&gt;
@@ -307,9 +307,9 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-15"&gt;Datalist&lt;/label&gt;
-    &lt;input list="list-name" name="input-15" id="input-15" class="u-text-input" /&gt;
+    &lt;input list="list-name" name="input-15" id="input-15" class="text-input" /&gt;
     &lt;datalist id="list-name"&gt;
       &lt;option value="Option 1"&gt;
       &lt;option value="Option 2"&gt;
@@ -320,17 +320,17 @@
     &lt;/datalist&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-16"&gt;Range&lt;/label&gt;
     &lt;input type="range" min="10" max="30" name="input-16" id="input-16" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-17"&gt;Color&lt;/label&gt;
     &lt;input type="color" name="input-17" id="input-17" /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="input-18"&gt;File&lt;/label&gt;
     &lt;input type="file" name="input-18" id="input-18" /&gt;
   &lt;/div&gt;

@@ -21,6 +21,17 @@ input, select, textarea {
 }
 
 
+.form-control {
+  // Stack one input label; used on individual .form-control.
+  &--stack-input-label {
+    label {
+      display: block;
+      margin-bottom: $label-margin-stacked;
+    }
+  }
+}
+
+
 .form-control + *,
 .control-group + * {
   margin-top: 1.5em;
@@ -39,6 +50,52 @@ input, select, textarea {
       margin-bottom: $control-margin-stacked;
     }
   }
+
+  &__controls {
+
+    // Make the controls stretch to fill available width.
+    &--stretch-controls {
+      width: 100%;
+
+      .form-control {
+        display: flex;
+        flex: auto;
+
+        > * {
+          width: 100%;
+        }
+
+        label {
+          flex: 0 0 auto;
+          width: inherit;
+        }
+      }
+    }
+
+    // Stack many input labels; used on .control-group__controls.
+    &--stack-input-labels {
+      .form-control {
+        label {
+          display: block;
+          margin-bottom: $label-margin-stacked;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: ($control-margin-stacked * 2);
+        }
+      }
+
+      &.control-group__controls--stretch-controls {
+        .form-control {
+          flex-direction: column;
+
+          label {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -48,8 +105,8 @@ input, select, textarea {
 
 
 // Improve/unify the appearance of text and select inputs.
-.u-text-input,
-.u-select-input select {
+.text-input,
+.select-input select {
   appearance: none;
   background-color: $color-input-bg;
   border: 1px solid $color-input-border;
@@ -57,7 +114,7 @@ input, select, textarea {
   padding: $input-padding;
 }
 
-.u-select-input {
+.select-input {
   display: inline-block;
   position: relative;
 
@@ -91,25 +148,6 @@ input, select, textarea {
   }
 }
 
-// Make the controls stretch to fill available width.
-.u-stretch-controls {
-  width: 100%;
-
-  .form-control {
-    display: flex;
-    flex: auto;
-
-    > * {
-      width: 100%;
-    }
-
-    label {
-      flex: 0 0 auto;
-      width: inherit;
-    }
-  }
-}
-
 
 // Inline elements.
 .u-inline-children {
@@ -140,40 +178,6 @@ input, select, textarea {
     }
   }
 
-}
-
-
-// Stack one input label; used on individual .form-control.
-.u-stack-input-label {
-  label {
-    display: block;
-    margin-bottom: $label-margin-stacked;
-  }
-}
-
-
-// Stack many input labels; used on .control-group__controls.
-.u-stack-input-labels {
-  .form-control {
-    label {
-      display: block;
-      margin-bottom: $label-margin-stacked;
-    }
-
-    &:not(:last-of-type) {
-      margin-bottom: ($control-margin-stacked * 2);
-    }
-  }
-
-  &.u-stretch-controls {
-    .form-control {
-      flex-direction: column;
-
-      label {
-        margin-right: 0;
-      }
-    }
-  }
 }
 
 
@@ -217,8 +221,8 @@ input, select, textarea {
     color: $color-error;
   }
 
-  .u-text-input,
-  .u-select-input select {
+  .text-input,
+  .select-input select {
     border-color: $color-error;
   }
 }
@@ -232,8 +236,8 @@ input, select, textarea {
     color: $color-success;
   }
 
-  .u-text-input,
-  .u-select-input select {
+  .text-input,
+  .select-input select {
     border-color: $color-success;
   }
 }

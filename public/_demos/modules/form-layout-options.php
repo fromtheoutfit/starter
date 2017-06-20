@@ -175,15 +175,15 @@
         <div class="control-group__controls">
           <div class="form-control">
             <label for="text-input-1" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-1" id="text-input-1" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-1" id="text-input-1" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-2" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-2" id="text-input-2" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-2" id="text-input-2" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-3" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-3" id="text-input-3" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-3" id="text-input-3" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -203,15 +203,15 @@
         <div class="control-group__controls">
           <div class="form-control">
             <label for="text-input-4" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-4" id="text-input-4" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-4" id="text-input-4" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-5" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-5" id="text-input-5" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-5" id="text-input-5" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-6" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-6" id="text-input-6" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-6" id="text-input-6" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -231,15 +231,15 @@
         <div class="control-group__controls u-inline-children">
           <div class="form-control">
             <label for="text-input-7" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-7" id="text-input-7" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-7" id="text-input-7" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-8" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-8" id="text-input-8" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-8" id="text-input-8" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-9" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-9" id="text-input-9" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-9" id="text-input-9" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -259,15 +259,15 @@
         <div class="control-group__controls u-inline-children">
           <div class="form-control">
             <label for="text-input-10" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-10" id="text-input-10" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-10" id="text-input-10" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-11" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-11" id="text-input-11" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-11" id="text-input-11" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-12" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-12" id="text-input-12" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-12" id="text-input-12" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -284,18 +284,18 @@
       -->
       <div class="control-group">
         <div class="control-group__label">Group Label</div>
-        <div class="control-group__controls u-stretch-controls">
+        <div class="control-group__controls control-group__controls--stretch-controls">
           <div class="form-control">
             <label for="text-input-13" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-13" id="text-input-13" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-13" id="text-input-13" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-14" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-14" id="text-input-14" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-14" id="text-input-14" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-15" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-15" id="text-input-15" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-15" id="text-input-15" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -312,18 +312,18 @@
       -->
       <div class="control-group u-inline-children">
         <div class="control-group__label u-padding-right u-padding-top">Group Label</div>
-        <div class="control-group__controls u-stretch-controls">
+        <div class="control-group__controls control-group__controls--stretch-controls">
           <div class="form-control">
             <label for="text-input-16" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-16" id="text-input-16" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-16" id="text-input-16" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-17" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-17" id="text-input-17" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-17" id="text-input-17" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-18" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-18" id="text-input-18" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-18" id="text-input-18" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -340,18 +340,18 @@
       -->
       <div class="control-group">
         <div class="control-group__label">Group Label</div>
-        <div class="control-group__controls u-inline-children u-stretch-controls">
+        <div class="control-group__controls u-inline-children control-group__controls--stretch-controls">
           <div class="form-control">
             <label for="text-input-19" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-19" id="text-input-19" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-19" id="text-input-19" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-20" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-20" id="text-input-20" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-20" id="text-input-20" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-21" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-21" id="text-input-21" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-21" id="text-input-21" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -368,18 +368,18 @@
       -->
       <div class="control-group u-inline-children">
         <div class="control-group__label u-padding-right u-padding-top">Group Label</div>
-        <div class="control-group__controls u-inline-children u-stretch-controls">
+        <div class="control-group__controls u-inline-children control-group__controls--stretch-controls">
           <div class="form-control">
             <label for="text-input-22" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-22" id="text-input-22" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-22" id="text-input-22" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-23" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-23" id="text-input-23" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-23" id="text-input-23" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-24" class="visuallyhidden">Input Label</label>
-            <input type="text" name="text-input-24" id="text-input-24" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-24" id="text-input-24" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -395,18 +395,18 @@
         - Input label layout:     stacked
       -->
       <div class="control-group">
-        <div class="control-group__controls u-stack-input-labels">
+        <div class="control-group__controls control-group__controls--stack-input-labels">
           <div class="form-control">
             <label for="text-input-25">Input Label</label>
-            <input type="text" name="text-input-25" id="text-input-25" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-25" id="text-input-25" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-26">Input Label</label>
-            <input type="text" name="text-input-26" id="text-input-26" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-26" id="text-input-26" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-27">Input Label</label>
-            <input type="text" name="text-input-27" id="text-input-27" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-27" id="text-input-27" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -425,15 +425,15 @@
         <div class="control-group__controls">
           <div class="form-control">
             <label for="text-input-28" class="u-padding-right">Input Label</label>
-            <input type="text" name="text-input-28" id="text-input-28" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-28" id="text-input-28" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-29" class="u-padding-right">Input Label</label>
-            <input type="text" name="text-input-29" id="text-input-29" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-29" id="text-input-29" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-30" class="u-padding-right">Input Label</label>
-            <input type="text" name="text-input-30" id="text-input-30" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-30" id="text-input-30" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -449,18 +449,18 @@
         - Input label layout:     stacked
       -->
       <div class="control-group">
-        <div class="control-group__controls u-stretch-controls u-stack-input-labels">
+        <div class="control-group__controls control-group__controls--stretch-controls control-group__controls--stack-input-labels">
           <div class="form-control">
             <label for="text-input-31">Input Label</label>
-            <input type="text" name="text-input-31" id="text-input-31" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-31" id="text-input-31" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-32">Input Label</label>
-            <input type="text" name="text-input-32" id="text-input-32" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-32" id="text-input-32" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-33">Input Label</label>
-            <input type="text" name="text-input-33" id="text-input-33" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-33" id="text-input-33" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -476,18 +476,18 @@
         - Input label layout:     inline
       -->
       <div class="control-group">
-        <div class="control-group__controls u-stretch-controls">
+        <div class="control-group__controls control-group__controls--stretch-controls">
           <div class="form-control">
             <label for="text-input-34" class="u-padding-right u-padding-top">Input Label</label>
-            <input type="text" name="text-input-34" id="text-input-34" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-34" id="text-input-34" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-35" class="u-padding-right u-padding-top">Input Label</label>
-            <input type="text" name="text-input-35" id="text-input-35" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-35" id="text-input-35" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
             <label for="text-input-36" class="u-padding-right u-padding-top">Input Label</label>
-            <input type="text" name="text-input-36" id="text-input-36" class="u-text-input" placeholder="Placeholder" />
+            <input type="text" name="text-input-36" id="text-input-36" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -634,15 +634,15 @@
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-1" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-1" id="text-input-1" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-1" id="text-input-1" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-2" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-2" id="text-input-2" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-2" id="text-input-2" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-3" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-3" id="text-input-3" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-3" id="text-input-3" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -662,15 +662,15 @@
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-4" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-4" id="text-input-4" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-4" id="text-input-4" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-5" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-5" id="text-input-5" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-5" id="text-input-5" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-6" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-6" id="text-input-6" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-6" id="text-input-6" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -690,15 +690,15 @@
     &lt;div class="control-group__controls u-inline-children"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-7" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-7" id="text-input-7" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-7" id="text-input-7" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-8" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-8" id="text-input-8" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-8" id="text-input-8" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-9" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-9" id="text-input-9" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-9" id="text-input-9" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -718,15 +718,15 @@
     &lt;div class="control-group__controls u-inline-children"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-10" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-10" id="text-input-10" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-10" id="text-input-10" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-11" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-11" id="text-input-11" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-11" id="text-input-11" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-12" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-12" id="text-input-12" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-12" id="text-input-12" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -743,18 +743,18 @@
   --&gt;
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
-    &lt;div class="control-group__controls u-stretch-controls"&gt;
+    &lt;div class="control-group__controls control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-13" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-13" id="text-input-13" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-13" id="text-input-13" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-14" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-14" id="text-input-14" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-14" id="text-input-14" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-15" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-15" id="text-input-15" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-15" id="text-input-15" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -771,18 +771,18 @@
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
     &lt;div class="control-group__label u-padding-right u-padding-top"&gt;Group Label&lt;/div&gt;
-    &lt;div class="control-group__controls u-stretch-controls"&gt;
+    &lt;div class="control-group__controls control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-16" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-16" id="text-input-16" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-16" id="text-input-16" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-17" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-17" id="text-input-17" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-17" id="text-input-17" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-18" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-18" id="text-input-18" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-18" id="text-input-18" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -799,18 +799,18 @@
   --&gt;
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
-    &lt;div class="control-group__controls u-inline-children u-stretch-controls"&gt;
+    &lt;div class="control-group__controls u-inline-children control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-19" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-19" id="text-input-19" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-19" id="text-input-19" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-20" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-20" id="text-input-20" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-20" id="text-input-20" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-21" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-21" id="text-input-21" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-21" id="text-input-21" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -827,18 +827,18 @@
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
     &lt;div class="control-group__label u-padding-right u-padding-top"&gt;Group Label&lt;/div&gt;
-    &lt;div class="control-group__controls u-inline-children u-stretch-controls"&gt;
+    &lt;div class="control-group__controls u-inline-children control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-22" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-22" id="text-input-22" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-22" id="text-input-22" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-23" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-23" id="text-input-23" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-23" id="text-input-23" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-24" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-24" id="text-input-24" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-24" id="text-input-24" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -854,18 +854,18 @@
     - Input label layout:     stacked
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__controls u-stack-input-labels"&gt;
+    &lt;div class="control-group__controls control-group__controls--stack-input-labels"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-25"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-25" id="text-input-25" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-25" id="text-input-25" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-26"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-26" id="text-input-26" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-26" id="text-input-26" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-27"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-27" id="text-input-27" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-27" id="text-input-27" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -884,15 +884,15 @@
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-28" class="u-padding-right"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-28" id="text-input-28" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-28" id="text-input-28" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-29" class="u-padding-right"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-29" id="text-input-29" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-29" id="text-input-29" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-30" class="u-padding-right"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-30" id="text-input-30" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-30" id="text-input-30" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -908,18 +908,18 @@
     - Input label layout:     stacked
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__controls u-stretch-controls u-stack-input-labels"&gt;
+    &lt;div class="control-group__controls control-group__controls--stretch-controls control-group__controls--stack-input-labels"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-31"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-31" id="text-input-31" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-31" id="text-input-31" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-32"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-32" id="text-input-32" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-32" id="text-input-32" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-33"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-33" id="text-input-33" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-33" id="text-input-33" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -935,18 +935,18 @@
     - Input label layout:     inline
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__controls u-stretch-controls"&gt;
+    &lt;div class="control-group__controls control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-34" class="u-padding-right u-padding-top"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-34" id="text-input-34" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-34" id="text-input-34" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-35" class="u-padding-right u-padding-top"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-35" id="text-input-35" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-35" id="text-input-35" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
         &lt;label for="text-input-36" class="u-padding-right u-padding-top"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-36" id="text-input-36" class="u-text-input" placeholder="Placeholder" /&gt;
+        &lt;input type="text" name="text-input-36" id="text-input-36" class="text-input" placeholder="Placeholder" /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;

@@ -48,26 +48,26 @@
 
     <form>
 
-      <div class="form-control u-stack-input-label is-error">
+      <div class="form-control form-control--stack-input-label is-error">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" required />
+        <input type="text" name="name" id="name" class="text-input" placeholder="ex. Susan Jones" required />
         <div class="form__response">Oops, this control is required.</div>
       </div>
 
-      <div class="form-control u-stack-input-label is-success">
+      <div class="form-control form-control--stack-input-label is-success">
         <label for="email-address">Email Address</label>
-        <input type="email" name="email-address" id="email-address" class="u-text-input" placeholder="ex. you@domain.com" required />
+        <input type="email" name="email-address" id="email-address" class="text-input" placeholder="ex. you@domain.com" required />
         <div class="form__response">This control is now good!</div>
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="phone-number">(Disabled) Phone Number</label>
-        <input type="tel" name="phone-number" id="phone-number" class="u-text-input" placeholder="ex. 1-555-555-5555" disabled />
+        <input type="tel" name="phone-number" id="phone-number" class="text-input" placeholder="ex. 1-555-555-5555" disabled />
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="subject">Subject</label>
-        <div class="u-select-input">
+        <div class="select-input">
           <select name="subject" id="subject">
             <option selected disabled>Please choose:</option>
             <option value="Invoices">Invoices</option>
@@ -79,9 +79,9 @@
         </div>
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="your-message">Your Message</label>
-        <textarea name="your-message" rows="5" cols="30" id="your-message" class="u-text-input" required></textarea>
+        <textarea name="your-message" rows="5" cols="30" id="your-message" class="text-input" required></textarea>
       </div>
 
       <div class="control-group">
@@ -102,7 +102,7 @@
         </div>
       </div>
 
-      <div class="form-control u-stack-input-label">
+      <div class="form-control form-control--stack-input-label">
         <label for="file-attachment">Attach a File</label>
         <input type="file" name="file-attachment" id="file-attachment" />
       </div>
@@ -135,26 +135,26 @@
       <div class="demo__language-code">
         <pre><code>&lt;form&gt;
 
-  &lt;div class="form-control u-stack-input-label is-error"&gt;
+  &lt;div class="form-control form-control--stack-input-label is-error"&gt;
     &lt;label for="name"&gt;Name&lt;/label&gt;
-    &lt;input type="text" name="name" id="name" class="u-text-input" placeholder="ex. Susan Jones" required /&gt;
+    &lt;input type="text" name="name" id="name" class="text-input" placeholder="ex. Susan Jones" required /&gt;
     &lt;div class="form__response"&gt;Oops, this control is required.&lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label is-success"&gt;
+  &lt;div class="form-control form-control--stack-input-label is-success"&gt;
     &lt;label for="email-address"&gt;Email Address&lt;/label&gt;
-    &lt;input type="email" name="email-address" id="email-address" class="u-text-input" placeholder="ex. you@domain.com" required /&gt;
+    &lt;input type="email" name="email-address" id="email-address" class="text-input" placeholder="ex. you@domain.com" required /&gt;
     &lt;div class="form__response"&gt;This control is now good!&lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="phone-number"&gt;(Disabled) Phone Number&lt;/label&gt;
-    &lt;input type="tel" name="phone-number" id="phone-number" class="u-text-input" placeholder="ex. 1-555-555-5555" disabled /&gt;
+    &lt;input type="tel" name="phone-number" id="phone-number" class="text-input" placeholder="ex. 1-555-555-5555" disabled /&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="subject"&gt;Subject&lt;/label&gt;
-    &lt;div class="u-select-input"&gt;
+    &lt;div class="select-input"&gt;
       &lt;select name="subject" id="subject"&gt;
         &lt;option selected disabled&gt;Please choose:&lt;/option&gt;
         &lt;option value="Invoices"&gt;Invoices&lt;/option&gt;
@@ -166,9 +166,9 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="your-message"&gt;Your Message&lt;/label&gt;
-    &lt;textarea name="your-message" rows="5" cols="30" id="your-message" class="u-text-input" required&gt;&lt;/textarea&gt;
+    &lt;textarea name="your-message" rows="5" cols="30" id="your-message" class="text-input" required&gt;&lt;/textarea&gt;
   &lt;/div&gt;
 
   &lt;div class="control-group"&gt;
@@ -189,7 +189,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;div class="form-control u-stack-input-label"&gt;
+  &lt;div class="form-control form-control--stack-input-label"&gt;
     &lt;label for="file-attachment"&gt;Attach a File&lt;/label&gt;
     &lt;input type="file" name="file-attachment" id="file-attachment" /&gt;
   &lt;/div&gt;

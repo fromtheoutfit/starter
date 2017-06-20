@@ -50,7 +50,7 @@
       <figure class="feature__image">
         <img src="../img/fpo-photo-light-1x.jpg" srcset="../img/fpo-photo-light-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
       </figure>
-      <div class="feature__content u-align-left u-background-dark">
+      <div class="feature__content feature__content--align-left feature__content--dark-bg">
         <h1 class="feature__title">Left-aligned Feature Content</h1>
         <div class="feature__body">
           <p><b>…with a dark background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -74,7 +74,7 @@
   &lt;figure class="feature__image"&gt;
     &lt;img src="../img/fpo-photo-light-1x.jpg" srcset="../img/fpo-photo-light-2x.jpg 2x" width="2500" height="400" alt="FPO photo" /&gt;
   &lt;/figure&gt;
-  &lt;div class="feature__content <span class="demo__highlight">u-align-left</span> <span class="demo__highlight">u-background-dark</span>"&gt;
+  &lt;div class="feature__content <span class="demo__highlight">feature__content--align-left</span> <span class="demo__highlight">feature__content--dark-bg</span>"&gt;
     &lt;h1 class="feature__title"&gt;Left-aligned Feature Content&lt;/h1&gt;
     &lt;div class="feature__body"&gt;
       &lt;p&gt;&lt;b&gt;…with a dark background.&lt;/b&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
@@ -95,7 +95,7 @@
       <figure class="feature__image">
         <img src="../img/fpo-photo-dark-1x.jpg" srcset="../img/fpo-photo-dark-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
       </figure>
-      <div class="feature__content u-align-center u-background-light">
+      <div class="feature__content feature__content--align-center feature__content--light-bg">
         <h1 class="feature__title">Center-aligned Feature Content</h1>
         <div class="feature__body">
           <p><b>…with a light background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -119,7 +119,7 @@
   &lt;figure class="feature__image"&gt;
     &lt;img src="../img/fpo-photo-dark-1x.jpg" srcset="../img/fpo-photo-dark-2x.jpg 2x" width="2500" height="400" alt="FPO photo" /&gt;
   &lt;/figure&gt;
-  &lt;div class="feature__content <span class="demo__highlight">u-align-center</span> <span class="demo__highlight">u-background-light</span>"&gt;
+  &lt;div class="feature__content <span class="demo__highlight">feature__content--align-center</span> <span class="demo__highlight">feature__content--light-bg</span>"&gt;
     &lt;h1 class="feature__title"&gt;Center-aligned Feature Content&lt;/h1&gt;
     &lt;div class="feature__body"&gt;
       &lt;p&gt;&lt;b&gt;…with a light background.&lt;/b&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
@@ -140,7 +140,7 @@
       <figure class="feature__image">
         <img src="../img/fpo-photo-mixed-1x.jpg" srcset="../img/fpo-photo-mixed-2x.jpg 2x" width="2500" height="400" alt="FPO photo" />
       </figure>
-      <div class="feature__content u-align-right u-background-dark">
+      <div class="feature__content feature__content--align-right feature__content--dark-bg">
         <h1 class="feature__title">Right-aligned Feature Content</h1>
         <div class="feature__body">
           <p><b>…with a dark background.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -164,7 +164,7 @@
   &lt;figure class="feature__image"&gt;
     &lt;img src="../img/fpo-photo-mixed-1x.jpg" srcset="../img/fpo-photo-mixed-2x.jpg 2x" width="2500" height="400" alt="FPO photo" /&gt;
   &lt;/figure&gt;
-  &lt;div class="feature__content <span class="demo__highlight">u-align-right</span> <span class="demo__highlight">u-background-dark</span>"&gt;
+  &lt;div class="feature__content <span class="demo__highlight">feature__content--align-right</span> <span class="demo__highlight">feature__content--dark-bg</span>"&gt;
     &lt;h1 class="feature__title"&gt;Right-aligned Feature Content&lt;/h1&gt;
     &lt;div class="feature__body"&gt;
       &lt;p&gt;&lt;b&gt;…with a dark background.&lt;/b&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
