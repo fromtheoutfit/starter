@@ -96,7 +96,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;table&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;table&gt;
   &lt;caption&gt;Caption for this table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -138,6 +142,7 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+      </div>
     </div>
 
 

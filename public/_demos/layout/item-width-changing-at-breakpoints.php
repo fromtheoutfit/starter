@@ -83,7 +83,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div data-layout="module" data-layout-options="wrap-items"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div data-layout="module" data-layout-options="wrap-items"&gt;
   &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
     ...
   &lt;/div&gt;
@@ -97,6 +101,7 @@
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

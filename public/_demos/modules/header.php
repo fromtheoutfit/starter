@@ -94,7 +94,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;header class="header"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;header class="header"&gt;
   &lt;div class="header__id"&gt;
     &lt;a href="#"&gt;&lt;img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="200" height="125" alt="Project Name" /&gt;&lt;/a&gt;
     &lt;h1 class="visuallyhidden"&gt;Project Name&lt;/h1&gt;
@@ -135,6 +139,101 @@
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/header&gt;</code></pre>
+      </div>
+
+      <div class="demo__language-intro">
+        <h3>JS</h3>
+        <p>The <code>&lt;header&gt;</code>’s navigation is mobile-ready and needs this JS to function.</p>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>const swapWidth = 600;
+let isVisible   = false;
+let wrapEl      = null;
+let allDesc     = null;
+let openBtn     = null;
+let closeBtn    = null;
+let vpWidth     = null;
+
+
+export function initialize() {
+  openBtn  = document.querySelector('.js-header__open-nav');
+  closeBtn = document.querySelector('.js-header__close-nav');
+  wrapEl   = document.querySelector('.js-header__nav-wrap');
+
+  // Stop everything if any of the above elements do not exist.
+  if (!openBtn || !closeBtn || !wrapEl) {
+    return;
+  }
+
+  allDesc = wrapEl.getElementsByTagName('*');
+  addListeners();
+  betterResize();
+}
+
+
+export function addListeners() {
+  openBtn.addEventListener('click', toggleNav, false);
+  closeBtn.addEventListener('click', toggleNav, false);
+  document.addEventListener('touchend', determineEventLoc, false);
+  document.addEventListener('click', determineEventLoc, false);
+  document.addEventListener('keyup', handleKeyPresses, false);
+  window.addEventListener('resizeViaRAF', handleResize, false);
+}
+
+
+export function betterResize() {
+  let running = false;
+  function doItViaRAF() {
+    if (running) {return;}
+    running = true;
+    requestAnimationFrame(function() {
+      window.dispatchEvent(new CustomEvent('resizeViaRAF'));
+      running = false;
+    });
+  }
+  window.addEventListener('resize', doItViaRAF);
+}
+
+
+export function handleResize() {
+  vpWidth = window.innerWidth;
+  if ((vpWidth >= swapWidth) && isVisible) {
+    toggleNav(event);
+  }
+}
+
+
+export function determineEventLoc(event) {
+  if (isVisible) {
+    if (event.target === wrapEl) {
+      return;
+    } else {
+      for (let i = 0; i < allDesc.length; i++) {
+        if (event.target === allDesc[i]) {
+          return;
+        }
+      }
+    }
+    toggleNav(event);
+  } else {
+    return;
+  }
+}
+
+
+export function handleKeyPresses(event) {
+  if (isVisible && (event.keyCode === 27)) {
+    toggleNav(event);
+  }
+}
+
+
+export function toggleNav(event) {
+  wrapEl.classList.toggle('is-visible');
+  isVisible = !isVisible;
+  event.stopPropagation();
+}</code></pre>
+      </div>
     </div>
 
 

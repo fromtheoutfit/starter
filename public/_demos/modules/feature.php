@@ -66,7 +66,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="feature"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="feature"&gt;
   &lt;figure class="feature__image"&gt;
     &lt;img src="../img/fpo-photo-light-1x.jpg" srcset="../img/fpo-photo-light-2x.jpg 2x" width="2500" height="400" alt="FPO photo" /&gt;
   &lt;/figure&gt;
@@ -78,6 +82,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 
@@ -106,7 +111,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="feature"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="feature"&gt;
   &lt;figure class="feature__image"&gt;
     &lt;img src="../img/fpo-photo-dark-1x.jpg" srcset="../img/fpo-photo-dark-2x.jpg 2x" width="2500" height="400" alt="FPO photo" /&gt;
   &lt;/figure&gt;
@@ -118,6 +127,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 
@@ -146,7 +156,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="feature"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="feature"&gt;
   &lt;figure class="feature__image"&gt;
     &lt;img src="../img/fpo-photo-mixed-1x.jpg" srcset="../img/fpo-photo-mixed-2x.jpg 2x" width="2500" height="400" alt="FPO photo" /&gt;
   &lt;/figure&gt;
@@ -158,6 +172,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

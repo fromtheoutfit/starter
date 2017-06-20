@@ -71,7 +71,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="mm"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="mm"&gt;
   &lt;div class="mm__header"&gt;
     &lt;h1 class="mm__title"&gt;Mixed Media Block Title&lt;/h1&gt;
     &lt;p class="mm__subtitle"&gt;Mixed media block subtitle&lt;/p&gt;
@@ -88,6 +92,7 @@
     &lt;a href="#" class="btn"&gt;Action&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 
@@ -130,7 +135,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="mm"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="mm"&gt;
   &lt;figure class="mm__image"&gt;
     &lt;a href="#"&gt;&lt;img src="../img/fpo-image-400x300-1x.png" srcset="../img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /&gt;&lt;/a&gt;
   &lt;/figure&gt;
@@ -156,6 +165,7 @@
     &lt;a href="#" class="btn"&gt;Action&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 
@@ -194,7 +204,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="mm"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="mm"&gt;
   &lt;div class="mm__header"&gt;
     &lt;h1 class="mm__title"&gt;&lt;a href="http://a-place.com"&gt;Title&lt;/a&gt;&lt;/h1&gt;
   &lt;/div&gt;
@@ -216,6 +230,7 @@
     &lt;a href="#" class="btn-small"&gt;Action 3&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 
@@ -241,7 +256,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="mm"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="mm"&gt;
   &lt;figure class="mm__image"&gt;
     &lt;a href="#" class="icon-play--image"&gt;&lt;img src="../img/fpo-image-400x300-1x.png" srcset="../img/fpo-image-400x300-2x.png 2x" width="400" height="300" alt="FPO image" /&gt;&lt;/a&gt;
     &lt;figcaption&gt;A small caption for the above image.&lt;/figcaption&gt;
@@ -250,6 +269,7 @@
     &lt;a href="#" class="btn icon-play--btn"&gt;Action&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

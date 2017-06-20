@@ -129,7 +129,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;form&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;form&gt;
 
   &lt;div class="form-control u-stack-input-label is-error"&gt;
     &lt;label for="name"&gt;Name&lt;/label&gt;
@@ -204,6 +208,7 @@
   &lt;div class="form__response is-success"&gt;Sent, thank you!&lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
+      </div>
     </div>
 
 

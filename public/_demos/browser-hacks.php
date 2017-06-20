@@ -47,13 +47,18 @@
 
 
     <div class="demo__code">
-      <pre><code>.selector {
   ...
+      <div class="demo__language-intro">
+        <h3>Sass</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>.selector {
 
   @include ie-11-only {
     ...
   }
 }</code></pre>
+      </div>
     </div>
 
     <?php include_once 'inc/scripts.php'; ?>

@@ -133,7 +133,11 @@ A line of code</code></pre>
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="copy-block"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="copy-block"&gt;
 
   &lt;h1&gt;Heading 1&lt;/h1&gt;
   &lt;h2&gt;Heading 2&lt;/h2&gt;
@@ -211,6 +215,7 @@ A line of code&lt;/code&gt;&lt;/pre&gt;
   &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

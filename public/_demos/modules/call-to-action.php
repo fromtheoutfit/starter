@@ -65,7 +65,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="cta"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="cta"&gt;
   &lt;div class="cta__content"&gt;
     &lt;h1 class="cta__title"&gt;See Our Thing&lt;/h1&gt;
     &lt;div class="cta__body"&gt;
@@ -76,6 +80,7 @@
     &lt;a href="#" class="btn"&gt;See Thing Now!&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

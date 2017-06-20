@@ -75,7 +75,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="row-reverse"</span>&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="row-reverse"</span>&gt;
   &lt;div data-layout="module__item"&gt;
     ...
   &lt;/div&gt;
@@ -89,6 +93,7 @@
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

@@ -58,10 +58,15 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="intro"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="intro"&gt;
   &lt;h1 class="intro__title"&gt;About The Company&lt;/h1&gt;
   &lt;p class="intro__subtitle"&gt;Bits and bobs about our people, culture, etc.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 
@@ -82,10 +87,15 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div class="intro <span class="demo__highlight">intro--inline</span> <span class="demo__highlight">intro--inverted</span>"&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div class="intro <span class="demo__highlight">intro--inline</span> <span class="demo__highlight">intro--inverted</span>"&gt;
   &lt;h1 class="intro__title"&gt;About The Company&lt;/h1&gt;
   &lt;p class="intro__subtitle"&gt;Bits and bobs about our people, culture, etc.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

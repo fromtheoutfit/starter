@@ -216,7 +216,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;form&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;form&gt;
 
   &lt;div class="form-control u-stack-input-label"&gt;
     &lt;label for="input-1"&gt;Text&lt;/label&gt;
@@ -378,6 +382,7 @@
   &lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
+      </div>
     </div>
 
 

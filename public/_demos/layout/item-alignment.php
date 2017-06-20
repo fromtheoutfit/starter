@@ -94,7 +94,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;div data-layout="module" data-layout-options="wrap-items" <span class="demo__highlight">data-layout-align="h-center"</span>&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;div data-layout="module" data-layout-options="wrap-items" <span class="demo__highlight">data-layout-align="h-center"</span>&gt;
   &lt;div data-layout="module__item" data-layout-width="one-third"&gt;
     ...
   &lt;/div&gt;
@@ -111,6 +115,7 @@
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+      </div>
     </div>
 
 

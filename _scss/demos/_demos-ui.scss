@@ -262,8 +262,33 @@ Demo code
 }
 
 
-.demo__code pre {
-  line-height: 1.25;
+.demo__language-intro {
+  align-items: center;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 3px;
+  display: flex;
+  margin-bottom: 1em;
+  padding: 1em;
+
+  &:not(:first-of-type) {
+    margin-top: 2em;
+  }
+
+  h3 {
+    font-size: 125%;
+    font-weight: bold;
+  }
+
+  p {
+    margin-left: 2em;
+  }
+}
+
+
+.demo__language-code {
+  pre {
+    line-height: 1.25;
+  }
 }
 
 

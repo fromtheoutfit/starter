@@ -501,7 +501,11 @@
 
 
     <div class="demo__code">
-      <pre><code>&lt;form&gt;
+      <div class="demo__language-intro">
+        <h3>HTML</h3>
+      </div>
+      <div class="demo__language-code">
+        <pre><code>&lt;form&gt;
 
   &lt;!--
     Layout Demo #1
@@ -948,6 +952,7 @@
   &lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
+      </div>
     </div>
 
 
