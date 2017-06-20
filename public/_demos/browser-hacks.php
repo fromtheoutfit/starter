@@ -47,15 +47,15 @@
 
 
     <div class="demo__code">
-  ...
       <div class="demo__language-intro">
         <h3>Sass</h3>
       </div>
       <div class="demo__language-code">
         <pre><code>.selector {
+  // Declarations for all browsers
 
   @include ie-11-only {
-    ...
+    // Overriding declarations for IE 11
   }
 }</code></pre>
       </div>
