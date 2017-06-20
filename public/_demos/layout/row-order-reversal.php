@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Grid with Row-order Reversal</h2>
+      <h2>Reverse the order of <code>module__items</code></h2>
     </div>
 
 

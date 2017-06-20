@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Grid with Equal-height <code>module__item</code>s</h2>
+      <h2>Equal-height <code>module__item</code>s</h2>
     </div>
 
 

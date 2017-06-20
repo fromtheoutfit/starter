@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Grid with <code>module__item</code> Alignment</h2>
+      <h2>Align all <code>module__item</code>s horizontally and/or vertically</h2>
     </div>
 
 

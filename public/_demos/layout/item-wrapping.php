@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Grid with <code>module__item</code> Wrapping</h2>
+      <h2>When space is tight, wrap <code>module__item</code>s</h2>
     </div>
 
 

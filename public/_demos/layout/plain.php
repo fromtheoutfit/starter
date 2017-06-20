@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Plain Grid</h2>
+      <h2>A plain grid</h2>
     </div>
 
 

@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Grid with <code>module__item</code> Width Changing at Breakpoints</h2>
+      <h2>Set a <code>module__item</code>’s width at specific breakpoints</h2>
     </div>
 
 

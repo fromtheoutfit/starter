@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Nested Grids</h2>
+      <h2>Grids inside grids!</h2>
     </div>
 
 

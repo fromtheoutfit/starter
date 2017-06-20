@@ -37,7 +37,7 @@
 
     <div class="demo__info">
       <h2>IE 11 Only</h2>
-      <p>In any selector that needs IE 11 specific overrides, use the <code>ie-11-only</code> @mixin:</p>
+      <p>In any selector that needs IE 11 specific overrides, use the <code>ie-11-only</code> <code>@mixin</code>:</p>
     </div>
 
 

@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Grid with Gutters</h2>
+      <h2>A grid with gutters</h2>
     </div>
 
 
