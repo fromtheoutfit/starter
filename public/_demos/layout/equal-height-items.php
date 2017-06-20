@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Equal-height <code>module__item</code>s</h2>
+      <h2>Equal-height <code>grid__item</code>s</h2>
     </div>
 
 
@@ -45,20 +45,20 @@
     ======================================================================= -->
 
 
-    <div data-layout="module" data-layout-options="equal-height-items">
-      <div data-layout="module__item">
+    <div data-layout="grid" data-layout-options="equal-height-items">
+      <div data-layout="grid__item">
         <div>
-          <p>Lets make the <code>module__item</code>s the same height as each other; the code below shows you how to do it.</p>
+          <p>Lets make the <code>grid__item</code>s the same height as each other; the code below shows you how to do it.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>Be sure to apply the code to the <code>module</code> itself, not to any of its <code>module__item</code>s.</p>
+          <p>Be sure to apply the code to the <code>grid</code> itself, not to any of its <code>grid__item</code>s.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>We need a hefty amount of content in this <code>module__item</code> to make this demonstration a bit more obvious, so how about a joke?</p>
+          <p>We need a hefty amount of content in this <code>grid__item</code> to make this demonstration a bit more obvious, so how about a joke?</p>
           <blockquote>
             <p><em>Dad hurt his wrist and had to go to the hospital, where he talked to a doctor.</em></p>
             <p>
@@ -83,14 +83,14 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="equal-height-items"</span>&gt;
-    &lt;div data-layout="module__item"&gt;
+        <pre><code>&lt;div data-layout="grid" <span class="demo__highlight">data-layout-options="equal-height-items"</span>&gt;
+    &lt;div data-layout="grid__item"&gt;
       ...
     &lt;/div&gt;
-    &lt;div data-layout="module__item"&gt;
+    &lt;div data-layout="grid__item"&gt;
       ...
     &lt;/div&gt;
-    &lt;div data-layout="module__item"&gt;
+    &lt;div data-layout="grid__item"&gt;
       ...
     &lt;/div&gt;
   &lt;/div&gt;

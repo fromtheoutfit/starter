@@ -45,18 +45,18 @@
     ======================================================================= -->
 
 
-    <div data-layout="module">
-      <div data-layout="module__item">
+    <div data-layout="grid">
+      <div data-layout="grid__item">
         <div>
-          <p>A <code>module__item</code> inside of an plain, optionless module. Without any additional code applied, all <code>module__item</code>s will be equal-width and on the same row, even if doing so breaks the layout in small viewports.</p>
+          <p>A <code>grid__item</code> inside of an plain, optionless <code>grid</code>. Without any additional code applied, all <code>grid__item</code>s will be equal-width and on the same row, even if doing so breaks the layout in small viewports.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>How’s the weather where you are?</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>Why not <a href="http://forecast.io/">find out</a>?</p>
           <p>That link points to a neat website that can determine your location and tell you what the current weather is where you are.</p>
@@ -75,14 +75,14 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module"&gt;
-  &lt;div data-layout="module__item"&gt;
+        <pre><code>&lt;div data-layout="grid"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

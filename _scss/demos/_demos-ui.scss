@@ -57,13 +57,12 @@ Navigation
   color: #fff;
   display: block;
   margin-bottom: 0.5em;
-  text-decoration: underline;
 }
 
 
 .demos-nav a:focus,
 .demos-nav a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
@@ -201,56 +200,56 @@ Demo information
 
 
 /* ============================================================================
-Layout demo(s) content - modules, module__items, etc.
+Layout demo(s) content - grids, grid__items, etc.
 ============================================================================ */
 
 
-.demo [data-layout~="module__item"] p,
-.demo [data-layout~="module__item"] pre {
+.demo [data-layout~="grid__item"] p,
+.demo [data-layout~="grid__item"] pre {
   line-height: 1.5;
   margin: 0.75em 0;
 }
 
 
-.demo [data-layout~="module__item"] p:first-child {
+.demo [data-layout~="grid__item"] p:first-child {
   margin-top: 0;
 }
 
 
-.demo [data-layout~="module__item"] p:last-child {
+.demo [data-layout~="grid__item"] p:last-child {
   margin-bottom: 0;
 }
 
 
-.demo [data-layout~="module__item"] ul,
-.demo [data-layout~="module__item"] ol {
+.demo [data-layout~="grid__item"] ul,
+.demo [data-layout~="grid__item"] ol {
   margin: 0.75em 0;
   padding-left: 1.25em;
 }
 
 
-.demo [data-layout~="module__item"] ul {
+.demo [data-layout~="grid__item"] ul {
   list-style-type: disc;
 }
 
 
-.demo [data-layout~="module__item"] ol {
+.demo [data-layout~="grid__item"] ol {
   list-style-type: decimal;
 }
 
 
-.demo [data-layout~="module__item"] li {
+.demo [data-layout~="grid__item"] li {
   margin-bottom: 0.5em;
   width: auto;
 }
 
 
-.demo [data-layout~="module__item"] li:last-child {
+.demo [data-layout~="grid__item"] li:last-child {
   margin-bottom: 0;
 }
 
 
-.demo [data-layout~="module__item"] > * {
+.demo [data-layout~="grid__item"] > * {
   border: 1px dashed rgba(0,0,0,0.25);
   padding: 20px;
 }

@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Reverse the order of <code>module__items</code></h2>
+      <h2>Reverse the order of <code>grid__items</code></h2>
     </div>
 
 
@@ -45,25 +45,25 @@
     ======================================================================= -->
 
 
-    <div data-layout="module" data-layout-options="row-reverse">
-      <div data-layout="module__item">
+    <div data-layout="grid" data-layout-options="row-reverse">
+      <div data-layout="grid__item">
         <div>
-          <p>This <code>module__item</code> is <b>first</b> in the html source order.</p>
+          <p>This <code>grid__item</code> is <b>first</b> in the html source order.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>This <code>module__item</code> is <b>second</b> in the html source order.</p>
+          <p>This <code>grid__item</code> is <b>second</b> in the html source order.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>This <code>module__item</code> is <b>third</b> in the html source order.</p>
+          <p>This <code>grid__item</code> is <b>third</b> in the html source order.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>This <code>module__item</code> is <b>fourth</b> in the html source order.</p>
+          <p>This <code>grid__item</code> is <b>fourth</b> in the html source order.</p>
         </div>
       </div>
     </div>
@@ -79,17 +79,17 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="row-reverse"</span>&gt;
-  &lt;div data-layout="module__item"&gt;
+        <pre><code>&lt;div data-layout="grid" <span class="demo__highlight">data-layout-options="row-reverse"</span>&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

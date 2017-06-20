@@ -8,26 +8,26 @@
 
 
 // ============================================================================
-// A standard module, an optional container for its items, and the items.
+// A standard grid, an optional container for its items, and the items.
 // ============================================================================
 
 
-[data-layout~="module"] {
+[data-layout~="grid"] {
   display: flex;
 }
 
 
-// module__container is optional. If you use it, it should be the immediate
-// descendant of module and it should envelope all module__item elements.
+// grid__container is optional. If you use it, it should be the immediate
+// descendant of grid and it should envelope all grid__item elements.
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// [data-layout~="module__container"] {
+// [data-layout~="grid__container"] {
 //   display: flex;
 //   max-width: $content-max-width;
 //   min-width: $content-min-width;
 // }
 
 
-[data-layout~="module__item"] {
+[data-layout~="grid__item"] {
   flex: 1;
 }

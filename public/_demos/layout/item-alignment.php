@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Align all <code>module__item</code>s horizontally and/or vertically</h2>
+      <h2>Align all <code>grid__item</code>s horizontally and/or vertically</h2>
     </div>
 
 
@@ -45,25 +45,25 @@
     ======================================================================= -->
 
 
-    <div data-layout="module" data-layout-options="wrap-items" data-layout-align="h-center">
-      <div data-layout="module__item" data-layout-width="one-third">
+    <div data-layout="grid" data-layout-options="wrap-items" data-layout-align="h-center">
+      <div data-layout="grid__item" data-layout-width="one-third">
         <div>
-          <p>It’s time to introduce another feature: <em><code>module__item</code> alignment!</em></p>
-          <p>When there’s unused space around <code>module__item</code>s, we can tell them to align themselves a few different ways.</p>
+          <p>It’s time to introduce another feature: <em><code>grid__item</code> alignment!</em></p>
+          <p>When there’s unused space around <code>grid__item</code>s, we can tell them to align themselves a few different ways.</p>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-third">
+      <div data-layout="grid__item" data-layout-width="one-third">
         <div>
           <p>In the code below you’ll see an attribute called <code>data-layout-align</code> with its value set to <code>h-center</code>.</p>
-          <p><code>h-center</code> tells the <code>module</code> to align its <code>module__item</code>s to the center of the x-axis.</p>
+          <p><code>h-center</code> tells the <code>grid</code> to align its <code>grid__item</code>s to the center of the x-axis.</p>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-third">
+      <div data-layout="grid__item" data-layout-width="one-third">
         <div>
           <p>There are a number of available values, some for the x-axis and some for the y-axis…</p>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-third">
+      <div data-layout="grid__item" data-layout-width="one-third">
         <div>
           <p>The available x-axis / horizontal values are:</p>
           <ul>
@@ -75,7 +75,7 @@
           </ul>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-third">
+      <div data-layout="grid__item" data-layout-width="one-third">
         <div>
           <p>The available y-axis / vertical values are:</p>
           <ul>
@@ -98,20 +98,20 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module" data-layout-options="wrap-items" <span class="demo__highlight">data-layout-align="h-center"</span>&gt;
-  &lt;div data-layout="module__item" data-layout-width="one-third"&gt;
+        <pre><code>&lt;div data-layout="grid" data-layout-options="wrap-items" <span class="demo__highlight">data-layout-align="h-center"</span>&gt;
+  &lt;div data-layout="grid__item" data-layout-width="one-third"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" data-layout-width="one-third"&gt;
+  &lt;div data-layout="grid__item" data-layout-width="one-third"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" data-layout-width="one-third"&gt;
+  &lt;div data-layout="grid__item" data-layout-width="one-third"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" data-layout-width="one-third"&gt;
+  &lt;div data-layout="grid__item" data-layout-width="one-third"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" data-layout-width="one-third"&gt;
+  &lt;div data-layout="grid__item" data-layout-width="one-third"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

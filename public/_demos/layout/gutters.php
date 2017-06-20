@@ -45,20 +45,20 @@
     ======================================================================= -->
 
 
-    <div data-layout="module" data-layout-options="gutters">
-      <div data-layout="module__item">
+    <div data-layout="grid" data-layout-options="gutters">
+      <div data-layout="grid__item">
         <div>
-          <p>One small addition: <em>gutters</em>. Take a look at the code below to see how to add gutters to a <code>module</code>.</p>
+          <p>One small addition: <em>gutters</em>. Take a look at the code below to see how to add gutters to a <code>grid</code>.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>See the highlighted <code>data-layout-options="gutters"</code> attribute? That’s all you need.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>Just be sure to apply that code to the <code>module</code> itself, <em>not</em> to any of its <code>module__item</code>s.</p>
+          <p>Just be sure to apply that code to the <code>grid</code> itself, <em>not</em> to any of its <code>grid__item</code>s.</p>
         </div>
       </div>
     </div>
@@ -74,14 +74,14 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="gutters"</span>&gt;
-  &lt;div data-layout="module__item"&gt;
+        <pre><code>&lt;div data-layout="grid" <span class="demo__highlight">data-layout-options="gutters"</span>&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

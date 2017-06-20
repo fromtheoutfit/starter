@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>When space is tight, wrap <code>module__item</code>s</h2>
+      <h2>When space is tight, wrap <code>grid__item</code>s</h2>
     </div>
 
 
@@ -45,48 +45,48 @@
     ======================================================================= -->
 
 
-    <div data-layout="module" data-layout-options="wrap-items">
-      <div data-layout="module__item">
+    <div data-layout="grid" data-layout-options="wrap-items">
+      <div data-layout="grid__item">
         <div>
-          <p>By default, all <code>module__item</code>s in a <code>module</code> will stay on one row, even if doing so breaks the layout.</p>
+          <p>By default, all <code>grid__item</code>s in a <code>grid</code> will stay on one row, even if doing so breaks the layout.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p><q>I think that’s dumb</q>, you might say.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>Let’s tell the <code>module__item</code>s to wrap onto more rows as needed.</p>
+          <p>Let’s tell the <code>grid__item</code>s to wrap onto more rows as needed.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>In the code below you’ll see the <code>wrap-items</code> value in the <code>data-layout-options</code> attribute…</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>…with that added to a <code>module</code>, all of its <code>module__item</code>s will now wrap as desired.</p>
+          <p>…with that added to a <code>grid</code>, all of its <code>grid__item</code>s will now wrap as desired.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>This demo has <code>wrap-items</code> on it, so make your browser thinner/wider to see it in action.</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
-          <p>See how some of the <code>module__item</code>s are moving to new rows as needed?</p>
+          <p>See how some of the <code>grid__item</code>s are moving to new rows as needed?</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>How neat is that?</p>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>That’s pretty neat.</p>
         </div>
@@ -104,32 +104,32 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module" <span class="demo__highlight">data-layout-options="wrap-items"</span>&gt;
-  &lt;div data-layout="module__item"&gt;
+        <pre><code>&lt;div data-layout="grid" <span class="demo__highlight">data-layout-options="wrap-items"</span>&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

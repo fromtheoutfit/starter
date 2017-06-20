@@ -45,42 +45,42 @@
     ======================================================================= -->
 
 
-    <div data-layout="module">
-      <div data-layout="module__item">
+    <div data-layout="grid">
+      <div data-layout="grid__item">
         <div>
           <p>
             Nested level = 0<br />
-            <code>module__item</code> #1
+            <code>grid__item</code> #1
           </p>
-          <div data-layout="module">
-            <div data-layout="module__item">
+          <div data-layout="grid">
+            <div data-layout="grid__item">
               <div>
                 <p>
                   Nested level = 1<br />
-                  <code>module__item</code> #1
+                  <code>grid__item</code> #1
                 </p>
               </div>
             </div>
-            <div data-layout="module__item">
+            <div data-layout="grid__item">
               <div>
                 <p>
                   Nested level = 1<br />
-                  <code>module__item</code> #2
+                  <code>grid__item</code> #2
                 </p>
-                <div data-layout="module">
-                  <div data-layout="module__item">
+                <div data-layout="grid">
+                  <div data-layout="grid__item">
                     <div>
                       <p>
                         Nested level = 2<br />
-                        <code>module__item</code> #1
+                        <code>grid__item</code> #1
                       </p>
                     </div>
                   </div>
-                  <div data-layout="module__item">
+                  <div data-layout="grid__item">
                     <div>
                       <p>
                         Nested level = 2<br />
-                        <code>module__item</code> #2
+                        <code>grid__item</code> #2
                       </p>
                     </div>
                   </div>
@@ -90,26 +90,26 @@
           </div>
         </div>
       </div>
-      <div data-layout="module__item">
+      <div data-layout="grid__item">
         <div>
           <p>
             Nested level = 0<br />
-            <code>module__item</code> #2
+            <code>grid__item</code> #2
           </p>
-          <div data-layout="module">
-            <div data-layout="module__item">
+          <div data-layout="grid">
+            <div data-layout="grid__item">
               <div>
                 <p>
                   Nested level = 1<br />
-                  <code>module__item</code> #1
+                  <code>grid__item</code> #1
                 </p>
               </div>
             </div>
-            <div data-layout="module__item">
+            <div data-layout="grid__item">
               <div>
                 <p>
                   Nested level = 1<br />
-                  <code>module__item</code> #2
+                  <code>grid__item</code> #2
                 </p>
               </div>
             </div>
@@ -129,33 +129,33 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module"&gt;
-  &lt;div data-layout="module__item"&gt;
+        <pre><code>&lt;div data-layout="grid"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
-    &lt;div data-layout="module"&gt;
-      &lt;div data-layout="module__item"&gt;
+    &lt;div data-layout="grid"&gt;
+      &lt;div data-layout="grid__item"&gt;
         ...
       &lt;/div&gt;
-      &lt;div data-layout="module__item"&gt;
+      &lt;div data-layout="grid__item"&gt;
         ...
-        &lt;div data-layout="module"&gt;
-          &lt;div data-layout="module__item"&gt;
+        &lt;div data-layout="grid"&gt;
+          &lt;div data-layout="grid__item"&gt;
             ...
           &lt;/div&gt;
-          &lt;div data-layout="module__item"&gt;
+          &lt;div data-layout="grid__item"&gt;
             ...
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div data-layout="module__item"&gt;
+  &lt;div data-layout="grid__item"&gt;
     ...
-    &lt;div data-layout="module"&gt;
-      &lt;div data-layout="module__item"&gt;
+    &lt;div data-layout="grid"&gt;
+      &lt;div data-layout="grid__item"&gt;
         ...
       &lt;/div&gt;
-      &lt;div data-layout="module__item"&gt;
+      &lt;div data-layout="grid__item"&gt;
         ...
       &lt;/div&gt;
     &lt;/div&gt;

@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Set a <code>module__item</code>’s width at specific breakpoints</h2>
+      <h2>Set a <code>grid__item</code>’s width at specific breakpoints</h2>
     </div>
 
 
@@ -45,22 +45,22 @@
     ======================================================================= -->
 
 
-    <div data-layout="module" data-layout-options="wrap-items">
-      <div data-layout="module__item" data-layout-width="one-whole s-one-third m-one-half">
+    <div data-layout="grid" data-layout-options="wrap-items">
+      <div data-layout="grid__item" data-layout-width="one-whole s-one-third m-one-half">
         <div>
-          <p>Sometimes you want your <code>module__item</code>(s) to be a particular width <em>at particular breakpoints</em>.</p>
-          <p>For example, lets say you want a <code>module__item</code> to be 100% wide in small viewports, 50% wide when the viewport is a bit bigger, then 25% wide when the viewport is huge.</p>
+          <p>Sometimes you want your <code>grid__item</code>(s) to be a particular width <em>at particular breakpoints</em>.</p>
+          <p>For example, lets say you want a <code>grid__item</code> to be 100% wide in small viewports, 50% wide when the viewport is a bit bigger, then 25% wide when the viewport is huge.</p>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-whole s-one-third m-one-half">
+      <div data-layout="grid__item" data-layout-width="one-whole s-one-third m-one-half">
         <div>
           <p>This layout system is ready for that—it makes (10) different widths available at (7) different breakpoints.</p>
-          <p>In the code below you’ll see a <em>bunch</em> of values in each <code>module__item</code>’s <code>data-layout-width</code> attribute. From left-to-right, the values dictate the width the <code>module__item</code> should be at each breakpoint.</p>
+          <p>In the code below you’ll see a <em>bunch</em> of values in each <code>grid__item</code>’s <code>data-layout-width</code> attribute. From left-to-right, the values dictate the width the <code>grid__item</code> should be at each breakpoint.</p>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-whole s-one-third m-one-half">
+      <div data-layout="grid__item" data-layout-width="one-whole s-one-third m-one-half">
         <div>
-          <p>Using the first <code>module__item</code> as an example, its <code>data-layout-width</code> values translate to:</p>
+          <p>Using the first <code>grid__item</code> as an example, its <code>data-layout-width</code> values translate to:</p>
           <ol>
             <li>By default, it’s width will be one-whole (100%).</li>
             <li>At the small breakpoint, its width will be one-third (33.333%).</li>
@@ -69,7 +69,7 @@
           <p>…and because we’ve not added any <em>more</em> values to that attribute, it will remain one-half (50%) as the viewport gets larger.</p>
         </div>
       </div>
-      <div data-layout="module__item" data-layout-width="one-whole m-one-half">
+      <div data-layout="grid__item" data-layout-width="one-whole m-one-half">
         <div>
           <p>If you scroll down the page a little more, you’ll see all possible widths defined and demonstrated—some of the latter ones might not work if your viewport is not very wide at the moment, so feel free to make it thinner / wider to see it all in action.</p>
         </div>
@@ -87,17 +87,17 @@
         <h3>HTML</h3>
       </div>
       <div class="demo__language-code">
-        <pre><code>&lt;div data-layout="module" data-layout-options="wrap-items"&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
+        <pre><code>&lt;div data-layout="grid" data-layout-options="wrap-items"&gt;
+  &lt;div data-layout="grid__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
+  &lt;div data-layout="grid__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
+  &lt;div data-layout="grid__item" <span class="demo__highlight">data-layout-width="one-whole s-one-third m-one-half"</span>&gt;
     ...
   &lt;/div&gt;
-  &lt;div data-layout="module__item" <span class="demo__highlight">data-layout-width="one-whole m-one-half"</span>&gt;
+  &lt;div data-layout="grid__item" <span class="demo__highlight">data-layout-width="one-whole m-one-half"</span>&gt;
     ...
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

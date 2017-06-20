@@ -52,7 +52,7 @@ fieldset {
 
 // Using the three selectors below, we reset some of the properties of many
 // common elements to then scope and redefine them inside of
-// _scss/modules/_copy-block.scss. This article sums up why it’s a good idea:
+// _scss/global/_copy-block.scss. This article sums up why it’s a good idea:
 // http://cognition.happycog.com/article/expressive-type-for-copy-blocks
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, blockquote, pre, figure,
 figcaption {font-size:inherit; line-height:1; margin:0; padding:0;}

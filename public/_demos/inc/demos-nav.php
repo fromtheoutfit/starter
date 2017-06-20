@@ -28,11 +28,11 @@
   <div class="demos-nav__list">
     <a href="/_demos/layout/plain.php">Plain grid</a>
     <a href="/_demos/layout/gutters.php">Grid with gutters</a>
-    <a href="/_demos/layout/equal-height-items.php">Equal height <code>module__item</code>s</a>
-    <a href="/_demos/layout/item-wrapping.php"><code>module__item</code> wrapping</a>
-    <a href="/_demos/layout/item-width.php"><code>module__item</code> width(s)</a>
-    <a href="/_demos/layout/item-width-changing-at-breakpoints.php"><code>module__item</code> width(s) changing at breakpoints</a>
-    <a href="/_demos/layout/item-alignment.php"><code>module__item</code> h/v alignment</a>
+    <a href="/_demos/layout/equal-height-items.php">Equal height <code>grid__item</code>s</a>
+    <a href="/_demos/layout/item-wrapping.php"><code>grid__item</code> wrapping</a>
+    <a href="/_demos/layout/item-width.php"><code>grid__item</code> width(s)</a>
+    <a href="/_demos/layout/item-width-changing-at-breakpoints.php">Changing <code>grid__item</code> width at breakpoints</a>
+    <a href="/_demos/layout/item-alignment.php"><code>grid__item</code> alignment</a>
     <a href="/_demos/layout/nested-grids.php">Nested grids</a>
     <a href="/_demos/layout/row-order-reversal.php">Row order reversal</a>
   </div>
