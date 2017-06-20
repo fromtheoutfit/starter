@@ -1,41 +1,57 @@
-let demosNav       = null;
-let demosNavLinks  = null;
-let demosNavToggle = null;
-const toggledClass = 'is-visible';
+let demosNav          = null;
+let demosNavAllDesc   = null;
+let demosNavToggle    = null;
+let demosNavIsVisible = false;
+
 
 export function initialize() {
   demosNav       = document.querySelector('.js-demos-nav');
-  demosNavLinks  = document.querySelectorAll('.js-demos-nav a');
   demosNavToggle = document.querySelector('.js-demos-nav-toggle');
 
   // Stop everything if any of the above elements do not exist.
-  if (!demosNav || !demosNavLinks || !demosNavToggle) {
+  if (!demosNav || !demosNavToggle) {
     return;
   }
 
+  demosNavAllDesc = demosNav.getElementsByTagName('*');
   addListeners();
 }
 
+
 export function addListeners() {
   demosNavToggle.addEventListener('click', toggleDemosNav, false);
-  for (let i = 0; i < demosNavLinks.length; i++) {
-    demosNavLinks[i].addEventListener('click', toggleDemosNav, false);
+  document.addEventListener('touchend', determineEventLoc, false);
+  document.addEventListener('click', determineEventLoc, false);
+  document.addEventListener('keyup', handleKeyPresses, false);
+}
+
+
+export function determineEventLoc(event) {
+  if (demosNavIsVisible) {
+    if (event.target === demosNav) {
+      return;
+    } else {
+      for (let i = 0; i < demosNavAllDesc.length; i++) {
+        if (event.target === demosNavAllDesc[i]) {
+          return;
+        }
+      }
+    }
+    toggleDemosNav(event);
+  } else {
+    return;
   }
 }
+
+
+export function handleKeyPresses(event) {
+  if (demosNavIsVisible && (event.keyCode === 27)) {
+    toggleDemosNav(event);
+  }
+}
+
 
 export function toggleDemosNav(event) {
-  if (demosNav.classList) {
-    demosNav.classList.toggle(toggledClass);
-  } else {
-    let classes       = demosNav.toggledClass.split(' ');
-    let existingIndex = classes.indexOf(toggledClass);
-    if (existingIndex >= 0) {
-      classes.splice(existingIndex, 1);
-    } else {
-      classes.push(toggledClass);
-    }
-    demosNav.toggledClass = classes.join(' ');
-  }
+  demosNav.classList.toggle('is-visible');
+  demosNavIsVisible = !demosNavIsVisible;
 }
-
-initialize();
