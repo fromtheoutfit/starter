@@ -29,11 +29,33 @@
     <?php include_once 'inc/demos-nav.php'; ?>
 
     <div class="copy-block">
-      <p style="padding:100px 25px 25px; text-align:center;">
-        &uarr;<br />
-        Hi! Tap that button up there.
+      <p class="demo-index-info">
+        <span class="demo-up-arrow">&uarr;</span>
+        Hello. Tap that button.
       </p>
     </div>
+
+    <style>
+      .demo-index-info {
+        padding: 50px 25px 25px;
+        text-align: center;
+      }
+      .demo-up-arrow {
+        animation-name: bounce-arrow;
+        animation-duration: 500ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        display: block;
+      }
+      @keyframes bounce-arrow {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
 
     <?php include_once 'inc/scripts.php'; ?>
 
