@@ -14,13 +14,13 @@
     <a href="/_demos/modules/header.php">Header</a>
     <a href="/_demos/modules/intro.php">Intro</a>
     <a href="/_demos/modules/copy-block.php">Copy Block</a>
-    <a href="/_demos/modules/table.php">Table</a>
+    <a href="/_demos/modules/mixed-media.php">Mixed Media</a>
+    <a href="/_demos/modules/feature.php">Feature</a>
+    <a href="/_demos/modules/call-to-action.php">Call to Action</a>
     <a href="/_demos/modules/form-control-types.php">Form: Control Types</a>
     <a href="/_demos/modules/form-layout-options.php">Form: Layout Options</a>
     <a href="/_demos/modules/form-states.php">Form: States</a>
-    <a href="/_demos/modules/mixed-media.php">Mixed Media</a>
-    <a href="/_demos/modules/call-to-action.php">Call to Action</a>
-    <a href="/_demos/modules/feature.php">Feature</a>
+    <a href="/_demos/modules/responsive-table.php">Responsive Table</a>
   </div>
 
   <!-- Layout Options -->
