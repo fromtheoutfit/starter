@@ -1,37 +1,98 @@
 $table-borders-color: rgba(0,0,0,.1);
-$table-rows-bg-color: rgba(0,0,0,.075);
+$table-th-bg-color:   rgba(0,0,0,.075);
+
+
+// CSS only Responsive Tables
+// http://dbushell.com/2016/03/04/css-only-responsive-tables/
 
 
 table {
-  border-bottom: 1px solid $table-borders-color;
   border-collapse: collapse;
-  border-right: 1px solid $table-borders-color;
-}
+  border-spacing: 0;
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  white-space: nowrap;
 
+  &,
+  &.flip-table-axis tbody {
+    background: radial-gradient(ellipse at left,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 75%) 0 center,
+                radial-gradient(ellipse at right, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 75%) 100% center;
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+    background-size: 16px 100%, 16px 100%;
+    -webkit-overflow-scrolling: touch;
+  }
 
-caption {
-  font-size: 85%;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
+  th {
+    text-align: left;
+    background: $table-th-bg-color;
+  }
 
-
-thead {
-  border-top: 1px solid $table-borders-color;
-}
-
-
-tbody {
-  border-top: 1px solid $table-borders-color;
-
-  tr:nth-child(even) {
-    background-color: $table-rows-bg-color;
+  th,
+  td {
+    padding: 8px 16px;
+    border: 1px solid $table-borders-color;
   }
 }
 
 
-th,
-td {
-  border-left: 1px solid $table-borders-color;
-  padding: 0.5em;
+table td,
+.flip-table-axis tbody tr {
+  &:first-child,
+  &:last-child {
+    background-repeat: no-repeat;
+    background-size: 24px 100%;
+  }
+
+  &:first-child {
+    background-image: linear-gradient(to right, #fff 50%, transparent 100%);
+  }
+
+  &:last-child {
+    background-image: linear-gradient(to left, #fff 50%, transparent 100%);
+    background-position: 100% 0;
+  }
+}
+
+
+.flip-table-axis {
+  background: none;
+  display: flex;
+  overflow: hidden;
+
+  thead {
+    display: flex;
+    flex-shrink: 0;
+    min-width: min-content;
+  }
+
+  tbody {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  td,
+  th {
+    display: block;
+
+    &:not(:last-child) {
+      border-bottom: 0;
+    }
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    min-width: min-content;
+  }
+
+  td {
+    background-image: none !important;
+    border-left: 0;
+  }
 }
