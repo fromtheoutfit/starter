@@ -41,6 +41,7 @@ mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
 // mix.extract(vendorLibs);
 // mix.sass(src, output);
 // mix.standaloneSass('src', output); <-- Faster, but isolated from Webpack.
+// mix.fastSass('src', output); <-- Alias for mix.standaloneSass().
 // mix.less(src, output);
 // mix.stylus(src, output);
 // mix.browserSync('my-site.dev');

@@ -5,15 +5,17 @@
   "author": "The Outfit, Inc.",
   "private": true,
   "devDependencies": {
-    "laravel-mix": "^0.11.4"
+    "browser-sync": "^2.18.12",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "laravel-mix": "^1.0.6"
   },
   "dependencies": {
     "jquery": "^3.2.1"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 }
