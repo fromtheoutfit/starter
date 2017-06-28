@@ -36,7 +36,7 @@
 
 
     <div class="demo__info">
-      <h2>Form Layout Options</h2>
+      <h2>Form Control Layouts</h2>
       <p>The various ways a group of form controls can be laid out.</p>
     </div>
 
@@ -49,7 +49,7 @@
     <form>
 
       <!--
-        Layout Demo #1
+        Layout #1
         =================================
         - Group label visibility: visible
         - Group label layout:     stacked
@@ -77,7 +77,7 @@
       </div>
 
       <!--
-        Layout Demo #2
+        Layout #2
         =================================
         - Group label visibility: visible
         - Group label layout:     inline
@@ -105,7 +105,7 @@
       </div>
 
       <!--
-        Layout Demo #3
+        Layout #3
         =================================
         - Group label visibility: visible
         - Group label layout:     stacked
@@ -133,7 +133,7 @@
       </div>
 
       <!--
-        Layout Demo #4
+        Layout #4
         =================================
         - Group label visibility: visible
         - Group label layout:     inline
@@ -161,7 +161,7 @@
       </div>
 
       <!--
-        Layout Demo #5
+        Layout #5
         =================================
         - Group label visibility: visible
         - Group label layout:     stacked
@@ -189,7 +189,7 @@
       </div>
 
       <!--
-        Layout Demo #6
+        Layout #6
         =================================
         - Group label visibility: visible
         - Group label layout:     inline
@@ -217,7 +217,7 @@
       </div>
 
       <!--
-        Layout Demo #7
+        Layout #7
         =================================
         - Group label visibility: visible
         - Group label layout:     stacked
@@ -245,7 +245,7 @@
       </div>
 
       <!--
-        Layout Demo #8
+        Layout #8
         =================================
         - Group label visibility: visible
         - Group label layout:     inline
@@ -273,7 +273,7 @@
       </div>
 
       <!--
-        Layout Demo #9
+        Layout #9
         =================================
         - Group label visibility: visible
         - Group label layout:     stacked
@@ -301,7 +301,7 @@
       </div>
 
       <!--
-        Layout Demo #10
+        Layout #10
         =================================
         - Group label visibility: visible
         - Group label layout:     inline
@@ -329,7 +329,7 @@
       </div>
 
       <!--
-        Layout Demo #11
+        Layout #11
         =================================
         - Group label visibility: visible
         - Group label layout:     stacked
@@ -357,7 +357,7 @@
       </div>
 
       <!--
-        Layout Demo #12
+        Layout #12
         =================================
         - Group label visibility: visible
         - Group label layout:     inline
@@ -385,7 +385,7 @@
       </div>
 
       <!--
-        Layout Demo #13
+        Layout #13
         =================================
         - Group label visibility: n/a
         - Group label layout:     n/a
@@ -412,7 +412,34 @@
       </div>
 
       <!--
-        Layout Demo #14
+        Layout #14
+        =================================
+        - Group label visibility: n/a
+        - Group label layout:     n/a
+        - Controls width:         auto
+        - Controls layout:        stacked
+        - Input label visibility: visible
+        - Input label layout:     stacked
+      -->
+      <div class="control-group">
+        <div class="control-group__controls control-group__controls--stack-input-labels u-inline-children">
+          <div class="form-control">
+            <label for="text-input-28">Input Label</label>
+            <input type="text" name="text-input-28" id="text-input-28" class="text-input" placeholder="Placeholder" />
+          </div>
+          <div class="form-control">
+            <label for="text-input-29">Input Label</label>
+            <input type="text" name="text-input-29" id="text-input-29" class="text-input" placeholder="Placeholder" />
+          </div>
+          <div class="form-control">
+            <label for="text-input-30">Input Label</label>
+            <input type="text" name="text-input-30" id="text-input-30" class="text-input" placeholder="Placeholder" />
+          </div>
+        </div>
+      </div>
+
+      <!--
+        Layout #15
         =================================
         - Group label visibility: n/a
         - Group label layout:     n/a
@@ -424,22 +451,22 @@
       <div class="control-group">
         <div class="control-group__controls">
           <div class="form-control">
-            <label for="text-input-28" class="u-padding-right">Input Label</label>
-            <input type="text" name="text-input-28" id="text-input-28" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-31" class="u-padding-right">Input Label</label>
+            <input type="text" name="text-input-31" id="text-input-31" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
-            <label for="text-input-29" class="u-padding-right">Input Label</label>
-            <input type="text" name="text-input-29" id="text-input-29" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-32" class="u-padding-right">Input Label</label>
+            <input type="text" name="text-input-32" id="text-input-32" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
-            <label for="text-input-30" class="u-padding-right">Input Label</label>
-            <input type="text" name="text-input-30" id="text-input-30" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-33" class="u-padding-right">Input Label</label>
+            <input type="text" name="text-input-33" id="text-input-33" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
 
       <!--
-        Layout Demo #15
+        Layout #16
         =================================
         - Group label visibility: n/a
         - Group label layout:     n/a
@@ -451,22 +478,22 @@
       <div class="control-group">
         <div class="control-group__controls control-group__controls--stretch-controls control-group__controls--stack-input-labels">
           <div class="form-control">
-            <label for="text-input-31">Input Label</label>
-            <input type="text" name="text-input-31" id="text-input-31" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-34">Input Label</label>
+            <input type="text" name="text-input-34" id="text-input-34" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
-            <label for="text-input-32">Input Label</label>
-            <input type="text" name="text-input-32" id="text-input-32" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-35">Input Label</label>
+            <input type="text" name="text-input-35" id="text-input-35" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
-            <label for="text-input-33">Input Label</label>
-            <input type="text" name="text-input-33" id="text-input-33" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-36">Input Label</label>
+            <input type="text" name="text-input-36" id="text-input-36" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
 
       <!--
-        Layout Demo #16
+        Layout #17
         =================================
         - Group label visibility: n/a
         - Group label layout:     n/a
@@ -478,16 +505,16 @@
       <div class="control-group">
         <div class="control-group__controls control-group__controls--stretch-controls">
           <div class="form-control">
-            <label for="text-input-34" class="u-padding-right u-padding-top">Input Label</label>
-            <input type="text" name="text-input-34" id="text-input-34" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-37" class="u-padding-right u-padding-top">Input Label</label>
+            <input type="text" name="text-input-37" id="text-input-37" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
-            <label for="text-input-35" class="u-padding-right u-padding-top">Input Label</label>
-            <input type="text" name="text-input-35" id="text-input-35" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-38" class="u-padding-right u-padding-top">Input Label</label>
+            <input type="text" name="text-input-38" id="text-input-38" class="text-input" placeholder="Placeholder" />
           </div>
           <div class="form-control">
-            <label for="text-input-36" class="u-padding-right u-padding-top">Input Label</label>
-            <input type="text" name="text-input-36" id="text-input-36" class="text-input" placeholder="Placeholder" />
+            <label for="text-input-39" class="u-padding-right u-padding-top">Input Label</label>
+            <input type="text" name="text-input-39" id="text-input-39" class="text-input" placeholder="Placeholder" />
           </div>
         </div>
       </div>
@@ -508,7 +535,7 @@
         <pre><code>&lt;form&gt;
 
   &lt;!--
-    Layout Demo #1
+    Layout #1
     =================================
     - Group label visibility: visible
     - Group label layout:     stacked
@@ -518,25 +545,25 @@
     - Input label layout:     inline
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-1" value="option-1" id="radio-1-option-1" /&gt;
-        &lt;label for="radio-1-option-1"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-1" value="option-2" id="radio-1-option-2" /&gt;
-        &lt;label for="radio-1-option-2"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-1" value="option-3" id="radio-1-option-3" /&gt;
-        &lt;label for="radio-1-option-3"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #2
+    Layout #2
     =================================
     - Group label visibility: visible
     - Group label layout:     inline
@@ -546,25 +573,25 @@
     - Input label layout:     inline
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
-    &lt;div class="control-group__label u-padding-right"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label u-padding-right"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-2" value="option-1" id="radio-2-option-1" /&gt;
-        &lt;label for="radio-2-option-1"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-2" value="option-2" id="radio-2-option-2" /&gt;
-        &lt;label for="radio-2-option-2"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-2" value="option-3" id="radio-2-option-3" /&gt;
-        &lt;label for="radio-2-option-3"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #3
+    Layout #3
     =================================
     - Group label visibility: visible
     - Group label layout:     stacked
@@ -574,25 +601,25 @@
     - Input label layout:     inline
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls u-inline-children"&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-3" value="option-1" id="radio-3-option-1" /&gt;
-        &lt;label for="radio-3-option-1"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-3" value="option-2" id="radio-3-option-2" /&gt;
-        &lt;label for="radio-3-option-2"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-3" value="option-3" id="radio-3-option-3" /&gt;
-        &lt;label for="radio-3-option-3"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #4
+    Layout #4
     =================================
     - Group label visibility: visible
     - Group label layout:     inline
@@ -602,25 +629,25 @@
     - Input label layout:     inline
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
-    &lt;div class="control-group__label u-padding-right"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label u-padding-right"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls u-inline-children"&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-4" value="option-1" id="radio-4-option-1" /&gt;
-        &lt;label for="radio-4-option-1"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-4" value="option-2" id="radio-4-option-2" /&gt;
-        &lt;label for="radio-4-option-2"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;input type="radio" name="radio-4" value="option-3" id="radio-4-option-3" /&gt;
-        &lt;label for="radio-4-option-3"&gt;Option&lt;/label&gt;
+        &lt;input type="radio" name="..." value="..." id="..." /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #5
+    Layout #5
     =================================
     - Group label visibility: visible
     - Group label layout:     stacked
@@ -630,25 +657,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-1" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-1" id="text-input-1" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-2" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-2" id="text-input-2" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-3" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-3" id="text-input-3" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #6
+    Layout #6
     =================================
     - Group label visibility: visible
     - Group label layout:     inline
@@ -658,25 +685,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
-    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-4" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-4" id="text-input-4" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-5" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-5" id="text-input-5" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-6" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-6" id="text-input-6" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #7
+    Layout #7
     =================================
     - Group label visibility: visible
     - Group label layout:     stacked
@@ -686,25 +713,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls u-inline-children"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-7" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-7" id="text-input-7" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-8" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-8" id="text-input-8" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-9" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-9" id="text-input-9" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #8
+    Layout #8
     =================================
     - Group label visibility: visible
     - Group label layout:     inline
@@ -714,25 +741,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
-    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls u-inline-children"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-10" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-10" id="text-input-10" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-11" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-11" id="text-input-11" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-12" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-12" id="text-input-12" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #9
+    Layout #9
     =================================
     - Group label visibility: visible
     - Group label layout:     stacked
@@ -742,25 +769,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-13" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-13" id="text-input-13" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-14" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-14" id="text-input-14" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-15" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-15" id="text-input-15" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #10
+    Layout #10
     =================================
     - Group label visibility: visible
     - Group label layout:     inline
@@ -770,25 +797,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
-    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-16" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-16" id="text-input-16" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-17" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-17" id="text-input-17" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-18" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-18" id="text-input-18" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #11
+    Layout #11
     =================================
     - Group label visibility: visible
     - Group label layout:     stacked
@@ -798,25 +825,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group"&gt;
-    &lt;div class="control-group__label"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls u-inline-children control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-19" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-19" id="text-input-19" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-20" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-20" id="text-input-20" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-21" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-21" id="text-input-21" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #12
+    Layout #12
     =================================
     - Group label visibility: visible
     - Group label layout:     inline
@@ -826,25 +853,25 @@
     - Input label layout:     n/a
   --&gt;
   &lt;div class="control-group u-inline-children"&gt;
-    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;Group Label&lt;/div&gt;
+    &lt;div class="control-group__label u-padding-right u-padding-top"&gt;...&lt;/div&gt;
     &lt;div class="control-group__controls u-inline-children control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-22" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-22" id="text-input-22" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-23" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-23" id="text-input-23" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-24" class="visuallyhidden"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-24" id="text-input-24" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="visuallyhidden"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #13
+    Layout #13
     =================================
     - Group label visibility: n/a
     - Group label layout:     n/a
@@ -856,22 +883,49 @@
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__controls control-group__controls--stack-input-labels"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-25"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-25" id="text-input-25" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-26"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-26" id="text-input-26" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-27"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-27" id="text-input-27" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #14
+    Layout #14
+    =================================
+    - Group label visibility: n/a
+    - Group label layout:     n/a
+    - Controls width:         auto
+    - Controls layout:        inline
+    - Input label visibility: visible
+    - Input label layout:     stacked
+  --&gt;
+  &lt;div class="control-group"&gt;
+    &lt;div class="control-group__controls control-group__controls--stack-input-labels u-inline-children"&gt;
+      &lt;div class="form-control"&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
+      &lt;/div&gt;
+      &lt;div class="form-control"&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
+      &lt;/div&gt;
+      &lt;div class="form-control"&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!--
+    Layout #15
     =================================
     - Group label visibility: n/a
     - Group label layout:     n/a
@@ -883,22 +937,22 @@
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-28" class="u-padding-right"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-28" id="text-input-28" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="u-padding-right"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-29" class="u-padding-right"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-29" id="text-input-29" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="u-padding-right"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-30" class="u-padding-right"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-30" id="text-input-30" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="u-padding-right"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #15
+    Layout #16
     =================================
     - Group label visibility: n/a
     - Group label layout:     n/a
@@ -910,22 +964,22 @@
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__controls control-group__controls--stretch-controls control-group__controls--stack-input-labels"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-31"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-31" id="text-input-31" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-32"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-32" id="text-input-32" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-33"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-33" id="text-input-33" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..."&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!--
-    Layout Demo #16
+    Layout #17
     =================================
     - Group label visibility: n/a
     - Group label layout:     n/a
@@ -937,16 +991,16 @@
   &lt;div class="control-group"&gt;
     &lt;div class="control-group__controls control-group__controls--stretch-controls"&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-34" class="u-padding-right u-padding-top"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-34" id="text-input-34" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="u-padding-right u-padding-top"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-35" class="u-padding-right u-padding-top"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-35" id="text-input-35" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="u-padding-right u-padding-top"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
       &lt;div class="form-control"&gt;
-        &lt;label for="text-input-36" class="u-padding-right u-padding-top"&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" name="text-input-36" id="text-input-36" class="text-input" placeholder="Placeholder" /&gt;
+        &lt;label for="..." class="u-padding-right u-padding-top"&gt;...&lt;/label&gt;
+        &lt;input type="text" name="..." id="..." class="text-input" placeholder="..." /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
