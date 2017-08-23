@@ -8,7 +8,7 @@ import * as nav from './nav'
 nav.initialize();
 
 
-// Note: The following is ONLY for the temporary demos found inside of
+// TODO: The following is ONLY for the temporary demos found inside of
 //       /public/_demos/. Be sure to comment-out or delete the next two lines
 //       before this project goes to production.
 import * as demos from './demos'
