@@ -40,6 +40,7 @@ $dialog-body-max-width:     680px;
   &__close {
     left: 0;
     padding: 8px 8px 0 0;
+    pointer-events: none;
     position: sticky;
     text-align: right;
     top: 0;
@@ -48,6 +49,7 @@ $dialog-body-max-width:     680px;
       font-size: 32px;
       line-height: 1;
       padding: 0 10px 5px;
+      pointer-events: auto;
 
       &:hover,
       &:focus {
