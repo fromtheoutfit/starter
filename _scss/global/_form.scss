@@ -219,12 +219,12 @@ input, select, textarea {
   .control-group__label,
   .form__response,
   &.form__response {
-    color: $color-error;
+    color: $color-state-danger;
   }
 
   .text-input,
   .select-input select {
-    border-color: $color-error;
+    border-color: $color-state-danger;
   }
 }
 
@@ -234,11 +234,11 @@ input, select, textarea {
   .control-group__label,
   .form__response,
   &.form__response  {
-    color: $color-success;
+    color: $color-state-success;
   }
 
   .text-input,
   .select-input select {
-    border-color: $color-success;
+    border-color: $color-state-success;
   }
 }

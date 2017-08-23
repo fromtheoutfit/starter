@@ -15,13 +15,22 @@ $line-height:       1.5;
 // ============================================================================
 
 
-$color-background:    white;
-$color-text:          black;
-$color-link:          blue;
-$color-link-hover:    orange;
-$color-link-visited:  gray;
-$color-error:         crimson;
-$color-success:       mediumseagreen;
+// $color-brand-1: #[brand hex here];
+// $color-brand-2: #[brand hex here];
+// $color-brand-3: #[brand hex here];
+// $color-brand-4: #[brand hex here];
+// $color-brand-5: #[brand hex here];
+
+$color-state-danger:    #a94442; // Light version (for background) = #f2dede
+$color-state-warning:   #8a6d3b; // Light version (for background) = #fcf8e3
+$color-state-info:      #31708f; // Light version (for background) = #d9edf7
+$color-state-success:   #3c763d; // Light version (for background) = #dff0d8
+
+$color-background:      #ffffff;
+$color-text:            #000000;
+$color-link:            #0000ff;
+$color-link-hover:      #ffa500;
+$color-link-visited:    #808080;
 
 
 // ============================================================================
