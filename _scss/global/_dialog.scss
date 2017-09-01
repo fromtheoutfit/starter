@@ -6,14 +6,16 @@ $dialog-body-width:         80%;
 $dialog-body-max-width:     680px;
 
 .dialog {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  &:not([hidden]) {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
   &__bg {
     background-color: $dialog-overlay-color;
@@ -32,12 +34,14 @@ $dialog-body-max-width:     680px;
     max-width: $dialog-body-max-width;
     min-width: $dialog-body-min-width;
     overflow: auto;
-    position: relative;
     -webkit-overflow-scrolling: touch;
+    position: relative;
     width: $dialog-body-width;
   }
 
   &__close {
+    border-top-left-radius: $dialog-body-border-radius;
+    border-top-right-radius: $dialog-body-border-radius;
     left: 0;
     padding: 8px 8px 0 0;
     pointer-events: none;

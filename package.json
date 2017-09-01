@@ -10,6 +10,7 @@
     "laravel-mix": "^1.0.6"
   },
   "dependencies": {
+    "ally.js": "^1.4.1",
     "jquery": "^3.2.1"
   },
   "scripts": {

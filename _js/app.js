@@ -5,7 +5,11 @@
 
 
 import * as nav from './nav'
+import * as dialog from './dialog'
+
+
 nav.initialize();
+dialog.initialize();
 
 
 // TODO: The following is ONLY for the temporary demos found inside of
