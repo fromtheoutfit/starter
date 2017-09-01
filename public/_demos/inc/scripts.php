@@ -13,10 +13,12 @@ https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site
 -->
 <!--
 <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
-  ga('create', 'UA-UPDATE-THIS', 'auto');
+  window.ga=function(){ga.q.push(arguments)};
+  ga.q=[];
+  ga.l=+new Date;
+  ga('create','UA-UPDATE-THIS','auto');
   ga('set', 'transport', 'beacon');
-  ga('send', 'pageview');
+  ga('send','pageview')
 </script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 -->
