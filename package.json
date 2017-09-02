@@ -5,9 +5,9 @@
   "author": "The Outfit, Inc.",
   "private": true,
   "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "browser-sync-webpack-plugin": "^1.1.4",
-    "laravel-mix": "^1.0.6"
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "laravel-mix": "^1.4.2"
   },
   "dependencies": {
     "ally.js": "^1.4.1",
