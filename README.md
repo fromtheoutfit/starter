@@ -2,102 +2,69 @@ todo: update this
 
 ![Logo of the project](https://via.placeholder.com/300x150?text=Project+Logo)
 
-# Name of the project
-> Additional information or tag line
+# Project Name
 
-A brief description of your project, what it is used for.
+A brief description of the project.
 
-## Installing / Getting started
+## Installing
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+Clone the repository in [Tower](https://www.git-tower.com/help/mac/manage-repositories/clone-remote-repository), or via the command line:
 
 ```shell
-commands here
+git clone path/to/repo.git
 ```
 
-Here you should say what actually happens when you execute the code above.
+Install the project's dependencies:
+
+```shell
+npm install
+```
 
 ## Developing
 
 ### Built With
-List main libraries, frameworks used including versions (React, Angular etc...)
+
+[Check out /package.json](blob/master/package.json) to see what this project is built with.
 
 ### Prerequisites
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
+
+- [Node/NPM](https://nodejs.org/en/download/)
 
 
 ### Setting up Dev
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+1. Boot up your local server (Homestead, VirtualBox, etc.)
+2. CD into the project's directory, then run the _watch_ script:
 
 ```shell
-git clone https://github.com/your/your-project.git
-cd your-project/
-packagemanager install
+cd project-directory/
+npm run watch
 ```
 
-And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
-
-### Building
-
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here. for example:
+### Readying for Production
 
 ```shell
-./configure
-make
-make install
+npm run production
 ```
-
-Here again you should state what actually happens when the code above gets
-executed.
 
 ### Deploying / Publishing
-give instructions on how to build and release a new version
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-```shell
-packagemanager deploy your-project -s server.com -u username -p password
-```
-
-And again you'd need to tell what the previous code actually does.
 
 ## Versioning
 
-We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
+Consider using [SemVer](http://semver.org/) for versioning.
 
+## Style Guide
 
-## Configuration
-
-Here you should write what are all of the configurations a user can enter when
-using the project.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-Explain what these tests test and why.
-
-```shell
-Give an example
-```
-
-## Style guide
-
-Explain your code style and show how to check it.
+_{Explain your code style and show how to check it.}_
 
 ## Api Reference
 
-If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
-
+_{If the api is external, link to api documentation. If not, describe your api including authentication methods as well as explaining all the endpoints with their required parameters.}_
 
 ## Database
 
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... 
+_{Explaining what database (and version) has been used}_
 
 ## Licensing
 
-State what the license is and how to find the text version of the license.
+_{State what the license is and how to find the text version of the license.}_
