@@ -51,7 +51,7 @@
         <h1 class="visuallyhidden">Project Name</h1>
       </div>
       <button class="header__open-nav js-header__open-nav" aria-label="Open navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /></svg></button>
-      <nav class="header__nav-wrap js-header__nav-wrap">
+      <nav class="header__nav-wrap js-header__nav-wrap" role="navigation">
         <button class="header__close-nav js-header__close-nav" aria-label="Close navigation">&times;</button>
         <h2 class="visuallyhidden">Main Navigation</h2>
         <ul class="header__nav-links">
