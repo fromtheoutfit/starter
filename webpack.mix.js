@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery']})
+mix.autoload({jquery: ['$', 'window.jQuery', 'jQuery'], 'ally.js/ally.js': ['ally']})
    .js('_js/app.js', 'public/lib/js')
    .sass('_scss/app.scss', 'public/lib/css')
    .options({

@@ -1,6 +1,5 @@
 // Importing ally.js provides accessibility features that aren't yet provided
 // by browsers. Learn more: https://allyjs.io/
-import ally from 'ally.js/ally.js'
 
 
 
