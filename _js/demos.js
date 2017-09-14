@@ -1,57 +1,57 @@
-let demosNav          = null;
-let demosNavAllDesc   = null;
-let demosNavToggle    = null;
-let demosNavIsVisible = false;
+let demosNav          = null
+let demosNavAllDesc   = null
+let demosNavToggle    = null
+let demosNavIsVisible = false
 
 
 export function initialize() {
-  demosNav       = document.querySelector('.js-demos-nav');
-  demosNavToggle = document.querySelector('.js-demos-nav-toggle');
+  demosNav       = document.querySelector('.js-demos-nav')
+  demosNavToggle = document.querySelector('.js-demos-nav-toggle')
 
   // Stop everything if any of the above elements do not exist.
   if (!demosNav || !demosNavToggle) {
-    return;
+    return
   }
 
-  demosNavAllDesc = demosNav.getElementsByTagName('*');
-  addListeners();
+  demosNavAllDesc = demosNav.getElementsByTagName('*')
+  addListeners()
 }
 
 
 export function addListeners() {
-  demosNavToggle.addEventListener('click', toggleDemosNav, false);
-  document.addEventListener('touchend', determineEventLoc, false);
-  document.addEventListener('click', determineEventLoc, false);
-  document.addEventListener('keyup', handleKeyPresses, false);
+  demosNavToggle.addEventListener('click', toggleDemosNav, false)
+  document.addEventListener('touchend', determineEventLoc, false)
+  document.addEventListener('click', determineEventLoc, false)
+  document.addEventListener('keyup', handleKeyPresses, false)
 }
 
 
 export function determineEventLoc(event) {
   if (demosNavIsVisible) {
     if (event.target === demosNav) {
-      return;
+      return
     } else {
       for (let i = 0; i < demosNavAllDesc.length; i++) {
         if (event.target === demosNavAllDesc[i]) {
-          return;
+          return
         }
       }
     }
-    toggleDemosNav(event);
+    toggleDemosNav(event)
   } else {
-    return;
+    return
   }
 }
 
 
 export function handleKeyPresses(event) {
   if (demosNavIsVisible && (event.keyCode === 27)) {
-    toggleDemosNav(event);
+    toggleDemosNav(event)
   }
 }
 
 
-export function toggleDemosNav(event) {
-  demosNav.classList.toggle('is-visible');
-  demosNavIsVisible = !demosNavIsVisible;
+export function toggleDemosNav() {
+  demosNav.classList.toggle('is-visible')
+  demosNavIsVisible = !demosNavIsVisible
 }

@@ -3,36 +3,36 @@
 
 
 
-let dialog            = null;
-let openDialogBtns    = null;
-let closeDialogBtn    = null;
-let handleKey         = null;
-let handleTab         = null;
-let handleDisabled    = null;
-let handleHidden      = null;
-let initialFocusedEl  = null;
-let firstTabbableEl   = null;
+let dialog            = null
+let openDialogBtns    = null
+let closeDialogBtn    = null
+let handleKey         = null
+let handleTab         = null
+let handleDisabled    = null
+let handleHidden      = null
+let initialFocusedEl  = null
+let firstTabbableEl   = null
 
 
 
 export function initialize() {
 
   // Grab the dialog.
-  dialog = document.querySelector('.js-dialog');
+  dialog = document.querySelector('.js-dialog')
 
   // Stop everything if the dialog does not exist / isn't in the document.
   if (!dialog) {
-    return;
+    return
   }
 
   // Grab all Open Dialog buttons, as well as the one Close Dialog button.
-  openDialogBtns = document.querySelectorAll('.js-open-dialog');
-  closeDialogBtn = document.querySelector('.js-close-dialog');
+  openDialogBtns = document.querySelectorAll('.js-open-dialog')
+  closeDialogBtn = document.querySelector('.js-close-dialog')
 
   // When any of the Open Dialog buttons is clicked, run openDialog.
-  Array.prototype.forEach.call(openDialogBtns, function(el, i){
-    el.addEventListener('click', openDialog, false);
-  });
+  Array.prototype.forEach.call(openDialogBtns, function(el){
+    el.addEventListener('click', openDialog, false)
+  })
 
 }
 
@@ -41,20 +41,20 @@ export function initialize() {
 export function openDialog() {
 
   // Remember the element that had focus before the dialog was opened.
-  initialFocusedEl = document.activeElement;
+  initialFocusedEl = document.activeElement
 
   // Make sure website elements *outside* of the dialog can not be navigated to
   // by screen readers via the document's Accessibility Tree.
   // https://allyjs.io/api/maintain/hidden.html
-  handleHidden = ally.maintain.hidden({filter:dialog});
+  handleHidden = ally.maintain.hidden({filter:dialog})
 
   // Make sure website elements *outside* of the dialog can not be focused.
   // https://allyjs.io/api/maintain/disabled.html
-  handleDisabled = ally.maintain.disabled({filter:dialog});
+  handleDisabled = ally.maintain.disabled({filter:dialog})
 
   // Make sure browser chrome/UI can not be focused.
   // https://allyjs.io/api/maintain/tab-focus.html
-  handleTab = ally.maintain.tabFocus({context:dialog});
+  handleTab = ally.maintain.tabFocus({context:dialog})
 
   // Handle keypresses.
   // https://allyjs.io/api/when/key.html
@@ -63,7 +63,7 @@ export function openDialog() {
     // Pressing Escape runs closeDialog.
     escape: closeDialog
 
-  });
+  })
 
   // When the dialog is visible...
   // https://allyjs.io/api/when/visible-area.html
@@ -76,21 +76,21 @@ export function openDialog() {
       firstTabbableEl = ally.query.firstTabbable({
         context: context,
         defaultToContext: true
-      });
-      firstTabbableEl.focus();
+      })
+      firstTabbableEl.focus()
 
     }
-  });
+  })
 
   // Open the dialog.
-  dialog.hidden = false;
-  dialog.setAttribute('aria-hidden', false);
+  dialog.hidden = false
+  dialog.setAttribute('aria-hidden', false)
 
   // Start listening for
   // - click events on the Close Dialog button, and
   // - the submit event on the dialog.
-  closeDialogBtn.addEventListener('click', closeDialog, false);
-  dialog.addEventListener('submit', saveDialog, true);
+  closeDialogBtn.addEventListener('click', closeDialog, false)
+  dialog.addEventListener('submit', saveDialog, true)
 
 }
 
@@ -100,30 +100,30 @@ export function closeDialog() {
 
   // UNDO the process of making sure website elements *outside* of the dialog
   // can not be navigated to by screen readers.
-  handleHidden.disengage();
+  handleHidden.disengage()
 
   // UNDO the process of making sure website elements *outside* of the dialog
   // can not be focused.
-  handleDisabled.disengage();
+  handleDisabled.disengage()
 
   // UNDO the process of making sure browser chrome/UI can not be focused.
-  handleTab.disengage();
+  handleTab.disengage()
 
   // UNDO the process of handling keypresses.
-  handleKey.disengage();
+  handleKey.disengage()
 
   // Close the dialog.
-  dialog.hidden = true;
-  dialog.setAttribute('aria-hidden', true);
+  dialog.hidden = true
+  dialog.setAttribute('aria-hidden', true)
 
   // Return focus to the element that had focus *before* opening the dialog.
-  initialFocusedEl.focus();
+  initialFocusedEl.focus()
 
   // Stop listening for
   // - click events on the Close Dialog button, and
   // - the submit event on the dialog.
-  closeDialogBtn.removeEventListener('click', closeDialog, false);
-  dialog.removeEventListener('submit', saveDialog, true);
+  closeDialogBtn.removeEventListener('click', closeDialog, false)
+  dialog.removeEventListener('submit', saveDialog, true)
 
 }
 
@@ -132,16 +132,16 @@ export function closeDialog() {
 export function saveDialog(e) {
 
   // Prevent the default behavior.
-  e.preventDefault();
+  e.preventDefault()
 
   // **************************************************************************
   // TODO: Do something with the form's data.
   // **************************************************************************
 
   // Reset the form's values.
-  dialog.querySelector('form').reset();
+  dialog.querySelector('form').reset()
 
   // Run closeDialog.
-  closeDialog();
+  closeDialog()
 
 }

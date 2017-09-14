@@ -8,12 +8,12 @@ import * as nav from './nav'
 import * as dialog from './dialog'
 
 
-nav.initialize();
-dialog.initialize();
+nav.initialize()
+dialog.initialize()
 
 
 // TODO: The following is ONLY for the temporary demos found inside of
 //       /public/_demos/. Be sure to comment-out or delete the next two lines
 //       before this project goes to production.
 import * as demos from './demos'
-demos.initialize();
+demos.initialize()
