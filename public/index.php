@@ -32,11 +32,11 @@
 
       <p>At the very begining of this project, you're probably building static templates that'll eventually be integrated into a dynamic back-end (CMS, Laravel, etc.) Assuming this is true, this very file (/public/index.php) is temporary and will soon be replaced by whatever the dynamic back-end requires. So, instead of building stuff <em>here</em>, consider the following:</p>
 
-      <ol>
-        <li>Look at the <a href="/_demos/" class="btn-small">demos</a> to see what’s available</li>
-        <li>Build your static templates wherever necessary, based on the dynamic back-end of choice (ask Michael and/or Bren)</li>
+      <ul>
+        <li>Look at the <a href="/_demos/" class="btn-small">demos</a> to see what modules already exist</li>
+        <li>Tweak those modules to fit the project, or create your own; either way, stick your work somewhere new. We tend to use <a href="/_templates/" class="btn-small" style="text-transform:none;">/public/_templates/</a>, <strong>(which isn’t created by default)</strong></li>
         <li>Treat yo' self</li>
-      </ol>
+      </ul>
 
     </div>
 
