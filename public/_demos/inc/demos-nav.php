@@ -17,9 +17,9 @@
     <a href="/_demos/modules/mixed-media.php">Mixed Media</a>
     <a href="/_demos/modules/feature.php">Feature</a>
     <a href="/_demos/modules/call-to-action.php">Call to Action</a>
+    <a href="/_demos/modules/responsive-table.php">Responsive Table</a>
     <a href="/_demos/modules/form-control-types-states.php">Form: Control Types / States</a>
     <a href="/_demos/modules/form-control-layouts.php">Form: Control Layouts</a>
-    <a href="/_demos/modules/responsive-table.php">Responsive Table</a>
   </div>
 
   <!-- Layout Options -->
