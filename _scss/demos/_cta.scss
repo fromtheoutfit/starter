@@ -1,4 +1,4 @@
-$cta-object-margin: 1em;
+$cta-object-margin: 16px;
 
 .demo .cta {
   padding: $cta-object-margin;
@@ -27,7 +27,7 @@ $cta-object-margin: 1em;
 
     p, ul, ol, dl, pre {
       &:not(:first-child) {
-        margin-top: ($cta-object-margin * 0.5);
+        margin-top: ($cta-object-margin / 2);
       }
     }
 

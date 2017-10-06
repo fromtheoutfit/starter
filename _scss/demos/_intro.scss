@@ -1,4 +1,4 @@
-$intro-object-margin: 1em;
+$intro-object-margin: 16px;
 
 .demo .intro {
   padding: $intro-object-margin;
@@ -12,7 +12,7 @@ $intro-object-margin: 1em;
   &__subtitle {
     font-size: 150%;
     line-height: 1.2;
-    margin-top: ($intro-object-margin * 0.5);
+    margin-top: ($intro-object-margin / 2);
   }
 }
 

@@ -1,6 +1,8 @@
+$header-object-margin: 16px;
+
 .demo .header {
   background-color: #888;
-  padding: 16px;
+  padding: $header-object-margin;
   position: relative;
 
   @include mq-min-width($bp-small) {
@@ -36,8 +38,8 @@
   }
 
   &__open-nav {
-    right: 16px;
-    top: 8px;
+    right: $header-object-margin;
+    top: ($header-object-margin / 2);
   }
 
   &__close-nav {

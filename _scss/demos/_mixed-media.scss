@@ -1,4 +1,4 @@
-$mm-object-margin: 1em;
+$mm-object-margin: 16px;
 
 .demo .mm {
   &__header {
@@ -19,7 +19,7 @@ $mm-object-margin: 1em;
   &__subtitle {
     font-size: 120%;
     line-height: 1.2;
-    margin-top: ($mm-object-margin * 0.5);
+    margin-top: ($mm-object-margin / 2);
   }
 
   &__image {
@@ -27,7 +27,7 @@ $mm-object-margin: 1em;
       color: lighten($color-text, 50%);
       font-size: 90%;
       line-height: $line-height;
-      margin-top: ($mm-object-margin * 0.5);
+      margin-top: ($mm-object-margin / 2);
     }
   }
 
@@ -37,7 +37,7 @@ $mm-object-margin: 1em;
 
     p, ul, ol, dl, pre {
       &:not(:first-child) {
-        margin-top: ($mm-object-margin * 0.5);
+        margin-top: ($mm-object-margin / 2);
       }
     }
 
