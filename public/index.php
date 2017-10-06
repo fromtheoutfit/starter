@@ -30,7 +30,7 @@
 
       <h1>Hello!</h1>
 
-      <p>At the very begining of this project, you're probably building static templates that'll eventually be integrated into a dynamic back-end (CMS, Laravel, etc.) Assuming this is true, this very file (/public/index.php) is temporary and will soon be replaced by whatever the dynamic back-end requires. So, instead of building stuff <em>here</em>, consider the following:</p>
+      <p>At the very begining of this project, you're probably building static templates that'll eventually be integrated into a dynamic back-end (CMS, Laravel, etc.) Assuming this is true, this very file (/public/index.php) is temporary and will soon be replaced by whatever the back-end requires. So, instead of building stuff <em>here</em>, consider the following:</p>
 
       <ul>
         <li>Look at the <a href="/_demos/" class="btn-small">demos</a> to see what modules already exist</li>
