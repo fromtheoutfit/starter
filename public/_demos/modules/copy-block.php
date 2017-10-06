@@ -113,7 +113,7 @@
 A line of code</code></pre>
 
       <figure>
-        <img src="../img/fpo-image-400x300-1x.png" alt="A blank image that is for placement only" width="400" height="300" />
+        <img src="../img/fpo-image-400x300-1x.png" srcset="../img/fpo-image-400x300-2x.png 2x" alt="A blank image that is for placement only" width="400" height="300" />
         <figcaption>This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image. This is a caption for the above image.</figcaption>
       </figure>
 
