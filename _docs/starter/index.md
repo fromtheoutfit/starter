@@ -2,8 +2,8 @@
 
 Starter is a collection of modules, demos, build-tools, and (hopefully) best practices created and used by [The Outfit](https://theout.fit/) for some of the projects we build.
 
-* [Contributing](https://github.com/fromtheoutfit/starter/tree/master/_docs/contributing.md)
-* [License](https://github.com/fromtheoutfit/starter/tree/master/_docs/license.md)
+* [Contributing](https://github.com/fromtheoutfit/starter/blob/master/_docs/starter/contributing.md)
+* [License](https://github.com/fromtheoutfit/starter/blob/master/_docs/starter/license.txt)
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ _Note: if you are using Laravel Homestead, refer to these two resources:_
 
 ### Specify files to watch
 
-While [developing](#start-development), Starter's build-tools will auto-refresh your open web browser(s) when any files you specify are changed and saved. To specify which files get this attention—_watched_—update [lines 34 - 36 in webpack.mix.js](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36).
+While [developing](#start-developing), Starter’s build-tools will auto-refresh your open web browser(s) when any files you specify are changed and saved. To specify which files get this attention—_"watched"_—update [lines 34 - 36 in /webpack.mix.js](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36).
 
 ## Usage
 
@@ -57,7 +57,7 @@ When you’re done writing code:
 1. In the terminal application where the watcher is running, type `control + c` to stop the watcher
 2. Shut down your local server
 
-_Note: at this point, the code **is not** ready for production; for that, continue reading…_
+_Note: at this point, the code **is not** ready for [production](#prepare-for-production)…_
 
 ### Prepare for production
 
