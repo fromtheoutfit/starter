@@ -34,7 +34,7 @@ _Note: if you are using Laravel Homestead, refer to these two resources:_
 
 ### Specify files to watch
 
-While [developing](#start-developing), Starter’s build-tools will auto-refresh your open web browser(s) when any files you specify are changed and saved. To specify which files get this attention—_"watched"_—update [lines 34 - 36 in /webpack.mix.js](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36).
+While [developing](#start-developing), Starter’s build-tools will auto-refresh your open web browser(s) when any files you specify are changed and saved. To specify which files get this attention – _"watched"_ – update [lines 34 - 36 in /webpack.mix.js](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36).
 
 ## Usage
 
