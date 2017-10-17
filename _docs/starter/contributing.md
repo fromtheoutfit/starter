@@ -1,33 +1,37 @@
 # Contributing to Starter
 
-We’re actively looking for folks interested in helping out and there are plenty of ways you can help!
-
-Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
-
-Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
+We’re actively looking for folks interested in helping out and there are plenty of ways you can help! Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved. Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/fromtheoutfit/starter/issues) is the preferred channel for [bug reports](#bugs), [features requests](#features) and [submitting pull requests](#pull-requests).
+The [issue tracker](https://github.com/fromtheoutfit/starter/issues) is the preferred channel for [bug reports](#bugs), [feature requests](#features) and [submitting pull requests](#pull-requests).
 
 <a name="bugs"></a>
 ## Bug reports
 
-A bug is a _demonstrable problem_ that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!
+A bug is a _demonstrable problem_ that is caused by the code in the repository.
 
 Guidelines for bug reports:
 
-1. **Use the GitHub issue search** &mdash; check if the issue has already been reported.
+1. **Use the GitHub issue search** to check if the issue has already been reported.
 
-2. **Check if the issue has been fixed** &mdash; try to reproduce it using the latest `master` in the repository.
+2. **Check if the issue has been fixed** by trying to reproduce it using the latest `master` in the repository.
 
-3. **Isolate the problem** &mdash; ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
+3. **Isolate the problem** by creating a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
 
-A good bug report shouldn’t leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
+A good bug report shouldn’t leave others needing to ask you for more information. Please try to be as detailed as possible in your report:
 
-Example:
+* What is your environment?
 
-> Short and descriptive example bug report title
+* What steps will reproduce the issue?
+
+* What browser(s) and OS experience the problem?
+
+* What would you expect to be the outcome?
+
+All of these details will help people to fix any potential bugs; for example:
+
+> A short and descriptive example bug report title
 >
 > A summary of the issue and the browser/OS environment in which it occurs. If suitable, include the steps required to reproduce the bug.
 >
@@ -47,7 +51,7 @@ Feature requests are welcome, but take a moment to find out whether your idea fi
 <a name="pull-requests"></a>
 ## Pull requests
 
-Good pull requests—patches, improvements, new features—are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
+Good pull requests—patches, improvements, new features—are a big help.
 
 **Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project’s developers might not want to merge into the project.
 
@@ -98,5 +102,4 @@ Adhering to the following process is the best way to get your work included in t
 7. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/)
     with a clear title and description.
 
-**IMPORTANT**: By submitting a patch, you agree to allow the project
-owners to license your work under the terms of the [MIT License](license.txt).
+**IMPORTANT**: By opening a pull request, you agree to allow the project owners to license your work under the terms of the [MIT License](license.txt).
