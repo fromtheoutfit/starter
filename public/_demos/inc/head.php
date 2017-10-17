@@ -4,26 +4,28 @@
 <link rel="stylesheet" href="/lib/css/app.css" />
 
 <!--
+These assets and color values need to be updated to something that is project-
+specific. We recommend using the following online generator to generate the
+appropriate assets/code/etc. that are needed for this project:
+- https://realfavicongenerator.net/
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6347" />
+<meta name="theme-color" content="#ff6347" />
+
+<!--
 ( * OPTIONAL * ) FACEBOOK / TWITTER: Is this project utilizing Facebook and
 Twitter? If so, utilize the code below and update the assets it references. If
 not, delete the code below and the assets that it references.
 - Facebook: https://developers.facebook.com/docs/sharing/best-practices
 - Twitter:  https://dev.twitter.com/cards/getting-started
 -->
-<meta property="og:site_name" content="TODO: update this with a site name"/>
+<meta property="og:site_name" content="TODO: update this with a site name" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@twitter-account-for-website" />
-<meta name="twitter:creator" content="@twitter-account-for-author" />
-
-<!--
-( * OPTIONAL * ) HOME SCREEN ICON: If you'd like it to be possible for users to
-add this project's icon to their device, utilize the code below and update the
-assets it references. If not, delete the code below and the assets that it
-references.
--->
-<link rel="apple-touch-icon" href="/lib/img/meta/apple-touch-icon.png" />
-<link rel="icon" sizes="192x192" href="/lib/img/meta/chrome-touch-icon-192x192.png" />
-<meta name="msapplication-TileImage" content="/lib/img/meta/ms-touch-icon-144x144-precomposed.png" />
 
 <!--
 ( * OPTIONAL * ) WEB APP: Is this project a web app? More importantly, are all
@@ -35,20 +37,4 @@ the code below. If not, delete the code below.
 <meta name="application-name" content="TODO: update this with a short application name" />
 <meta name="apple-mobile-web-app-title" content="TODO: update this with a short application name" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="msapplication-TileColor" content="#3372DF" /><!-- TODO: update this hex value -->
-<meta name="theme-color" content="#3372DF" /><!-- TODO: update this hex value -->
-
-<!--
-( * OPTIONAL * ) PINNED TAB ICON: When someone pins this project's tab in
-Safari, a unique SVG will be used. It needs a transparent background and 100%
-black for all vectors. The link element's color attribute sets the display
-color of the image. Learn more here:
-https://developer.apple.com/library/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
--->
-<link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
-
-<!--
-TODO: Update the following files with project specific details.
-- /public/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
-- /public/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
--->
+<meta name="msapplication-TileColor" content="#ff6347" /><!-- TODO: update this hex value -->
