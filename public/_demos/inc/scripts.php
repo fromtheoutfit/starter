@@ -1,3 +1,15 @@
+<!--
+( * OPTIONAL * ) FEATURE SUPPORT DETECTION: By default, the Modernizr script
+below detects support for touch events *only*. If this project will need to
+detect support for additional features, follow these steps:
+1. Go to this URL: http://modernizr.com/download/?-touchevents-setclasses
+2. Find & check off the additional features you want to detect support for
+3. Select the BUILD button to download an updated version of Modernizr
+4. Replace the contents of the below script with what was downloaded
+-->
+<script src="/lib/js/modernizr.js"></script>
+
+
 <script src="/lib/js/app.js"></script>
 
 

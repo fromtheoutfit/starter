@@ -48,17 +48,6 @@ https://developer.apple.com/library/mac/releasenotes/General/WhatsNewInSafari/Ar
 <link rel="mask-icon" href="/lib/img/meta/site-icon.svg" color="#3372DF" /><!-- TODO: update this hex value -->
 
 <!--
-( * OPTIONAL * ) FEATURE SUPPORT DETECTION: By default, the Modernizr script
-below detects support for touch events *only*. If this project will need to
-detect support for additional features, follow these steps:
-1. Go to this URL: http://modernizr.com/download/?-touchevents-setclasses
-2. Find & check off the additional features you want to detect support for
-3. Select the BUILD button to download an updated version of Modernizr
-4. Replace the contents of the below script with what was downloaded
--->
-<script src="/lib/js/modernizr.js"></script>
-
-<!--
 TODO: Update the following files with project specific details.
 - /public/favicon.ico (Tools: https://www.google.com/?q=favicon+generator)
 - /public/robots.txt  (Info: http://www.robotstxt.org/robotstxt.html)
