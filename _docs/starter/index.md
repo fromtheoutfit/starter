@@ -34,7 +34,7 @@ Your local server, while running, will make a particular URL available on your c
 
 ### Specify files to watch
 
-While you’re [developing](#start-developing), Starter’s build-tools will watch specific files and, when any of them are changed and saved, auto-refresh your open web browser(s). To specify which files get watched, update [lines 34 - 36](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36) in /webpack.mix.js.
+While you’re [developing](#start-developing-watch-script), Starter’s build-tools will watch specific files and, when any of them are changed and saved, auto-refresh your open web browser(s). To specify which files get watched, update [lines 34 - 36](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36) in /webpack.mix.js.
 
 ## Usage
 
@@ -57,7 +57,7 @@ When you’re done writing code:
 1. In the terminal application where the watcher is running, type `control + c` to stop the watcher
 2. Shut down your local server
 
-_Note: at this point, the code **is not** ready for [production](#prepare-for-production)…_
+_Note: at this point, the code **is not** ready for [production](#prepare-for-production-production-script)…_
 
 ### Prepare for production (`production` script)
 
@@ -79,7 +79,7 @@ Our goal is to add more demos as time allows.
 
 ## Thanks
 
-Starter is built on the work of many other open source projects, and we’re incredibly grateful to all of the people who pour hours into them:
+Starter is built on the work of many other projects, and we’re incredibly grateful to all of the people who pour hours into them:
 
 * [Node](https://github.com/nodejs/node)
 * [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
