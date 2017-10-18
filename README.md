@@ -1,15 +1,8 @@
 # Table of Contents
 
-## Project Documentation
+The goal of Starter is to be a starting point for your projects and, as such, there are two types of documentation provided:
 
-Documentation specific to _this project_, which is built _on top of_ Starter.
+* [Documentation specific to the project that you build _on top of_ Starter](https://github.com/fromtheoutfit/starter/tree/master/_docs/project/index.md)
+* [Documentation specific to Starter itself](https://github.com/fromtheoutfit/starter/tree/master/_docs/starter/index.md)
 
-* [Start here](https://github.com/fromtheoutfit/starter/tree/master/_docs/project/index.md)
-
-## Starter Documentation
-
-Documentation specific to Starter, which aims to be a starting point for new projects.
-
-* [Start here](https://github.com/fromtheoutfit/starter/tree/master/_docs/starter/index.md)
-* [Contributing](https://github.com/fromtheoutfit/starter/tree/master/_docs/starter/contributing.md)
-* [License](https://github.com/fromtheoutfit/starter/tree/master/_docs/starter/license.txt)
+The former is, by default, just a simple template for you to eventually update as your project progresses. The latter aims to describe what Starter is, how to install and use it, etc.
