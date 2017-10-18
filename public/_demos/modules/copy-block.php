@@ -122,7 +122,7 @@ A line of code</code></pre>
         <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
       </video>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" title="Big Buck Bunny" allowfullscreen></iframe>
 
     </div>
 
