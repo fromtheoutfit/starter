@@ -7,4 +7,4 @@ The goal of Starter is to be a starting point for your projects and, as such, th
 
 The former is, by default, just a simple template for you to eventually update as your project progresses. The latter aims to describe what Starter is, how to install and use it, etc.
 
-Start is developed by the folks at [The Outfit](https://theout.fit/).
+Starter is developed by the folks at [The Outfit](https://theout.fit/).

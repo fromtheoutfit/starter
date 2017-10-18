@@ -68,8 +68,21 @@ This will recompile and minify the JavaScript and CSS, making the codebase ready
 
 ## Demos
 
-todo: talk about demos
+With your local server running, visit [your local url]/_demos/ to see a handful of demos:
+
+* modules
+* layout/grid examples
+* form controls
+* etc.
+
+Our goal is to add more demos as time allows.
 
 ## Thanks
 
-todo: fill in thanks
+Starter is built on the work of many other open source projects, and we’re incredibly grateful to all of the people who pour hours into them:
+
+* [Node](https://github.com/nodejs/node)
+* [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
+* [Browsersync](https://github.com/BrowserSync/browser-sync)
+* [Ally.js](https://github.com/medialize/ally.js)
+* [ESLint](https://github.com/eslint/eslint)
