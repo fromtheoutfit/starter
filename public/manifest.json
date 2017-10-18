@@ -1,5 +1,6 @@
 {
-    "name": "todo: change this",
+    "name": "todo",
+    "short_name": "todo",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
