@@ -7,15 +7,15 @@ Starter is a collection of modules, demos, build-tools, and (hopefully) best pra
 
 ## Prerequisites
 
-* [**Node.js**](https://nodejs.org/), though you _may_ already have it installed. To check, open your  terminal application and run `node --v`. If it returns a version number, you’re all set.
+* [**Node.js**](https://nodejs.org/), though you _may_ already have it installed. To check, open your  terminal application and run `node --v`. If it returns a version number, you’re all set; if it doesn’t, go to [nodejs.org](https://nodejs.org/) to download and install it.
 * **A local server.** We currently use and recommend [Laravel Homestead](https://laravel.com/docs/5.5/homestead), but something as simple as [MAMP/WAMP](https://www.mamp.info/) will work.
 
 ## Installation
 
-1. **Get the code:**
+1. **Get the code by doing *one* of the following:**
     * Clone the repository: `git clone https://github.com/fromtheoutfit/starter.git`
     * or, [download it as a .zip file](https://github.com/fromtheoutfit/starter/archive/master.zip).
-2. **Install dependencies:** Navigate to the directory containing the code and run `npm install`
+2. **Install dependencies:** Navigate to the directory containing the code and run `npm install` to install [the packages that Starter relies on](https://github.com/fromtheoutfit/starter/blob/master/package.json).
 
 ## Adjustments
 
