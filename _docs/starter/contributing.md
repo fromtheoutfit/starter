@@ -53,7 +53,7 @@ Feature requests are welcome, but take a moment to find out whether your idea fi
 
 Good pull requests—patches, improvements, new features—are a big help.
 
-**Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project’s developers might not want to merge into the project.
+[**Please ask first**](https://github.com/fromtheoutfit/starter/issues/new) before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project’s developers might not want to merge into the project.
 
 Please adhere to the coding conventions used throughout a project (indentation, accurate comments, etc.) and any other requirements (such as test coverage).
 
