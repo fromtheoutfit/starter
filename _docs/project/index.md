@@ -24,7 +24,7 @@ npm install
 
 ### Built With
 
-[Check out /package.json](blob/master/package.json) to see what this project is built with.
+[Check out /package.json](https://github.com/fromtheoutfit/starter/blob/master/package.json) to see what this project is built with.
 
 ### Prerequisites
 
