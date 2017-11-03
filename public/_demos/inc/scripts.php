@@ -34,3 +34,16 @@ https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 -->
+
+
+<!--
+We call the print stylesheet last for a few reasons:
+- Not compiling it into app.css has the benefit of reducing that file's size
+  and stops any render-blocking affect the print-specific styles may have on
+  the browser(s)
+- Requesting the file here, versus in <head>, defers its http request until
+  after all of the more important content is requested and rendered
+- …and this is OK because we're betting that the user won't attempt to print
+  before the browser gets to this point during its execution of this document
+-->
+<link rel="stylesheet" href="/lib/css/print.css" media="print" />
