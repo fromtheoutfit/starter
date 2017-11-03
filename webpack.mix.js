@@ -18,6 +18,7 @@ mix
   })
   .js('_js/app.js', 'public/lib/js')
   .sass('_scss/app.scss', 'public/lib/css')
+  .sass('_scss/print.scss', 'public/lib/css')
   .options({
     processCssUrls: false
   })
@@ -25,8 +26,9 @@ mix
   .browserSync({
     proxy: 'starter.dev',
     files: [
-      'public/lib/css/app.css',  // Generated .css file
-      'public/lib/js/app.js',    // Generated .js file
+      'public/lib/css/app.css',   // Generated app.css file
+      'public/lib/css/print.css', // Generated print.css file
+      'public/lib/js/app.js',     // Generated .js file
       // =====================================================================
       // You probably need only one of the below lines, depending
       // on which platform this project is being built upon.

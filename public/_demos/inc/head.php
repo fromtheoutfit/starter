@@ -2,6 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="/lib/css/app.css" />
+<link rel="stylesheet" href="/lib/css/print.css" media="print" />
 
 <!--
 These assets and color values need to be updated to something that is project-
