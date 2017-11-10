@@ -24,7 +24,7 @@ $mm-object-margin: 16px;
 
   &__image {
     figcaption {
-      color: lighten($color-text, 50%);
+      color: lighten($color-text, 25%);
       font-size: 90%;
       line-height: $line-height;
       margin-top: ($mm-object-margin / 2);
