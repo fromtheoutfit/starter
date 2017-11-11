@@ -29,7 +29,7 @@ export function initialize() {
   openDialogBtns = document.querySelectorAll('.js-open-dialog')
   closeDialogBtn = document.querySelector('.js-close-dialog')
 
-  // When any of the Open Dialog buttons is clicked, run openDialog.
+  // When any of the Open Dialog buttons are clicked, run openDialog.
   Array.prototype.forEach.call(openDialogBtns, function(el){
     el.addEventListener('click', openDialog, false)
   })
