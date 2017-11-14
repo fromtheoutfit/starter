@@ -23,6 +23,11 @@ $header-object-margin: 16px;
     padding: 0;
     position: absolute;
 
+    // Hide if there's no JS.
+    .no-js & {
+      @extend .hidden;
+    }
+
     @include mq-min-width($bp-small) {
       display: none;
       visibility: hidden;
@@ -50,25 +55,31 @@ $header-object-margin: 16px;
 
   &__nav-wrap {
     background-color: #fff;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transform: translateX(100%);
-    transition-property: transform;
-    transition-duration: 250ms;
-    width: 80%;
+
+    .js & {
+      height: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      transform: translateX(100%);
+      transition-property: transform;
+      transition-duration: 250ms;
+      width: 80%;
+    }
 
     @include mq-min-width($bp-small) {
-      background-color: transparent;
-      height: auto;
-      padding: 0;
-      position: static;
-      right: auto;
-      top: auto;
-      transition: none;
-      transform: none;
-      width: auto;
+      .no-js &,
+      .js & {
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+        position: static;
+        right: auto;
+        top: auto;
+        transition: none;
+        transform: none;
+        width: auto;
+      }
     }
 
     &.is-visible {
@@ -77,25 +88,55 @@ $header-object-margin: 16px;
     }
   }
 
-  &__nav-links {
-    bottom: 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 16px;
-    position: absolute;
-    top: 40px;
-    width: 100%;
+  &__nav-title {
+    .no-js & {
+      border-bottom: 1px solid rgba(0,0,0,0.25);
+      font-size: (22rem/16);
+      padding: 8px;
 
-    @include mq-min-width($bp-small) {
-      display: flex;
-      bottom: auto;
-      overflow: visible;
-      padding: 0;
-      position: static;
-      top: auto;
-      width: auto;
+      @include mq-min-width($bp-small) {
+        // We copy/paste the .visuallyhidden declarations, here, because,
+        // unfortunately, we cannot @extend the class through a media query.
+        border: 0;
+        clip: rect(0 0 0 0);
+        font-size: 0;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
     }
 
+    .js & {
+      @extend .visuallyhidden;
+    }
+  }
+
+  &__nav-links {
+    .js & {
+      bottom: 0;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 16px;
+      position: absolute;
+      top: 40px;
+      width: 100%;
+    }
+
+    @include mq-min-width($bp-small) {
+      .no-js &,
+      .js & {
+        display: flex;
+        bottom: auto;
+        overflow: visible;
+        padding: 0;
+        position: static;
+        top: auto;
+        width: auto;
+      }
+    }
 
     > li + li {
       @include mq-min-width($bp-small) {
