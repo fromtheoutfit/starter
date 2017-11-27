@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+let mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ mix
       'laravel/resources/views/**/*.php', // Laravel-specific view files
       'craft/templates/**/*.+(html|twig)' // Craft-specific templates, as html and/or twig
     ]
-  });
+  })
 
 // Full API
 // mix.js(src, output);
