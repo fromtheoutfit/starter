@@ -1,4 +1,6 @@
 let mix = require('laravel-mix')
+let glob = require('glob-all')
+let purgecss = require('purgecss-webpack-plugin')
 
 const config = {
   localUrl: 'starter.dev',
@@ -44,8 +46,18 @@ mix
       'public/lib/js/app.js',     // Generated .js file
     ])
   })
+
+// In production only...
+if (mix.inProduction()) {
+  mix.webpackConfig({
+    plugins: [
+      // https://github.com/FullHuman/purgecss
+      new purgecss({
+        paths: glob.sync(config.templates)
+      })
     ]
   })
+}
 
 // Full API
 // mix.js(src, output);

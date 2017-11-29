@@ -38,7 +38,7 @@ While you’re [developing](#start-developing-watch-script), Starter’s build-t
 
 ## Usage
 
-The build-tools that come with Starter have [various scripts you can run](https://github.com/fromtheoutfit/starter/blob/master/package.json#L17), two of which are typically used most often:
+The build-tools that come with Starter have [various scripts you can run](https://github.com/fromtheoutfit/starter/blob/master/package.json#L19), two of which are typically used most often:
 
 ### Start developing (`watch` script)
 
@@ -84,5 +84,6 @@ Starter is built on the work of many other projects, and we’re incredibly grat
 * [Node](https://github.com/nodejs/node)
 * [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
 * [Browsersync](https://github.com/BrowserSync/browser-sync)
+* [Purgecss](https://github.com/FullHuman/purgecss)
 * [Ally.js](https://github.com/medialize/ally.js)
 * [ESLint](https://github.com/eslint/eslint)
