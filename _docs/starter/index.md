@@ -21,11 +21,11 @@ Starter is a collection of modules, demos, build-tools, and (hopefully) best pra
 
 After completing the [installation](#installation), make the following adjustments:
 
-### Set the project URL
+### Set the local URL
 
 Your local server, while running, will make a particular URL available on your computer. Whatever that URL is – _check your local server’s documentation to figure it out_ – you need to tell Starter about it:
 
-* In /webpack.mix.js, go to [line #26](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L26) and change the `proxy` value from _starter.dev_ to the URL your local server makes available.
+* In /webpack.mix.js, go to [line #6](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L6) and change the `localUrl` value from _starter.dev_ to the URL your local server makes available.
 
 > Note: if you are using Laravel Homestead, refer to these two resources:
 > 
@@ -34,7 +34,7 @@ Your local server, while running, will make a particular URL available on your c
 
 ### Specify files to watch
 
-While you’re [developing](#start-developing-watch-script), Starter’s build-tools will watch specific files and, when any of them are changed and saved, auto-refresh your open web browser(s). To specify which files get watched, update [lines 34 - 36](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L34-L36) in /webpack.mix.js.
+While you’re [developing](#start-developing-watch-script), Starter’s build-tools will watch specific files and, when any of them are changed and saved, auto-refresh your open web browser(s). To specify which files get watched, update [lines 12 - 14](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L12-L14) in /webpack.mix.js.
 
 ## Usage
 

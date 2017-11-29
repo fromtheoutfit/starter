@@ -1,5 +1,18 @@
 let mix = require('laravel-mix')
 
+const config = {
+  localUrl: 'starter.dev',
+  templates: [
+    // ========================================================================
+    // You probably need only one of the below lines, depending on which
+    // platform this project is being built upon.
+    // ========================================================================
+    'public/**/*.+(html|php)',          // Generic .html and/or .php files [no specific platform]
+    'laravel/resources/views/**/*.php', // Laravel-specific view files
+    'craft/templates/**/*.+(html|twig)' // Craft-specific templates, as html and/or twig
+  ]
+}
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -24,18 +37,13 @@ mix
   })
   .sourceMaps()
   .browserSync({
-    proxy: 'starter.dev',
-    files: [
+    proxy: config.localUrl,
+    files: config.templates.concat([
       'public/lib/css/app.css',   // Generated app.css file
       'public/lib/css/print.css', // Generated print.css file
       'public/lib/js/app.js',     // Generated .js file
-      // =====================================================================
-      // You probably need only one of the below lines, depending
-      // on which platform this project is being built upon.
-      // =====================================================================
-      'public/**/*.+(html|php)',          // Generic .html and/or .php files [no specific platform]
-      'laravel/resources/views/**/*.php', // Laravel-specific view files
-      'craft/templates/**/*.+(html|twig)' // Craft-specific templates, as html and/or twig
+    ])
+  })
     ]
   })
 
