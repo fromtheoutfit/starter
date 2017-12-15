@@ -3,7 +3,7 @@ let glob = require('glob-all')
 let purgecss = require('purgecss-webpack-plugin')
 
 const config = {
-  localUrl: 'starter.dev',
+  localUrl: 'starter.test',
   templates: [
     // ========================================================================
     // You probably need only one of the below lines, depending on which

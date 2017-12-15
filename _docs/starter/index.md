@@ -25,10 +25,10 @@ After completing the [installation](#installation), make the following adjustmen
 
 Your local server, while running, will make a particular URL available on your computer. Whatever that URL is – _check your local server’s documentation to figure it out_ – you need to tell Starter about it:
 
-* In /webpack.mix.js, go to [line #6](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L6) and change the `localUrl` value from _starter.dev_ to the URL your local server makes available.
+* In /webpack.mix.js, go to [line #6](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L6) and change the `localUrl` value from _starter.test_ to the URL your local server makes available.
 
 > Note: if you are using Laravel Homestead, refer to these two resources:
-> 
+>
 > * Configuring Homestead: https://laravel.com/docs/5.5/homestead#configuring-homestead
 > * …and our own internal version of the above information: https://gist.github.com/marcamos/415df7891d98eef0e5bc18120e3d80bb
 
