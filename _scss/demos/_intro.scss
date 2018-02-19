@@ -37,6 +37,11 @@ $intro-object-margin: 16px;
   .intro__title {
     @include mq-min-width($bp-compact) {
       padding-right: $intro-object-margin;
+
+      [dir='rtl'] & {
+        padding-left: $intro-object-margin;
+        padding-right: 0;
+      }
     }
   }
 
@@ -44,6 +49,12 @@ $intro-object-margin: 16px;
     @include mq-min-width($bp-compact) {
       padding-left: $intro-object-margin;
       text-align: right;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: $intro-object-margin;
+        text-align: left;
+      }
     }
   }
 }

@@ -125,6 +125,11 @@ input, select, textarea {
     padding-right: ($input-padding * 3);
     width: 100%;
 
+    [dir='rtl'] & {
+      padding-left: ($input-padding * 3);
+      padding-right: $input-padding;
+    }
+
     // Remove Firefox's inner focus ring:
     &:focus:-moz-focusring {color:transparent; text-shadow:0 0 0 $color-text;}
 
@@ -146,6 +151,11 @@ input, select, textarea {
     right: $input-padding;
     top: 50%;
     width: 0;
+
+    [dir='rtl'] & {
+      left: $input-padding;
+      right: auto;
+    }
   }
 }
 
@@ -175,6 +185,11 @@ input, select, textarea {
 
       &:not(:last-of-type) {
         margin-right: $control-margin-inline;
+
+        [dir='rtl'] & {
+          margin-left: $control-margin-inline;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -185,6 +200,11 @@ input, select, textarea {
 // Various white-space classes.
 .u-padding-right {
   padding-right: $label-margin-inline;
+
+  [dir='rtl'] & {
+    padding-left: $label-margin-inline;
+    padding-right: 0;
+  }
 }
 
 .u-padding-top {

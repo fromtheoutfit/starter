@@ -28,6 +28,10 @@ table {
   th {
     text-align: left;
     background: $table-th-bg-color;
+
+    [dir='rtl'] & {
+      text-align: right;
+    }
   }
 
   th,
@@ -48,11 +52,21 @@ table td,
 
   &:first-child {
     background-image: linear-gradient(to right, #fff 50%, rgba(255,255,255,0.001) 100%);
+
+    [dir='rtl'] & {
+      background-image: linear-gradient(to left, #fff 50%, rgba(255,255,255,0.001) 100%);
+      background-position: 100% 0;
+    }
   }
 
   &:last-child {
     background-image: linear-gradient(to left, #fff 50%, rgba(255,255,255,0.001) 100%);
     background-position: 100% 0;
+
+    [dir='rtl'] & {
+      background-image: linear-gradient(to right, #fff 50%, rgba(255,255,255,0.001) 100%);
+      background-position: 0 100%;
+    }
   }
 }
 
@@ -93,6 +107,11 @@ table td,
 
   td {
     background-image: none !important;
-    border-left: 0;
+    border-left: none;
+
+    [dir='rtl'] & {
+      border-left: 1px solid $table-borders-color;
+      border-right: none;
+    }
   }
 }

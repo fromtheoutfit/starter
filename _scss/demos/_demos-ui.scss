@@ -219,6 +219,11 @@ Layout demo(s) content - grids, grid__items, etc.
 .demo [data-layout~="grid__item"] ol {
   margin: 0.75em 0;
   padding-left: 1.25em;
+
+  [dir='rtl'] & {
+    padding-left: 0;
+    padding-right: 1.25em;
+  }
 }
 
 
@@ -279,6 +284,11 @@ Demo code
 
   p {
     margin-left: 2em;
+
+    [dir='rtl'] & {
+      margin-left: 0;
+      margin-right: 2em;
+    }
   }
 }
 

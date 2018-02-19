@@ -141,6 +141,11 @@ $header-object-margin: 16px;
     > li + li {
       @include mq-min-width($bp-small) {
         margin-left: 1em;
+
+        [dir='rtl'] & {
+          margin-left: 0;
+          margin-right: 1em;
+        }
       }
     }
 
@@ -180,6 +185,11 @@ $header-object-margin: 16px;
       a {
         padding-left: 24px;
 
+        [dir='rtl'] & {
+          padding-left: 0;
+          padding-right: 24px;
+        }
+
         @include mq-min-width($bp-small) {
           padding-left: inherit;
         }
@@ -189,9 +199,14 @@ $header-object-margin: 16px;
         a {
           padding-left: 40px;
 
-        @include mq-min-width($bp-small) {
-          padding-left: inherit;
-        }
+          [dir='rtl'] & {
+            padding-left: 0;
+            padding-right: 40px;
+          }
+
+          @include mq-min-width($bp-small) {
+            padding-left: inherit;
+          }
         }
       }
     }

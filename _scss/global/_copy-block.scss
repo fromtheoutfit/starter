@@ -52,6 +52,11 @@
 
   ul, ol, dd {
     padding-left: 1.5em;
+
+    [dir='rtl'] & {
+      padding-left: 0;
+      padding-right: 1.5em;
+    }
   }
 
   ul {
@@ -73,6 +78,13 @@
   blockquote {
     border-left: 8px solid transparentize($color-text, .75);
     padding-left: 1em;
+
+    [dir='rtl'] & {
+      border-left: none;
+      border-right: 8px solid transparentize($color-text, .75);
+      padding-left: 0;
+      padding-right: 1em;
+    }
   }
 
   figcaption {

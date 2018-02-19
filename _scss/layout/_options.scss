@@ -13,78 +13,158 @@
   margin-left:   -($gutter-size);
   margin-top:    -($gutter-size);
 
+  [dir='rtl'] & {
+    margin-left: inherit;
+    margin-right: -($gutter-size);
+  }
+
   @include mq-min-width($bp-tiny) {
     margin-left:   -($t-gutter-size);
     margin-top:    -($t-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($t-gutter-size);
+    }
   }
 
   @include mq-min-width($bp-small) {
     margin-left:   -($s-gutter-size);
     margin-top:    -($s-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($s-gutter-size);
+    }
   }
 
   @include mq-min-width($bp-compact) {
     margin-left:   -($c-gutter-size);
     margin-top:    -($c-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($c-gutter-size);
+    }
   }
 
   @include mq-min-width($bp-medium) {
     margin-left:   -($m-gutter-size);
     margin-top:    -($m-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($m-gutter-size);
+    }
   }
 
   @include mq-min-width($bp-large) {
     margin-left:   -($l-gutter-size);
     margin-top:    -($l-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($l-gutter-size);
+    }
   }
 
   @include mq-min-width($bp-huge) {
     margin-left:   -($h-gutter-size);
     margin-top:    -($h-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($h-gutter-size);
+    }
   }
 
   @include mq-min-width($bp-epic) {
     margin-left:   -($e-gutter-size);
     margin-top:    -($e-gutter-size);
+
+    [dir='rtl'] & {
+      margin-left: inherit;
+      margin-right: -($e-gutter-size);
+    }
   }
 
   > * {
     padding-left: ($gutter-size);
     padding-top:  ($gutter-size);
 
+    [dir='rtl'] & {
+      padding-left: inherit;
+      padding-right: ($gutter-size);
+    }
+
     @include mq-min-width($bp-tiny) {
       padding-left: ($t-gutter-size);
       padding-top:  ($t-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($t-gutter-size);
+      }
     }
 
     @include mq-min-width($bp-small) {
       padding-left: ($s-gutter-size);
       padding-top:  ($s-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($s-gutter-size);
+      }
     }
 
     @include mq-min-width($bp-compact) {
       padding-left: ($c-gutter-size);
       padding-top:  ($c-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($c-gutter-size);
+      }
     }
 
     @include mq-min-width($bp-medium) {
       padding-left: ($m-gutter-size);
       padding-top:  ($m-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($m-gutter-size);
+      }
     }
 
     @include mq-min-width($bp-large) {
       padding-left: ($l-gutter-size);
       padding-top:  ($l-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($l-gutter-size);
+      }
     }
 
     @include mq-min-width($bp-huge) {
       padding-left: ($h-gutter-size);
       padding-top:  ($h-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($h-gutter-size);
+      }
     }
 
     @include mq-min-width($bp-epic) {
       padding-left: ($e-gutter-size);
       padding-top:  ($e-gutter-size);
+
+      [dir='rtl'] & {
+        padding-left: inherit;
+        padding-right: ($e-gutter-size);
+      }
     }
   }
 

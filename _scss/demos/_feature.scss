@@ -97,6 +97,11 @@ $feature-object-margin: 1em;
 
     ul, ol, dd {
       padding-left: 1.5em;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: 1.5em;
+      }
     }
 
     ul {

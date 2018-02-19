@@ -13,6 +13,11 @@ $cta-object-margin: 16px;
       flex: none;
       padding-right: $cta-object-margin;
       width: 75%;
+
+      [dir='rtl'] & {
+        padding-left: $cta-object-margin;
+        padding-right: 0;
+      }
     }
   }
 
@@ -37,6 +42,11 @@ $cta-object-margin: 16px;
 
     ul, ol, dd {
       padding-left: 1.5em;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: 1.5em;
+      }
     }
 
     ul {
@@ -65,6 +75,12 @@ $cta-object-margin: 16px;
       padding-left: $cta-object-margin;
       text-align: right;
       width: 25%;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: $cta-object-margin;
+        text-align: left;
+      }
     }
   }
 }

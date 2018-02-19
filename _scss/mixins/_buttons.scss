@@ -59,6 +59,10 @@
   padding: 0;
   text-align: left;
 
+  [dir='rtl'] & {
+    text-align: right;
+  }
+
   &:hover,
   &:focus {
     color: $color-link-hover;
@@ -80,6 +84,10 @@
   color: $color-text;
   padding: 0;
   text-align: left;
+
+  [dir='rtl'] & {
+    text-align: right;
+  }
 
   &:hover,
   &:focus {
