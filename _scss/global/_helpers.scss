@@ -54,3 +54,18 @@
 .clearfix:after {
   clear: both;
 }
+
+// In supporting environments, kill all animations when the user prefers
+// reduced motion. Note that the below application of this feature might be a
+// bit heavy-handed; you could, perhaps, change it to selectively reduce motion
+// only where it's being used too much rather killing all animations. It's your
+// and the client's call. Learn more at:
+// - https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion
+// - https://webkit.org/blog/7551/responsive-design-for-motion/
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+     animation: none !important;
+     transition: none !important;
+  }
+}
