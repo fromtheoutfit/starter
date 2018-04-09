@@ -1,8 +1,6 @@
 {
     "/public/lib/js/app.js": "/public/lib/js/app.js",
-    "/public/lib/css/app.css": "/public/lib/css/app.css",
-    "/public/lib/css/print.css": "/public/lib/css/print.css",
     "/public/lib/js/app.js.map": "/public/lib/js/app.js.map",
-    "/public/lib/css/app.css.map": "/public/lib/css/app.css.map",
-    "/public/lib/css/print.css.map": "/public/lib/css/print.css.map"
+    "/public/lib/css/app.css": "/public/lib/css/app.css",
+    "/public/lib/css/print.css": "/public/lib/css/print.css"
 }
