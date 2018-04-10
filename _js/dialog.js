@@ -18,7 +18,7 @@ let firstTabbableEl   = null
 export function initialize() {
 
   // Grab the dialog.
-  dialog = document.querySelector('.js-dialog')
+  dialog = document.querySelector('[data-dialog]')
 
   // Stop everything if the dialog does not exist / isn't in the document.
   if (!dialog) {
@@ -26,8 +26,8 @@ export function initialize() {
   }
 
   // Grab all Open Dialog buttons, as well as the one Close Dialog button.
-  openDialogBtns = document.querySelectorAll('.js-open-dialog')
-  closeDialogBtn = document.querySelector('.js-close-dialog')
+  openDialogBtns = document.querySelectorAll('[data-open-dialog]')
+  closeDialogBtn = document.querySelector('[data-close-dialog]')
 
   // When any of the Open Dialog buttons are clicked, run openDialog.
   Array.prototype.forEach.call(openDialogBtns, function(el){

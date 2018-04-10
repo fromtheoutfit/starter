@@ -50,9 +50,9 @@
         <a href="#"><img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="200" height="125" alt="Project Name" /></a>
         <h1 class="visuallyhidden">Project Name</h1>
       </div>
-      <button class="header__open-nav js-header__open-nav" aria-label="Open navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /></svg></button>
-      <nav class="header__nav-wrap js-header__nav-wrap" role="navigation">
-        <button class="header__close-nav js-header__close-nav" aria-label="Close navigation">&times;</button>
+      <button class="header__open-nav" data-open-nav aria-label="Open navigation"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /></svg></button>
+      <nav class="header__nav-wrap" data-nav-wrap role="navigation">
+        <button class="header__close-nav" data-close-nav aria-label="Close navigation">&times;</button>
         <h2 class="header__nav-title">Main Navigation</h2>
         <ul class="header__nav-links">
           <li>
@@ -103,9 +103,9 @@
     &lt;a href="#"&gt;&lt;img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="200" height="125" alt="Project Name" /&gt;&lt;/a&gt;
     &lt;h1 class="visuallyhidden"&gt;Project Name&lt;/h1&gt;
   &lt;/div&gt;
-  &lt;button class="header__open-nav js-header__open-nav" aria-label="Open navigation"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"&gt;&lt;path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /&gt;&lt;/svg&gt;&lt;/button&gt;
-  &lt;nav class="header__nav-wrap js-header__nav-wrap"&gt;
-    &lt;button class="header__close-nav js-header__close-nav" aria-label="Close navigation"&gt;&times;&lt;/button&gt;
+  &lt;button class="header__open-nav" data-open-nav aria-label="Open navigation"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"&gt;&lt;path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z" fill="#fff" /&gt;&lt;/svg&gt;&lt;/button&gt;
+  &lt;nav class="header__nav-wrap" data-nav-wrap&gt;
+    &lt;button class="header__close-nav" data-close-nav aria-label="Close navigation"&gt;&times;&lt;/button&gt;
     &lt;h2 class="visuallyhidden"&gt;Main Navigation&lt;/h2&gt;
     &lt;ul class="header__nav-links"&gt;
       &lt;li&gt;
@@ -156,9 +156,9 @@ let vpWidth     = null;
 
 
 export function initialize() {
-  openBtn  = document.querySelector('.js-header__open-nav');
-  closeBtn = document.querySelector('.js-header__close-nav');
-  wrapEl   = document.querySelector('.js-header__nav-wrap');
+  openBtn  = document.querySelector('[data-open-nav]');
+  closeBtn = document.querySelector('[data-close-nav]');
+  wrapEl   = document.querySelector('[data-nav-wrap]');
 
   // Stop everything if any of the above elements do not exist.
   if (!openBtn || !closeBtn || !wrapEl) {

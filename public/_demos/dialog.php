@@ -34,7 +34,7 @@
           <p><span class="lorem-dashum">The phantoms, for so they then seemed, were flitting on the other side of the deck, and, with a noiseless celerity, were casting loose the tackles and bands of the boat which swung there. This boat had always been deemed one of the spare boats, though technically called the captain's, on account of its hanging from the starboard quarter. The figure that now stood by its bows was tall and swart, with one white tooth evilly protruding from its steel-like lips.</span></p>
 
           <!-- This is the Show Dialog button -->
-          <p><button class="btn js-open-dialog">Show Dialog</button></p>
+          <p><button class="btn" data-open-dialog>Show Dialog</button></p>
 
           <p><span class="lorem-dashum">A rumpled Chinese jacket of black cotton funereally invested him, with wide black trowsers of the same dark stuff. But strangely crowning this ebonness was a glistening white plaited turban, the living hair braided and coiled round and round upon his head. Less swart in aspect, the companions of this figure were of that vivid, tiger-yellow complexion peculiar to some of the aboriginal natives of the Manillas;&mdash;a race notorious for a certain diabolism of subtilty, and by some honest white mariners supposed to be the paid spies and secret confidential agents on the water of the devil, their lord, whose counting-room they suppose to be elsewhere.</span></p>
           <p><span class="lorem-dashum">While yet the wondering ship's company were gazing upon these strangers, Ahab cried out to the white-turbaned old man at their head, "All ready there, Fedallah?" "Ready," was the half-hissed reply. "Lower away then; d'ye hear?" shouting across the deck. "Lower away there, I say." Such was the thunder of his voice, that spite of their amazement the men sprang over the rail; the sheaves whirled round in the blocks; with a wallow, the three boats dropped into the sea; while, with a dexterous, off-handed daring, unknown in any other vocation, the sailors, goat-like, leaped down the rolling ship's side into the tossed boats below.</span></p>
@@ -57,11 +57,11 @@
     Many things happen in /_js/dialog.js to control the behavior and
     accessibility of this dialog.
     -->
-    <div class="dialog js-dialog" role="dialog" aria-labelledby="dialog__title" aria-describedby="dialog__description" aria-hidden="true" hidden>
+    <div class="dialog" data-dialog role="dialog" aria-labelledby="dialog__title" aria-describedby="dialog__description" aria-hidden="true" hidden>
       <div class="dialog__bg"></div>
       <div class="dialog__body">
         <div class="dialog__close">
-          <button class="btn-strip js-close-dialog" aria-label="Close dialog">×</button>
+          <button class="btn-strip" data-close-dialog aria-label="Close dialog">×</button>
         </div>
         <div class="dialog__content" role="document">
           <div class="copy-block">

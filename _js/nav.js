@@ -8,9 +8,9 @@ let vpWidth     = null
 
 
 export function initialize() {
-  openBtn  = document.querySelector('.js-header__open-nav')
-  closeBtn = document.querySelector('.js-header__close-nav')
-  wrapEl   = document.querySelector('.js-header__nav-wrap')
+  openBtn  = document.querySelector('[data-open-nav]')
+  closeBtn = document.querySelector('[data-close-nav]')
+  wrapEl   = document.querySelector('[data-nav-wrap]')
 
   // Stop everything if any of the above elements do not exist.
   if (!openBtn || !closeBtn || !wrapEl) {

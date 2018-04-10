@@ -1,4 +1,4 @@
-<nav class="demos-nav js-demos-nav">
+<nav class="demos-nav" data-demos-nav>
 
   <!-- General -->
   <h1>General:</h1>
@@ -36,6 +36,6 @@
     <a href="/_demos/layout/row-order-reversal.php">Row order reversal</a>
   </div>
 
-  <button class="demos-nav__toggle js-demos-nav-toggle" title="Toggle the demo navigation">Demo Nav</button>
+  <button class="demos-nav__toggle" data-demos-nav-toggle title="Toggle the demo navigation">Demo Nav</button>
 
 </nav>

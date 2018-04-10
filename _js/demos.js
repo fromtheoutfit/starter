@@ -5,8 +5,8 @@ let demosNavIsVisible = false
 
 
 export function initialize() {
-  demosNav       = document.querySelector('.js-demos-nav')
-  demosNavToggle = document.querySelector('.js-demos-nav-toggle')
+  demosNav       = document.querySelector('[data-demos-nav]')
+  demosNavToggle = document.querySelector('[data-demos-nav-toggle]')
 
   // Stop everything if any of the above elements do not exist.
   if (!demosNav || !demosNavToggle) {
