@@ -2,8 +2,8 @@
 
 Starter is a collection of modules, demos, build-tools, and (hopefully) best practices created and used by [The Outfit](https://theout.fit/) for some of the projects we build.
 
-* [Contributing](https://github.com/fromtheoutfit/starter/blob/master/_docs/starter/contributing.md)
-* [License](https://github.com/fromtheoutfit/starter/blob/master/_docs/starter/license.txt)
+* [Contributing](https://github.com/fromtheoutfit/starter/blob/master/CONTRIBUTING.md)
+* [License](https://github.com/fromtheoutfit/starter/blob/master/LICENSE)
 
 ## Prerequisites
 
