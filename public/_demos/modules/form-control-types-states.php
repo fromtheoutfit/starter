@@ -38,6 +38,7 @@
     <div class="demo__info">
       <h2>Form Control Types / States</h2>
       <p>All of the form control types and states supported by this project.</p>
+      <p><small><strong>Note:</strong> There are a number of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes">helpful input attributes</a> worth considering that can improve your user’s experience.</small></p>
     </div>
 
 
