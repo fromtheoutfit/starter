@@ -25,7 +25,7 @@ After completing the [installation](#installation), make the following adjustmen
 
 Your local server, while running, will make a particular URL available on your computer. Whatever that URL is – _check your local server’s documentation to figure it out_ – you need to tell Starter about it:
 
-* In /webpack.mix.js, go to [line #6](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L6) and change the `localUrl` value from _starter.test_ to the URL your local server makes available.
+* In /webpack.mix.js, go to [line #5](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L5) and change the `localUrl` value from _starter.test_ to the URL your local server makes available.
 
 > Note: if you are using Laravel Homestead, refer to these two resources:
 >
@@ -34,11 +34,11 @@ Your local server, while running, will make a particular URL available on your c
 
 ### Specify files to watch
 
-While you’re [developing](#start-developing-watch-script), Starter’s build-tools will watch specific files and, when any of them are changed and saved, auto-refresh your open web browser(s). To specify which files get watched, update [lines 12 - 14](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L12-L14) in /webpack.mix.js.
+While you’re [developing](#start-developing-watch-script), Starter’s build-tools will watch specific files and, when any of them are changed and saved, auto-refresh your open web browser(s). To specify which files get watched, update [lines 11 - 13](https://github.com/fromtheoutfit/starter/blob/master/webpack.mix.js#L11-L13) in /webpack.mix.js.
 
 ## Usage
 
-The build-tools that come with Starter have [various scripts you can run](https://github.com/fromtheoutfit/starter/blob/master/package.json#L19), two of which are typically used most often:
+The build-tools that come with Starter have [various scripts you can run](https://github.com/fromtheoutfit/starter/blob/master/package.json#L18), two of which are typically used most often:
 
 ### Start developing (`watch` script)
 
