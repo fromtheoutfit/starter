@@ -1,5 +1,5 @@
 let mix = require('laravel-mix')
-require('laravel-mix-purgecss')
+require('laravel-mix-purgecss') // Note that this is only utilized in Laravel projects
 
 const config = {
   localUrl: 'starter.test',
@@ -31,19 +31,13 @@ mix
     'ally.js/ally.js': ['ally']
   })
   .options({
-    autoprefixer: {
-      options: {
-        grid: true
-      }
-    },
+    autoprefixer: {options: {grid: true}},
     processCssUrls: false
   })
   .js('_js/app.js', 'public/lib/js')
   .sass('_scss/app.scss', 'public/lib/css')
   .sass('_scss/print.scss', 'public/lib/css')
-  .purgeCss({
-    globs: config.templates
-  })
+  .purgeCss({globs: config.templates}) // Note that this is only utilized in Laravel projects
   .sourceMaps()
   .browserSync({
     proxy: config.localUrl,
