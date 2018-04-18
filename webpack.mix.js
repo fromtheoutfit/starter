@@ -30,16 +30,21 @@ mix
     jquery: ['$', 'window.jQuery', 'jQuery'],
     'ally.js/ally.js': ['ally']
   })
+  .options({
+    autoprefixer: {
+      options: {
+        grid: true
+      }
+    },
+    processCssUrls: false
+  })
   .js('_js/app.js', 'public/lib/js')
-  .standaloneSass('_scss/app.scss', 'public/lib/css')
-  .standaloneSass('_scss/print.scss', 'public/lib/css')
-  .sourceMaps()
+  .sass('_scss/app.scss', 'public/lib/css')
+  .sass('_scss/print.scss', 'public/lib/css')
   .purgeCss({
     globs: config.templates
   })
-  .options({
-    processCssUrls: false
-  })
+  .sourceMaps()
   .browserSync({
     proxy: config.localUrl,
     files: config.templates.concat([
