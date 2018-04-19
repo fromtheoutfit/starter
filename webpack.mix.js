@@ -39,6 +39,7 @@ mix
   .sass('_scss/print.scss', 'public/lib/css')
   .purgeCss({globs: config.templates})
   .sourceMaps()
+  .webpackConfig({devtool: 'source-map'})
   .browserSync({
     proxy: config.localUrl,
     files: config.templates.concat([
