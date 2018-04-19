@@ -84,6 +84,6 @@ Starter is built on the work of many other projects, and we’re incredibly grat
 * [Node](https://github.com/nodejs/node)
 * [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
 * [Browsersync](https://github.com/BrowserSync/browser-sync)
-* [Purgecss](https://github.com/FullHuman/purgecss)
+* [Purgecss](https://github.com/spatie/laravel-mix-purgecss)
 * [Ally.js](https://github.com/medialize/ally.js)
 * [ESLint](https://github.com/eslint/eslint)
