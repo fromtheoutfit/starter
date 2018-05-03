@@ -6,10 +6,12 @@
 
 
 import * as nav from './nav'
+import * as userPanel from './user-panel'
 import * as dialog from './dialog'
 
 
 nav.initialize()
+userPanel.initialize()
 dialog.initialize()
 
 

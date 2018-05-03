@@ -29,7 +29,7 @@ $dialog-body-max-width:     680px;
   &__body {
     background-color: $dialog-body-bg-color;
     border-radius: $dialog-body-border-radius;
-    box-shadow: 0 2px 100px rgba(0,0,0,0.25);
+    box-shadow: $overlay-box-shadow;
     max-height: calc(100vh - 50px);
     max-width: $dialog-body-max-width;
     min-width: $dialog-body-min-width;
