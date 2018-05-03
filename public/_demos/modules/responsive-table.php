@@ -49,11 +49,11 @@
     <table>
       <thead>
         <tr>
-          <th>Browser</th>
-          <th>Sessions</th>
-          <th>Percentage</td>
-          <th>New Users</th>
-          <th>Avg. Duration</th>
+          <th scope="col">Browser</th>
+          <th scope="col">Sessions</th>
+          <th scope="col">Percentage</td>
+          <th scope="col">New Users</th>
+          <th scope="col">Avg. Duration</th>
         </tr>
       </thead>
       <tbody>
@@ -130,9 +130,9 @@
         <pre><code>&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;...&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
-      &lt;th&gt;...&lt;/td&gt;
+      &lt;th scope="col"&gt;...&lt;/th&gt;
+      &lt;th scope="col"&gt;...&lt;/th&gt;
+      &lt;th scope="col"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -160,11 +160,11 @@
     <table class="flip-table-axis">
       <thead>
         <tr>
-          <th>Browser</th>
-          <th>Sessions</th>
-          <th>Percentage</td>
-          <th>New Users</th>
-          <th>Avg. Duration</th>
+          <th scope="row">Browser</th>
+          <th scope="row">Sessions</th>
+          <th scope="row">Percentage</td>
+          <th scope="row">New Users</th>
+          <th scope="row">Avg. Duration</th>
         </tr>
       </thead>
       <tbody>
@@ -241,9 +241,9 @@
         <pre><code>&lt;table <span class="demo__highlight">class="flip-table-axis"</span>&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;...&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
-      &lt;th&gt;...&lt;/td&gt;
+      &lt;th scope="row"&gt;...&lt;/th&gt;
+      &lt;th scope="row"&gt;...&lt;/th&gt;
+      &lt;th scope="row"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
