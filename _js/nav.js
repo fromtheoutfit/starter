@@ -1,10 +1,8 @@
-const swapWidth = 600
 let isVisible   = false
 let wrapEl      = null
 let allDesc     = null
 let openBtn     = null
 let closeBtn    = null
-let vpWidth     = null
 
 
 export function initialize() {
@@ -19,7 +17,6 @@ export function initialize() {
 
   allDesc = wrapEl.getElementsByTagName('*')
   addListeners()
-  betterResize()
 }
 
 
@@ -29,29 +26,6 @@ export function addListeners() {
   document.addEventListener('touchend', determineEventLoc, false)
   document.addEventListener('click', determineEventLoc, false)
   document.addEventListener('keyup', handleKeyPresses, false)
-  window.addEventListener('resizeViaRAF', handleResize, false)
-}
-
-
-export function betterResize() {
-  let running = false
-  function doItViaRAF() {
-    if (running) {return}
-    running = true
-    requestAnimationFrame(function() {
-      window.dispatchEvent(new CustomEvent('resizeViaRAF'))
-      running = false
-    })
-  }
-  window.addEventListener('resize', doItViaRAF)
-}
-
-
-export function handleResize() {
-  vpWidth = window.innerWidth
-  if ((vpWidth >= swapWidth) && isVisible) {
-    toggleNav(event)
-  }
 }
 
 
