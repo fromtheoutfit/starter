@@ -26,10 +26,6 @@ const config = {
  */
 
 mix
-  .autoload({
-    jquery: ['$', 'window.jQuery', 'jQuery'],
-    'ally.js/ally.js': ['ally']
-  })
   .options({
     autoprefixer: {options: {grid: true}},
     processCssUrls: false
@@ -39,7 +35,18 @@ mix
   .sass('_scss/print.scss', 'public/lib/css')
   .purgeCss({globs: config.templates})
   .sourceMaps()
-  .webpackConfig({devtool: 'source-map'})
+  .webpackConfig(webpack => {
+    return {
+      plugins: [
+        new webpack.ProvidePlugin({
+          'ally': 'ally.js',
+          $: 'jquery',
+          jQuery: 'jquery'
+        })
+      ],
+      devtool: 'source-map'
+    }
+  })
   .browserSync({
     proxy: config.localUrl,
     files: config.templates.concat([
