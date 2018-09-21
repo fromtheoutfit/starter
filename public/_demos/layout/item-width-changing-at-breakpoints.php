@@ -71,7 +71,7 @@
       </div>
       <div data-layout="grid__item" data-layout-width="one-whole m-one-half">
         <div>
-          <p>If you scroll down the page a little more, you’ll see all possible widths defined and demonstrated—some of the latter ones might not work if your viewport is not very wide at the moment, so feel free to make it thinner / wider to see it all in action.</p>
+          <p>These <code>grid__item</code>(s) are set up to demonstrate the below code; take a moment to make your browser thinner/wider to see how they react.</p>
         </div>
       </div>
     </div>
