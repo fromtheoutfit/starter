@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
 
-    <?php include_once '../inc/head.php'; ?>
+    <?php include '../inc/head.php'; ?>
 
     <!--
     ( * NOTE * ) Most of <head>'s elements are stored in the include above. The
@@ -27,7 +27,7 @@
   <body class="demo">
 
 
-    <?php include_once '../inc/demos-nav.php'; ?>
+    <?php include '../inc/demos-nav.php'; ?>
 
 
     <!-- ======================================================================
@@ -219,7 +219,7 @@ A line of code&lt;/code&gt;&lt;/pre&gt;
     </div>
 
 
-    <?php include_once '../inc/scripts.php'; ?>
+    <?php include '../inc/scripts.php'; ?>
 
 
   </body>

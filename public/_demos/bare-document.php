@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
 
-    <?php include_once 'inc/head.php'; ?>
+    <?php include 'inc/head.php'; ?>
 
     <!--
     ( * NOTE * ) Most of <head>'s elements are stored in the include above. The
@@ -26,7 +26,7 @@
   </head>
   <body>
 
-    <?php include_once 'inc/demos-nav.php'; ?>
+    <?php include 'inc/demos-nav.php'; ?>
 
     <div style="padding:50px;">
       <em>pssst, this is an empty document … view the source</em>
@@ -34,7 +34,7 @@
 
     <!-- YOUR MARKUP HERE. -->
 
-    <?php include_once 'inc/scripts.php'; ?>
+    <?php include 'inc/scripts.php'; ?>
 
   </body>
 </html>

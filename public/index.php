@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
 
-    <?php include_once '_demos/inc/head.php'; ?>
+    <?php include '_demos/inc/head.php'; ?>
 
     <!--
     ( * NOTE * ) Most of <head>'s elements are stored in the include above. The
