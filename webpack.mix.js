@@ -4,12 +4,13 @@ const config = {
   localUrl: 'starter.test',
   templates: [
     // ========================================================================
-    // You probably need only one of the below lines, depending on which
+    // You probably need only one or two of the below lines, depending on which
     // platform this project is being built upon.
     // ========================================================================
+    'web/**/*.+(html|php)',             // Craft-specific .html and/or .php files [ex. non-CMS front-end templates]
+    'templates/**/*.+(html|twig)',      // Craft-specific templates, as html and/or twig
     'public/**/*.+(html|php)',          // Generic .html and/or .php files [no specific platform]
-    'laravel/resources/views/**/*.php', // Laravel-specific view files
-    'craft/templates/**/*.+(html|twig)' // Craft-specific templates, as html and/or twig
+    'laravel/resources/views/**/*.php'  // Laravel-specific view files
   ]
 }
 
@@ -48,9 +49,9 @@ mix
   .browserSync({
     proxy: config.localUrl,
     files: config.templates.concat([
-      'public/lib/css/app.css',   // Generated app.css file
-      'public/lib/css/print.css', // Generated print.css file
-      'public/lib/js/app.js',     // Generated .js file
+      '+(web|public)/lib/css/app.css',   // Generated app.css file
+      '+(web|public)/lib/css/print.css', // Generated print.css file
+      '+(web|public)/lib/js/app.js',     // Generated .js file
     ])
   })
 
