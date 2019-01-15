@@ -60,7 +60,7 @@ $header-object-margin: 16px;
       top: 0;
       transform: translateX(-100%);
       transition-property: transform;
-      transition-duration: 250ms;
+      transition-duration: $transition-duration;
       width: 80%;
     }
 
