@@ -52,7 +52,7 @@
           <img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="128" height="80" alt="Company name" />
         </a>
       </div>
-      <button class="header__open-nav" data-open-nav aria-label="Open navigation">
+      <button class="btn-strip header__open-nav" data-open-nav aria-label="Open navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41">
           <g fill="#fff" fill-rule="evenodd">
             <rect width="40" height="6" y="0" rx="2"/>
@@ -63,7 +63,7 @@
         </svg>
       </button>
       <nav class="header__nav-wrap" data-nav-wrap role="navigation">
-        <button class="header__close-nav" data-close-nav aria-label="Close navigation">&times;</button>
+        <button class="btn-strip header__close-nav" data-close-nav aria-label="Close navigation">&times;</button>
         <h2 class="header__nav-title">Main Navigation</h2>
         <div class="header__nav-links">
           <ul>
@@ -143,7 +143,7 @@
       &lt;img src="/_demos/img/fpo-logo-1x.png" srcset="/_demos/img/fpo-logo-2x.png 2x" width="128" height="80" alt="Company name" /&gt;
     &lt;/a&gt;
   &lt;/div&gt;
-  &lt;button class="header__open-nav" data-open-nav aria-label="Open navigation"&gt;
+  &lt;button class="btn-strip header__open-nav" data-open-nav aria-label="Open navigation"&gt;
     &lt;svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41"&gt;
       &lt;g fill="#fff" fill-rule="evenodd"&gt;
         &lt;rect width="40" height="6" y="0" rx="2"/&gt;
@@ -154,7 +154,7 @@
     &lt;/svg&gt;
   &lt;/button&gt;
   &lt;nav class="header__nav-wrap" data-nav-wrap role="navigation"&gt;
-    &lt;button class="header__close-nav" data-close-nav aria-label="Close navigation"&gt;&times;&lt;/button&gt;
+    &lt;button class="btn-strip header__close-nav" data-close-nav aria-label="Close navigation"&gt;&times;&lt;/button&gt;
     &lt;h2 class="header__nav-title"&gt;Main Navigation&lt;/h2&gt;
     &lt;div class="header__nav-links"&gt;
       &lt;ul&gt;

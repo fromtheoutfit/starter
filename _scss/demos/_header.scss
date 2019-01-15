@@ -22,19 +22,12 @@ $header-object-margin: 16px;
 
   &__open-nav,
   &__close-nav {
-    background-color: transparent;
-    border: none;
     line-height: 1;
-    padding: 0;
     position: absolute;
 
     // Hide if there's no JS.
     .no-js & {
       @extend .hidden;
-    }
-
-    &:hover {
-      cursor: pointer;
     }
   }
 
