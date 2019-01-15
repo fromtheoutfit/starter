@@ -60,6 +60,13 @@ h1, h2, h3, h4, h5, h6 {font-weight:inherit;}
 ul, ol {list-style-type:none;}
 
 
+// https://developer.paciellogroup.com/blog/2018/03/focus-visible-and-backwards-compatibility/
+// https://caniuse.com/#feat=css-focus-visible
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
 a {
   color: $color-link;
   text-decoration: none;

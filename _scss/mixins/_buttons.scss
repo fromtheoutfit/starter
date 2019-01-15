@@ -41,7 +41,6 @@
     background: $hf-bg-color;
     color: $hf-color;
     cursor: pointer;
-    outline: none;
   }
 
   &:disabled {
@@ -67,7 +66,6 @@
   &:focus {
     color: $color-link-hover;
     cursor: pointer;
-    outline: none;
   }
 
   &:disabled {
@@ -92,7 +90,6 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    outline: none;
   }
 
   &:disabled {
