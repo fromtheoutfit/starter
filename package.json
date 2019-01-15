@@ -8,8 +8,7 @@
     "browser-sync": "^2.24.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "eslint": "^5.5.0",
-    "laravel-mix": "^2.1.14",
-    "laravel-mix-purgecss": "^2.2.3"
+    "laravel-mix": "^2.1.14"
   },
   "dependencies": {
     "ally.js": "^1.4.1",

@@ -1,5 +1,4 @@
 let mix = require('laravel-mix')
-require('laravel-mix-purgecss')
 
 const config = {
   localUrl: 'starter.test',
@@ -33,7 +32,6 @@ mix
   .js('_js/app.js', 'public/lib/js')
   .sass('_scss/app.scss', 'public/lib/css')
   .sass('_scss/print.scss', 'public/lib/css')
-  .purgeCss({globs: config.templates})
   .sourceMaps()
   .webpackConfig(webpack => {
     return {
