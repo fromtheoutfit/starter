@@ -47,6 +47,7 @@ mix
     }
   })
   .browserSync({
+    browser: 'google chrome',
     proxy: config.localUrl,
     files: config.templates.concat([
       '+(web|public)/lib/css/app.css',   // Generated app.css file
