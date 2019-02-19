@@ -3,6 +3,12 @@
 // ============================================================================
 
 
+// https://www.w3.org/TR/CSS2/page.html
+@page {
+  margin: 18mm 12mm;
+}
+
+
 *,
 *:before,
 *:after,
@@ -44,7 +50,8 @@ pre {
 
 pre,
 blockquote {
-  border: 1px solid #999;
+  border: 1mm solid #999;
+  padding: 5mm;
   page-break-inside: avoid;
 }
 
