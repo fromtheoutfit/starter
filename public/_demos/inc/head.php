@@ -1,5 +1,4 @@
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="/lib/css/app.css" />
 
@@ -12,9 +11,10 @@ appropriate assets/code/etc. that are needed for this project:
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/manifest.json" />
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6347" />
-<meta name="theme-color" content="#ff6347" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+<meta name="msapplication-TileColor" content="#000000" />
+<meta name="theme-color" content="#000000" />
 
 <!--
 ( * OPTIONAL * ) FACEBOOK / TWITTER: Is this project utilizing Facebook and
@@ -37,4 +37,3 @@ the code below. If not, delete the code below.
 <meta name="application-name" content="TODO: update this with a short application name" />
 <meta name="apple-mobile-web-app-title" content="TODO: update this with a short application name" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="msapplication-TileColor" content="#ff6347" /><!-- TODO: update this hex value -->

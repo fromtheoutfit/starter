@@ -15,6 +15,7 @@
   padding: 0;
   position: absolute;
   width: 1px;
+  white-space: nowrap;
 
   // Extends the .visuallyhidden class to allow the element to be focusable
   // when navigated to via the keyboard: h5bp.com/p
@@ -27,6 +28,7 @@
     overflow: visible;
     position: static;
     width: auto;
+    white-space: inherit;
   }
 }
 

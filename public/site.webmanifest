@@ -1,6 +1,6 @@
 {
-    "name": "todo",
-    "short_name": "todo",
+    "name": "Project Name",
+    "short_name": "Project Name",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +13,6 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ff6347",
-    "background_color": "#ff6347"
+    "theme_color": "#000000",
+    "background_color": "#000000"
 }
