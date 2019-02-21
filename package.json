@@ -1,23 +1,28 @@
 {
   "name": "the-outfit-starter",
-  "version": "1.1.1",
+  "version": "1.4.0",
   "description": "The directories, files, and code that most website projects are started with at The Outfit.",
   "author": "The Outfit, Inc.",
   "private": true,
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "eslint": "^5.5.0",
-    "laravel-mix": "^2.1.14"
+    "eslint": "^5.14.1",
+    "laravel-mix": "^4.0.14",
+    "sass": "^1.17.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.6"
   },
   "dependencies": {
     "ally.js": "^1.4.1",
     "jquery": "^3.3.1"
   },
   "scripts": {
-    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "npm run development",
+    "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "prod": "npm run production",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 }
