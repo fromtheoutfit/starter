@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "ally.js": "^1.4.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "scripts": {
     "dev": "npm run development",
