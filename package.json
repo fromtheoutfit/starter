@@ -5,17 +5,17 @@
   "author": "The Outfit, Inc.",
   "private": true,
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "eslint": "^5.14.1",
-    "laravel-mix": "^4.0.14",
-    "sass": "^1.26.3",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.6"
+    "eslint": "^7.6.0",
+    "laravel-mix": "^5.0.4",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
     "ally.js": "^1.4.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.1"
   },
   "scripts": {
     "dev": "npm run development",
